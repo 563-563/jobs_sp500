@@ -1,0 +1,2 @@
+run_id,as_of_date,started_at,ended_at,operator_name,sp500_source_doc_id,sp500_snapshot_timestamp,karpathy_jobs_source_doc_id,karpathy_jobs_commit_hash,schema_version,notes
+pilot25_2026Q1_v1,2026-03-16,2026-03-16T16:54:35.970Z,2026-03-16T16:54:35.970Z,,SRC-pilot25_2026Q1_v1-SP500-WIKI,2026-03-16T16:54:35.970Z,,,001_phase1_tables,pilot_size=25; selection_rule=alphabetical_by_ticker_norm

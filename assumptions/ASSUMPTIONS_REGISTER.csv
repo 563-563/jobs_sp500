@@ -1,0 +1,4 @@
+assumption_id,run_id,assumption_text,rationale,impact_area,status,owner,created_at,resolved_at
+ASM-001,pilot25_2026Q1_v1,"Use karpathy/jobs vulnerability scores as-is","User-selected methodology for phase 1","scoring",approved,,2026-03-16,
+ASM-002,pilot25_2026Q1_v1,"Primary workforce evidence source is 10-K/annual filings","Maximizes traceability and consistency","coverage",approved,,2026-03-16,
+ASM-003,pilot25_2026Q1_v1,"Unmapped workforce remains explicit unknown share","Avoids hidden imputation bias","mapping",approved,,2026-03-16,

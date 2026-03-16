@@ -1,0 +1,7 @@
+check_id,run_id,check_name,check_status,check_details,checked_at
+CHK-pilot25_2026Q1_v1-SP500_UNIVERSE_ROW_COUNT,pilot25_2026Q1_v1,sp500_universe_row_count,pass,rows=503; expected>=500,2026-03-16T16:59:23.025Z
+CHK-pilot25_2026Q1_v1-SP500_CIK_MATCH_COMPLETE,pilot25_2026Q1_v1,sp500_cik_match_complete,pass,unmatched=0,2026-03-16T16:59:23.025Z
+CHK-pilot25_2026Q1_v1-PILOT_ROW_COUNT,pilot25_2026Q1_v1,pilot_row_count,pass,rows=25; expected=25,2026-03-16T16:59:23.025Z
+CHK-pilot25_2026Q1_v1-PILOT_UNIQUE_TICKERS,pilot25_2026Q1_v1,pilot_unique_tickers,pass,duplicate_tickers=0,2026-03-16T16:59:23.025Z
+CHK-pilot25_2026Q1_v1-KARPATHY_SCORE_RANGE,pilot25_2026Q1_v1,karpathy_score_range,pass,rows=342; out_of_range=0,2026-03-16T16:59:23.025Z
+CHK-pilot25_2026Q1_v1-PILOT_FILINGS_ANNUAL_FORM_COVERAGE,pilot25_2026Q1_v1,pilot_filings_annual_form_coverage,pass,ok=25; total=25,2026-03-16T16:59:23.025Z

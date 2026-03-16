@@ -1,0 +1,21 @@
+# Citation Record Template
+
+- `citation_id`:
+- `run_id`:
+- `ticker`:
+- `claim_type`: (numeric | qualitative | mapping)
+- `claim_text`:
+- `source_doc_id`:
+- `source_url`:
+- `source_version`:
+- `filing_date`:
+- `section_ref`:
+- `page_ref`:
+- `quote`:
+- `extraction_method`: (manual | script | hybrid)
+- `recorded_by`:
+- `recorded_at`:
+- `verification_status`: (unverified | verified)
+- `verified_by`:
+- `verified_at`:
+- `notes`:

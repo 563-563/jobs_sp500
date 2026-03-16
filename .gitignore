@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Environment and local settings
+.env
+.env.*
+
+# Python cache (if used later)
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.vscode/
+.idea/
+
