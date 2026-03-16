@@ -179,5 +179,19 @@ Rules:
 - publishes score only when approved mapped share >= threshold
 - blocks scoring when confidence policy is violated
 
+## 15) Visualization Dashboard
+Command:
+
+`node scripts/generate-results-dashboard.mjs`
+
+Output:
+- `data/outputs/pilot25_2026Q1_v1__dashboard.html`
+
+Dashboard includes:
+- conservative vs relaxed comparison
+- top relaxed scores
+- confidence and blocker distributions
+- full company detail table
+
 ## Reproducibility
 Each run writes timestamped, immutable artifacts and records source URLs, access time, and checksums.
