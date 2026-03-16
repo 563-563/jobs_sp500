@@ -1,0 +1,5 @@
+check_id,run_id,check_name,check_status,check_details,checked_at
+CHK-pilot25_2026Q1_v1-RESULT_ROW_COUNT,pilot25_2026Q1_v1,result_row_count,pass,rows=25; expected=25,2026-03-16T17:07:47.548Z
+CHK-pilot25_2026Q1_v1-UNIQUE_TICKERS,pilot25_2026Q1_v1,unique_tickers,pass,unique=25,2026-03-16T17:07:47.548Z
+CHK-pilot25_2026Q1_v1-KNOWN_UNKNOWN_SUM_100,pilot25_2026Q1_v1,known_unknown_sum_100,pass,bad_rows=0,2026-03-16T17:07:47.548Z
+CHK-pilot25_2026Q1_v1-NULL_SCORE_WHEN_ZERO_KNOWN,pilot25_2026Q1_v1,null_score_when_zero_known,pass,violations=0,2026-03-16T17:07:47.548Z
