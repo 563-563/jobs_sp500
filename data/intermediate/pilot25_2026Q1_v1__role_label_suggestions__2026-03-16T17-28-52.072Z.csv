@@ -1,0 +1,6 @@
+run_id,signal_id,ticker,role_phrase,role_keyword,suggestion_rank,suggested_repo_label,suggested_repo_title,suggested_repo_score,match_score,review_status,reviewer,reviewed_at,review_notes
+pilot25_2026Q1_v1,RSC-pilot25_2026Q1_v1-ADI-1,ADI,engineering,engineering,1,computer-hardware-engineers,Computer hardware engineers,8,5,pending,,,
+pilot25_2026Q1_v1,RSC-pilot25_2026Q1_v1-ADI-1,ADI,engineering,engineering,2,electrical-and-electronics-engineers,Electrical and electronics engineers,7,5,optional,,,
+pilot25_2026Q1_v1,RSC-pilot25_2026Q1_v1-ADI-1,ADI,engineering,engineering,3,materials-engineers,Materials engineers,7,5,optional,,,
+pilot25_2026Q1_v1,RSC-pilot25_2026Q1_v1-ADI-1,ADI,engineering,engineering,4,aerospace-engineers,Aerospace engineers,7,3,optional,,,
+pilot25_2026Q1_v1,RSC-pilot25_2026Q1_v1-ADI-1,ADI,engineering,engineering,5,biomedical-engineers,Bioengineers and biomedical engineers,7,3,optional,,,

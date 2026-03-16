@@ -134,5 +134,33 @@ Purpose:
 - links signals to approved total headcount (when available)
 - outputs a review queue for manual role-share validation
 
+## 11) Targeted Workforce Extraction (Higher Recall)
+Command:
+
+`node scripts/extract-workforce-evidence-targeted.mjs`
+
+Purpose:
+- scans local filing HTML snapshots with targeted human-capital terms
+- generates denser evidence/citation sets for downstream role extraction
+
+## 12) Role Label Suggestion + Review
+Commands:
+
+`node scripts/generate-role-label-suggestions.mjs`  
+`node scripts/build-role-mapping-review-queue.mjs`  
+`node scripts/generate-role-mapping-review-pack.mjs`
+
+Purpose:
+- proposes best-fit `karpathy/jobs` labels for extracted role signals
+- creates a reviewer queue and markdown review pack
+
+## 13) Company Vulnerability from Approved Role Mapping
+Command:
+
+`node scripts/compute-company-vulnerability-from-role-approvals.mjs`
+
+Output:
+- company-level vulnerability computed from manually approved role mappings only
+
 ## Reproducibility
 Each run writes timestamped, immutable artifacts and records source URLs, access time, and checksums.

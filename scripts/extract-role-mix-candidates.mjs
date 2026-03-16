@@ -89,24 +89,27 @@ function extractSignals(quote) {
   const roleKeyword = detectRoleKeyword(q);
   if (!roleKeyword) return signals;
 
-  const countPattern = /of whom(?: approximately)? ([\d,]+) are in ([a-zA-Z\-\s]+?) roles?/i;
-  const countMatch = q.match(countPattern);
-  if (countMatch) {
-    signals.push({
-      signal_type: "count",
-      signal_value: Number(countMatch[1].replaceAll(",", "")),
-      role_phrase: countMatch[2].trim(),
-      role_keyword: roleKeyword,
-    });
-  }
+  const patterns = [
+    { type: "count", re: /of whom(?: approximately)? ([\d,]+) are in ([a-zA-Z\-\s]+?) roles?/i },
+    {
+      type: "count",
+      re: /([\d,]+)\s+(?:employees|people)\s+(?:are in|in)\s+([a-zA-Z\-\s]+?) roles?/i,
+    },
+    {
+      type: "pct",
+      re: /(\d+(?:\.\d+)?)%\s+of\s+(?:our\s+)?(?:employees|workforce)\s+(?:are|is)\s+(?:in\s+)?([a-zA-Z\-\s]+?)\b/i,
+    },
+  ];
 
-  const pctPattern = /(\d+(?:\.\d+)?)%\s+(?:are\s+)?in\s+([a-zA-Z\-\s]+?)\b/i;
-  const pctMatch = q.match(pctPattern);
-  if (pctMatch) {
+  for (const p of patterns) {
+    const match = q.match(p.re);
+    if (!match) continue;
+    const numeric = Number(match[1].replaceAll(",", ""));
+    if (!Number.isFinite(numeric) || numeric <= 0) continue;
     signals.push({
-      signal_type: "pct",
-      signal_value: Number(pctMatch[1]),
-      role_phrase: pctMatch[2].trim(),
+      signal_type: p.type,
+      signal_value: numeric,
+      role_phrase: match[2].trim(),
       role_keyword: roleKeyword,
     });
   }
@@ -115,7 +118,12 @@ function extractSignals(quote) {
 }
 
 function main() {
-  const evidencePath = latest(/__workforce_evidence_auto__/);
+  let evidencePath;
+  try {
+    evidencePath = latest(/__workforce_evidence_targeted__/);
+  } catch {
+    evidencePath = latest(/__workforce_evidence_auto__/);
+  }
   const reviewedQueuePath = latest(/__headcount_verification_queue_reviewed__/);
   const evidence = parseSimpleCsv(readFileSync(evidencePath, "utf8"));
   const queue = parseSimpleCsv(readFileSync(reviewedQueuePath, "utf8"));
@@ -186,4 +194,3 @@ function main() {
 }
 
 main();
-
