@@ -1,0 +1,8 @@
+{
+  "methodology_version": "v2_relaxed_2026-03-16",
+  "allow_pending_headcount": true,
+  "allow_pending_role_mappings": true,
+  "allow_sector_priors_fill": true,
+  "notes": "Relaxed mode publishes estimated scores using verified evidence first, then pending evidence, then sector priors with explicit confidence downgrade."
+}
+
