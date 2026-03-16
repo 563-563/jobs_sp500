@@ -1,0 +1,4 @@
+check_id,run_id,check_name,check_status,check_details,checked_at
+CHK-pilot25_2026Q1_v1-ADJUDICATION_CONFIDENCE_ENUM,pilot25_2026Q1_v1,adjudication_confidence_enum,pass,invalid_rows=0,2026-03-16T17:41:05.860Z
+CHK-pilot25_2026Q1_v1-APPROVED_SHARE_VALID,pilot25_2026Q1_v1,approved_share_valid,pass,invalid_rows=0,2026-03-16T17:41:05.860Z
+CHK-pilot25_2026Q1_v1-PUBLISHED_SCORE_THRESHOLD_GATE,pilot25_2026Q1_v1,published_score_threshold_gate,pass,violations=0,2026-03-16T17:41:05.860Z

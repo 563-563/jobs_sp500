@@ -103,6 +103,9 @@ function main() {
       signal_id: r.signal_id,
       ticker: r.ticker,
       role_phrase_raw: r.role_phrase,
+      signal_type: r.signal_type,
+      signal_value: r.signal_value,
+      implied_share_pct: r.implied_share_pct,
       normalized_role_bucket: bucket,
       suggested_repo_label: r.suggested_repo_label,
       suggested_repo_title: r.suggested_repo_title,
@@ -136,6 +139,9 @@ function main() {
       "signal_id",
       "ticker",
       "role_phrase_raw",
+      "signal_type",
+      "signal_value",
+      "implied_share_pct",
       "normalized_role_bucket",
       "suggested_repo_label",
       "suggested_repo_title",
@@ -160,4 +166,3 @@ function main() {
 }
 
 main();
-

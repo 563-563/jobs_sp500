@@ -87,7 +87,11 @@ function extractSignals(quote) {
   const signals = [];
   const q = quote;
   const roleKeyword = detectRoleKeyword(q);
-  if (!roleKeyword) return signals;
+  const lower = q.toLowerCase();
+  if (!roleKeyword && !lower.includes("employees are grouped across") && !lower.includes("overall population")) {
+    return signals;
+  }
+  if (lower.includes("as a percentage of revenue")) return signals;
 
   const patterns = [
     { type: "count", re: /of whom(?: approximately)? ([\d,]+) are in ([a-zA-Z\-\s]+?) roles?/i },
@@ -112,6 +116,24 @@ function extractSignals(quote) {
       role_phrase: match[2].trim(),
       role_keyword: roleKeyword,
     });
+  }
+
+  // Pattern for grouped role disclosures like "... engineering and research and development (37%), services and support (26%) ..."
+  if (lower.includes("overall population") || lower.includes("employees are grouped")) {
+    const re = /([a-z][a-z&\/\-\s]+?)\s*\((\d+(?:\.\d+)?)%\)/gi;
+    let m;
+    while ((m = re.exec(q)) !== null) {
+      const phrase = String(m[1] || "").trim();
+      const pct = Number(m[2]);
+      if (!Number.isFinite(pct) || pct <= 0 || pct > 100) continue;
+      const kw = detectRoleKeyword(phrase) || "operations";
+      signals.push({
+        signal_type: "pct",
+        signal_value: pct,
+        role_phrase: phrase,
+        role_keyword: kw,
+      });
+    }
   }
 
   return signals;
@@ -143,7 +165,9 @@ function main() {
       const impliedShare =
         s.signal_type === "count" && Number.isFinite(total) && total > 0
           ? ((s.signal_value / total) * 100).toFixed(2)
-          : "";
+          : s.signal_type === "pct"
+            ? Number(s.signal_value).toFixed(2)
+            : "";
       rows.push({
         signal_id: `RSC-${RUN_ID}-${e.ticker}-${rows.length + 1}`,
         run_id: RUN_ID,

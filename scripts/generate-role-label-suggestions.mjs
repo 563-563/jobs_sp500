@@ -110,10 +110,26 @@ function main() {
         match_score: (() => {
           let score = overlapScore(queryTokens, row.token_set);
           const title = String(row.repo_title || "").toLowerCase();
-          if (String(rm.role_phrase).toLowerCase().includes("engineering")) {
+          const phrase = String(rm.role_phrase).toLowerCase();
+          if (phrase.includes("engineering") || phrase.includes("research and development")) {
             if (title.includes("engineers")) score += 3;
+            if (title.includes("software developers")) score += 4;
+            if (title.includes("computer and information research scientists")) score += 2;
             if (title.includes("engineering managers")) score += 1;
             if (title.includes("technicians")) score -= 1;
+          }
+          if (phrase.includes("services and support")) {
+            if (row.repo_label === "computer-support-specialists") score += 5;
+            if (row.repo_label === "customer-service-representatives") score += 4;
+          }
+          if (phrase.includes("sales and marketing")) {
+            if (row.repo_label === "sales-managers") score += 4;
+            if (row.repo_label === "advertising-promotions-and-marketing-managers") score += 4;
+            if (row.repo_label === "market-research-analysts") score += 2;
+          }
+          if (phrase.includes("administrative functions")) {
+            if (row.repo_label === "management-analysts") score += 3;
+            if (row.repo_label === "administrative-services-managers") score += 3;
           }
           if (industry.includes("semiconductor")) {
             if (
@@ -123,6 +139,10 @@ function main() {
             ) {
               score += 2;
             }
+          }
+          if (industry.includes("internet") || industry.includes("software")) {
+            if (row.repo_label === "software-developers") score += 3;
+            if (row.repo_label === "computer-support-specialists") score += 2;
           }
           return score;
         })(),
