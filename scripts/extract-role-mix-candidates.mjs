@@ -15,6 +15,7 @@ const ROLE_KEYWORDS = [
   "marketing",
   "operations",
   "manufacturing",
+  "labor",
   "research",
   "development",
   "corporate",
@@ -102,6 +103,10 @@ function extractSignals(quote) {
     {
       type: "pct",
       re: /(\d+(?:\.\d+)?)%\s+of\s+(?:our\s+)?(?:employees|workforce)\s+(?:are|is)\s+(?:in\s+)?([a-zA-Z\-\s]+?)\b/i,
+    },
+    {
+      type: "pct",
+      re: /(\d+(?:\.\d+)?)%\s+of\s+(?:our\s+)?employees?.{0,80}?primarily\s+in\s+([a-zA-Z\-\s]+?)\s+roles?/i,
     },
   ];
 

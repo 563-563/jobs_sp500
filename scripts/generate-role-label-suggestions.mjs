@@ -131,6 +131,11 @@ function main() {
             if (row.repo_label === "management-analysts") score += 3;
             if (row.repo_label === "administrative-services-managers") score += 3;
           }
+          if (phrase.includes("direct-labor") || phrase.includes("manufacturing and clinical treatment planning")) {
+            if (row.repo_label === "assemblers-and-fabricators") score += 5;
+            if (row.repo_label === "dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians") score += 4;
+            if (row.repo_label === "industrial-production-managers") score += 2;
+          }
           if (industry.includes("semiconductor")) {
             if (
               row.repo_label === "electrical-and-electronics-engineers" ||

@@ -71,6 +71,7 @@ function normalizeBucket(rolePhrase) {
   if (r.includes("sales")) return "sales";
   if (r.includes("marketing")) return "marketing";
   if (r.includes("manufactur")) return "manufacturing";
+  if (r.includes("direct-labor") || r.includes("labor")) return "manufacturing";
   if (r.includes("operation")) return "operations";
   if (r.includes("research")) return "research";
   if (r.includes("customer")) return "customer_support";

@@ -108,6 +108,15 @@ function approveRule(row) {
         note: "Auto-approved: grouped workforce percentage for services/support.",
       };
     }
+    if (phrase.includes("sales and marketing")) {
+      return {
+        approved: true,
+        label: "sales-managers",
+        share: implied.toFixed(2),
+        confidence: "narrow",
+        note: "Auto-approved: grouped workforce percentage for sales/marketing.",
+      };
+    }
   }
 
   return { approved: false };
@@ -178,4 +187,3 @@ function main() {
 }
 
 main();
-
