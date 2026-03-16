@@ -1,0 +1,9 @@
+{
+  "methodology_version": "v2_conservative_2026-03-16",
+  "coverage_threshold_pct": 30,
+  "allowed_confidence_for_scoring": ["exact", "narrow"],
+  "block_if_any_unknown_confidence": true,
+  "publish_score_when_threshold_met_only": true,
+  "notes": "Conservative policy: no company-level vulnerability score unless approved role-share coverage meets threshold using high-confidence mappings."
+}
+

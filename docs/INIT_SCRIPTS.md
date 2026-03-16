@@ -162,5 +162,22 @@ Command:
 Output:
 - company-level vulnerability computed from manually approved role mappings only
 
+## 14) Methodology v2 (Conservative)
+Config:
+
+`config/methodology_v2.json`
+
+Commands:
+
+`node scripts/build-role-mapping-adjudication-v2.mjs`  
+`node scripts/generate-role-mapping-adjudication-v2-pack.mjs`  
+`node scripts/compute-company-vulnerability-v2-conservative.mjs`  
+`node scripts/qa-methodology-v2.mjs`
+
+Rules:
+- uses confidence tiers (`exact`, `narrow`, `broad`, `unknown`)
+- publishes score only when approved mapped share >= threshold
+- blocks scoring when confidence policy is violated
+
 ## Reproducibility
 Each run writes timestamped, immutable artifacts and records source URLs, access time, and checksums.
