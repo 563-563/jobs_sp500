@@ -129,10 +129,15 @@ function isNoisySentence(sentence) {
 
 function extractEmployeeCount(sentence) {
   const patterns = [
-    /(?:approximately|about|around|over|nearly|roughly)?\s*([\d,]{3,})\s+(?:full[- ]time\s+equivalent\s+)?employees?/i,
-    /employees?.{0,40}?([\d,]{3,})/i,
-    /workforce.{0,40}?([\d,]{3,})/i,
+    /as of.{0,60}?(?:had|employed)\s+(?:approximately|about|around|over|nearly|roughly)?\s*([\d,]{3,})\s+(?:full[- ]time\s+equivalent\s+)?(?:employees?|people|team members)/i,
+    /(?:had|employed)\s+(?:approximately|about|around|over|nearly|roughly)?\s*([\d,]{3,})\s+(?:full[- ]time\s+equivalent\s+)?(?:employees?|people|team members)/i,
+    /(?:approximately|about|around|over|nearly|roughly)\s*([\d,]{3,})\s+(?:full[- ]time\s+equivalent\s+)?employees?/i,
   ];
+  const lower = sentence.toLowerCase();
+  if ((lower.includes("or more") || lower.includes("at least")) && !lower.includes("we had")) return null;
+  if (lower.includes("employee retirement income security act") || lower.includes("erisa")) return null;
+  if (lower.includes("retail stores")) return null;
+  if (lower.includes("ai and data workforce")) return null;
   for (const p of patterns) {
     const match = sentence.match(p);
     if (!match) continue;

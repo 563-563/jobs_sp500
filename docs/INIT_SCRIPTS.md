@@ -96,5 +96,22 @@ Outputs:
 - company-level results table (`data/outputs/`)
 - result QA ledger (`data/logs/`)
 
+## 8) Headcount verification workflow
+Commands:
+
+`node scripts/build-headcount-verification-queue.mjs`  
+`node scripts/compute-company-results-verified-headcount.mjs`
+
+Workflow:
+- build auto candidates and one recommended review row per company
+- manually set `review_status` and `verified_headcount` in the queue file
+- recompute results to apply only `approved` verified headcounts
+
+Status values:
+- `pending`
+- `approved`
+- `rejected`
+- `needs_research`
+
 ## Reproducibility
 Each run writes timestamped, immutable artifacts and records source URLs, access time, and checksums.
