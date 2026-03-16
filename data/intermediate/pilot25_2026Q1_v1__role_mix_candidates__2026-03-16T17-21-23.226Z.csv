@@ -1,0 +1,2 @@
+signal_id,run_id,ticker,evidence_id,citation_id,role_keyword,role_phrase,signal_type,signal_value,total_headcount_reference,implied_share_pct,quote,review_status,reviewer,reviewed_at,review_notes
+RSC-pilot25_2026Q1_v1-ADI-1,pilot25_2026Q1_v1,ADI,EVD-pilot25_2026Q1_v1-ADI-011,CIT-pilot25_2026Q1_v1-ADI-011,engineering,engineering,count,13000,24500,53.06,"As of November 1, 2025, we had approximately 24,500 employees, of whom approximately 13,000 are in engineering roles.",pending,,,

@@ -1,0 +1,26 @@
+run_id,as_of_date,company_name,ticker,cik,ai_vulnerability_score,known_workforce_share_pct,unknown_workforce_share_pct,confidence_level,data_quality_grade,primary_filing_date,verified_headcount,headcount_verification_status,headcount_citation_id,notes
+pilot25_2026Q1_v1,2026-03-16,Agilent Technologies,A,0001090872,,0,100,low,F,2025-12-22,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Apple Inc.,AAPL,0000320193,,0,100,low,F,2025-10-31,166000,approved,CIT-pilot25_2026Q1_v1-AAPL-002,employee_count_candidate=166000; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,AbbVie,ABBV,0001551152,,0,100,low,F,2026-02-20,57000,approved,CIT-pilot25_2026Q1_v1-ABBV-003,employee_count_candidate=57000; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Airbnb,ABNB,0001559720,,0,100,low,F,2026-02-12,8200,approved,CIT-pilot25_2026Q1_v1-ABNB-003,employee_count_candidate=8200; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Abbott Laboratories,ABT,0000001800,,0,100,low,F,2026-02-20,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Arch Capital Group,ACGL,0000947484,,0,100,low,F,2026-02-26,8000,approved,CIT-pilot25_2026Q1_v1-ACGL-003,employee_count_candidate=8000; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Accenture,ACN,0001467373,,0,100,low,F,2025-10-10,,unverified,,employee_count_candidate=77000; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Adobe Inc.,ADBE,0000796343,,0,100,low,F,2026-01-15,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Analog Devices,ADI,0000006281,,0,100,low,F,2025-11-25,24500,approved,CIT-pilot25_2026Q1_v1-ADI-011,employee_count_candidate=24500; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Archer Daniels Midland,ADM,0000007084,,0,100,low,F,2026-02-17,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Automatic Data Processing,ADP,0000008670,,0,100,low,F,2025-08-06,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Autodesk,ADSK,0000769397,,0,100,low,F,2026-03-03,14300,approved,CIT-pilot25_2026Q1_v1-ADSK-008,employee_count_candidate=15300; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Ameren,AEE,0001002910,,0,100,low,F,2026-02-18,,unverified,,employee_count_candidate=1974; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,American Electric Power,AEP,0000004904,,0,100,low,F,2026-02-12,,unverified,,employee_count_candidate=17581; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,AES Corporation,AES,0000874761,,0,100,low,F,2026-03-02,,unverified,,no employee count candidate extracted; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Aflac,AFL,0000004977,,0,100,low,F,2026-02-25,,unverified,,employee_count_candidate=1000; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,American International Group,AIG,0000005272,,0,100,low,F,2026-02-12,,unverified,,employee_count_candidate=22100; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Assurant,AIZ,0001267238,,0,100,low,F,2026-02-19,14800,approved,CIT-pilot25_2026Q1_v1-AIZ-009,employee_count_candidate=14800; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Arthur J. Gallagher & Co.,AJG,0000354190,,0,100,low,F,2026-02-17,72000,approved,CIT-pilot25_2026Q1_v1-AJG-009,employee_count_candidate=72000; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Akamai Technologies,AKAM,0001086222,,0,100,low,F,2026-02-20,11000,approved,CIT-pilot25_2026Q1_v1-AKAM-005,employee_count_candidate=11000; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Albemarle Corporation,ALB,0000915913,,0,100,low,F,2026-02-11,7800,approved,CIT-pilot25_2026Q1_v1-ALB-003,employee_count_candidate=7800; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Align Technology,ALGN,0001097149,,0,100,low,F,2026-02-27,20290,approved,CIT-pilot25_2026Q1_v1-ALGN-010,employee_count_candidate=20290; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Allstate,ALL,0000899051,,0,100,low,F,2026-02-20,,unverified,,employee_count_candidate=700; no role-share breakdown extracted
+pilot25_2026Q1_v1,2026-03-16,Allegion,ALLE,0001579241,,0,100,low,F,2026-02-17,13300,approved,CIT-pilot25_2026Q1_v1-ALLE-008,employee_count_candidate=13300; no role-share breakdown extracted; verified_headcount_approved
+pilot25_2026Q1_v1,2026-03-16,Applied Materials,AMAT,0000006951,,0,100,low,F,2025-12-12,,unverified,,no employee count candidate extracted; no role-share breakdown extracted

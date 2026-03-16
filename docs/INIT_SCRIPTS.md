@@ -113,5 +113,26 @@ Status values:
 - `rejected`
 - `needs_research`
 
+## 9) Strict Auto Review (Optional)
+Commands:
+
+`node scripts/auto-review-headcount-queue.mjs`  
+`node scripts/compute-company-results-verified-headcount.mjs`
+
+Behavior:
+- auto-approves only high-confidence total-headcount statements
+- leaves medium/unclear rows pending
+- preserves `needs_research` rows
+
+## 10) Role-Mix Candidate Extraction
+Command:
+
+`node scripts/extract-role-mix-candidates.mjs`
+
+Purpose:
+- scans workforce evidence for role-specific count/percentage signals
+- links signals to approved total headcount (when available)
+- outputs a review queue for manual role-share validation
+
 ## Reproducibility
 Each run writes timestamped, immutable artifacts and records source URLs, access time, and checksums.

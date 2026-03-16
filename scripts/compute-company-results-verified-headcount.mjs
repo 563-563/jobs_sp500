@@ -69,13 +69,20 @@ function latest(pattern, dir) {
 
 function main() {
   const basePath = latest(/__company_results__/, OUT_DIR);
-  const queuePath = latest(/__headcount_verification_queue__/, INT_DIR);
+  let queuePath;
+  try {
+    queuePath = latest(/__headcount_verification_queue_reviewed__/, INT_DIR);
+  } catch {
+    queuePath = latest(/__headcount_verification_queue__/, INT_DIR);
+  }
 
   const baseRows = parseSimpleCsv(readFileSync(basePath, "utf8"));
   const queueRows = parseSimpleCsv(readFileSync(queuePath, "utf8"));
+  const queueByTicker = new Map();
   const approved = new Map();
 
   for (const q of queueRows) {
+    queueByTicker.set(q.ticker, q);
     if (String(q.review_status).toLowerCase() !== "approved") continue;
     const val = Number(q.verified_headcount);
     if (!Number.isFinite(val) || val <= 0) continue;
@@ -84,6 +91,7 @@ function main() {
 
   const outRows = baseRows.map((b) => {
     const q = approved.get(b.ticker);
+    const qAny = queueByTicker.get(b.ticker);
     if (q) {
       return {
         run_id: RUN_ID,
@@ -100,7 +108,7 @@ function main() {
         verified_headcount: q.verified_headcount,
         headcount_verification_status: "approved",
         headcount_citation_id: q.citation_id,
-        notes: `${b.notes}; verified_headcount_approved`,
+        notes: `verified_headcount=${q.verified_headcount}; source=${q.citation_id}; review_status=approved`,
       };
     }
     return {
@@ -116,9 +124,14 @@ function main() {
       data_quality_grade: b.data_quality_grade,
       primary_filing_date: b.primary_filing_date,
       verified_headcount: "",
-      headcount_verification_status: "unverified",
-      headcount_citation_id: "",
-      notes: b.notes,
+      headcount_verification_status:
+        qAny && String(qAny.review_status).toLowerCase() === "needs_research"
+          ? "needs_research"
+          : "unverified",
+      headcount_citation_id: qAny?.citation_id || "",
+      notes: qAny
+        ? `review_status=${qAny.review_status}; review_notes=${qAny.review_notes || ""}`
+        : "no queue row found",
     };
   });
 
@@ -153,4 +166,3 @@ function main() {
 }
 
 main();
-
