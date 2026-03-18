@@ -7,7 +7,7 @@ description: Run and stabilize one-by-one company defensibility scoring for larg
 
 ## Overview
 
-Execute per-ticker reasoning cycles while preserving global artifacts, enforce hard publish gates, and provide checkpoint/restore safety for large-universe runs.
+Execute per-ticker reasoning cycles while preserving global artifacts, enforce hard publish gates for final lock, and run iterative convergence passes for full-universe ingest.
 
 ## Quick Start
 
@@ -15,12 +15,16 @@ Execute per-ticker reasoning cycles while preserving global artifacts, enforce h
    - `node scripts/create-final-final-baseline.mjs`
 2. Run one ticker:
    - `node scripts/run-company-agent-one.mjs AAPL`
-3. Validate hard gates:
+3. Validate integrity:
+   - `node skills/public/sp500-defensibility-pipeline/scripts/validate_integrity_minimum.mjs`
+4. Validate final hard gates (final lock only):
    - `node skills/public/sp500-defensibility-pipeline/scripts/validate_hard_gates.mjs`
-4. If needed, restore from checkpoint:
+5. If needed, restore from checkpoint:
    - `node skills/public/sp500-defensibility-pipeline/scripts/restore_checkpoint.mjs --checkpoint <path-to-checkpoint-json>`
 
-## Full Sweep
+## Execution Modes
+
+### Final-Lock Sweep (strict)
 
 Run a one-by-one sweep from a ticker list:
 
@@ -30,14 +34,38 @@ powershell -ExecutionPolicy Bypass -File skills/public/sp500-defensibility-pipel
 
 If `-TickersFile` is omitted, the script uses latest `pilot*_companies` intermediate file.
 
+Use this mode when all companies are expected to satisfy final hard gates at the end of the run.
+
+### Iterative Scale Sweep (500 ingest)
+
+Run iterative one-by-one passes where progress accumulates across passes and unresolved companies are re-queued:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File skills/public/sp500-defensibility-pipeline/scripts/run_iterative_ladder.ps1 -UniverseFile data/intermediate/my_universe.csv -MaxPasses 4 -CheckpointEvery 25 -QueueLimit 150
+```
+
+Default flow:
+
+1. Pass 1 runs the provided universe file.
+2. Next passes run only the generated repair queue (highest-priority unresolved tickers first).
+3. Each pass enforces integrity checks (source/methodology failures), not final hard-gate lock.
+
+Repair queue command (standalone):
+
+```bash
+node skills/public/sp500-defensibility-pipeline/scripts/build_repair_queue.mjs --limit 150
+```
+
 ## Guardrails
 
 - Use `scripts/run-company-agent-one.mjs` for iterative ticker work.
 - Avoid `scripts/run-company-agents.mjs` during one-by-one upgrade passes.
-- Treat hard-gate regressions as blockers; checkpoint before major sweeps.
+- Use strict hard-gate mode only for final lock declarations.
+- Use iterative mode for large ingest convergence and queue-driven retries.
 - Regenerate dashboard/kanban after restores or artifact rollbacks.
 
 ## References
 
 - Workflow: `references/workflow.md`
 - Source ladder and evidence strategy: `references/source-ladder.md`
+- At-scale runbook: `references/at-scale.md`

@@ -1,4 +1,4 @@
 interface:
   display_name: "S&P500 Defensibility Pipeline"
-  short_description: "Run one-by-one defensibility scoring at scale"
-  default_prompt: "Use $sp500-defensibility-pipeline to run and QA one-by-one company defensibility scoring for full-universe ingest."
+  short_description: "Run one-by-one defensibility scoring with iterative convergence"
+  default_prompt: "Use $sp500-defensibility-pipeline to run full-universe one-by-one scoring passes, prioritize repair queues, and lock final hard-gate outputs."

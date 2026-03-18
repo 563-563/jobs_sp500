@@ -56,8 +56,19 @@ Use checkpoint restore when a sweep creates unacceptable regression:
 
 ## Scale-Up to 500
 
-- Keep one-ticker execution as default.
-- Checkpoint every 25-50 tickers.
-- Keep a queue of high-impact tickers (low confidence, pending mappings, broad priors) and run them first.
-- Treat large metric swings as investigation triggers, not automatic acceptance.
+Use two modes deliberately:
 
+1. Convergence mode (iterative ladder):
+   - `run_iterative_ladder.ps1`
+   - Runs full universe once, then re-runs only unresolved high-priority tickers from repair queue.
+   - Enforces integrity checks (no source/methodology fails), not final all-green hard-gate lock.
+2. Final-lock mode (strict sweep):
+   - `run_ticker_sweep.ps1`
+   - Requires full hard-gate pass at run end and rolls back on failure.
+
+Recommended cadence for 500 ingest:
+
+1. Pass 1: full universe.
+2. Pass 2+: repair queue only (`build_repair_queue.mjs`) with queue limit (for example, 100-200).
+3. Stop when queue reaches 0, or queue size is no longer improving.
+4. Run strict final-lock sweep only when convergence indicates all companies can pass hard gates.
