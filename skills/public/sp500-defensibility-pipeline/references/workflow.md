@@ -4,7 +4,7 @@
 
 1. Objectives
 2. Inputs
-3. Standard Loop
+3. Per-Ticker Stage Contract
 4. Hard Gates
 5. Recovery Pattern
 6. Scale-Up to 500
@@ -21,17 +21,27 @@
 - Universe file (`ticker` column CSV or line-delimited ticker text file).
 - Existing intermediate artifacts and checkpoint history.
 
-## Standard Loop
+## Per-Ticker Stage Contract
 
-1. Create a baseline checkpoint:
-   - `node scripts/create-final-final-baseline.mjs`
-2. Run per-ticker cycle:
-   - `node scripts/run-company-agent-one.mjs <TICKER>`
-3. Validate gates:
-   - `node skills/public/sp500-defensibility-pipeline/scripts/validate_hard_gates.mjs`
-4. Repeat for next ticker.
+Canonical flow is defined in `references/ticker-sop.md`.
 
-Use `run_ticker_sweep.ps1` to automate steps 2-3 with periodic checkpoints.
+Every ticker must pass these stages in order:
+
+1. Source discovery (internet scrub).
+2. Document acquisition and parsing (including PDF/OCR as needed).
+3. Signal extraction (keyword/table/entity).
+4. LLM reasoning (role allocation + confidence + citations).
+5. Gap check.
+6. Retry missing stages until satisfactory.
+
+Automation notes:
+
+1. Use `scripts/run-company-agent-one.mjs <TICKER>` as the mutation primitive.
+2. Use `run_ticker_pass.ps1`/`run_iterative_ladder.ps1` for batch orchestration.
+3. Use `build_repair_queue.mjs` to target unresolved tickers.
+
+Important:
+- Re-running scoring alone is not a completed pass for a ticker unless stages 1-5 are satisfied.
 
 ## Hard Gates
 

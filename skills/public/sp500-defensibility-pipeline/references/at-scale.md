@@ -12,6 +12,8 @@
 
 Run full-universe one-by-one reasoning (up to S&P 500 scale) without discarding progress when some tickers remain unresolved.
 
+Per ticker, follow `references/ticker-sop.md` as the non-negotiable workflow contract.
+
 ## Inputs
 
 - Universe CSV with `ticker` column (for example `sp500_constituents_full` export).
@@ -53,6 +55,9 @@ powershell -ExecutionPolicy Bypass -File skills/public/sp500-defensibility-pipel
    - queue no longer improves,
    - max passes reached.
 4. Review unresolved tail manually, then run strict final-lock sweep.
+
+Interpretation rule:
+- A queue pass is only meaningful if unresolved tickers received new discovery/acquisition/extraction/reasoning work, not just re-scoring with unchanged evidence.
 
 ## Safety Checks
 

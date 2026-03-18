@@ -5,7 +5,8 @@
 1. Purpose
 2. Preferred Source Order
 3. Role Breakdown Strategy
-4. Escalation Rules
+4. Discovery Checklist
+5. Escalation Rules
 
 ## Purpose
 
@@ -28,9 +29,24 @@ Use a repeatable evidence ladder so role/headcount decisions remain defensible.
 - If source uses broad buckets (for example, "professionals"), map using explicit decomposition assumptions and keep provenance.
 - Replace broad/proxy mappings with direct evidence when discovered in later passes.
 
+## Discovery Checklist
+
+For each ticker, check each bucket and mark found/not found:
+
+1. SEC annual filing (`10-K`, `20-F`, `40-F`).
+2. SEC proxy (`DEF 14A`).
+3. SEC annual report PDF.
+4. Company sustainability/ESG/workforce report.
+5. EEO-1/workforce table publication.
+6. Investor presentation with function/workforce breakdown.
+7. Careers/workforce page with role/location signals.
+8. Industry prior fallback (BLS/NAICS), only if direct sources are insufficient.
+
+If any high-priority bucket is unchecked, ticker is not ready for final reasoning.
+
 ## Escalation Rules
 
 - If ticker drops from `medium_high_confidence`, stop and inspect before continuing batch.
 - If pending mappings increase unexpectedly, inspect adjudication outputs for that ticker.
 - If source-ladder QA fails, fix queue integrity before trusting scores.
-
+- If a ticker remains unresolved across two passes with unchanged evidence, force Stage 0/1 refresh before another scoring pass.

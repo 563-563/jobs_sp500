@@ -7,7 +7,15 @@ description: Run and stabilize one-by-one company defensibility scoring for larg
 
 ## Overview
 
-Execute per-ticker reasoning cycles while preserving global artifacts, enforce hard publish gates for final lock, and run iterative convergence passes for full-universe ingest.
+Operate each ticker with a strict stage contract:
+
+1. Internet source discovery.
+2. Document acquisition/parsing (HTML/PDF/OCR).
+3. Signal extraction (keyword/table/entity).
+4. LLM reasoning for role breakdown and confidence.
+5. Gap check and targeted retries.
+
+Then aggregate into universe-level scoring and QA.
 
 ## Quick Start
 
@@ -21,6 +29,20 @@ Execute per-ticker reasoning cycles while preserving global artifacts, enforce h
    - `node skills/public/sp500-defensibility-pipeline/scripts/validate_hard_gates.mjs`
 5. If needed, restore from checkpoint:
    - `node skills/public/sp500-defensibility-pipeline/scripts/restore_checkpoint.mjs --checkpoint <path-to-checkpoint-json>`
+
+## Default Ticker Method (Required)
+
+For each ticker, follow `references/ticker-sop.md` exactly.
+
+Do not treat repeated score recomputation as progress unless the ticker has gone through:
+
+1. Discovery
+2. Acquisition/parsing
+3. Extraction
+4. LLM reasoning
+5. Gap-driven retry decision
+
+If any stage is incomplete, the ticker is not done.
 
 ## Execution Modes
 
@@ -63,9 +85,11 @@ node skills/public/sp500-defensibility-pipeline/scripts/build_repair_queue.mjs -
 - Use strict hard-gate mode only for final lock declarations.
 - Use iterative mode for large ingest convergence and queue-driven retries.
 - Regenerate dashboard/kanban after restores or artifact rollbacks.
+- Treat per-ticker reasoning as mandatory, not optional.
 
 ## References
 
 - Workflow: `references/workflow.md`
+- Per-ticker SOP: `references/ticker-sop.md`
 - Source ladder and evidence strategy: `references/source-ladder.md`
 - At-scale runbook: `references/at-scale.md`
