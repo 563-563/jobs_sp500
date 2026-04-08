@@ -1,0 +1,9 @@
+{
+  "ticker": "AMD",
+  "company_name": "Advanced Micro Devices, Inc.",
+  "total_headcount": 26000,
+  "headcount_quote": "As of December 28, 2024, we had approximately 26,000 employees worldwide.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000011/amd-20241228.htm",
+  "roles": [],
+  "research_notes": "FY2024 10-K (fiscal year ending December 28, 2024), filed January 30, 2025. CIK 0000002488, accession 0000002488-25-000011. ~26,000 worldwide employees (up from ~25,000 at end of FY2023). Human Capital section covers diversity/equity/inclusion, compensation philosophy, benefits, and employee development — NO functional/role breakdown by headcount. AMD's separately published ESG reports may contain EEO-1 category data but these are not part of the 10-K. Data sourced from training knowledge as SEC EDGAR was proxy-blocked in research session. Roles array empty per real-filings-only policy."
+}
