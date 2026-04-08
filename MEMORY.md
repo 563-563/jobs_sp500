@@ -6,28 +6,34 @@ Last updated: 2026-04-08
 ## RESEARCHED list
 <!-- Tickers that have completed deep-research (JSON in data/intermediate/researched/) -->
 <!-- and have been injected into the pipeline. -->
-AAPL, AVGO, TSLA, BRK.B, CRM
+AAPL, AVGO, TSLA, BRK.B, CRM, NFLX, AMD, INTC, GILD, REGN
 
 ## Priority List (remaining)
-NFLX, AMD, INTC, GILD, REGN, ZTS, QCOM, TXN, INTU, NOW, UBER, TRV, NSC, ADI, AMAT
+ZTS, QCOM, TXN, INTU, NOW, UBER, TRV, NSC, ADI, AMAT
 
 ## Batch History
 
 | Batch | Tickers | Status | Role Data Found | Notes |
 |-------|---------|--------|-----------------|-------|
 | 1 | AAPL, AVGO, TSLA, BRK.B, CRM | ✓ done | BRK.B only | AAPL/AVGO/TSLA/CRM 10-Ks have no role breakdown; BRK.B segment data from AFS supplement |
+| 2 | NFLX, AMD, INTC, GILD, REGN | ✓ done | none | All 10-Ks lack role breakdown; headcounts added |
 
-## Pipeline Results After Batch 1
+## Pipeline Results After Batch 2 (34 companies total)
 
 | Ticker | Conservative | Relaxed | Confidence | Notes |
 |--------|-------------|---------|------------|-------|
 | ADI | 8.00 | — | high | From pilot25; 53% engineering (narrow) |
 | AKAM | 8.25 | — | high | From pilot25; 80% role coverage (narrow) |
 | BRK.B | blocked | 7.12 | high | 100% direct mapped; blocked conservative by medium-conf rows |
-| AAPL | — | 8.05 | low | Sector priors only (IT sector) |
-| AVGO | — | 8.05 | low | Sector priors only (IT sector) |
-| CRM | — | 8.05 | low | Sector priors only (IT sector) |
-| TSLA | — | 6.80 | low | Sector priors only (Consumer Discretionary) |
+| AAPL | — | 8.05 | low | Sector priors (IT) |
+| AVGO | — | 8.05 | low | Sector priors (IT) |
+| CRM | — | 8.05 | low | Sector priors (IT) |
+| AMD | — | 8.05 | low | Sector priors (IT) |
+| INTC | — | 8.05 | low | Sector priors (IT) |
+| NFLX | — | 8.05 | low | Sector priors (Communication Services) |
+| TSLA | — | 6.80 | low | Sector priors (Consumer Discretionary) |
+| GILD | — | 7.30 | low | Sector priors (Health Care) |
+| REGN | — | 7.30 | low | Sector priors (Health Care) |
 
 ## Key Findings
 - Most mega-cap 10-Ks do NOT disclose role/function breakdowns — only total headcount
