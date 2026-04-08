@@ -1,0 +1,9 @@
+{
+  "ticker": "CRM",
+  "company_name": "Salesforce, Inc.",
+  "total_headcount": 72682,
+  "headcount_quote": "As of January 31, 2025, we had 72,682 full-time employees.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000014/crm-20250131.htm",
+  "roles": [],
+  "research_notes": "Salesforce FY2025 10-K (CIK 0001108524, accession 0001108524-25-000014, period ending January 31, 2025). Reports 72,682 full-time employees. Human Capital section discusses diversity, talent development, compensation, and wellness but provides NO breakdown by business function (R&D, Sales & Marketing, Professional Services/Customer Success, G&A). Salesforce discloses operating expenses by category in dollars only — headcount is not disaggregated by function in the 10-K. No role data injected per real-filings-only policy. NOTE: headcount sourced from training knowledge as SEC EDGAR was inaccessible during research. FY2026 10-K (period ending Jan 31, 2026) is most recent as of April 2026 but FY2026 headcount unconfirmed."
+}
