@@ -1,0 +1,9 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "total_headcount": 166000,
+  "headcount_quote": "As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "roles": [],
+  "research_notes": "Apple FY2025 10-K (accession 0000320193-25-000079) contains no role or function breakdown. Human Capital section discloses only total FTE count plus boilerplate on culture, compensation, and benefits. R&D expenses ~$34.55B driven by headcount-related expenses but no R&D headcount figure given. Apple publishes EEO-1 data separately (apple.com/diversity/pdf/) using EEOC categories (U.S.-only) but this was not accessible and is not part of the 10-K. Third-party LinkedIn-derived breakdowns (e.g., engineering ~41%) are not authoritative. No role data injected per policy of real-filings-only."
+}
