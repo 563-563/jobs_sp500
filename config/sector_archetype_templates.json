@@ -1,0 +1,251 @@
+{
+  "_doc": "Workforce composition templates by GICS sector/sub-industry archetype. Derived from deep research on exemplar companies. Each entry maps to validated karpathy slugs with exposure scores. Use as starting point, adjust per company when evidence exists.",
+  "_version": "2026-04-03",
+
+  "archetypes": {
+    "warehouse_logistics": {
+      "description": "Fulfillment, delivery, logistics-heavy companies",
+      "exemplars": ["AMZN"],
+      "gics_sectors": ["Consumer Discretionary", "Industrials"],
+      "gics_sub_industries": ["Broadline Retail", "Air Freight & Logistics", "Cargo Ground Transportation"],
+      "template": [
+        { "label": "hand-laborers-and-material-movers", "share": 45, "exposure": 2 },
+        { "label": "heavy-and-tractor-trailer-truck-drivers", "share": 10, "exposure": 5 },
+        { "label": "delivery-truck-drivers-and-driver-sales-workers", "share": 10, "exposure": 3 },
+        { "label": "material-moving-machine-operators", "share": 5, "exposure": 4 },
+        { "label": "industrial-production-managers", "share": 5, "exposure": 6 },
+        { "label": "customer-service-representatives", "share": 5, "exposure": 9 },
+        { "label": "software-developers", "share": 5, "exposure": 9 },
+        { "label": "logisticians", "share": 5, "exposure": 7 },
+        { "label": "management-analysts", "share": 5, "exposure": 7 },
+        { "label": "sales-managers", "share": 3, "exposure": 7 },
+        { "label": "accountants-and-auditors", "share": 2, "exposure": 8 }
+      ],
+      "expected_score_range": [3.0, 4.5]
+    },
+
+    "home_improvement_retail": {
+      "description": "Big-box retail with significant warehouse/distribution",
+      "exemplars": ["HD", "LOW"],
+      "gics_sub_industries": ["Home Improvement Retail"],
+      "template": [
+        { "label": "retail-sales-workers", "share": 40, "exposure": 4 },
+        { "label": "cashiers", "share": 10, "exposure": 7 },
+        { "label": "hand-laborers-and-material-movers", "share": 15, "exposure": 2 },
+        { "label": "top-executives", "share": 10, "exposure": 6 },
+        { "label": "software-developers", "share": 5, "exposure": 9 },
+        { "label": "management-analysts", "share": 5, "exposure": 7 },
+        { "label": "heavy-and-tractor-trailer-truck-drivers", "share": 5, "exposure": 5 },
+        { "label": "construction-managers", "share": 3, "exposure": 5 },
+        { "label": "security-guards", "share": 3, "exposure": 5 },
+        { "label": "accountants-and-auditors", "share": 2, "exposure": 8 },
+        { "label": "human-resources-specialists", "share": 2, "exposure": 7 }
+      ],
+      "expected_score_range": [4.0, 5.0]
+    },
+
+    "restaurant_food_service": {
+      "description": "Restaurant chains with company-operated stores",
+      "exemplars": ["SBUX", "CMG"],
+      "gics_sub_industries": ["Restaurants"],
+      "template": [
+        { "label": "food-preparation-workers", "share": 65, "exposure": 2 },
+        { "label": "food-service-managers", "share": 12, "exposure": 4 },
+        { "label": "cashiers", "share": 5, "exposure": 7 },
+        { "label": "hand-laborers-and-material-movers", "share": 5, "exposure": 2 },
+        { "label": "software-developers", "share": 3, "exposure": 9 },
+        { "label": "management-analysts", "share": 3, "exposure": 7 },
+        { "label": "advertising-promotions-and-marketing-managers", "share": 2, "exposure": 8 },
+        { "label": "logisticians", "share": 2, "exposure": 7 },
+        { "label": "accountants-and-auditors", "share": 2, "exposure": 8 },
+        { "label": "human-resources-specialists", "share": 1, "exposure": 7 }
+      ],
+      "expected_score_range": [2.5, 3.5]
+    },
+
+    "pure_tech_software": {
+      "description": "Software/internet companies with predominantly knowledge workers",
+      "exemplars": ["GOOGL", "CRM", "NOW", "ADBE"],
+      "gics_sectors": ["Communication Services", "Information Technology"],
+      "gics_sub_industries": ["Interactive Media & Services", "Application Software", "Systems Software"],
+      "template": [
+        { "label": "software-developers", "share": 35, "exposure": 9 },
+        { "label": "sales-managers", "share": 10, "exposure": 7 },
+        { "label": "management-analysts", "share": 10, "exposure": 7 },
+        { "label": "computer-support-specialists", "share": 5, "exposure": 8 },
+        { "label": "data-scientists", "share": 5, "exposure": 9 },
+        { "label": "advertising-promotions-and-marketing-managers", "share": 5, "exposure": 8 },
+        { "label": "project-management-specialists", "share": 5, "exposure": 7 },
+        { "label": "computer-and-information-research-scientists", "share": 3, "exposure": 9 },
+        { "label": "information-security-analysts", "share": 3, "exposure": 8 },
+        { "label": "network-and-computer-systems-administrators", "share": 3, "exposure": 8 },
+        { "label": "financial-managers", "share": 3, "exposure": 7 },
+        { "label": "human-resources-specialists", "share": 3, "exposure": 7 },
+        { "label": "lawyers", "share": 2, "exposure": 8 },
+        { "label": "customer-service-representatives", "share": 3, "exposure": 9 },
+        { "label": "administrative-services-managers", "share": 2, "exposure": 5 },
+        { "label": "computer-and-information-systems-managers", "share": 3, "exposure": 7 }
+      ],
+      "expected_score_range": [7.5, 8.5]
+    },
+
+    "diversified_bank": {
+      "description": "Large diversified banks with retail, investment, and wealth segments",
+      "exemplars": ["JPM", "BAC", "C"],
+      "gics_sub_industries": ["Diversified Banks"],
+      "template": [
+        { "label": "customer-service-representatives", "share": 12, "exposure": 9 },
+        { "label": "software-developers", "share": 10, "exposure": 9 },
+        { "label": "financial-analysts", "share": 8, "exposure": 9 },
+        { "label": "tellers", "share": 6, "exposure": 7 },
+        { "label": "bookkeeping-accounting-and-auditing-clerks", "share": 6, "exposure": 9 },
+        { "label": "securities-commodities-and-financial-services-sales-agents", "share": 6, "exposure": 8 },
+        { "label": "compliance-officers", "share": 5, "exposure": 8 },
+        { "label": "management-analysts", "share": 5, "exposure": 7 },
+        { "label": "loan-officers", "share": 4, "exposure": 8 },
+        { "label": "personal-financial-advisors", "share": 4, "exposure": 7 },
+        { "label": "financial-managers", "share": 4, "exposure": 7 },
+        { "label": "accountants-and-auditors", "share": 3, "exposure": 8 },
+        { "label": "secretaries-and-administrative-assistants", "share": 3, "exposure": 8 },
+        { "label": "top-executives", "share": 3, "exposure": 6 },
+        { "label": "data-scientists", "share": 2, "exposure": 9 },
+        { "label": "computer-and-information-systems-managers", "share": 2, "exposure": 7 },
+        { "label": "human-resources-specialists", "share": 2, "exposure": 7 },
+        { "label": "information-security-analysts", "share": 2, "exposure": 8 },
+        { "label": "operations-research-analysts", "share": 2, "exposure": 9 },
+        { "label": "lawyers", "share": 2, "exposure": 8 },
+        { "label": "sales-managers", "share": 3, "exposure": 7 },
+        { "label": "market-research-analysts", "share": 2, "exposure": 9 },
+        { "label": "financial-examiners", "share": 2, "exposure": 8 },
+        { "label": "computer-support-specialists", "share": 2, "exposure": 8 }
+      ],
+      "expected_score_range": [7.5, 8.5]
+    },
+
+    "managed_healthcare": {
+      "description": "Health insurance + health services companies with clinical workforce",
+      "exemplars": ["UNH"],
+      "gics_sub_industries": ["Managed Health Care"],
+      "template": [
+        { "label": "registered-nurses", "share": 12, "exposure": 4 },
+        { "label": "customer-service-representatives", "share": 10, "exposure": 9 },
+        { "label": "claims-adjusters-appraisers-examiners-and-investigators", "share": 10, "exposure": 7 },
+        { "label": "software-developers", "share": 7, "exposure": 9 },
+        { "label": "medical-assistants", "share": 5, "exposure": 4 },
+        { "label": "pharmacy-technicians", "share": 4, "exposure": 4 },
+        { "label": "medical-and-health-services-managers", "share": 4, "exposure": 6 },
+        { "label": "nurse-anesthetists-nurse-midwives-and-nurse-practitioners", "share": 4, "exposure": 5 },
+        { "label": "physicians-and-surgeons", "share": 3, "exposure": 5 },
+        { "label": "medical-records-and-health-information-technicians", "share": 3, "exposure": 9 },
+        { "label": "insurance-sales-agents", "share": 3, "exposure": 7 },
+        { "label": "licensed-practical-and-licensed-vocational-nurses", "share": 3, "exposure": 4 },
+        { "label": "substance-abuse-behavioral-disorder-and-mental-health-counselors", "share": 3, "exposure": 5 },
+        { "label": "secretaries-and-administrative-assistants", "share": 3, "exposure": 8 },
+        { "label": "management-analysts", "share": 3, "exposure": 7 },
+        { "label": "pharmacists", "share": 2, "exposure": 5 },
+        { "label": "data-scientists", "share": 2, "exposure": 9 },
+        { "label": "computer-systems-analysts", "share": 2, "exposure": 8 },
+        { "label": "home-health-aides-and-personal-care-aides", "share": 2, "exposure": 2 },
+        { "label": "bookkeeping-accounting-and-auditing-clerks", "share": 2, "exposure": 9 },
+        { "label": "accountants-and-auditors", "share": 2, "exposure": 8 },
+        { "label": "compliance-officers", "share": 1, "exposure": 8 },
+        { "label": "insurance-underwriters", "share": 1, "exposure": 9 },
+        { "label": "financial-managers", "share": 1, "exposure": 7 },
+        { "label": "human-resources-specialists", "share": 1, "exposure": 7 },
+        { "label": "information-security-analysts", "share": 1, "exposure": 8 },
+        { "label": "computer-and-information-systems-managers", "share": 1, "exposure": 7 },
+        { "label": "top-executives", "share": 1, "exposure": 6 }
+      ],
+      "expected_score_range": [6.0, 7.0]
+    },
+
+    "cpg_food_beverage": {
+      "description": "Consumer packaged goods — food/beverage manufacturing + distribution",
+      "exemplars": ["PEP"],
+      "gics_sub_industries": ["Soft Drinks & Non-alcoholic Beverages", "Packaged Foods & Meats", "Household Products"],
+      "template": [
+        { "label": "food-and-tobacco-processing-workers", "share": 25, "exposure": 3 },
+        { "label": "hand-laborers-and-material-movers", "share": 15, "exposure": 2 },
+        { "label": "delivery-truck-drivers-and-driver-sales-workers", "share": 12, "exposure": 3 },
+        { "label": "material-moving-machine-operators", "share": 6, "exposure": 4 },
+        { "label": "heavy-and-tractor-trailer-truck-drivers", "share": 5, "exposure": 5 },
+        { "label": "industrial-production-managers", "share": 5, "exposure": 6 },
+        { "label": "retail-sales-workers", "share": 5, "exposure": 4 },
+        { "label": "sales-managers", "share": 3, "exposure": 7 },
+        { "label": "logisticians", "share": 3, "exposure": 7 },
+        { "label": "advertising-promotions-and-marketing-managers", "share": 3, "exposure": 8 },
+        { "label": "assemblers-and-fabricators", "share": 3, "exposure": 3 },
+        { "label": "industrial-engineers", "share": 2, "exposure": 7 },
+        { "label": "chemical-technicians", "share": 2, "exposure": 5 },
+        { "label": "accountants-and-auditors", "share": 2, "exposure": 8 },
+        { "label": "management-analysts", "share": 2, "exposure": 7 },
+        { "label": "market-research-analysts", "share": 2, "exposure": 9 },
+        { "label": "human-resources-specialists", "share": 1, "exposure": 7 },
+        { "label": "software-developers", "share": 2, "exposure": 9 },
+        { "label": "top-executives", "share": 1, "exposure": 6 },
+        { "label": "customer-service-representatives", "share": 1, "exposure": 9 }
+      ],
+      "expected_score_range": [3.5, 5.0]
+    },
+
+    "aerospace_defense": {
+      "description": "Aerospace and defense contractors — engineering + manufacturing heavy",
+      "exemplars": ["RTX"],
+      "gics_sub_industries": ["Aerospace & Defense"],
+      "template": [
+        { "label": "assemblers-and-fabricators", "share": 15, "exposure": 3 },
+        { "label": "aerospace-engineers", "share": 10, "exposure": 7 },
+        { "label": "software-developers", "share": 6, "exposure": 9 },
+        { "label": "electrical-and-electronics-engineers", "share": 5, "exposure": 7 },
+        { "label": "mechanical-engineers", "share": 5, "exposure": 7 },
+        { "label": "quality-control-inspectors", "share": 5, "exposure": 5 },
+        { "label": "machinists-and-tool-and-die-makers", "share": 4, "exposure": 4 },
+        { "label": "management-analysts", "share": 4, "exposure": 7 },
+        { "label": "industrial-production-managers", "share": 4, "exposure": 6 },
+        { "label": "industrial-engineers", "share": 3, "exposure": 7 },
+        { "label": "logisticians", "share": 3, "exposure": 7 },
+        { "label": "sales-managers", "share": 3, "exposure": 7 },
+        { "label": "accountants-and-auditors", "share": 3, "exposure": 8 },
+        { "label": "purchasing-managers-buyers-and-purchasing-agents", "share": 2, "exposure": 7 },
+        { "label": "computer-hardware-engineers", "share": 2, "exposure": 8 },
+        { "label": "information-security-analysts", "share": 2, "exposure": 8 },
+        { "label": "human-resources-specialists", "share": 2, "exposure": 7 },
+        { "label": "top-executives", "share": 2, "exposure": 6 },
+        { "label": "secretaries-and-administrative-assistants", "share": 2, "exposure": 8 },
+        { "label": "compliance-officers", "share": 1, "exposure": 8 },
+        { "label": "computer-and-information-systems-managers", "share": 1, "exposure": 7 }
+      ],
+      "expected_score_range": [5.5, 7.0]
+    },
+
+    "entertainment_theme_parks": {
+      "description": "Entertainment companies with large theme park/resort operations",
+      "exemplars": ["DIS"],
+      "gics_sub_industries": ["Movies & Entertainment"],
+      "template": [
+        { "label": "food-preparation-workers", "share": 15, "exposure": 2 },
+        { "label": "customer-service-representatives", "share": 12, "exposure": 9 },
+        { "label": "cashiers", "share": 8, "exposure": 7 },
+        { "label": "software-developers", "share": 6, "exposure": 9 },
+        { "label": "retail-sales-workers", "share": 5, "exposure": 4 },
+        { "label": "hand-laborers-and-material-movers", "share": 5, "exposure": 2 },
+        { "label": "secretaries-and-administrative-assistants", "share": 5, "exposure": 8 },
+        { "label": "security-guards", "share": 3, "exposure": 5 },
+        { "label": "management-analysts", "share": 3, "exposure": 7 },
+        { "label": "advertising-promotions-and-marketing-managers", "share": 3, "exposure": 8 },
+        { "label": "producers-and-directors", "share": 3, "exposure": 7 },
+        { "label": "accountants-and-auditors", "share": 3, "exposure": 8 },
+        { "label": "editors", "share": 2, "exposure": 9 },
+        { "label": "actors", "share": 2, "exposure": 7 },
+        { "label": "food-service-managers", "share": 2, "exposure": 4 },
+        { "label": "industrial-production-managers", "share": 2, "exposure": 6 },
+        { "label": "sales-managers", "share": 2, "exposure": 7 },
+        { "label": "human-resources-specialists", "share": 2, "exposure": 7 },
+        { "label": "computer-support-specialists", "share": 2, "exposure": 8 },
+        { "label": "logisticians", "share": 1, "exposure": 7 },
+        { "label": "top-executives", "share": 1, "exposure": 6 }
+      ],
+      "expected_score_range": [5.5, 6.5]
+    }
+  }
+}

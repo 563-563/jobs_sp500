@@ -86,10 +86,15 @@ node skills/public/sp500-defensibility-pipeline/scripts/build_repair_queue.mjs -
 - Use iterative mode for large ingest convergence and queue-driven retries.
 - Regenerate dashboard/kanban after restores or artifact rollbacks.
 - Treat per-ticker reasoning as mandatory, not optional.
+- Use hard-coded adjudication rules only for triage/rejection; keep context-dependent mappings pending for reasoning.
+- Conservative publish is blocked unless a ticker has a reasoning artifact with explicit `need_more_data=no`.
+- Auto-adjudication defaults to reject-only triage for obvious non-role artifacts; auto-approval is opt-in only.
+- In-window reasoning must follow the standard contract in `references/reasoning-prompt-contract.md` and produce decision files consumable by apply scripts.
 
 ## References
 
 - Workflow: `references/workflow.md`
 - Per-ticker SOP: `references/ticker-sop.md`
+- Reasoning prompt contract: `references/reasoning-prompt-contract.md`
 - Source ladder and evidence strategy: `references/source-ladder.md`
 - At-scale runbook: `references/at-scale.md`

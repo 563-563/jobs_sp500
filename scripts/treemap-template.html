@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&P 500 AI Vulnerability Treemap</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #header {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    flex-shrink: 0;
+  }
+
+  #header h1 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #e6edf3;
+    white-space: nowrap;
+  }
+
+  #header .stats {
+    font-size: 12px;
+    color: #8b949e;
+    white-space: nowrap;
+  }
+
+  #header .stats span { color: #58a6ff; font-weight: 600; }
+
+  #legend {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #8b949e;
+    white-space: nowrap;
+  }
+
+  #legend .gradient-bar {
+    width: 140px;
+    height: 12px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #238636, #9e6a03, #da3633);
+  }
+
+  #main-container {
+    display: flex;
+    height: calc(100vh - 52px);
+    overflow: hidden;
+  }
+
+  #treemap-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Company cells */
+  .cell rect {
+    stroke: #0d1117;
+    stroke-width: 1px;
+    cursor: pointer;
+    transition: opacity 0.12s, stroke 0.12s;
+  }
+
+  .cell:hover rect {
+    opacity: 0.82;
+    stroke: #e6edf3;
+    stroke-width: 2px;
+  }
+
+  .cell text {
+    pointer-events: none;
+    fill: #fff;
+  }
+
+  .cell .ticker-label {
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  }
+
+  .cell .score-label {
+    opacity: 0.92;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.85);
+  }
+
+  .cell .name-label {
+    opacity: 0.72;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.85);
+  }
+
+  .sector-label {
+    font-weight: 700;
+    fill: rgba(230,237,243,0.88);
+    pointer-events: none;
+    font-size: 13px;
+  }
+
+  /* Detail panel */
+  #detail-panel {
+    width: 420px;
+    min-width: 420px;
+    background: #161b22;
+    border-left: 1px solid #30363d;
+    overflow-y: auto;
+    padding: 24px;
+    display: none;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  #detail-panel.open {
+    display: block;
+  }
+
+  #detail-panel .close-btn {
+    position: sticky;
+    top: 0;
+    float: right;
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+    z-index: 2;
+  }
+
+  #detail-panel .close-btn:hover {
+    background: #30363d;
+  }
+
+  .detail-header { margin-bottom: 20px; }
+
+  .detail-ticker {
+    font-size: 13px;
+    color: #8b949e;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .detail-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e6edf3;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .detail-sector {
+    font-size: 12px;
+    color: #8b949e;
+    display: inline-block;
+    background: #21262d;
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+  }
+
+  .score-display {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .score-big {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .score-meter { flex: 1; }
+
+  .score-meter .meter-bar {
+    height: 10px;
+    background: #21262d;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+
+  .score-meter .meter-fill {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .score-meter .meter-label {
+    font-size: 11px;
+    color: #8b949e;
+  }
+
+  .detail-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+
+  .meta-card {
+    background: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+
+  .meta-card .meta-label {
+    font-size: 10px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+
+  .meta-card .meta-value {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .detail-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 20px 0 10px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .role-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+
+  .role-table th {
+    text-align: left;
+    color: #8b949e;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 4px;
+    border-bottom: 1px solid #21262d;
+    position: sticky;
+    top: 0;
+    background: #161b22;
+  }
+
+  .role-table td {
+    padding: 7px 4px;
+    border-bottom: 1px solid rgba(48,54,61,0.4);
+    vertical-align: top;
+  }
+
+  .role-table tr:hover td {
+    background: rgba(56,139,253,0.05);
+  }
+
+  .role-name {
+    font-weight: 500;
+    color: #e6edf3;
+    font-size: 12px;
+  }
+
+  .role-note {
+    font-size: 10px;
+    color: #8b949e;
+    margin-top: 2px;
+    line-height: 1.35;
+  }
+
+  .exposure-badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 11px;
+    min-width: 28px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .no-data-msg {
+    color: #8b949e;
+    font-size: 13px;
+    padding: 16px;
+    text-align: center;
+    background: #0d1117;
+    border-radius: 8px;
+    border: 1px dashed #30363d;
+    line-height: 1.5;
+  }
+
+  /* Tooltip */
+  #tooltip {
+    position: fixed;
+    pointer-events: none;
+    background: #1c2128;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.12s;
+    max-width: 280px;
+  }
+
+  #tooltip.visible { opacity: 1; }
+  #tooltip .tt-ticker { font-weight: 700; font-size: 14px; }
+  #tooltip .tt-name { color: #8b949e; font-size: 12px; margin-bottom: 4px; }
+  #tooltip .tt-sector { color: #58a6ff; font-size: 11px; margin-bottom: 3px; }
+  #tooltip .tt-score { font-size: 16px; font-weight: 800; }
+  #tooltip .tt-headcount { font-size: 11px; color: #8b949e; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>S&amp;P 500 AI Vulnerability Treemap</h1>
+  <div id="legend">
+    <span>Low risk</span>
+    <div class="gradient-bar"></div>
+    <span>High risk</span>
+  </div>
+  <div class="stats">
+    <span id="stat-total">503</span> companies |
+    <span id="stat-scored">499</span> scored |
+    <span id="stat-researched">82</span> deep-researched
+  </div>
+</div>
+
+<div id="main-container">
+  <div id="treemap-container"></div>
+  <div id="detail-panel">
+    <button class="close-btn" onclick="closePanel()">&times;</button>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<div id="tooltip"></div>
+
+<script>
+let DATA = null;
+
+function vulnColor(score) {
+  if (score == null) return '#21262d';
+  const t = Math.max(0, Math.min(10, score)) / 10;
+  // Green -> Yellow -> Red
+  if (t < 0.4) {
+    const s = t / 0.4;
+    return d3.interpolateRgb('#1a7f37', '#9e6a03')(s);
+  } else if (t < 0.7) {
+    const s = (t - 0.4) / 0.3;
+    return d3.interpolateRgb('#9e6a03', '#cf222e')(s);
+  } else {
+    const s = (t - 0.7) / 0.3;
+    return d3.interpolateRgb('#cf222e', '#a40e26')(s);
+  }
+}
+
+function vulnLabel(score) {
+  if (score == null) return 'N/A';
+  if (score <= 3) return 'Low';
+  if (score <= 5) return 'Moderate';
+  if (score <= 7) return 'High';
+  return 'Very High';
+}
+
+function fmt(n) {
+  if (n == null) return 'N/A';
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return Math.round(n / 1e3) + 'K';
+  return n.toLocaleString();
+}
+
+// ── SECTOR COLORS for subtle background tint ──
+const SECTOR_TINT = {
+  'Information Technology': 'rgba(56,139,253,0.06)',
+  'Health Care':            'rgba(63,185,80,0.06)',
+  'Financials':             'rgba(210,153,34,0.06)',
+  'Consumer Discretionary': 'rgba(188,86,221,0.06)',
+  'Communication Services': 'rgba(219,171,255,0.06)',
+  'Industrials':            'rgba(139,148,158,0.06)',
+  'Consumer Staples':       'rgba(63,185,80,0.04)',
+  'Energy':                 'rgba(218,54,51,0.06)',
+  'Utilities':              'rgba(56,139,253,0.04)',
+  'Real Estate':            'rgba(210,153,34,0.04)',
+  'Materials':              'rgba(139,148,158,0.04)',
+};
+
+function renderTreemap(data) {
+  DATA = data;
+  const container = document.getElementById('treemap-container');
+  const W = container.clientWidth;
+  const H = container.clientHeight;
+
+  document.getElementById('stat-total').textContent = data.stats.total_companies;
+  document.getElementById('stat-scored').textContent = data.stats.with_vulnerability_scores;
+  document.getElementById('stat-researched').textContent = data.stats.with_role_breakdowns;
+
+  // Hierarchy: root -> sectors -> companies
+  const sectorGroups = {};
+  for (const c of data.companies) {
+    if (!sectorGroups[c.sector]) sectorGroups[c.sector] = [];
+    sectorGroups[c.sector].push(c);
+  }
+
+  const hier = {
+    name: 'S&P 500',
+    children: Object.entries(sectorGroups).map(([sec, cos]) => ({
+      name: sec,
+      children: cos.map(c => ({ name: c.ticker, value: c.weight, data: c })),
+    })),
+  };
+
+  const root = d3.hierarchy(hier)
+    .sum(d => d.value || 0)
+    .sort((a, b) => b.value - a.value);
+
+  d3.treemap()
+    .size([W, H])
+    .paddingTop(20)
+    .paddingInner(1.5)
+    .paddingOuter(2)
+    .round(true)(root);
+
+  container.innerHTML = '';
+  const svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+
+  // Sector backgrounds
+  const sectors = root.children || [];
+  svg.selectAll('.sector-bg')
+    .data(sectors).enter()
+    .append('rect')
+    .attr('x', d => d.x0).attr('y', d => d.y0)
+    .attr('width', d => d.x1 - d.x0).attr('height', d => d.y1 - d.y0)
+    .attr('fill', d => SECTOR_TINT[d.data.name] || 'rgba(30,36,44,0.5)')
+    .attr('stroke', '#30363d').attr('stroke-width', 1)
+    .attr('rx', 2);
+
+  // Sector labels
+  const SECTOR_ABBREV = {
+    'Information Technology': 'Technology',
+    'Consumer Discretionary': 'Cons. Discr.',
+    'Communication Services': 'Comm. Services',
+    'Consumer Staples': 'Cons. Staples',
+    'Health Care': 'Health Care',
+  };
+
+  svg.selectAll('.sector-label')
+    .data(sectors).enter()
+    .append('text')
+    .attr('class', 'sector-label')
+    .attr('x', d => d.x0 + 5).attr('y', d => d.y0 + 14)
+    .each(function(d) {
+      const avail = d.x1 - d.x0 - 10;
+      const el = d3.select(this);
+      el.text(d.data.name);
+      if (this.getComputedTextLength() > avail) {
+        el.text(SECTOR_ABBREV[d.data.name] || d.data.name);
+      }
+      if (this.getComputedTextLength() > avail) {
+        el.attr('visibility', 'hidden');
+      }
+    });
+
+  // Company cells
+  const leaves = root.leaves();
+  const cells = svg.selectAll('.cell')
+    .data(leaves).enter()
+    .append('g')
+    .attr('class', 'cell')
+    .attr('transform', d => `translate(${d.x0},${d.y0})`);
+
+  cells.append('rect')
+    .attr('width', d => Math.max(0, d.x1 - d.x0))
+    .attr('height', d => Math.max(0, d.y1 - d.y0))
+    .attr('fill', d => vulnColor(d.data.data?.vulnerability_score))
+    .attr('rx', 1.5);
+
+  // Labels
+  cells.each(function(d) {
+    const w = d.x1 - d.x0;
+    const h = d.y1 - d.y0;
+    const g = d3.select(this);
+    const co = d.data.data;
+    if (!co) return;
+
+    if (w > 28 && h > 14) {
+      g.append('text').attr('class', 'ticker-label')
+        .attr('x', 3).attr('y', 12)
+        .style('font-size', w > 70 ? '11px' : w > 45 ? '9px' : '7px')
+        .text(co.ticker);
+    }
+
+    if (w > 48 && h > 26 && co.vulnerability_score != null) {
+      g.append('text').attr('class', 'score-label')
+        .attr('x', 3).attr('y', 23)
+        .style('font-size', w > 70 ? '10px' : '8px')
+        .text(co.vulnerability_score.toFixed(1));
+    }
+
+    if (w > 90 && h > 38) {
+      const nameEl = g.append('text').attr('class', 'name-label')
+        .attr('x', 3).attr('y', 34)
+        .style('font-size', '8px')
+        .text(co.name);
+      const maxW = w - 6;
+      let t = co.name;
+      while (t.length > 4 && nameEl.node().getComputedTextLength() > maxW) {
+        t = t.slice(0, -1);
+        nameEl.text(t + '..');
+      }
+    }
+  });
+
+  // Tooltip
+  const tip = document.getElementById('tooltip');
+
+  cells.on('mouseover', function(ev, d) {
+    const co = d.data.data;
+    if (!co) return;
+    tip.innerHTML = `
+      <div class="tt-ticker">${co.ticker}</div>
+      <div class="tt-name">${co.name}</div>
+      <div class="tt-sector">${co.sector}</div>
+      <div class="tt-score" style="color:${vulnColor(co.vulnerability_score)}">
+        ${co.vulnerability_score != null ? co.vulnerability_score.toFixed(2) + ' / 10' : 'No score yet'}
+      </div>
+      ${co.headcount ? `<div class="tt-headcount">${fmt(co.headcount)} employees</div>` : ''}
+      ${co.has_roles ? '<div class="tt-headcount" style="color:#3fb950">Click for role breakdown</div>' : ''}
+    `;
+    tip.classList.add('visible');
+  })
+  .on('mousemove', function(ev) {
+    let x = ev.clientX + 14, y = ev.clientY + 14;
+    if (x + 280 > window.innerWidth) x = ev.clientX - 290;
+    if (y + 160 > window.innerHeight) y = ev.clientY - 170;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  })
+  .on('mouseout', () => tip.classList.remove('visible'))
+  .on('click', (ev, d) => {
+    if (d.data.data) openPanel(d.data.data);
+  });
+}
+
+// ── DETAIL PANEL ──
+
+function openPanel(co) {
+  const panel = document.getElementById('detail-panel');
+  const content = document.getElementById('detail-content');
+  const s = co.vulnerability_score;
+  const color = vulnColor(s);
+
+  let rolesHtml = '';
+  if (co.roles && co.roles.length > 0) {
+    const rows = co.roles
+      .sort((a, b) => b.share_pct - a.share_pct)
+      .map(r => `
+        <tr>
+          <td>
+            <div class="role-name">${r.title}</div>
+            ${r.note ? `<div class="role-note">${escHtml(r.note)}</div>` : ''}
+          </td>
+          <td style="text-align:right;white-space:nowrap">${r.workers != null ? fmt(r.workers) : '--'}</td>
+          <td style="text-align:right;white-space:nowrap">${r.share_pct.toFixed(1)}%</td>
+          <td style="text-align:center">
+            ${r.ai_exposure != null
+              ? `<span class="exposure-badge" style="background:${vulnColor(r.ai_exposure)}">${r.ai_exposure}</span>`
+              : '--'}
+          </td>
+        </tr>`).join('');
+
+    rolesHtml = `
+      <div class="detail-section-title">Role Breakdown (${co.roles.length} roles mapped)</div>
+      <table class="role-table">
+        <thead><tr><th>Role</th><th style="text-align:right">Est. Workers</th><th style="text-align:right">Share</th><th style="text-align:center">AI Exp.</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+  } else {
+    rolesHtml = `
+      <div class="detail-section-title">Role Breakdown</div>
+      <div class="no-data-msg">
+        Detailed role breakdown not yet available for this company.<br>
+        ${s != null ? 'Score above is based on sector-archetype template estimation.' : 'This company has not yet been scored.'}
+      </div>`;
+  }
+
+  content.innerHTML = `
+    <div class="detail-header">
+      <div class="detail-ticker">${co.ticker}</div>
+      <div class="detail-name">${co.name}</div>
+      <div class="detail-sector">${co.sector}</div>
+    </div>
+    <div class="score-display">
+      <div class="score-big" style="color:${color}">${s != null ? s.toFixed(1) : 'N/A'}</div>
+      <div class="score-meter">
+        <div class="meter-bar"><div class="meter-fill" style="width:${s != null ? s * 10 : 0}%;background:${color}"></div></div>
+        <div class="meter-label">AI Vulnerability Score (0-10) &mdash; ${vulnLabel(s)}</div>
+      </div>
+    </div>
+    <div class="detail-meta">
+      <div class="meta-card">
+        <div class="meta-label">Employees</div>
+        <div class="meta-value">${co.headcount ? fmt(co.headcount) : 'N/A'}</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Research Depth</div>
+        <div class="meta-value" style="color:${co.has_roles ? '#3fb950' : '#8b949e'};font-size:13px">
+          ${co.has_roles ? 'Deep Research' : 'Archetype Est.'}
+        </div>
+      </div>
+    </div>
+    ${rolesHtml}
+  `;
+
+  if (!panel.classList.contains('open')) {
+    panel.classList.add('open');
+    // Re-render treemap to fit narrower space after panel opens
+    scheduleRerender();
+  }
+}
+
+function closePanel() {
+  const panel = document.getElementById('detail-panel');
+  if (!panel.classList.contains('open')) return;
+  panel.classList.remove('open');
+  scheduleRerender();
+}
+
+let _rerenderScheduled = false;
+function scheduleRerender() {
+  if (_rerenderScheduled) return;
+  _rerenderScheduled = true;
+  requestAnimationFrame(() => {
+    _rerenderScheduled = false;
+    if (DATA) renderTreemap(DATA);
+  });
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+
+// ── LOAD AND RENDER ──
+
+async function init() {
+  // Try inline data first
+  if (window.__TREEMAP_DATA__) {
+    renderTreemap(window.__TREEMAP_DATA__);
+    return;
+  }
+  // Fallback: fetch external JSON
+  try {
+    const r = await fetch('sp500_treemap_data.json');
+    if (r.ok) { renderTreemap(await r.json()); return; }
+  } catch(e) {}
+  document.getElementById('treemap-container').innerHTML =
+    '<p style="color:#da3633;padding:40px">Could not load data. Open via a local server or rebuild with: node scripts/build-treemap-data.mjs</p>';
+}
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => { if (DATA) renderTreemap(DATA); }, 200);
+});
+
+init();
+</script>
+<script id="inline-data">
+// DATA_INJECT_MARKER
+</script>
+</body>
+</html>

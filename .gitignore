@@ -14,3 +14,9 @@ __pycache__/
 .vscode/
 .idea/
 
+# Intermediate data (large, regenerable from pipeline)
+data/intermediate/
+
+# Claude local state
+.claude/
+

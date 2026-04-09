@@ -1,0 +1,111 @@
+{
+  "version": "2026-03-17b",
+  "stage2_trigger_direct_mapped_share_lt_pct": 60,
+  "stage2_trigger_if_used_sector_priors": true,
+  "queue_target_stages": [
+    "needs_role_signal",
+    "needs_more_coverage",
+    "in_progress"
+  ],
+  "skip_defensibility_statuses": [
+    "medium_high_confidence"
+  ],
+  "source_buckets": [
+    {
+      "key": "sec_primary_filing",
+      "label": "SEC annual filing (10-K/20-F/40-F)",
+      "stage": "stage1",
+      "search_round": 1,
+      "recommended_domains": [
+        "sec.gov"
+      ],
+      "query_suffix": "10-K annual report human capital employees workforce"
+    },
+    {
+      "key": "sec_proxy_statement",
+      "label": "SEC proxy statement (DEF 14A)",
+      "stage": "stage1",
+      "search_round": 1,
+      "recommended_domains": [
+        "sec.gov"
+      ],
+      "query_suffix": "DEF 14A proxy statement employees workforce by function"
+    },
+    {
+      "key": "sec_annual_report_pdf",
+      "label": "SEC annual report PDF",
+      "stage": "stage1",
+      "search_round": 1,
+      "recommended_domains": [
+        "sec.gov"
+      ],
+      "query_suffix": "annual report PDF employees workforce role breakdown"
+    },
+    {
+      "key": "eeo1_table",
+      "label": "EEO-1 / equal employment table",
+      "stage": "stage2",
+      "search_round": 2,
+      "recommended_domains": [
+        "sec.gov",
+        "company responsibility site",
+        "company investor relations site"
+      ],
+      "query_suffix": "EEO-1 workforce demographics consolidated report"
+    },
+    {
+      "key": "dei_workforce_table",
+      "label": "DEI / workforce demographics table",
+      "stage": "stage2",
+      "search_round": 2,
+      "recommended_domains": [
+        "company sustainability site",
+        "company impact report site",
+        "sec.gov"
+      ],
+      "query_suffix": "DEI report workforce demographics employees by function"
+    },
+    {
+      "key": "sustainability_report",
+      "label": "Sustainability / ESG report",
+      "stage": "stage2",
+      "search_round": 2,
+      "recommended_domains": [
+        "company sustainability site",
+        "sec.gov"
+      ],
+      "query_suffix": "sustainability report workforce composition role breakdown"
+    },
+    {
+      "key": "investor_presentation",
+      "label": "Investor presentation",
+      "stage": "stage3",
+      "search_round": 3,
+      "recommended_domains": [
+        "company investor relations site"
+      ],
+      "query_suffix": "investor day presentation workforce operations role mix"
+    },
+    {
+      "key": "workforce_page",
+      "label": "Workforce / careers page",
+      "stage": "stage3",
+      "search_round": 3,
+      "recommended_domains": [
+        "company careers site",
+        "company about or people site"
+      ],
+      "query_suffix": "workforce profile careers employees by function"
+    },
+    {
+      "key": "bls_industry_roles_fallback",
+      "label": "BLS industry-role fallback",
+      "stage": "fallback",
+      "search_round": 4,
+      "recommended_domains": [
+        "bls.gov"
+      ],
+      "query_suffix": "BLS OEWS NAICS employment by occupation"
+    }
+  ]
+}

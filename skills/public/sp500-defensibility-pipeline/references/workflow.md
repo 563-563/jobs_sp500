@@ -37,8 +37,27 @@ Every ticker must pass these stages in order:
 Automation notes:
 
 1. Use `scripts/run-company-agent-one.mjs <TICKER>` as the mutation primitive.
+   - Includes source-ladder acquisition before reasoning:
+     `generate-external-role-evidence-queue.mjs` ->
+     `resolve_external_search_urls.py` ->
+     `auto-triage-external-role-evidence-queue.mjs` ->
+     `review_external_docs.py` ->
+     `promote_external_doc_signals.py` ->
+     `integrate-external-role-signals.mjs`.
 2. Use `run_ticker_pass.ps1`/`run_iterative_ladder.ps1` for batch orchestration.
 3. Use `build_repair_queue.mjs` to target unresolved tickers.
+4. Treat scripted adjudication policy as triage only:
+   - Auto-reject obvious malformed/non-role snippets.
+   - Keep ambiguous mappings pending.
+   - Resolve pending mappings through per-ticker reasoning with citation-backed rationale.
+5. Generate per-ticker reasoning artifact before scoring gates:
+   - Must include role-confidence judgment.
+   - Must include explicit `need_more_data` decision.
+   - Conservative publish is allowed only when `need_more_data=no`.
+6. When reasoning in-window (non-API mode), enforce the standard prompt and decision schema:
+   - Use `references/reasoning-prompt-contract.md`.
+   - Produce both headcount and mapping decisions in apply-script-compatible CSV shape.
+   - Apply decisions before recomputing confidence/scoring artifacts.
 
 Important:
 - Re-running scoring alone is not a completed pass for a ticker unless stages 1-5 are satisfied.
