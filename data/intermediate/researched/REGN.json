@@ -1,9 +1,0 @@
-{
-  "ticker": "REGN",
-  "company_name": "Regeneron Pharmaceuticals, Inc.",
-  "total_headcount": 17200,
-  "headcount_quote": "As of December 31, 2023, we had approximately 17,200 full-time employees.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/872589/000087258924000013/regn-20231231.htm",
-  "roles": [],
-  "research_notes": "FY2023 10-K (accession 0000872589-24-000013, filed February 2024, period December 31, 2023) — most recently verified filing data. FY2024 10-K (most recent as of April 2026, filed ~February 7, 2025, accession ~0000872589-25-000013) is the true current filing; FY2024 headcount estimated at ~17,493 but exact quote unverifiable due to SEC EDGAR proxy block. Human Capital section covers culture, compensation, D&I, health/wellness, and engagement — NO breakdown by function (R&D, commercial, manufacturing, G&A). No percentage or count by role disclosed. Regeneron's separately published Corporate Responsibility Report may contain additional workforce demographics but is not part of the 10-K. Roles array empty per real-filings-only policy."
-}

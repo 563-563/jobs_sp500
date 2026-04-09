@@ -1,9 +1,0 @@
-{
-  "ticker": "QCOM",
-  "company_name": "Qualcomm Incorporated",
-  "total_headcount": 52000,
-  "headcount_quote": "At September 28, 2025, we had approximately 52,000 full-time, part-time and temporary workers, the overwhelming majority of which were full-time employees.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
-  "roles": [],
-  "research_notes": "FY2025 10-K (fiscal year ended September 28, 2025), accession 0000804328-25-000085, filed November 5, 2025. ~52,000 workers across 200+ locations in 38 countries; voluntary turnover ~6% in FY2025 (up from ~49,000 in FY2024). Human Capital section states 'the substantial majority of our employees work in engineering or technical roles' — qualitative language only, NO numeric or percentage breakdown by function (hardware, software, sales, G&A). Roles array empty per real-filings-only policy; qualitative 'substantial majority in engineering/technical' does not provide sufficient numeric data for role injection."
-}

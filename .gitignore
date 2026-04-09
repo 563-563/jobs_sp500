@@ -17,6 +17,9 @@ __pycache__/
 # Intermediate data (large, regenerable from pipeline)
 data/intermediate/
 
+# Generated outputs (regenerable by running pipeline scripts)
+data/outputs/
+
 # Claude local state
 .claude/
 

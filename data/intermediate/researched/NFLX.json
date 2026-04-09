@@ -1,9 +1,0 @@
-{
-  "ticker": "NFLX",
-  "company_name": "Netflix, Inc.",
-  "total_headcount": 16000,
-  "headcount_quote": "As of December 31, 2025, we had approximately 16,000 full-time employees. Of these, approximately 10,900 (68%) were located in the United States and Canada, 2,500 (16%) in Europe, Middle East, and Africa, 1,900 (12%) in Asia-Pacific and 700 (4%) in Latin America.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
-  "roles": [],
-  "research_notes": "Netflix FY2025 10-K (filed January 23, 2026; accession 0001065280-26-000034; CIK 1065280). Reports ~16,000 full-time employees. Only breakdown provided is geographic: US/Canada 68%, EMEA 16%, APAC 12%, LATAM 4%. No functional/role breakdown disclosed anywhere in 10-K. Expense line items (tech & development, marketing, G&A) disclosed in dollars only, not mapped to headcount. Content production part-time/temporary workers noted separately but uncounted. AI-generated search summaries fabricated functional breakdowns — excluded. Roles array empty per real-filings-only policy."
-}

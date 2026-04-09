@@ -1,9 +1,0 @@
-{
-  "ticker": "GILD",
-  "company_name": "Gilead Sciences, Inc.",
-  "total_headcount": 17000,
-  "headcount_quote": "As of December 31, 2025, Gilead had approximately 17,000 employees.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm",
-  "roles": [],
-  "research_notes": "FY2025 10-K filed February 24, 2026 (accession 0000882095-26-000006). ~17,000 employees at December 31, 2025 (down from ~17,600 at end of FY2024, ~18,000 at end of FY2023). Human Capital section covers inclusion/diversity (demographics by gender and race/ethnicity), talent development (~3,500 leaders in development in 2024), total rewards, and employee listening strategy. No breakdown by functional role or business unit (R&D, commercial, manufacturing, G&A) disclosed. Consistent across all recent 10-K filings reviewed (FY2022-FY2025). Roles array empty per real-filings-only policy."
-}

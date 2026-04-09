@@ -1,9 +1,0 @@
-{
-  "ticker": "TSLA",
-  "company_name": "Tesla, Inc.",
-  "total_headcount": 134785,
-  "headcount_quote": "As of December 31, 2025, our employee headcount worldwide was 134,785.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
-  "roles": [],
-  "research_notes": "Most recent 10-K: FY2025 (December 31, 2025), filed January 29, 2026, accession 0001628280-26-003952. FY2024 comparison: 125,665. Human Capital Resources section covers total headcount, equity participation (92% of employees receive equity), career development programs (Manufacturing Development Program, Engineering Development Program), and limited U.S. demographics (2.2% veterans, 3.5% individuals with disabilities). No breakdown by function (manufacturing, engineering, sales/service, R&D, admin) is disclosed in either FY2024 or FY2025 10-K. Third-party role estimates derived from LinkedIn data (not from SEC filings) excluded per real-filings-only policy."
-}

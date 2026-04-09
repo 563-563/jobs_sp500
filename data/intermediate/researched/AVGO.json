@@ -1,9 +1,0 @@
-{
-  "ticker": "AVGO",
-  "company_name": "Broadcom Inc.",
-  "total_headcount": 37000,
-  "headcount_quote": "As of October 27, 2024, we had approximately 37,000 full-time employees.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000069/avgo-20241027.htm",
-  "roles": [],
-  "research_notes": "RECENCY WARNING: most recent 10-K as of 2026-04-08 is FY2025 (fiscal year ended ~Oct 26, 2025, filed ~Dec 2025). That filing postdates agent training cutoff (Aug 2025) and SEC EDGAR domains returned HTTP 403 in this environment. Data here is from FY2024 10-K (fiscal year ended Oct 27, 2024), sourced from training knowledge. Post-VMware acquisition (Nov 2023, ~39,000 VMware employees) Broadcom carried out major restructuring: $673M charges in Q1 FY2024 and $105M in Q1 FY2025 for employee termination costs, substantially completed by end of FY2025. R&D expense ~$9.3B for FY2024 disclosed but not R&D headcount. Human Capital section reports total headcount only — no function-level breakdown. Roles set to [] per real-filings-only policy."
-}

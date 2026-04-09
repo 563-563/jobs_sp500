@@ -1,9 +1,0 @@
-{
-  "ticker": "INTC",
-  "company_name": "Intel Corporation",
-  "total_headcount": 108900,
-  "headcount_quote": "As of December 28, 2024, we had approximately 108,900 employees worldwide, including approximately 67,200 in the United States.",
-  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000007/intc-20241228.htm",
-  "roles": [],
-  "research_notes": "FY2024 10-K (fiscal year ending December 28, 2024), filed January 30, 2025. CIK 0000050863, accession 0000050863-25-000007. ~108,900 worldwide employees (~67,200 US) at December 28, 2024, down from ~124,800 at end of FY2023 due to August 2024 restructuring (~15,000+ cuts). Human Capital Resources section (Item 1) covers talent strategy, compensation, DEI, wellness, development — NO numerical breakdown by function (R&D/engineering vs. manufacturing/fab vs. sales vs. G&A). Intel is an IDM spanning chip design, process/manufacturing engineers, fab workers, firmware/software engineers, sales, and corporate — none quantified in the 10-K. Data sourced from training knowledge as SEC EDGAR was proxy-blocked. Roles array empty per real-filings-only policy."
-}
