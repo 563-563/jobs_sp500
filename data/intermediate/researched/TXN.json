@@ -1,0 +1,9 @@
+{
+  "ticker": "TXN",
+  "company_name": "Texas Instruments Incorporated",
+  "total_headcount": 33000,
+  "headcount_quote": "At December 31, 2025, we had about 33,000 employees worldwide. Of those, about 90% were in R&D, sales or manufacturing.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000059/txn-20251231.htm",
+  "roles": [],
+  "research_notes": "FY2025 10-K (period ending December 31, 2025, accession 0000097476-26-000059). ~33,000 worldwide (down from ~34,000 FY2024). Human Capital section discloses only a combined '~90% in R&D, sales or manufacturing' — no numeric split between the three categories. Annual Report PDF: https://www.sec.gov/Archives/edgar/data/97476/000009747626000080/ti2025ars.pdf. Turnover rate 10.1% in 2025 (9.1% in 2024). TI is an IDM so manufacturing (fab workers) is a significant component alongside R&D (chip design engineers). The combined 90% figure is not a valid injection since we cannot allocate it across R&D, sales, and manufacturing without further breakdowns. Roles array empty per real-filings-only policy."
+}

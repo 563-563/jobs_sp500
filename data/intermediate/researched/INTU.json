@@ -1,0 +1,9 @@
+{
+  "ticker": "INTU",
+  "company_name": "Intuit Inc.",
+  "total_headcount": 18200,
+  "headcount_quote": "As of July 31, 2025, we had approximately 18,200 employees.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm",
+  "roles": [],
+  "research_notes": "FY2025 10-K (fiscal year ended July 31, 2025, accession 0000896878-25-000035, filed September 3, 2025). ~18,200 employees at July 31, 2025, down from ~18,800 in FY2024. Headcount figure sourced from third-party financial data aggregators (MacroTrends, StockAnalysis) citing the 10-K; direct document fetch was blocked (403). In July 2024 Intuit laid off ~1,800 (10%) and rehired ~1,800 primarily in engineering, product, and customer-facing roles. Separately employs ~10,800 seasonal workers January-April for TurboTax. Human Capital section does not disclose function-level headcount breakdown. Roles array empty per real-filings-only policy."
+}

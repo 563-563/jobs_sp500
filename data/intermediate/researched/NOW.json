@@ -1,0 +1,9 @@
+{
+  "ticker": "NOW",
+  "company_name": "ServiceNow, Inc.",
+  "total_headcount": 29187,
+  "headcount_quote": "As of December 31, 2025, we employed 29,187 people on a full-time basis.",
+  "headcount_source_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+  "roles": [],
+  "research_notes": "FY2025 10-K (filed January 28, 2026, accession 0001373715-26-000007). 29,187 full-time employees at December 31, 2025 (up from 26,293 at year-end 2024, +11%). FY2024 had 13,193 US / 13,100 international. Human Capital section covers engagement surveys, DEI, compensation, talent development, total headcount only — NO functional breakdown. MD&A references headcount increases in R&D, Sales & Marketing, Cost of Revenues, and G&A as expense drivers but gives no specific counts by function. Third-party LinkedIn-derived functional breakdowns excluded per real-filings-only policy. Roles array empty."
+}
