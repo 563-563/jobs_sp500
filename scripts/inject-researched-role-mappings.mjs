@@ -1997,6 +1997,28 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  GILD: [
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "broad", note: "Pharmaceutical sales representatives promoting HIV (Biktarvy, Descovy), hepatology, oncology (Trodelvy), and inflammation therapies to physicians and healthcare systems; ~6,600 commercial employees." },
+    { label: "medical-scientists", share: 15.0, conf: "broad", note: "Clinical researchers, clinical scientists, and CRAs running Gilead's global clinical trial portfolio; ~11,000 employees in R&D and manufacturing per Gilead website." },
+    { label: "chemical-engineers", share: 7.0, conf: "broad", note: "Pharmaceutical process engineers designing and scaling drug manufacturing processes at Gilead's Foster City CA, La Verne CA, Cork Ireland, and other manufacturing sites." },
+    { label: "chemists-and-materials-scientists", share: 7.0, conf: "broad", note: "Medicinal chemists and analytical chemists in Gilead's discovery research organization developing new antiviral and oncology drug candidates." },
+    { label: "biochemists-and-biophysicists", share: 5.0, conf: "broad", note: "Biochemists and molecular biologists studying virus mechanisms, protein structures, and drug-target interactions in Gilead's antiviral and oncology R&D programs." },
+    { label: "compliance-officers", share: 5.0, conf: "broad", note: "Regulatory affairs scientists, pharmacovigilance specialists, and GxP quality compliance officers navigating FDA, EMA, and global drug approval requirements." },
+    { label: "quality-control-inspectors", share: 5.0, conf: "broad", note: "GMP quality control analysts and inspectors in Gilead's manufacturing sites ensuring pharmaceutical product quality, purity, and potency." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "broad", note: "Medical and commercial marketing managers for Gilead's branded HIV, hepatology, and oncology portfolios including disease awareness and HCP education programs." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting professionals managing Gilead's $28B+ revenue global operations, royalty accounting, and SEC financial reporting." },
+    { label: "mathematicians-and-statisticians", share: 4.0, conf: "broad", note: "Biostatisticians and clinical data scientists supporting Gilead's clinical trial statistical analyses, endpoint evaluations, and FDA submission packages." },
+    { label: "microbiologists", share: 3.0, conf: "broad", note: "Virologists and microbiologists studying HIV, hepatitis B/C, COVID-19, and other infectious disease targets in Gilead's research programs." },
+    { label: "human-resources-specialists", share: 3.0, conf: "broad", note: "HR business partners, scientific recruiters, and L&D team supporting Gilead's global life sciences talent acquisition." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "IT management, digital health systems directors, and product managers for Gilead's clinical data infrastructure and commercial systems." },
+    { label: "lawyers", share: 3.0, conf: "broad", note: "Patent attorneys, regulatory counsel, and pharmaceutical licensing lawyers protecting Gilead's blockbuster HIV and HCV drug IP portfolios." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "CEO, CFO, CLO, and executive VPs across commercial, R&D, manufacturing, and corporate functions." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Supply chain managers handling Gilead's global drug distribution to pharmacies, specialty distributors, and access programs in 140+ countries." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "IT infrastructure and laboratory systems administrators managing clinical data systems, ERP, and research computing platforms." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A, investor relations, and M&A analysts supporting Gilead's active business development and licensing strategy." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.0, conf: "broad", note: "Procurement specialists sourcing active pharmaceutical ingredients (APIs), excipients, and manufacturing supplies globally." },
+  ],
+
   INTC: [
     { label: "computer-hardware-engineers", share: 29.0, conf: "broad", note: "CPU, GPU, AI accelerator, and connectivity chip architects/designers; engineering ~33.6% of 108,900 employees per Unify (~36,530), primarily chip design engineers in Oregon, Arizona, California, Israel, Ireland." },
     { label: "semiconductor-processing-technicians", share: 19.0, conf: "broad", note: "Wafer fab operators and process technicians at Intel's IDM fabs in Oregon (D1X, D1D), Arizona (Fab 52, 62), New Mexico, Israel (Fab 28, 38), Ireland, Malaysia; Intel is uniquely an integrated device manufacturer." },
