@@ -1997,6 +1997,21 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  PANW: [
+    { label: "software-developers", share: 30.0, conf: "narrow", note: "Engineering is Palo Alto Networks' largest function at ~4,163 employees (~37% of ~15,289 total FY2024) per Unify; Strata firewall platform (PAN-OS), Prisma Cloud, Cortex XDR, and XSOAR cybersecurity product engineers." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 21.0, conf: "narrow", note: "Enterprise account executives, channel sales managers, and government sales reps; Sales & Support ~3,205 employees (~21% of total) per Unify; PANW's key growth engine in its platformization strategy." },
+    { label: "computer-systems-analysts", share: 10.0, conf: "broad", note: "Professional services and implementation consultants deploying PANW's next-gen firewall, SASE, and AI-driven SOC solutions for enterprise customers; consulting is a separate revenue category." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers across network security, cloud security, and AI-driven security operations platform organizations." },
+    { label: "network-and-computer-systems-administrators", share: 6.0, conf: "narrow", note: "IT infrastructure staff and internal security operations; IT ~1,036 employees (~7% of total) per Unify; PANW also uses its own products internally as a 'best customer.'" },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "AI/ML threat detection researchers and data scientists at Unit 42 threat intelligence and Cortex AI; adversarial ML and threat hunting expertise central to PANW's AI-powered SOC strategy." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "narrow", note: "Cybersecurity demand generation, field marketing, brand, and product marketing; Marketing & Product ~791 employees per Unify; Ignite conference and thought leadership are key marketing channels." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance and accounting professionals managing PANW's complex deferred revenue accounting, subscription metrics, and SEC reporting for a $9.2B ARR cybersecurity company." },
+    { label: "top-executives", share: 4.0, conf: "broad", note: "CEO Nikesh Arora and executive leadership across products, sales, engineering, and corporate functions; Business Management and senior VP layers." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and talent acquisition specialists competing for scarce cybersecurity engineering talent in the San Jose/Bay Area market." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP counsel, government/federal contracting attorneys, and data privacy lawyers for PANW's large US government customer base and global operations." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A and investor relations analysts; PANW is a high-profile cybersecurity company with complex ARR/RPO/billings metrics closely tracked by investors." },
+  ],
+
   PYPL: [
     { label: "software-developers", share: 20.0, conf: "broad", note: "Payments platform engineers, checkout UX, mobile app (Venmo, PayPal, Honey), Braintree payment gateway, and API platform developers; Engineering ~4,468 employees per Unify data." },
     { label: "customer-service-representatives", share: 18.0, conf: "broad", note: "Merchant and consumer support specialists globally; 44% of PayPal's ~24,400 employees are in Asia-Pacific, largely serving global customer service operations for payment disputes and account issues." },
