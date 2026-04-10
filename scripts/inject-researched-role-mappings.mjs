@@ -1997,6 +1997,22 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  UBER: [
+    { label: "customer-service-representatives", share: 20.0, conf: "broad", note: "Rider and driver support specialists, Uber Eats consumer support, and partner success agents; Sales & Support is Uber's largest department at ~44% of 31,100 full-time employees per Unify." },
+    { label: "operations-research-analysts", share: 18.0, conf: "broad", note: "City operations managers, marketplace analysts, logistics operations staff, and driver partner operations teams; Operations ~12% of total per Unify; key function ensuring supply-demand balance." },
+    { label: "software-developers", share: 15.0, conf: "broad", note: "Mobile app engineers (iOS, Android), backend platform engineers, payments systems, mapping/routing, and ML infrastructure; Engineering ~15% of 31,100 employees per Unify." },
+    { label: "management-analysts", share: 10.0, conf: "broad", note: "Strategy analysts, business operations managers, market expansion specialists; Business Management ~12% per Unify; key for Uber's ongoing global market development." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers across Uber's Rides, Delivery, Freight, and Platform engineering organizations." },
+    { label: "mathematicians-and-statisticians", share: 7.0, conf: "broad", note: "Data scientists building dynamic pricing algorithms, ETA prediction, driver-rider matching optimization, and fraud detection models; core competitive advantage for Uber's marketplace efficiency." },
+    { label: "lawyers", share: 6.0, conf: "broad", note: "Regulatory affairs attorneys, labor law specialists (gig worker classification litigation worldwide), IP counsel; Uber has faced legal battles in 70+ countries over driver classification and operating licenses." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting teams managing Uber's complex multi-country, multi-currency $43.9B revenue operations and international tax compliance." },
+    { label: "advertising-promotions-and-marketing-managers", share: 4.0, conf: "broad", note: "Rider/driver acquisition marketing, Uber Eats restaurant promotions, brand marketing, and Uber for Business enterprise marketing teams." },
+    { label: "compliance-officers", share: 3.0, conf: "broad", note: "Trust & safety officers, background check operations, regulatory compliance managers, and data protection officers; critical for Uber's licensed operations in 70+ countries." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, technical recruiters, and DEI specialists supporting Uber's global 31,100-employee corporate workforce." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Dara Khosrowshahi and executive leaders across Rides, Delivery, Freight, and corporate functions." },
+    { label: "public-relations-specialists", share: 1.0, conf: "broad", note: "Policy communications, PR, and government relations specialists managing Uber's relationships with regulators, media, and public officials globally." },
+  ],
+
   NOW: [
     { label: "software-developers", share: 25.0, conf: "narrow", note: "Engineering ~6,460 employees (~24.6% of 26,293 total) per Unify; platform engineers building ServiceNow's ITSM, ITOM, HRSD, and AI Now generative AI features; product grew 15.99% in 2024." },
     { label: "computer-systems-analysts", share: 15.0, conf: "broad", note: "Professional services implementation consultants and solution architects; ServiceNow has a large services organization for enterprise platform implementations, customizations, and integrations." },
