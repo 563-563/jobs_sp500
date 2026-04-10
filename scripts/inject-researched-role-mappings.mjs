@@ -1997,6 +1997,23 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  TRV: [
+    { label: "claims-adjusters-appraisers-examiners-and-investigators", share: 38.0, conf: "narrow", note: "Travelers' Claim team is approximately 13,000 strong per their 2024 Sustainability Report, representing ~38% of 34,000 total employees; covers Business Insurance, Bond & Specialty, and Personal Insurance claim lines." },
+    { label: "insurance-underwriters", share: 22.0, conf: "broad", note: "Commercial and personal lines underwriters assessing risk and pricing policies; Travelers' core competitive advantage is underwriting excellence delivering 86.2% combined ratio in 2024 record performance." },
+    { label: "actuaries", share: 5.0, conf: "broad", note: "Pricing actuaries, reserve actuaries, and catastrophe model specialists; Travelers employs many Fellowship of Casualty Actuarial Society (FCAS) credentialed professionals for rigorous P&C risk assessment." },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "Data scientists and quantitative risk modelers for catastrophe modeling, predictive pricing analytics, and AI-driven claims triage; key to Travelers' underwriting profitability." },
+    { label: "software-developers", share: 5.0, conf: "broad", note: "InsurTech platform engineers building claims management systems, digital customer portals, telematics platforms (IntelliDrive), and API integrations with independent agents." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance, accounting, and statutory reporting professionals managing Travelers' $46.5B revenue global insurance operations and complex insurance accounting." },
+    { label: "insurance-sales-agents", share: 5.0, conf: "broad", note: "Internal sales team supporting Travelers' independent agent distribution network; Travelers does not use captive agents, so internal sales staff focus on agency development and commercial market." },
+    { label: "compliance-officers", share: 3.0, conf: "broad", note: "Regulatory compliance officers monitoring insurance regulations across 50 US states, Canada, UK, and Ireland; critical for maintaining Travelers' insurance licenses." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "IT management and digital transformation leaders supporting Travelers' technology platforms, data analytics, and InsurTech modernization initiatives." },
+    { label: "human-resources-specialists", share: 2.5, conf: "broad", note: "HR business partners and L&D specialists; Travelers' average employee tenure is 11+ years suggesting strong retention programs." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Alan Schnitzer and senior leadership across Business Insurance, Bond & Specialty, Personal Insurance, and corporate functions." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Claims defense counsel coordinators, corporate legal, regulatory, and compliance attorneys managing Travelers' legal exposures." },
+    { label: "financial-analysts", share: 1.5, conf: "broad", note: "FP&A and investor relations analysts supporting Travelers' capital management and communication with insurance analyst community." },
+    { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Process improvement analysts and operational analysts optimizing Travelers' claims handling efficiency and underwriting workflow." },
+  ],
+
   UBER: [
     { label: "customer-service-representatives", share: 20.0, conf: "broad", note: "Rider and driver support specialists, Uber Eats consumer support, and partner success agents; Sales & Support is Uber's largest department at ~44% of 31,100 full-time employees per Unify." },
     { label: "operations-research-analysts", share: 18.0, conf: "broad", note: "City operations managers, marketplace analysts, logistics operations staff, and driver partner operations teams; Operations ~12% of total per Unify; key function ensuring supply-demand balance." },
