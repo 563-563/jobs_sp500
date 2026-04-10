@@ -1997,6 +1997,27 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  INTC: [
+    { label: "computer-hardware-engineers", share: 29.0, conf: "broad", note: "CPU, GPU, AI accelerator, and connectivity chip architects/designers; engineering ~33.6% of 108,900 employees per Unify (~36,530), primarily chip design engineers in Oregon, Arizona, California, Israel, Ireland." },
+    { label: "semiconductor-processing-technicians", share: 19.0, conf: "broad", note: "Wafer fab operators and process technicians at Intel's IDM fabs in Oregon (D1X, D1D), Arizona (Fab 52, 62), New Mexico, Israel (Fab 28, 38), Ireland, Malaysia; Intel is uniquely an integrated device manufacturer." },
+    { label: "software-developers", share: 12.0, conf: "broad", note: "Platform software, firmware, compiler engineers (LLVM/oneAPI), EDA software, driver development, and software-defined silicon tooling teams." },
+    { label: "industrial-engineers", share: 7.0, conf: "broad", note: "Process integration, yield engineering, equipment engineering, and fab ramp engineers; critical to Intel's IDM model and fab technology leadership recovery efforts." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "Analog, mixed-signal, RF, and high-speed I/O engineers for Intel's networking chips, Altera FPGAs, and Mobileye vision processors." },
+    { label: "computer-and-information-systems-managers", share: 4.0, conf: "broad", note: "Engineering managers, product managers, and program directors across CCG, DCAI, NEX, Foundry, and Intel Capital organizations." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance, accounting, and audit professionals for Intel's $53B revenue global operations including complex foundry services accounting." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 3.0, conf: "broad", note: "Equipment maintenance technicians servicing ASML lithography tools, CVD/PVD systems, CMP, and etch equipment at Intel's global fabs." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Supply chain and distribution logistics for Intel's global chip manufacturing and delivery operations; managing wafer transport, test, and packaging supply chain." },
+    { label: "quality-control-inspectors", share: 3.0, conf: "broad", note: "Silicon validation, post-silicon QA, and product qualification engineers; critical for Intel's data center and PC processor reliability certifications." },
+    { label: "advertising-promotions-and-marketing-managers", share: 2.0, conf: "broad", note: "Intel Inside campaign management, product marketing for Core/Xeon/Gaudi brands, and developer marketing for oneAPI platform." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 2.0, conf: "broad", note: "OEM account managers (Dell, HP, Lenovo, Asus) and enterprise/cloud customer sales; Sales & Support ~2,246 employees per Unify." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Corporate IT and fab network administrators supporting Intel's global manufacturing and design operations; IT ~2,471 per Unify." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "C-suite (CEO Pat Gelsinger departed 2024), EVPs/SVPs across Products & Solutions, Manufacturing, and Corporate functions during transformation period." },
+    { label: "human-resources-specialists", share: 1.0, conf: "broad", note: "HR business partners, technical recruiters, and L&D teams; HR ~954 employees per Unify data." },
+    { label: "lawyers", share: 1.0, conf: "broad", note: "Patent attorneys, regulatory counsel, and antitrust lawyers; Intel has one of the largest semiconductor patent portfolios globally." },
+    { label: "mathematicians-and-statisticians", share: 1.0, conf: "broad", note: "AI/ML researchers for Gaudi AI accelerators, Habana Labs integration, and EDA machine learning tools for chip design automation." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.0, conf: "broad", note: "Procurement managers sourcing semiconductor chemicals, gases, wafer materials, and fab equipment for Intel's integrated manufacturing operations." },
+  ],
+
   AMD: [
     { label: "computer-hardware-engineers", share: 30.0, conf: "broad", note: "CPU (Zen architecture), GPU (RDNA/CDNA), and FPGA (Xilinx) chip architects and digital design engineers; engineering ~46% of ~28,000 employees per Unify; AMD's primary function as a fabless semiconductor company." },
     { label: "software-developers", share: 22.0, conf: "broad", note: "ROCm GPU computing stack engineers, firmware developers, driver teams, and tools/compiler engineers; AMD's major investment area to compete with NVIDIA's CUDA ecosystem for AI workloads." },
