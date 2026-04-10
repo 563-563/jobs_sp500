@@ -2530,6 +2530,22 @@ const RESEARCHED = {
     { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing Fortinet's patent portfolio in network security, plus government contracting lawyers for Fortinet's significant US federal business." },
     { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Business intelligence and security operations analysts supporting Fortinet's FortiAnalyzer/FortiManager cloud analytics products and internal business operations optimization." },
   ],
+
+  CDNS: [
+    { label: "software-developers", share: 42.0, conf: "broad", note: "EDA tool software engineers building Cadence's Virtuoso custom IC platform, Xcelium/Jasper verification, Genus/Innovus digital implementation, and cloud-native AI-enhanced EDA; Engineering is ~63% of Cadence's LinkedIn-visible workforce per Unify, and the vast majority are software developers." },
+    { label: "computer-hardware-engineers", share: 15.0, conf: "broad", note: "Chip design engineers developing Cadence's silicon IP portfolio (DDR, PCIe, USB, Ethernet PHYs) and emulation hardware (Palladium Z2, Protium X2 FPGA-based systems); IP licensing and verification hardware are significant Cadence product lines." },
+    { label: "mathematicians-and-statisticians", share: 8.0, conf: "broad", note: "AI/ML researchers developing Cadence AI-Enhanced EDA (JedAI platform), machine learning for design rule checking, AI-driven drug discovery in Cadence Molecular Sciences, and formal verification algorithms." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "EDA license sales representatives and account managers selling Cadence's toolsuite to semiconductor design companies; Cadence's Sales & Support org is ~6% of LinkedIn-visible headcount, with significant revenue concentration in major chip design customers." },
+    { label: "computer-systems-analysts", share: 5.0, conf: "broad", note: "Application engineers (AEs) and professional services consultants helping semiconductor companies implement Cadence tools, tune verification flows, and optimize designs; Cadence has a dedicated consulting organization." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "Engineering managers, product directors, and IT leadership coordinating Cadence's multi-division R&D and global IT infrastructure across 25+ countries." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting professionals managing Cadence's complex revenue recognition for multi-year EDA license agreements, hardware leases, and maintenance contracts; Cadence has $4B+ annual revenue." },
+    { label: "advertising-promotions-and-marketing-managers", share: 4.0, conf: "broad", note: "B2B product marketing, demand generation, and technical marketing managers for Cadence's EDA, IP, and system simulation platforms; heavy presence at DAC, ICCAD, and DesignCon conferences." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and division leaders under CEO Anirudh Devgan managing Cadence's EDA, Intellectual Property, and System Design & Analysis business segments." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and recruiters supporting Cadence's 12,700-person global workforce; HR is ~2% of LinkedIn-visible headcount per Unify (80 employees in sample)." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing Cadence's extensive patent portfolio in EDA algorithms and semiconductor design; also licensing lawyers managing complex multi-year EDA and IP licensing agreements." },
+    { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Business intelligence and analytics professionals supporting Cadence's business operations and financial planning; Operations is ~2% of LinkedIn-visible headcount per Unify (69 employees in sample)." },
+    { label: "network-and-computer-systems-administrators", share: 1.0, conf: "broad", note: "Internal IT infrastructure staff managing Cadence's compute clusters, cloud environments, and network systems; IT is ~6% of LinkedIn-visible headcount per Unify, supporting compute-intensive EDA workloads." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
