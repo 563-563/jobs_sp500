@@ -2461,6 +2461,24 @@ const RESEARCHED = {
     { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Supply chain and procurement professionals sourcing precision optical components, laser systems, and advanced materials for KLA's inspection equipment; supply chain is highly specialized and globally distributed." },
     { label: "lawyers", share: 1.0, conf: "broad", note: "IP counsel managing KLA's extensive patent portfolio in semiconductor inspection and metrology; plus export control lawyers given KLA's products are subject to EAR restrictions affecting China sales." },
   ],
+
+  LRCX: [
+    { label: "electrical-and-electronics-engineers", share: 18.0, conf: "broad", note: "Hardware engineers designing plasma etch chambers, RF power delivery systems, impedance matching networks, and endpoint detection electronics; core to Lam's Kiyo etch and SPEED deposition platforms." },
+    { label: "electro-mechanical-technicians", share: 16.0, conf: "broad", note: "Equipment assembly, module integration, and test technicians in Lam's manufacturing facilities (Fremont CA, Malaysia, Korea, Taiwan), plus field service technicians installed and servicing systems at customer fabs." },
+    { label: "chemical-engineers", share: 12.0, conf: "broad", note: "Process chemistry engineers developing and optimizing etch chemistry, ALD precursors, CVD gas chemistries, and wet clean formulations; Lam's deposition/etch/clean portfolio is fundamentally chemistry-driven." },
+    { label: "software-developers", share: 12.0, conf: "broad", note: "Software engineers building etch recipe management, chamber control systems, process analytics, and AI-driven defect fingerprinting; Lam's Sense.i platform embeds AI into advanced process control." },
+    { label: "mechanical-engineers", share: 8.0, conf: "broad", note: "Precision mechanical design engineers developing vacuum chambers, wafer handling robotics, electrostatic chucks, and gas delivery systems enabling atomic-scale process uniformity." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "Strategic account managers and regional sales engineers selling Lam's etch, deposition, and cleaning systems to TSMC, Samsung, Intel, Micron, and SK Hynix; each system valued at $3–$15M." },
+    { label: "computer-support-specialists", share: 7.0, conf: "broad", note: "Field applications engineers and customer support specialists embedded at fab sites worldwide providing process integration support, remote diagnostics, and on-site service under Lam's multi-year service contracts." },
+    { label: "industrial-engineers", share: 5.0, conf: "broad", note: "Manufacturing engineers managing Lam's equipment production lines, lean manufacturing initiatives, and new product introduction processes across global facilities." },
+    { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Quality assurance engineers verifying component specifications and finished system performance; Lam's tools must meet tight uniformity and contamination specs before shipment to leading-edge customers." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing Lam's revenue recognition for long-cycle capital equipment contracts, service contract amortization, and warranty reserves for a $17B+ revenue company." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "Engineering managers, product managers, and IT directors managing Lam's multi-division R&D programs and enterprise IT systems for ~17,000 employees globally." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "C-suite and division leadership managing Lam's strategy across Deposition, Etch, and Clean product groups; CEO Tim Archer leads execution of Lam's services-led growth and AI capability strategy." },
+    { label: "human-resources-specialists", share: 1.0, conf: "broad", note: "HR professionals recruiting semiconductor engineering talent and managing global workforce across Lam's US, Asia-Pacific, and European operations." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 0.5, conf: "broad", note: "Supply chain and procurement professionals sourcing specialized materials, precision components, and sub-assemblies for Lam's etch and deposition equipment; supply chain is highly specialized globally." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "IP and export control attorneys managing Lam's patent portfolio and compliance with US export regulations that restrict advanced semiconductor equipment sales to China." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
