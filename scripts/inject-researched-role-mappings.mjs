@@ -2577,6 +2577,21 @@ const RESEARCHED = {
     { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing ANSYS's simulation software patent portfolio and licensing agreements; also M&A lawyers supporting the $35B acquisition by Synopsys completed in 2025." },
     { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Business intelligence and program management professionals; Program & Project Management is ~1% of Unify sample (23 employees), supporting ANSYS's global customer implementation programs." },
   ],
+
+  DXCM: [
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 30.0, conf: "broad", note: "Large US and international diabetes sales force calling on endocrinologists, CDEs, primary care physicians, pharmacies, and healthcare systems; medical device companies in the diabetes space historically have sales rep ratios exceeding 1 rep per 10 physicians; sales & marketing is ~40%+ of DexCom's revenue spend." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Patient support specialists and healthcare provider support staff managing DexCom's 24/7 customer service center; a consumer-facing medical device with ~7M+ users worldwide requires significant ongoing support operations." },
+    { label: "software-developers", share: 12.0, conf: "broad", note: "Mobile app developers (Dexcom G7 iOS/Android app), cloud platform engineers managing Dexcom Clarity, embedded firmware engineers for the CGM transmitter and receiver, and integration engineers for EHR/pump connectivity." },
+    { label: "electrical-and-electronics-engineers", share: 10.0, conf: "broad", note: "Hardware engineers designing DexCom's CGM sensor electronics, custom low-power Bluetooth transmitters, wearable patch systems, and next-generation G-series sensor platforms including the Stelo OTC device." },
+    { label: "compliance-officers", share: 8.0, conf: "broad", note: "FDA regulatory affairs specialists, clinical project managers, and global regulatory submission teams; DexCom must maintain Class II/III device clearances across 50+ countries and conduct frequent clinical trials for new products." },
+    { label: "quality-control-inspectors", share: 7.0, conf: "broad", note: "Quality engineers and inspection specialists ensuring ISO 13485 medical device quality management compliance; DexCom uses contract manufacturers (Malaysia) so quality oversight of outsourced manufacturing is critical." },
+    { label: "advertising-promotions-and-marketing-managers", share: 6.0, conf: "broad", note: "DTC marketing professionals managing DexCom's significant direct-to-consumer advertising campaigns (TV, digital), HCP marketing, payer/formulary positioning, and brand management for G7 and Stelo products." },
+    { label: "medical-scientists", share: 5.0, conf: "broad", note: "Clinical and research scientists developing next-generation glucose biosensor chemistries, running FDA clinical studies, and advancing DexCom's pipeline of non-invasive and minimally-invasive glucose monitoring technologies." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing DexCom's revenue recognition for a mix of hardware and subscription service revenue, insurance billing complexities, and SEC reporting as a $4B+ revenue medical device company." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "IT directors and product managers overseeing DexCom's data platform infrastructure (Dexcom Clarity cloud), enterprise IT systems, and connected health software product management." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "C-suite and senior leadership managing DexCom's global diabetes CGM business, including international expansion and new product categories beyond traditional prescription CGM." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR professionals supporting DexCom's ~10,300-person global workforce which has grown rapidly from aggressive hiring to build out the commercial infrastructure for G7 and Stelo launches." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
