@@ -1997,6 +1997,25 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  TXN: [
+    { label: "semiconductor-processing-technicians", share: 31.0, conf: "broad", note: "Wafer fab operators at TI's Texas fabs (DMOS6, RFAB, SM1, new Sherman TX 300mm) and Maine fabs; TI's IDM strategy means ~40% of 34,000 employees are in manufacturing; 90% of employees in R&D, sales, or manufacturing per 2024 10-K." },
+    { label: "electrical-and-electronics-engineers", share: 20.0, conf: "narrow", note: "Analog/mixed-signal circuit designers (op-amps, voltage regulators, ADC/DAC, motor drivers, power ICs); TI's core strength and competitive advantage in the $74B analog semiconductor market." },
+    { label: "computer-hardware-engineers", share: 12.0, conf: "broad", note: "Embedded processor designers (MSP430 MCU, Sitara ARM-based SoC, TMS320 DSP, SimpleLink wireless); TI's Embedded Processing segment complements its large analog portfolio." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "Field sales engineers and distribution channel managers serving thousands of industrial, automotive, and communications OEM customers; TI's direct model is key differentiator; Sales ~1,283 per Unify." },
+    { label: "industrial-engineers", share: 5.0, conf: "broad", note: "Fab process engineers, process integration specialists, and yield engineers supporting TI's 300mm wafer manufacturing scale-up strategy." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 5.0, conf: "broad", note: "Fab equipment maintenance technicians servicing photolithography, CVD/PVD, etch, and CMP equipment at TI's multiple US fabs." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals for TI's $15.6B revenue operations; Finance & Administration ~1,000 employees per Unify data." },
+    { label: "software-developers", share: 3.0, conf: "broad", note: "Embedded software tools engineers (Code Composer Studio IDE, TI Cloud, DriverLib, SYS/BIOS RTOS) supporting TI's developer ecosystem for microcontrollers and DSPs." },
+    { label: "quality-control-inspectors", share: 3.0, conf: "broad", note: "Reliability and quality engineers ensuring TI's automotive- and industrial-grade components meet AEC-Q100, ISO 26262, and other standards; TI turnover rate 9.1% in 2024 per 10-K." },
+    { label: "computer-and-information-systems-managers", share: 2.0, conf: "broad", note: "Engineering managers, product managers, and operations managers across analog and embedded processing divisions." },
+    { label: "advertising-promotions-and-marketing-managers", share: 2.0, conf: "broad", note: "Product marketing for analog and embedded segment, trade show presence, and developer ecosystem marketing at events like TI's TechDay." },
+    { label: "logisticians", share: 2.0, conf: "broad", note: "Supply chain and distribution logistics managers coordinating TI's global chip distribution to distributors and direct OEM customers." },
+    { label: "human-resources-specialists", share: 1.5, conf: "broad", note: "HR business partners, technical recruiters, and L&D specialists supporting TI's 34,000 global employees." },
+    { label: "top-executives", share: 1.0, conf: "broad", note: "CEO, CFO, and senior VP leadership at TI's Dallas TX headquarters overseeing the company's long-term 300mm fab expansion strategy." },
+    { label: "financial-analysts", share: 1.0, conf: "broad", note: "FP&A and investor relations analysts; TI is known for its detailed investor communications about free cash flow per share and long-term capital allocation model." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "Patent counsel and regulatory attorneys managing TI's semiconductor IP portfolio and licensing agreements." },
+  ],
+
   QCOM: [
     { label: "computer-hardware-engineers", share: 35.0, conf: "broad", note: "Snapdragon SoC architects, custom Oryon CPU core designers, Adreno GPU engineers, and cellular modem ASIC engineers; engineering ~70% of Qualcomm's ~49,000 employees per Unify data." },
     { label: "software-developers", share: 25.0, conf: "broad", note: "Modem firmware, Android Snapdragon integration, Qualcomm AI Stack, QuRT RTOS, and Snapdragon SDK software engineers; ~half of Qualcomm's engineering workforce is software-focused." },
