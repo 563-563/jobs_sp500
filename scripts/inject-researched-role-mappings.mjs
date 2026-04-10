@@ -2546,6 +2546,21 @@ const RESEARCHED = {
     { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Business intelligence and analytics professionals supporting Cadence's business operations and financial planning; Operations is ~2% of LinkedIn-visible headcount per Unify (69 employees in sample)." },
     { label: "network-and-computer-systems-administrators", share: 1.0, conf: "broad", note: "Internal IT infrastructure staff managing Cadence's compute clusters, cloud environments, and network systems; IT is ~6% of LinkedIn-visible headcount per Unify, supporting compute-intensive EDA workloads." },
   ],
+
+  SNPS: [
+    { label: "software-developers", share: 40.0, conf: "broad", note: "EDA tool software engineers building Synopsys Design Compiler, VCS simulator, Verdi debug, PrimeTime, VC Formal, and the Silicon IP infrastructure; also security tool engineers for Coverity SAST, Black Duck SCA, and Polaris AppSec; Engineering is ~47% of LinkedIn-visible headcount per Unify." },
+    { label: "computer-hardware-engineers", share: 12.0, conf: "broad", note: "Silicon IP design engineers developing Synopsys DesignWare IP cores (DDR, PCIe, USB, MIPI, Ethernet); also hardware engineers building Synopsys HAPS FPGA-based prototyping platforms and ZeBu emulation systems." },
+    { label: "mathematicians-and-statisticians", share: 8.0, conf: "broad", note: "Formal verification researchers, machine learning scientists for AI-enhanced EDA (Synopsys.ai), statistical timing analysis experts, and data scientists; AI/ML is central to Synopsys' next-generation EDA strategy." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "EDA license sales representatives and account managers selling Synopsys tools, IP, and application security products; Sales & Support is ~9% of LinkedIn-visible headcount per Unify (603 employees in sample)." },
+    { label: "computer-systems-analysts", share: 6.0, conf: "broad", note: "Application engineers (AEs) and professional services consultants providing design methodology support and EDA tool implementation at semiconductor company customers; Consulting is ~1% per Unify sample." },
+    { label: "computer-and-information-systems-managers", share: 6.0, conf: "broad", note: "Engineering managers, product directors, and IT leadership; Business Management is ~19% of Unify sample (1,256 employees) including product management and R&D management roles." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance and accounting professionals managing Synopsys' complex multi-year EDA and IP license revenue recognition, acquisition accounting (multiple acquisitions), and SEC reporting; Finance & Admin is ~6% of Unify sample." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "broad", note: "B2B EDA product marketing and application security marketing professionals; Marketing & Product is ~6% of Unify sample (388 employees); Synopsys markets heavily to both EDA and enterprise security audiences." },
+    { label: "top-executives", share: 4.0, conf: "broad", note: "C-suite and senior vice presidents managing Synopsys' EDA Group, Design IP Group, and Software Integrity Group (application security) as separate major business segments." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and recruiters; HR is ~2% of Unify sample (129 employees) for Synopsys' ~20,000 global workforce." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing Synopsys' extensive EDA algorithm patent portfolio; also licensing lawyers structuring complex EDA and IP licensing agreements with major semiconductor companies." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Internal IT infrastructure staff; IT is ~5% of Unify sample (347 employees) managing Synopsys' compute clusters for EDA workloads, cloud infrastructure for SaaS EDA tools, and global enterprise network." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
