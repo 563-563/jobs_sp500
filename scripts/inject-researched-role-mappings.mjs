@@ -1997,6 +1997,24 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  CRM: [
+    { label: "software-developers", share: 25.0, conf: "broad", note: "R&D headcount increased 13% in FY2025 per 10-K; product, platform, and AI engineers (Einstein, Agentforce, Data Cloud, Slack) are Salesforce's largest function at ~25% of 76,453 total employees." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "broad", note: "Enterprise account executives, sales development reps, and renewals managers; Sales & Support ~18,300 employees per Unify data; Salesforce invests heavily (~37% of revenue) in sales & marketing." },
+    { label: "computer-systems-analysts", share: 15.0, conf: "broad", note: "Salesforce implementation consultants, solution architects, and technical architects in professional services; cost of revenues headcount grew 7% in FY2025 primarily for professional services." },
+    { label: "computer-support-specialists", share: 8.0, conf: "broad", note: "Technical support engineers and customer support specialists across Salesforce's global support centers handling platform issues, integrations, and API troubleshooting." },
+    { label: "management-analysts", share: 7.0, conf: "broad", note: "Customer success managers and strategic advisors helping enterprises maximize Salesforce ROI; core differentiator in Salesforce's subscription model reducing churn." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "broad", note: "Demand generation, digital marketing, product marketing, and events (Dreamforce) teams; Marketing & Product ~5,600 employees per Unify data." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers across core CRM, platform, AI, and vertical cloud organizations." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance, accounting, tax, and audit functions for Salesforce's $37.9B revenue global operations; Finance & Administration ~2,300 employees per Unify data." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "Co-CEOs, SVPs, EVPs, and VPs across product, sales, engineering, marketing, and Salesforce's diverse cloud portfolio." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, recruiters, and Ohana Culture team; Salesforce emphasizes employee wellbeing and DEI as core brand pillars." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Corporate IT and cloud infrastructure administrators; Salesforce uses its own platform and various cloud providers for internal operations." },
+    { label: "market-research-analysts", share: 2.0, conf: "broad", note: "Product strategy, competitive intelligence, and market analysts supporting product roadmap decisions and go-to-market planning." },
+    { label: "financial-analysts", share: 1.5, conf: "broad", note: "FP&A, investor relations, and corporate finance analysts; Salesforce actively manages capital allocation, M&A, and its remaining stake in Slack." },
+    { label: "mathematicians-and-statisticians", share: 1.0, conf: "broad", note: "AI/ML researchers and data scientists building Agentforce autonomous agents, Einstein AI models, and predictive analytics for the Salesforce platform." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "Legal team managing enterprise SaaS contracts, data privacy (GDPR, CCPA), IP, and antitrust matters; growing function given global AI regulation." },
+  ],
+
   "BRK.B": [
     { label: "assemblers-and-fabricators", share: 33.0, conf: "narrow", note: "Manufacturing is Berkshire's largest segment with 180,112 employees (46% of total); includes Precision Castparts aerospace parts, Marmon industrial products, Lubrizol chemicals, Forest River RVs, IMC cutting tools, Johns Manville building materials." },
     { label: "railroad-occupations", share: 9.0, conf: "narrow", note: "BNSF Railway employs ~35,000 workers (locomotive engineers, conductors, track maintenance, yardmasters) as part of Railroad/Utilities/Energy segment of 60,459." },
