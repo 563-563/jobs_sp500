@@ -1997,6 +1997,23 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  ADI: [
+    { label: "computer-hardware-engineers", share: 36.0, conf: "narrow", note: "~13,000 of ADI's ~24,000 employees are in engineering roles per FY2024 10-K; analog/mixed-signal ASIC designers, data converter engineers, and amplifier/filter designers form the majority of ADI's engineering workforce." },
+    { label: "electrical-and-electronics-engineers", share: 16.0, conf: "broad", note: "RF, power, signal integrity, and high-speed data converter circuit designers; ADI's specialization in precision analog and mixed-signal semiconductors requires deep EE expertise across amplifiers, ADCs/DACs, power management, and communications ICs." },
+    { label: "semiconductor-processing-technicians", share: 14.0, conf: "broad", note: "Wafer fab process operators at ADI's internal manufacturing facilities in Wilmington MA, Limerick Ireland, and Beaverton OR; ADI is a partial IDM using both internal fabs and TSMC for different product lines." },
+    { label: "industrial-engineers", share: 7.0, conf: "broad", note: "Process integration, test engineering, and yield engineers in ADI's manufacturing operations; critical for ensuring high-performance analog chip specifications are met in volume production." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 5.0, conf: "narrow", note: "Field application engineers and OEM account managers; Sales ~1,167 employees per ZoomInfo data; ADI serves industrial, automotive, communications, and consumer electronics OEMs." },
+    { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Quality and reliability engineers ensuring ADI's precision analog components meet strict industrial and automotive quality standards (AEC-Q100, IATF 16949)." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "narrow", note: "Finance and accounting professionals; Finance ~1,070 employees per ZoomInfo data; manages ADI's $9.4B revenue global operations including complex Maxim Integrated post-merger accounting." },
+    { label: "software-developers", share: 3.0, conf: "broad", note: "Embedded firmware, DSP algorithm, and driver software engineers supporting ADI's analog and digital signal processing products, plus software platforms like ADI's Open Ecosystem." },
+    { label: "advertising-promotions-and-marketing-managers", share: 3.0, conf: "narrow", note: "Product marketing, application marketing, and technical marketing engineers; Marketing ~689 employees per ZoomInfo; critical for communicating complex analog semiconductor value propositions." },
+    { label: "computer-and-information-systems-managers", share: 2.0, conf: "broad", note: "IT management, engineering management, and product line managers overseeing ADI's semiconductor design, manufacturing, and customer support organizations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "narrow", note: "HR business partners, technical recruiters, and L&D specialists; HR ~482 employees per ZoomInfo; recruiting for scarce mixed-signal design talent globally." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Vincent Roche and executive leadership overseeing ADI's semiconductor strategy, Maxim integration, and market expansion into automotive and industrial markets." },
+    { label: "lawyers", share: 1.0, conf: "broad", note: "Patent counsel, regulatory attorneys, and commercial lawyers protecting ADI's extensive mixed-signal semiconductor IP portfolio." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.0, conf: "broad", note: "Procurement managers managing TSMC and Samsung Foundry wafer purchases for ADI's fabless product lines alongside internal fab material procurement." },
+  ],
+
   NSC: [
     { label: "railroad-occupations", share: 60.0, conf: "broad", note: "Conductors, locomotive engineers, yardmasters, signal operators, and train crew; ~16,000 of Norfolk Southern's ~20,000 employees work in field operations across 20,000 miles of track in 22 states per 2024 filings." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 10.0, conf: "broad", note: "Locomotive and freight car mechanics in NS car and locomotive shops; mechanical department employees performing inspections, running maintenance, and heavy overhauls of rolling stock." },
