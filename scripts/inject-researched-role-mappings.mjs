@@ -1997,6 +1997,25 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  ZTS: [
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 30.0, conf: "broad", note: "Veterinary territory sales representatives calling on veterinary clinics, hospitals, and livestock producers; Zoetis's large commercial salesforce drives ~$9.3B revenue across companion animal and livestock segments." },
+    { label: "medical-scientists", share: 10.0, conf: "broad", note: "R&D scientists developing next-generation animal health medicines, vaccines, and diagnostics; Zoetis invests ~10% of revenue in R&D to maintain leadership in veterinary pharmaceuticals." },
+    { label: "chemical-engineers", share: 10.0, conf: "broad", note: "Bioprocess and pharmaceutical manufacturing engineers at Zoetis's global manufacturing network including Kalamazoo MI, Lincoln NE, Guarulhos Brazil, and other sites producing vaccines and biologics." },
+    { label: "quality-control-inspectors", share: 8.0, conf: "broad", note: "GMP quality analysts and inspectors ensuring Zoetis's pharmaceutical, vaccine, and diagnostic products meet USDA, FDA, and global regulatory standards." },
+    { label: "advertising-promotions-and-marketing-managers", share: 7.0, conf: "broad", note: "Commercial marketing teams for companion animal brands (Apoquel, Cytopoint, Simparica Trio, Revolution) and livestock products; significant direct-to-consumer awareness campaigns." },
+    { label: "biochemists-and-biophysicists", share: 5.0, conf: "broad", note: "Biologists and molecular scientists in Zoetis's discovery research labs developing monoclonal antibodies and novel therapies for companion animal diseases." },
+    { label: "veterinarians", share: 5.0, conf: "broad", note: "Veterinary Medical Science Liaisons (vMSLs), Technical Services Veterinarians, and research veterinarians supporting clinical trials and providing scientific support to veterinary practitioners." },
+    { label: "compliance-officers", share: 5.0, conf: "broad", note: "Regulatory affairs scientists and pharmacovigilance specialists managing USDA, FDA, and global regulatory submissions and post-approval compliance for animal health products." },
+    { label: "logisticians", share: 4.0, conf: "broad", note: "Supply chain professionals managing Zoetis's global distribution of animal health products including cold-chain biologics to veterinary distributors in 100+ countries." },
+    { label: "accountants-and-auditors", share: 3.5, conf: "broad", note: "Finance and accounting professionals for Zoetis's $9.3B revenue global operations with operations across approximately 45 countries." },
+    { label: "chemists-and-materials-scientists", share: 3.5, conf: "broad", note: "Analytical chemists and formulation scientists characterizing active pharmaceutical ingredients and developing veterinary drug formulations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, talent acquisition specialists, and L&D professionals managing Zoetis's global 13,800-employee workforce." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys and regulatory lawyers protecting Zoetis's extensive animal health patent portfolio and managing global licensing agreements." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO, CFO, and senior leadership across commercial, R&D, manufacturing, and corporate functions at Zoetis's Parsippany, NJ headquarters." },
+    { label: "computer-and-information-systems-managers", share: 2.0, conf: "broad", note: "IT management and digital transformation leaders supporting Zoetis's global operations and digital diagnostics initiatives (VetScan)." },
+    { label: "financial-analysts", share: 1.0, conf: "broad", note: "FP&A and investor relations analysts supporting Zoetis's capital allocation decisions and analyst/investor communications." },
+  ],
+
   REGN: [
     { label: "medical-scientists", share: 20.0, conf: "broad", note: "Regeneron's core research scientists in drug discovery, translational medicine, and clinical sciences; 66% of Regeneron's ~15,106 employees have at least a bachelor's degree, 26% majored in biology." },
     { label: "biochemists-and-biophysicists", share: 15.0, conf: "broad", note: "Protein scientists, antibody engineers, and structural biologists working with Regeneron's proprietary VelociSuite technologies (VelocImmune, VelociGene) for antibody drug development." },
