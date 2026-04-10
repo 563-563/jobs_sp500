@@ -1997,6 +1997,28 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  TSLA: [
+    { label: "assemblers-and-fabricators", share: 35.0, conf: "broad", note: "Vehicle assembly, battery cell/module, body stampingand paint line workers at Gigafactories in Fremont CA (~20k+), Austin TX (~21k), Berlin (~11.5k), and Shanghai; ~45,000 manufacturing employees total per marketing/electroiq sources." },
+    { label: "automotive-service-technicians-and-mechanics", share: 13.0, conf: "broad", note: "Service center technicians diagnosing and repairing vehicles at ~1,000+ Tesla Service Centers worldwide; major workforce category after Musk service capacity push." },
+    { label: "software-developers", share: 11.5, conf: "broad", note: "Autopilot/FSD AI, embedded vehicle software, mobile apps, energy software, and Dojo AI training infrastructure engineers; Tesla prioritizes software-defined vehicles." },
+    { label: "logisticians", share: 4.0, conf: "broad", note: "Global supply chain, inbound components, vehicle delivery logistics teams managing Tesla's complex global procurement and last-mile delivery operations." },
+    { label: "electrical-and-electronics-engineers", share: 4.0, conf: "broad", note: "Battery system, motor, power electronics, and Supercharger design engineers working on vehicle electrical architectures and energy products." },
+    { label: "quality-control-inspectors", share: 3.5, conf: "broad", note: "Vehicle and energy product quality inspection staff at Gigafactories; Tesla has focused heavily on quality after delivery center issues in prior years." },
+    { label: "retail-sales-workers", share: 3.5, conf: "broad", note: "Tesla store/showroom staff across ~400+ retail locations; complementing primarily online direct sales model." },
+    { label: "mechanical-engineers", share: 3.5, conf: "broad", note: "Vehicle design, body structure, thermal, HVAC, and manufacturing tooling engineers across product lines (Model S/X/3/Y/Cybertruck)." },
+    { label: "industrial-engineers", share: 3.0, conf: "broad", note: "Manufacturing process and lean operations engineers at Gigafactories; Tesla's 'machine that builds the machine' philosophy requires extensive manufacturing engineering." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "Engineering managers, IT directors, and product managers across vehicle, software, energy, and autonomy organizations." },
+    { label: "accountants-and-auditors", share: 2.5, conf: "broad", note: "Finance, accounting, tax, and audit functions for Tesla's $97B+ revenue global operations including energy and services segments." },
+    { label: "customer-service-representatives", share: 2.5, conf: "broad", note: "Customer support, energy concierge, and online sales support staff handling vehicle orders, delivery, and service inquiries." },
+    { label: "top-executives", share: 2.5, conf: "broad", note: "VPs, directors, and senior management across vehicle engineering, manufacturing, energy, Autopilot, and corporate functions." },
+    { label: "electricians", share: 2.0, conf: "broad", note: "Gigafactory electrical infrastructure workers and Supercharger network installation and maintenance crews." },
+    { label: "solar-photovoltaic-installers", share: 2.0, conf: "broad", note: "Tesla Solar panel, Solar Roof, and Powerwall installation crews for residential and commercial energy customers." },
+    { label: "human-resources-specialists", share: 1.5, conf: "broad", note: "HR business partners, recruiters, and L&D specialists managing talent across 125,665 employees post-2024 restructuring." },
+    { label: "network-and-computer-systems-administrators", share: 1.5, conf: "broad", note: "Corporate IT infrastructure and Supercharger network connectivity management across global facilities." },
+    { label: "advertising-promotions-and-marketing-managers", share: 1.0, conf: "broad", note: "Marketing function is small relative to peers as Tesla relies on Elon Musk and word-of-mouth; primarily digital/event marketing." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "Legal team managing regulatory compliance, patent portfolio, labor law, and litigation across Tesla's global operations." },
+  ],
+
   AVGO: [
     { label: "software-developers", share: 28.0, conf: "narrow", note: "~55% of Broadcom's 37,000 employees are in R&D per FY2024 10-K; VMware infrastructure software (vSphere, vSAN, NSX, Tanzu, Carbon Black) comprises roughly half of R&D headcount (~28% total)." },
     { label: "computer-hardware-engineers", share: 25.0, conf: "narrow", note: "~55% R&D per 10-K; semiconductor ASIC/chip design engineers for networking, storage, wireless, broadband chips constitute the other half of R&D (~25% total)." },
