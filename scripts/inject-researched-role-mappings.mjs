@@ -2479,6 +2479,24 @@ const RESEARCHED = {
     { label: "purchasing-managers-buyers-and-purchasing-agents", share: 0.5, conf: "broad", note: "Supply chain and procurement professionals sourcing specialized materials, precision components, and sub-assemblies for Lam's etch and deposition equipment; supply chain is highly specialized globally." },
     { label: "lawyers", share: 0.5, conf: "broad", note: "IP and export control attorneys managing Lam's patent portfolio and compliance with US export regulations that restrict advanced semiconductor equipment sales to China." },
   ],
+
+  MCHP: [
+    { label: "semiconductor-processing-technicians", share: 24.0, conf: "broad", note: "Fab operators and process technicians in Microchip's own wafer fabrication facilities in Tempe AZ, Bangkok Thailand, and Gresham OR; Microchip operates as a partial IDM with internal fab capacity for PIC microcontrollers and analog ICs." },
+    { label: "computer-hardware-engineers", share: 20.0, conf: "broad", note: "IC design engineers developing Microchip's PIC, AVR, SAM microcontroller families, FPGA products (SmartFusion, PolarFire from Microsemi), mixed-signal SoCs, and wireless MCUs; chip design is the core R&D function." },
+    { label: "electrical-and-electronics-engineers", share: 12.0, conf: "broad", note: "Analog and mixed-signal circuit designers developing op-amps, ADCs/DACs, power management ICs, timing/synchronization products, and RF components acquired through Microsemi and other acquisitions." },
+    { label: "software-developers", share: 10.0, conf: "broad", note: "Embedded software engineers creating MPLAB IDE and development tools, firmware libraries, bootloaders, and reference designs that help customers implement Microchip MCUs; software tools are critical for MCU ecosystem adoption." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "Field application engineers (FAEs) and regional sales engineers supporting Microchip's fragmented customer base of thousands of OEM design engineers across industrial, automotive, consumer, and defense markets." },
+    { label: "industrial-engineers", share: 5.0, conf: "broad", note: "Semiconductor process engineers managing wafer fabrication process recipes, yield optimization, and new process node development in Microchip's internal CMOS and BiCMOS fabs." },
+    { label: "quality-control-inspectors", share: 5.0, conf: "broad", note: "Quality engineers and reliability inspectors ensuring Microchip's chips meet AEC-Q100 automotive and MIL-SPEC defense qualification standards; critical given Microchip's significant automotive and defense market exposure." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing Microchip's revenue recognition, distributor inventory correction cycles, and complex acquisition integration accounting (Microsemi, Atmel, etc.)." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "Engineering managers, IT directors, and product managers coordinating Microchip's large product portfolio of 100,000+ SKUs across microcontrollers, analog, FPGAs, and mixed-signal categories." },
+    { label: "top-executives", share: 2.5, conf: "broad", note: "C-suite and divisional leadership overseeing Microchip's multi-business operations spanning microcontrollers, analog, security, and aerospace/defense (Microsemi) segments." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR professionals managing workforce across Microchip's global operations including US, Asia, and Europe, including employee relations for fab workers and engineers." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 2.0, conf: "broad", note: "Equipment maintenance technicians servicing and maintaining Microchip's wafer fab equipment (lithography, etch, CVD, ion implant) in its internal semiconductor manufacturing facilities." },
+    { label: "advertising-promotions-and-marketing-managers", share: 1.5, conf: "broad", note: "B2B technical marketing professionals managing Microchip's design-win campaigns, distributor co-marketing, and developer community engagement; MPLAB ecosystem and Microchip Direct brand building." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Supply chain and procurement staff managing chemicals, gases, and materials for internal fabs, plus outsourced assembly/test at OSAT partners in Asia." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "IP and regulatory attorneys managing Microchip's patent portfolio and export compliance for defense/aerospace products subject to ITAR/EAR regulations through the Microsemi business." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
