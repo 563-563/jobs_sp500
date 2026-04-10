@@ -1997,6 +1997,23 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  PYPL: [
+    { label: "software-developers", share: 20.0, conf: "broad", note: "Payments platform engineers, checkout UX, mobile app (Venmo, PayPal, Honey), Braintree payment gateway, and API platform developers; Engineering ~4,468 employees per Unify data." },
+    { label: "customer-service-representatives", share: 18.0, conf: "broad", note: "Merchant and consumer support specialists globally; 44% of PayPal's ~24,400 employees are in Asia-Pacific, largely serving global customer service operations for payment disputes and account issues." },
+    { label: "compliance-officers", share: 10.0, conf: "broad", note: "AML compliance officers, KYC analysts, and payment regulatory compliance specialists; PayPal holds money transmitter licenses in 50+ countries requiring substantial compliance staff." },
+    { label: "mathematicians-and-statisticians", share: 10.0, conf: "broad", note: "Fraud detection ML engineers and data scientists; real-time transaction fraud scoring is PayPal's core competitive moat protecting $1.7T payment volume; Risk/Safety/Compliance is a significant function." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 7.0, conf: "broad", note: "Merchant acquisition, enterprise sales for PayPal Commerce Platform, Braintree, Zettle, and PPCP; Sales & Support ~1,732 employees per Unify data." },
+    { label: "advertising-promotions-and-marketing-managers", share: 6.0, conf: "broad", note: "Consumer and merchant marketing, co-marketing programs, PayPal/Venmo brand campaigns; Marketing & Product ~1,474 employees per Unify." },
+    { label: "computer-and-information-systems-managers", share: 6.0, conf: "broad", note: "Engineering managers, product managers, and technology directors across PayPal's Consumer, Merchant, and Platforms organizations." },
+    { label: "accountants-and-auditors", share: 5.5, conf: "broad", note: "Finance and accounting professionals managing PayPal's complex payments accounting, merchant fee revenue recognition, and SEC reporting for a $31.8B revenue fintech." },
+    { label: "financial-analysts", share: 5.0, conf: "broad", note: "FP&A, economics research, and investor relations analysts; PayPal is closely followed by Wall Street and manages complex financial metrics (TPV, take rate, NNAs)." },
+    { label: "lawyers", share: 4.0, conf: "broad", note: "Payments regulation lawyers (CFPB, state money transmitter), IP counsel, consumer protection attorneys, and EU PSD2/GDPR compliance legal team." },
+    { label: "network-and-computer-systems-administrators", share: 3.5, conf: "broad", note: "IT infrastructure and payment processing systems administrators; PayPal processes 26M+ transactions daily requiring massive 24/7 infrastructure operations." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Alex Chriss and executive leadership following 2024 restructuring; senior VPs across Consumer, SMB, Enterprise, and Platform organizations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, talent acquisition, and L&D specialists managing PayPal's workforce through significant restructuring (10% cut in 2024)." },
+    { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Payment operations analysts optimizing PayPal's merchant onboarding, payment routing, and treasury operations efficiency." },
+  ],
+
   AMAT: [
     { label: "electrical-and-electronics-engineers", share: 25.0, conf: "broad", note: "R&D engineers designing semiconductor process equipment (CVD, PVD, ALD, etch, CMP, implant, metrology); ~35,700 employees with 45% in Asia-Pacific and 43% North America per FY2024 10-K; engineering is AMAT's largest function." },
     { label: "electro-mechanical-technicians", share: 20.0, conf: "broad", note: "Field Service Engineers (FSEs) installing, qualifying, and maintaining multi-million dollar semiconductor equipment at TSMC, Samsung, SK Hynix, Intel, and other fab customer sites globally; Applied Global Services is ~30% of AMAT revenue." },
