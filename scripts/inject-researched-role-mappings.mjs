@@ -1997,6 +1997,25 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  REGN: [
+    { label: "medical-scientists", share: 20.0, conf: "broad", note: "Regeneron's core research scientists in drug discovery, translational medicine, and clinical sciences; 66% of Regeneron's ~15,106 employees have at least a bachelor's degree, 26% majored in biology." },
+    { label: "biochemists-and-biophysicists", share: 15.0, conf: "broad", note: "Protein scientists, antibody engineers, and structural biologists working with Regeneron's proprietary VelociSuite technologies (VelocImmune, VelociGene) for antibody drug development." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "US commercial team promoting Eylea (ophthalmology), Dupixent (atopic dermatitis/asthma), and Libtayo (oncology); SG&A expenses ~$3.2B reflect substantial commercial investment." },
+    { label: "chemical-engineers", share: 7.0, conf: "broad", note: "Bioprocess engineers managing large-scale mammalian cell culture manufacturing of monoclonal antibodies at Regeneron's Tarrytown NY and Limerick Ireland facilities." },
+    { label: "quality-control-inspectors", share: 7.0, conf: "broad", note: "GMP quality analysts and inspectors ensuring Regeneron's biologic products meet FDA and global regulatory specifications for release." },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "Biostatisticians, bioinformaticians, and computational biologists analyzing genomics data (Regeneron Genetics Center with 3M+ exomes sequenced) and clinical trial outcomes." },
+    { label: "chemists-and-materials-scientists", share: 5.0, conf: "broad", note: "Analytical chemists and formulation scientists characterizing biologic drug substances and developing drug product formulations for Regeneron's pipeline." },
+    { label: "compliance-officers", share: 5.0, conf: "broad", note: "Regulatory affairs scientists and pharmacovigilance specialists managing FDA submissions, post-marketing surveillance, and global regulatory compliance." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "broad", note: "Medical affairs, medical science liaisons (MSLs), and commercial marketing teams for Dupixent brand across multiple indications and patient populations." },
+    { label: "accountants-and-auditors", share: 3.5, conf: "broad", note: "Finance and accounting professionals managing Regeneron's complex Sanofi collaboration accounting, royalty structures, and SEC reporting for a ~$15B revenue company." },
+    { label: "lawyers", share: 3.5, conf: "broad", note: "Patent counsel, regulatory attorneys, and licensing lawyers protecting Regeneron's biologics patent portfolio and managing Sanofi collaboration agreements." },
+    { label: "microbiologists", share: 3.0, conf: "broad", note: "Immunologists and virologists studying disease mechanisms for Regeneron's therapeutic antibody programs in oncology, ophthalmology, and inflammatory diseases." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "Executive leadership including long-tenured CEO Leonard Schleifer, and SVPs across research, commercial, manufacturing, and corporate functions." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and scientific recruiters supporting Regeneron's research-centric culture and competitive scientist talent market." },
+    { label: "computer-and-information-systems-managers", share: 1.0, conf: "broad", note: "IT management and bioinformatics infrastructure managers supporting Regeneron's large-scale genomics and computational biology operations." },
+    { label: "logisticians", share: 1.0, conf: "broad", note: "Supply chain and distribution managers coordinating Regeneron's global pharmaceutical distribution and cold-chain logistics for biologics." },
+  ],
+
   GILD: [
     { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "broad", note: "Pharmaceutical sales representatives promoting HIV (Biktarvy, Descovy), hepatology, oncology (Trodelvy), and inflammation therapies to physicians and healthcare systems; ~6,600 commercial employees." },
     { label: "medical-scientists", share: 15.0, conf: "broad", note: "Clinical researchers, clinical scientists, and CRAs running Gilead's global clinical trial portfolio; ~11,000 employees in R&D and manufacturing per Gilead website." },
