@@ -1997,6 +1997,23 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  QCOM: [
+    { label: "computer-hardware-engineers", share: 35.0, conf: "broad", note: "Snapdragon SoC architects, custom Oryon CPU core designers, Adreno GPU engineers, and cellular modem ASIC engineers; engineering ~70% of Qualcomm's ~49,000 employees per Unify data." },
+    { label: "software-developers", share: 25.0, conf: "broad", note: "Modem firmware, Android Snapdragon integration, Qualcomm AI Stack, QuRT RTOS, and Snapdragon SDK software engineers; ~half of Qualcomm's engineering workforce is software-focused." },
+    { label: "electrical-and-electronics-engineers", share: 10.0, conf: "broad", note: "5G RF engineers, analog/mixed-signal circuit designers, antenna engineers, and mmWave specialists for Qualcomm's cellular modem products (X80 modem)." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers across modem, wireless, compute, AI, and automotive chip organizations." },
+    { label: "lawyers", share: 5.0, conf: "broad", note: "IP licensing attorneys, patent counsel, and standards negotiators managing Qualcomm's ~$6B/year technology licensing (QTL) business and extensive 3G/4G/5G patent portfolio." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 4.0, conf: "broad", note: "OEM account managers serving Apple, Samsung, Xiaomi, OPPO, and other phone/tablet OEMs; plus automotive and IoT customer sales teams." },
+    { label: "mathematicians-and-statisticians", share: 3.0, conf: "broad", note: "AI/ML researchers, signal processing PhDs, and data scientists at Qualcomm AI Research (acquired from Borealis AI, Element AI); contributing to wireless standards bodies (3GPP)." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing Qualcomm's complex royalty accounting and licensing revenue recognition for QTL's ~$6B annual licensing income." },
+    { label: "advertising-promotions-and-marketing-managers", share: 2.5, conf: "broad", note: "Snapdragon brand marketing, OEM co-marketing programs, developer ecosystem marketing, and automotive/IoT segment marketing teams." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, technical recruiters, and L&D specialists competing for scarce wireless and AI engineering talent globally." },
+    { label: "network-and-computer-systems-administrators", share: 1.5, conf: "broad", note: "IT infrastructure and lab network administrators supporting Qualcomm's global engineering design centers and compute workloads; IT ~7% per Unify." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Procurement managers managing relationships with TSMC, Samsung Foundry, and packaging providers for Qualcomm's fabless chip supply chain." },
+    { label: "financial-analysts", share: 1.5, conf: "broad", note: "FP&A, investor relations, and M&A analysts supporting Qualcomm's complex multi-segment financial reporting and licensing deal analysis." },
+    { label: "top-executives", share: 1.0, conf: "broad", note: "CEO Cristiano Amon and executive leadership across QCT (chips), QTL (licensing), and corporate functions at Qualcomm's San Diego headquarters." },
+  ],
+
   ZTS: [
     { label: "wholesale-and-manufacturing-sales-representatives", share: 30.0, conf: "broad", note: "Veterinary territory sales representatives calling on veterinary clinics, hospitals, and livestock producers; Zoetis's large commercial salesforce drives ~$9.3B revenue across companion animal and livestock segments." },
     { label: "medical-scientists", share: 10.0, conf: "broad", note: "R&D scientists developing next-generation animal health medicines, vaccines, and diagnostics; Zoetis invests ~10% of revenue in R&D to maintain leadership in veterinary pharmaceuticals." },
