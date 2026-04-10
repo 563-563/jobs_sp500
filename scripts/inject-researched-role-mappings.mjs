@@ -1997,6 +1997,26 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  AMD: [
+    { label: "computer-hardware-engineers", share: 30.0, conf: "broad", note: "CPU (Zen architecture), GPU (RDNA/CDNA), and FPGA (Xilinx) chip architects and digital design engineers; engineering ~46% of ~28,000 employees per Unify; AMD's primary function as a fabless semiconductor company." },
+    { label: "software-developers", share: 22.0, conf: "broad", note: "ROCm GPU computing stack engineers, firmware developers, driver teams, and tools/compiler engineers; AMD's major investment area to compete with NVIDIA's CUDA ecosystem for AI workloads." },
+    { label: "electrical-and-electronics-engineers", share: 8.0, conf: "broad", note: "Analog, mixed-signal, RF, power delivery, and signal integrity engineers for chip I/O design, package engineering, and SerDes across AMD's product lines." },
+    { label: "computer-and-information-systems-managers", share: 6.0, conf: "broad", note: "Engineering managers, product managers, and program managers across CPU, GPU, data center, and client compute divisions." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 6.0, conf: "broad", note: "OEM account managers (Dell, HP, Lenovo), enterprise data center sales, and channel distribution partners; Sales & Support ~1,588 employees per Unify plus broader go-to-market team." },
+    { label: "industrial-engineers", share: 4.0, conf: "broad", note: "Test engineering, design-for-test (DFT), silicon validation, and yield engineers coordinating with TSMC for AMD's fabless manufacturing model." },
+    { label: "accountants-and-auditors", share: 3.5, conf: "broad", note: "Finance, accounting, and tax professionals for AMD's $25.8B revenue (FY2024) including complex Xilinx integration accounting." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite (Lisa Su, CFO), EVPs, SVPs, and VPs across CPU, GPU, FPGA/embedded, data center AI, and client segments." },
+    { label: "advertising-promotions-and-marketing-managers", share: 3.0, conf: "broad", note: "Product marketing (Ryzen vs Intel, Radeon vs NVIDIA), developer marketing, trade show presence, and digital marketing campaigns." },
+    { label: "mathematicians-and-statisticians", share: 3.0, conf: "broad", note: "AI/ML researchers, neural network optimization scientists, and data scientists working on AMD's AI accelerator strategy and Instinct GPU software ecosystem." },
+    { label: "quality-control-inspectors", share: 2.5, conf: "broad", note: "Silicon validation, post-silicon QA, and product qualification engineers ensuring AMD's CPU/GPU performance and reliability standards." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, technical recruiters, and L&D specialists managing AMD's global engineering talent acquisition and retention." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A, investor relations, and corporate finance analysts; AMD is a highly followed company with complex revenue mix across compute segments." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Corporate IT and lab infrastructure supporting AMD's global engineering teams and massive computational design workloads." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Supply chain professionals managing wafer purchases from TSMC, packaging materials, and component procurement for AMD's fabless operations." },
+    { label: "lawyers", share: 1.0, conf: "broad", note: "IP litigation attorneys, patent counsel, and regulatory lawyers; AMD actively litigates and defends IP disputes in semiconductor industry." },
+    { label: "logisticians", share: 0.5, conf: "broad", note: "Supply chain logistics coordinators managing AMD's global distribution of finished chips and ensuring delivery to OEM/ODM customers." },
+  ],
+
   NFLX: [
     { label: "software-developers", share: 25.0, conf: "narrow", note: "Engineering is Netflix's largest discipline with ~3,480 employees (~25% of 14,000) per Unify data; streaming platform, recommendation engine, encoding, and data infrastructure engineers." },
     { label: "advertising-promotions-and-marketing-managers", share: 12.0, conf: "broad", note: "Marketing & Product is second largest function at ~2,600 employees (~19%); subscriber acquisition, brand, localized campaigns across 190 countries; awards campaign spending for Emmy/Oscar." },
