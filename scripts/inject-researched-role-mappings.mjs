@@ -1997,6 +1997,24 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  AMAT: [
+    { label: "electrical-and-electronics-engineers", share: 25.0, conf: "broad", note: "R&D engineers designing semiconductor process equipment (CVD, PVD, ALD, etch, CMP, implant, metrology); ~35,700 employees with 45% in Asia-Pacific and 43% North America per FY2024 10-K; engineering is AMAT's largest function." },
+    { label: "electro-mechanical-technicians", share: 20.0, conf: "broad", note: "Field Service Engineers (FSEs) installing, qualifying, and maintaining multi-million dollar semiconductor equipment at TSMC, Samsung, SK Hynix, Intel, and other fab customer sites globally; Applied Global Services is ~30% of AMAT revenue." },
+    { label: "software-developers", share: 12.0, conf: "broad", note: "Equipment control software, process simulation, and AI/ML engineers; software increasingly differentiates AMAT's equipment performance for advanced nodes including equipment intelligence for chipmakers." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 8.0, conf: "broad", note: "Equipment assembly and manufacturing technicians at AMAT's production facilities in Silicon Valley, Austin TX, and Singapore, building and testing precision semiconductor equipment." },
+    { label: "assemblers-and-fabricators", share: 6.0, conf: "broad", note: "Equipment assembly workers at AMAT's manufacturing facilities; assembling the chambers, robotics, gas delivery, and vacuum systems that make up AMAT's complex process equipment." },
+    { label: "mechanical-engineers", share: 5.0, conf: "broad", note: "Mechanical design engineers for equipment chambers, robotic handling systems, vacuum systems, and gas delivery components; mechanical design is core to equipment reliability." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 5.0, conf: "broad", note: "Strategic account managers at major semiconductor fabs (TSMC, Samsung, Intel, Micron) managing multi-billion dollar equipment procurement relationships." },
+    { label: "computer-and-information-systems-managers", share: 4.0, conf: "broad", note: "Engineering managers, product managers, and program directors across Semiconductor Systems, Applied Global Services, and Display segments." },
+    { label: "industrial-engineers", share: 2.0, conf: "broad", note: "Manufacturing process engineers and lean operations specialists improving throughput and quality in AMAT's equipment manufacturing facilities." },
+    { label: "quality-control-inspectors", share: 3.0, conf: "broad", note: "Equipment quality inspection engineers ensuring AMAT's precision semiconductor manufacturing equipment meets stringent customer specifications." },
+    { label: "accountants-and-auditors", share: 3.5, conf: "broad", note: "Finance and accounting professionals for AMAT's $27.2B revenue (FY2024) global operations including complex service contract accounting." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Gary Dickerson and senior leadership across Semiconductor Systems, AGS, and Display business units at AMAT's Santa Clara CA headquarters." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, global talent acquisition, and L&D specialists managing AMAT's diverse 35,700-employee global workforce." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Procurement managers sourcing precision components (ceramics, pumps, robotic components, gas delivery) for AMAT's complex equipment supply chain." },
+    { label: "lawyers", share: 1.0, conf: "broad", note: "Patent counsel and regulatory attorneys protecting AMAT's extensive semiconductor equipment process IP portfolio and managing export control compliance." },
+  ],
+
   ADI: [
     { label: "computer-hardware-engineers", share: 36.0, conf: "narrow", note: "~13,000 of ADI's ~24,000 employees are in engineering roles per FY2024 10-K; analog/mixed-signal ASIC designers, data converter engineers, and amplifier/filter designers form the majority of ADI's engineering workforce." },
     { label: "electrical-and-electronics-engineers", share: 16.0, conf: "broad", note: "RF, power, signal integrity, and high-speed data converter circuit designers; ADI's specialization in precision analog and mixed-signal semiconductors requires deep EE expertise across amplifiers, ADCs/DACs, power management, and communications ICs." },
