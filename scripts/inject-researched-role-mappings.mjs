@@ -1997,6 +1997,26 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  NFLX: [
+    { label: "software-developers", share: 25.0, conf: "narrow", note: "Engineering is Netflix's largest discipline with ~3,480 employees (~25% of 14,000) per Unify data; streaming platform, recommendation engine, encoding, and data infrastructure engineers." },
+    { label: "advertising-promotions-and-marketing-managers", share: 12.0, conf: "broad", note: "Marketing & Product is second largest function at ~2,600 employees (~19%); subscriber acquisition, brand, localized campaigns across 190 countries; awards campaign spending for Emmy/Oscar." },
+    { label: "producers-and-directors", share: 10.0, conf: "broad", note: "Netflix Studios production executives, development executives, and creative directors for original content; Netflix committed $17B+ in content spending with substantial original production staff." },
+    { label: "computer-and-information-systems-managers", share: 7.0, conf: "broad", note: "Engineering managers, product managers, and technical directors spanning platform, product, and data organizations." },
+    { label: "mathematicians-and-statisticians", share: 6.0, conf: "broad", note: "Data scientists and ML engineers powering Netflix's famous recommendation system, A/B testing infrastructure, and content performance analytics; Netflix pioneered data-driven content decisions." },
+    { label: "lawyers", share: 5.0, conf: "broad", note: "Content licensing attorneys, IP lawyers, labor relations (SAG-AFTRA, WGA), and global regulatory compliance; Netflix's legal team handles complex multi-jurisdictional content rights." },
+    { label: "writers-and-authors", share: 5.0, conf: "broad", note: "Creative development writers and script development executives for Netflix Originals; Netflix has large development teams scouting and developing original IP across film and series." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 5.0, conf: "broad", note: "B2B partnerships, carrier/MVPD distribution deals, and advertising sales reps for the ad-supported Netflix plan launched 2022; growing ad sales function." },
+    { label: "accountants-and-auditors", share: 4.5, conf: "broad", note: "Finance and accounting professionals managing Netflix's $40B+ revenue, complex content asset capitalization, and global treasury operations." },
+    { label: "management-analysts", share: 4.0, conf: "broad", note: "Strategy, business development, and content acquisition executives; Netflix's content licensing and acquisition requires sophisticated deal analysis." },
+    { label: "network-and-computer-systems-administrators", share: 3.0, conf: "broad", note: "Infrastructure engineers, site reliability engineers, and CDN operations managing Netflix's global streaming infrastructure serving 300M+ subscribers." },
+    { label: "human-resources-specialists", share: 3.0, conf: "broad", note: "HR and culture team; Netflix's famous 'Culture Deck' drives distinctive HR practices with emphasis on freedom and responsibility model." },
+    { label: "public-relations-specialists", share: 2.5, conf: "broad", note: "PR, communications, and awards campaign teams; Netflix spends significantly on Emmy/Oscar/Golden Globe campaigns as original content PR strategy." },
+    { label: "graphic-designers", share: 2.5, conf: "broad", note: "UI/UX designers, thumbnail artwork designers, and brand designers; Netflix's personalized thumbnails and interface design are known competitive advantages." },
+    { label: "multimedia-artists-and-animators", share: 2.5, conf: "broad", note: "Animators and VFX artists for Netflix's growing animation slate (Arcane, The House, etc.) and visual effects on original productions." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "Co-CEOs, Chief Content Officer, CFO, CLO, and senior VPs across Netflix's content, product, technology, and corporate functions." },
+    { label: "film-and-video-editors-and-camera-operators", share: 1.0, conf: "broad", note: "In-house post-production editors and camera operators for Netflix's directly-produced content; most production outsourced to studios." },
+  ],
+
   CRM: [
     { label: "software-developers", share: 25.0, conf: "broad", note: "R&D headcount increased 13% in FY2025 per 10-K; product, platform, and AI engineers (Einstein, Agentforce, Data Cloud, Slack) are Salesforce's largest function at ~25% of 76,453 total employees." },
     { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "broad", note: "Enterprise account executives, sales development reps, and renewals managers; Sales & Support ~18,300 employees per Unify data; Salesforce invests heavily (~37% of revenue) in sales & marketing." },
