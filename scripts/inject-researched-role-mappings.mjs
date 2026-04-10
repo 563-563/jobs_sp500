@@ -2561,6 +2561,22 @@ const RESEARCHED = {
     { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing Synopsys' extensive EDA algorithm patent portfolio; also licensing lawyers structuring complex EDA and IP licensing agreements with major semiconductor companies." },
     { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Internal IT infrastructure staff; IT is ~5% of Unify sample (347 employees) managing Synopsys' compute clusters for EDA workloads, cloud infrastructure for SaaS EDA tools, and global enterprise network." },
   ],
+
+  ANSS: [
+    { label: "software-developers", share: 30.0, conf: "broad", note: "Simulation software engineers building ANSYS Mechanical FEA, Fluent/CFX CFD, HFSS/Maxwell EM solvers, Discovery multiphysics, and Lumerical optical simulation; Engineering is ~35% of Unify-sampled headcount, most of which are software and numerical methods engineers." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "broad", note: "Enterprise simulation software sales representatives and account managers; Sales & Support is ~20% of Unify sample (557 employees); ANSYS sells complex, high-value software licenses to aerospace, automotive, energy, semiconductor, and consumer electronics manufacturers." },
+    { label: "computer-systems-analysts", share: 10.0, conf: "broad", note: "Technical application engineers, professional services consultants, and pre-sales engineers helping engineers at customer organizations implement simulation workflows across ANSYS' broad product portfolio." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Product managers, program managers, and strategy consultants; Business Management is ~17% of Unify sample (464 employees), encompassing product strategy, implementation methodology, and customer success roles." },
+    { label: "computer-and-information-systems-managers", share: 6.0, conf: "broad", note: "Engineering directors, product directors, and IT management; ANSYS operates as a multi-division software company spanning physics simulation, systems simulation, and optics requiring substantial technical leadership." },
+    { label: "mathematicians-and-statisticians", share: 6.0, conf: "broad", note: "Numerical methods researchers and computational physicists developing FEM algorithms, CFD solvers, EM simulation methods, and topology optimization; simulation software requires deep applied mathematics expertise." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "broad", note: "Product marketing and demand generation professionals; Marketing & Product is ~9% of Unify sample (243 employees); ANSYS markets heavily at engineering conferences (ANSYS Simulation World, industry trade shows)." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting professionals managing ANSYS's complex software license and subscription revenue recognition, deferred maintenance revenue, and SEC reporting; Finance & Admin is ~4.5% of Unify sample." },
+    { label: "top-executives", share: 4.0, conf: "broad", note: "C-suite and senior vice presidents leading ANSYS's business through acquisition by Synopsys (completed July 2025); CEO Ajei Gopal and team drove ANSYS's expansion into cloud simulation and AI-assisted design." },
+    { label: "network-and-computer-systems-administrators", share: 4.0, conf: "broad", note: "Internal IT staff and cloud infrastructure engineers; IT is ~7% of Unify sample (192 employees); ANSYS's cloud simulation offerings (ANSYS Cloud Direct) require significant cloud infrastructure management." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and recruiters; HR is ~2% of Unify sample (60 employees) for ANSYS's 6,500-person global engineering software workforce." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys managing ANSYS's simulation software patent portfolio and licensing agreements; also M&A lawyers supporting the $35B acquisition by Synopsys completed in 2025." },
+    { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Business intelligence and program management professionals; Program & Project Management is ~1% of Unify sample (23 employees), supporting ANSYS's global customer implementation programs." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
