@@ -1997,6 +1997,27 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  AVGO: [
+    { label: "software-developers", share: 28.0, conf: "narrow", note: "~55% of Broadcom's 37,000 employees are in R&D per FY2024 10-K; VMware infrastructure software (vSphere, vSAN, NSX, Tanzu, Carbon Black) comprises roughly half of R&D headcount (~28% total)." },
+    { label: "computer-hardware-engineers", share: 25.0, conf: "narrow", note: "~55% R&D per 10-K; semiconductor ASIC/chip design engineers for networking, storage, wireless, broadband chips constitute the other half of R&D (~25% total)." },
+    { label: "computer-support-specialists", share: 8.0, conf: "broad", note: "VMware enterprise technical support and professional services engineers; large function retained post-acquisition to serve top enterprise accounts." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 6.0, conf: "broad", note: "Enterprise account executives managing ~600 largest VMware/software accounts and semiconductor OEM/ODM customer sales after post-acquisition sales restructuring." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "RF, analog, signal processing, and power management semiconductor engineers across Broadcom's wireless, networking, and broadband chip product lines." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "Engineering managers, R&D directors, and technical product managers across semiconductor solutions and infrastructure software segments." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance, accounting, tax, and audit functions for Broadcom's $51B+ revenue operations and SEC reporting obligations." },
+    { label: "operations-research-analysts", share: 3.0, conf: "broad", note: "Business operations, program management, and operational analytics across both segments; integration of VMware operations post-acquisition." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Supply chain management for Broadcom's fabless semiconductor model, coordinating with TSMC and other contract fabs for component delivery." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "VPs, senior directors, and C-suite across semiconductor solutions, infrastructure software, sales, and corporate functions." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Corporate IT infrastructure team; Broadcom uses its own VMware technology internally for enterprise IT." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, talent acquisition, and L&D specialists; attrition rate ~2.9% (excluding VMware) in FY2024 per 10-K." },
+    { label: "advertising-promotions-and-marketing-managers", share: 2.0, conf: "broad", note: "Product marketing, demand generation, and event marketing for semiconductor and enterprise software segments." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A, corporate finance, and M&A analysts; Broadcom is a serial acquirer requiring deep deal analysis and integration finance capability." },
+    { label: "lawyers", share: 1.0, conf: "broad", note: "IP, regulatory, antitrust, M&A, and contract legal team; Broadcom maintains extensive semiconductor and software patent portfolios." },
+    { label: "industrial-engineers", share: 1.0, conf: "broad", note: "Test and process engineering coordinating with TSMC and other wafer fabs; yield improvement and manufacturing quality oversight." },
+    { label: "market-research-analysts", share: 0.5, conf: "broad", note: "Market intelligence and competitive analysis for semiconductor and enterprise software product planning." },
+    { label: "mathematicians-and-statisticians", share: 0.5, conf: "broad", note: "AI/ML applied research and data science; smaller function than pure software companies but growing with AI chip initiatives." },
+  ],
+
   AAPL: [
     { label: "retail-sales-workers", share: 28.0, conf: "broad", note: "Apple Specialists and retail floor staff across ~530 Apple Stores globally; ~73,700 of ~166,000 employees are in retail locations per electroiq/seo.ai estimates." },
     { label: "software-developers", share: 23.0, conf: "broad", note: "iOS, macOS, watchOS, services, and cloud software engineers; engineering is ~41% of corporate workforce per Unify/electroiq data, corporate ~55% of total headcount." },
