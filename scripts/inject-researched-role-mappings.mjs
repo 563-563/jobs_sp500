@@ -2411,6 +2411,22 @@ const RESEARCHED = {
     { label: "lawyers", share: 0.5, conf: "broad", note: "IP, regulatory, antitrust, and commercial lawyers; Apple actively litigates IP cases and navigates global antitrust scrutiny." },
     { label: "purchasing-managers-buyers-and-purchasing-agents", share: 0.5, conf: "broad", note: "Procurement and commodity management professionals managing Apple's complex multi-tier global supply chain." },
   ],
+
+  SNOW: [
+    { label: "software-developers", share: 30.0, conf: "narrow", note: "Engineering org ~2,977 employees (~35% of 7,834 total) per FY2025 10-K; Snowflake's cloud data platform, Snowpark, and Cortex AI require large software engineering teams across data engineering, platform infra, and ML." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "narrow", note: "Sales & Support ~2,781 employees (~32% combined) per FY2025 10-K; enterprise account executives, solution engineers, and channel sales reps driving Snowflake's consumption-based revenue model." },
+    { label: "computer-systems-analysts", share: 10.0, conf: "broad", note: "Professional services consultants and implementation specialists helping enterprises migrate data workloads to Snowflake; consulting is a significant delivery function alongside sales." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Customer success managers and technical account managers (~8% estimate) ensuring enterprise customer adoption and expansion in Snowflake's land-and-expand consumption model." },
+    { label: "computer-and-information-systems-managers", share: 7.0, conf: "broad", note: "Engineering managers, product managers, and technical directors managing Snowflake's platform engineering and product org; multi-cloud product requires deep technical leadership." },
+    { label: "advertising-promotions-and-marketing-managers", share: 5.0, conf: "narrow", note: "Marketing & Product org ~689 employees (~9% combined) per FY2025 10-K; demand gen, field marketing, product marketing, and developer relations for cloud data platform audience." },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "ML/AI researchers and data scientists developing Snowflake Cortex AI, anomaly detection, query optimization algorithms, and Snowflake Arctic open-source LLM; central to Snowflake's AI differentiation strategy." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting professionals managing Snowflake's complex consumption-based revenue recognition, deferred revenue, and public company reporting requirements." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership including CEO Sridhar Ramaswamy and exec team managing Snowflake's strategic direction, product vision, and investor relations as a high-profile cloud data company." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, recruiters, and people operations staff supporting Snowflake's ~7,800-person global workforce across 34 countries." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Legal counsel managing data privacy (GDPR/CCPA), IP, customer contracts, and regulatory compliance for a cloud data platform handling sensitive enterprise data." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A and IR analysts; Snowflake's consumption-based model with complex RPO and net revenue retention metrics requires sophisticated financial modeling and investor communications." },
+    { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Internal IT infrastructure and cloud operations staff; Snowflake's platform is cloud-native but requires internal IT for employee systems and multi-cloud administrative support." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
