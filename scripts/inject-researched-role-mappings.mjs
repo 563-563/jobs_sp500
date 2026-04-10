@@ -1997,6 +1997,22 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  NSC: [
+    { label: "railroad-occupations", share: 60.0, conf: "broad", note: "Conductors, locomotive engineers, yardmasters, signal operators, and train crew; ~16,000 of Norfolk Southern's ~20,000 employees work in field operations across 20,000 miles of track in 22 states per 2024 filings." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 10.0, conf: "broad", note: "Locomotive and freight car mechanics in NS car and locomotive shops; mechanical department employees performing inspections, running maintenance, and heavy overhauls of rolling stock." },
+    { label: "construction-laborers-and-helpers", share: 8.0, conf: "broad", note: "Maintenance of Way (MOW) track gang laborers, tie replacement crews, and rail installation teams maintaining Norfolk Southern's 20,000-mile network." },
+    { label: "electricians", share: 3.0, conf: "broad", note: "Signal system electricians maintaining NS's electronic signal and communication infrastructure, and locomotive electricians servicing traction motors and electrical systems." },
+    { label: "accountants-and-auditors", share: 3.5, conf: "broad", note: "Finance and accounting professionals at Norfolk Southern's Atlanta HQ managing the $12.1B revenue railroad's financial reporting and cost control programs." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "IT management and technology leaders overseeing NS's train control systems, network operations center, and digital transformation initiatives." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Intermodal and carload traffic planning specialists managing NS's freight network optimization, service design, and intermodal terminal logistics." },
+    { label: "civil-engineers", share: 2.0, conf: "broad", note: "Bridge, structure, and track design engineers managing NS's capital infrastructure program, including major bridge maintenance and new construction projects." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Alan Shaw and executive leadership at Atlanta headquarters following post-East Palestine management changes and PSR (Precision Scheduled Railroading) operational strategy." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR professionals managing Norfolk Southern's complex multi-union labor relations, collective bargaining, and workforce development programs." },
+    { label: "lawyers", share: 1.5, conf: "broad", note: "Labor relations attorneys, regulatory counsel, and liability lawyers; NS faces ongoing litigation from the East Palestine, Ohio derailment and manages complex FRA regulatory compliance." },
+    { label: "operations-research-analysts", share: 1.5, conf: "broad", note: "Network optimization analysts and operations research scientists improving NS's car utilization, locomotive productivity, and service reliability metrics." },
+    { label: "software-developers", share: 0.5, conf: "broad", note: "Internal technology developers supporting NS's train management systems, customer visibility tools, and operational analytics platforms." },
+  ],
+
   TRV: [
     { label: "claims-adjusters-appraisers-examiners-and-investigators", share: 38.0, conf: "narrow", note: "Travelers' Claim team is approximately 13,000 strong per their 2024 Sustainability Report, representing ~38% of 34,000 total employees; covers Business Insurance, Bond & Specialty, and Personal Insurance claim lines." },
     { label: "insurance-underwriters", share: 22.0, conf: "broad", note: "Commercial and personal lines underwriters assessing risk and pricing policies; Travelers' core competitive advantage is underwriting excellence delivering 86.2% combined ratio in 2024 record performance." },
