@@ -2609,6 +2609,22 @@ const RESEARCHED = {
     { label: "top-executives", share: 2.0, conf: "broad", note: "C-suite and senior leadership managing IDEXX's Companion Animal Group (CAG), Water, and LPD segments with CEO Jay Mazelsky overseeing IDEXX's premium diagnostics and software-driven recurring revenue model." },
     { label: "human-resources-specialists", share: 1.0, conf: "broad", note: "HR business partners and recruiters supporting IDEXX's ~11,000-person global workforce; IDEXX's culture emphasizes veterinary mission alignment in recruiting." },
   ],
+
+  VRTX: [
+    { label: "medical-scientists", share: 28.0, conf: "narrow", note: "Basic and translational research scientists, clinical scientists, pharmacologists, and biologists; nearly two-thirds of Vertex's ~6,100 employees are in R&D roles per 10-K disclosure; CF biology, pain biology (sodium channel Nav1.8), and cell/gene therapy researchers are core." },
+    { label: "biochemists-and-biophysicists", share: 15.0, conf: "broad", note: "Structural biologists, protein scientists, RNA biologists, cell biologists, and molecular pharmacologists; Vertex's drug discovery platform requires deep mechanistic science across small molecules (CF), biologics, and CRISPR gene editing (CASGEVY with CRISPR Therapeutics)." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "Specialty pharmaceutical sales representatives and account managers promoting TRIKAFTA, KALYDECO, ORKAMBI, SYMDEKO, and suzetrigine/JOURNAVX to pulmonologists, CF care centers, and pain specialists; CF affects ~70,000 patients globally requiring intensive field coverage." },
+    { label: "chemists-and-materials-scientists", share: 10.0, conf: "broad", note: "Medicinal chemists, analytical chemists, and formulation scientists developing Vertex's small molecule drug candidates across CF, pain, AAT deficiency, and kidney disease programs; small molecule chemistry is Vertex's historical core competency." },
+    { label: "compliance-officers", share: 10.0, conf: "broad", note: "FDA regulatory affairs specialists and quality assurance professionals managing NDA/BLA submissions, post-market surveillance, and GMP compliance for Vertex's marketed products across 50+ countries; regulatory is critical for maintaining TRIKAFTA's global reimbursement." },
+    { label: "advertising-promotions-and-marketing-managers", share: 7.0, conf: "broad", note: "Specialty pharmaceutical brand managers, medical affairs/medical science liaisons (MSLs), and market access/payer relations professionals managing TRIKAFTA reimbursement globally and launching JOURNAVX in acute pain." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing Vertex's ~$11B annual revenue, R&D milestone payments, royalty arrangements (CRISPR Therapeutics collaboration), and SEC reporting." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership including CEO Reshma Kewalramani overseeing Vertex's R&D pipeline strategy, M&A (Alpine Immune Sciences 2024 acquisition), and global commercial operations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners and recruiters supporting Vertex's rapid growth (13% headcount increase in 2023); attracting PhD-level scientists in competitive Boston/San Diego biotech talent markets." },
+    { label: "mathematicians-and-statisticians", share: 2.0, conf: "broad", note: "Biostatisticians designing and analyzing Vertex's clinical trials; critical for CF outcome studies, pain NRS endpoints, and CASGEVY long-term safety analyses." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys protecting Vertex's CF drug patent estate (TRIKAFTA patent expiry defended aggressively) and regulatory/commercial lawyers managing global reimbursement negotiations." },
+    { label: "chemical-engineers", share: 2.0, conf: "broad", note: "Process development and manufacturing scale-up engineers converting Vertex's small molecule drug candidates and biologics into GMP-compliant commercial manufacturing processes at CDMOs." },
+    { label: "logisticians", share: 1.0, conf: "broad", note: "Specialty pharmaceutical distribution and supply chain managers ensuring global TRIKAFTA supply for CF patients across 50+ countries via specialty pharmacy networks and direct patient programs." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
