@@ -2497,6 +2497,22 @@ const RESEARCHED = {
     { label: "purchasing-managers-buyers-and-purchasing-agents", share: 1.5, conf: "broad", note: "Supply chain and procurement staff managing chemicals, gases, and materials for internal fabs, plus outsourced assembly/test at OSAT partners in Asia." },
     { label: "lawyers", share: 0.5, conf: "broad", note: "IP and regulatory attorneys managing Microchip's patent portfolio and export compliance for defense/aerospace products subject to ITAR/EAR regulations through the Microsemi business." },
   ],
+
+  ON: [
+    { label: "semiconductor-processing-technicians", share: 30.0, conf: "broad", note: "Fab operators and process technicians across onsemi's multiple 8-inch and 6-inch wafer fabs in East Fishkill NY, Gresham OR (former Intel fab), South Korea, Philippines, Czech Republic, and other locations; largest employee group in this IDM." },
+    { label: "computer-hardware-engineers", share: 15.0, conf: "broad", note: "IC design engineers developing onsemi's power MOSFETs, IGBTs, silicon carbide (SiC) MOSFETs, CMOS image sensors, and motor control ICs; onsemi's pivot to SiC and autonomous vehicle image sensing is driving heavy design investment." },
+    { label: "electrical-and-electronics-engineers", share: 12.0, conf: "broad", note: "Power electronics and analog circuit design engineers working on onsemi's automotive power management, EV charging ICs, and industrial power conversion products; power electronics expertise is central to onsemi's intelligent power strategy." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 8.0, conf: "broad", note: "Equipment maintenance technicians servicing lithography, etch, diffusion, and ion implant tools in onsemi's semiconductor fabs; high headcount needed to maintain uptime across multiple manufacturing locations globally." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "Key account managers and field application engineers selling onsemi's products to Tier-1 automotive OEMs, electric vehicle manufacturers, and industrial automation customers; automotive is onsemi's largest end market." },
+    { label: "industrial-engineers", share: 6.0, conf: "broad", note: "Semiconductor process engineers driving yield improvement, process integration, and new node development across onsemi's fab network; SiC crystal growth and wafer processing require specialized process engineering." },
+    { label: "quality-control-inspectors", share: 5.0, conf: "broad", note: "Quality engineers and reliability technicians ensuring AEC-Q101 automotive qualification and ISO/TS 16949 compliance for onsemi's automotive-grade power semiconductors and image sensors." },
+    { label: "software-developers", share: 5.0, conf: "broad", note: "Software engineers developing reference firmware for motor control algorithms, EV battery management systems, and image signal processing pipelines; embedded software ecosystems support onsemi's chip design wins." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "broad", note: "Finance and accounting professionals managing onsemi's complex global operations, multi-currency consolidation, and SEC reporting as a $7B+ revenue semiconductor company restructuring around intelligent power and sensing." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "Engineering managers, IT directors, and product managers coordinating onsemi's multi-division operations across automotive, industrial, and cloud power end markets." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "C-suite and senior leadership under CEO Hassane El-Khoury overseeing onsemi's strategic transformation from a broad-line semiconductor supplier to a focused power and sensing solutions company." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR professionals managing onsemi's global workforce of ~26,000 employees across manufacturing facilities, R&D centers, and sales offices in 35+ countries." },
+    { label: "advertising-promotions-and-marketing-managers", share: 1.0, conf: "broad", note: "B2B technical marketing professionals managing onsemi's automotive and industrial customer engagements, trade show presence, and thought leadership in power semiconductors and intelligent sensing." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
