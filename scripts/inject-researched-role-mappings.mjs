@@ -1997,6 +1997,22 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  INTU: [
+    { label: "software-developers", share: 32.0, conf: "narrow", note: "Engineering is Intuit's largest function with ~4,919 employees (~32% of 18,800 total) per Unify; product engineers for TurboTax, QuickBooks, Credit Karma, Mailchimp, and AI-powered tax/accounting features." },
+    { label: "customer-service-representatives", share: 10.0, conf: "broad", note: "Sales & Support ~2,006 employees per Unify plus TurboTax customer service; Intuit also employs ~10,800 seasonal TurboTax Live experts (CPAs, enrolled agents) Jan-April for tax season." },
+    { label: "accountants-and-auditors", share: 10.0, conf: "broad", note: "CPAs and tax specialists in Intuit's TurboTax Live expert network (full-time portion); plus Finance & Administration accounting team; 17% of workforce in Finance per Unify data." },
+    { label: "advertising-promotions-and-marketing-managers", share: 10.0, conf: "broad", note: "Marketing & Product ~2,198 employees (~14% of total) per Unify; brand and performance marketing for TurboTax, QuickBooks, Credit Karma, and Mailchimp; seasonal heavy ad spend." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product managers, and technical directors managing Intuit's multi-product platform development and AI transformation strategy." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 7.0, conf: "broad", note: "B2B sales team for QuickBooks enterprise/advanced, Intuit Enterprise Suite, and partner/accountant channel (accountants who recommend QuickBooks to clients)." },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "Data scientists and ML engineers powering Intuit AI (generative AI for financial guidance), Credit Karma credit scoring, personalized tax recommendations, and fraud detection systems." },
+    { label: "financial-analysts", share: 5.0, conf: "broad", note: "FP&A, investor relations, and treasury analysts; Finance & Administration is 17% of Intuit's workforce encompassing internal financial planning and management." },
+    { label: "human-resources-specialists", share: 3.0, conf: "broad", note: "HR business partners, technical recruiters, and L&D specialists; HR ~715 employees per Unify data; Intuit focuses on culture and employee experience as key retention tools." },
+    { label: "compliance-officers", share: 3.0, conf: "broad", note: "Tax regulatory compliance officers, fintech regulatory specialists, and data privacy professionals; Risk/Safety/Compliance ~180 per Unify; critical for IRS-regulated tax software." },
+    { label: "network-and-computer-systems-administrators", share: 3.0, conf: "broad", note: "Corporate IT infrastructure and cloud platform administrators; IT ~925 employees per Unify; Intuit operates cloud-first multi-product platform infrastructure." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Legal team covering financial services regulations, tax software liability, privacy (CCPA/GDPR), IP, and commercial contracts across Intuit's diverse software portfolio." },
+    { label: "top-executives", share: 2.0, conf: "broad", note: "CEO Sasan Goodarzi and executive leadership across Consumer, Small Business/Self-Employed, Credit Karma, and ProTax segments at Mountain View CA headquarters." },
+  ],
+
   TXN: [
     { label: "semiconductor-processing-technicians", share: 31.0, conf: "broad", note: "Wafer fab operators at TI's Texas fabs (DMOS6, RFAB, SM1, new Sherman TX 300mm) and Maine fabs; TI's IDM strategy means ~40% of 34,000 employees are in manufacturing; 90% of employees in R&D, sales, or manufacturing per 2024 10-K." },
     { label: "electrical-and-electronics-engineers", share: 20.0, conf: "narrow", note: "Analog/mixed-signal circuit designers (op-amps, voltage regulators, ADC/DAC, motor drivers, power ICs); TI's core strength and competitive advantage in the $74B analog semiconductor market." },
