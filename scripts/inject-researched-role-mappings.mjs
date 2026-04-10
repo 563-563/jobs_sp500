@@ -1996,6 +1996,29 @@ const RESEARCHED = {
     { label: "operations-research-analysts", share: 2.5, conf: "broad", note: "Content ops, ad ops, platform ops analysts. Content policy specialists, platform integrity at scale." },
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
+
+  AAPL: [
+    { label: "retail-sales-workers", share: 28.0, conf: "broad", note: "Apple Specialists and retail floor staff across ~530 Apple Stores globally; ~73,700 of ~166,000 employees are in retail locations per electroiq/seo.ai estimates." },
+    { label: "software-developers", share: 23.0, conf: "broad", note: "iOS, macOS, watchOS, services, and cloud software engineers; engineering is ~41% of corporate workforce per Unify/electroiq data, corporate ~55% of total headcount." },
+    { label: "computer-support-specialists", share: 9.0, conf: "broad", note: "Genius Bar technicians and in-store AppleCare support staff; a core function in every Apple retail location." },
+    { label: "sales-managers", share: 5.0, conf: "broad", note: "Apple Store managers, team leads, and market directors overseeing ~530 retail locations worldwide." },
+    { label: "computer-hardware-engineers", share: 5.0, conf: "broad", note: "Apple Silicon (A-series, M-series) chip designers and hardware engineers; Apple employs thousands in silicon and hardware design per 2025 10-K investment comments." },
+    { label: "computer-and-information-systems-managers", share: 4.5, conf: "broad", note: "Engineering managers, product managers, and technical program managers across hardware, software, and services organizations." },
+    { label: "customer-service-representatives", share: 4.0, conf: "broad", note: "Online AppleCare advisors and concierge staff; Apple Support employs large remote workforce for consumer and business support." },
+    { label: "top-executives", share: 3.5, conf: "broad", note: "VPs, Senior VPs, and directors across hardware, software, services, retail, finance, and corporate functions per Apple org structure." },
+    { label: "electrical-and-electronics-engineers", share: 3.0, conf: "broad", note: "Circuit, antenna, power, and display engineers for iPhone, iPad, Mac, Apple Watch, and AirPods hardware platforms." },
+    { label: "advertising-promotions-and-marketing-managers", share: 2.5, conf: "broad", note: "Product marketing, brand, and campaign managers across consumer and B2B segments; Apple's marketing is a core competitive differentiator." },
+    { label: "logisticians", share: 2.5, conf: "broad", note: "Supply chain and operations professionals managing Apple's global component sourcing and distribution network across 200+ countries." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "broad", note: "Finance, accounting, tax, treasury, and audit functions supporting Apple's $391B revenue operations and SEC reporting." },
+    { label: "human-resources-specialists", share: 1.5, conf: "broad", note: "HR business partners, recruiters, and L&D specialists managing talent across 166,000 employees globally." },
+    { label: "network-and-computer-systems-administrators", share: 1.5, conf: "broad", note: "Corporate IT infrastructure team managing internal networks, systems, and cloud environments for Apple's global operations." },
+    { label: "mathematicians-and-statisticians", share: 1.5, conf: "broad", note: "ML/AI researchers and data scientists working on Siri, on-device ML, and AI features; Apple's stated AI/ML hiring priority per 2025 10-K." },
+    { label: "graphic-designers", share: 1.0, conf: "broad", note: "Industrial and visual designers in Apple's famous design organization led from Jony Ive era; UI/UX design across all platforms." },
+    { label: "financial-analysts", share: 1.0, conf: "broad", note: "FP&A, corporate development, M&A, and investor relations analysts supporting Apple's treasury and capital allocation." },
+    { label: "industrial-engineers", share: 0.5, conf: "broad", note: "Manufacturing and process engineers supporting Apple's contract manufacturing quality and process oversight with Foxconn and other partners." },
+    { label: "lawyers", share: 0.5, conf: "broad", note: "IP, regulatory, antitrust, and commercial lawyers; Apple actively litigates IP cases and navigates global antitrust scrutiny." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 0.5, conf: "broad", note: "Procurement and commodity management professionals managing Apple's complex multi-tier global supply chain." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
