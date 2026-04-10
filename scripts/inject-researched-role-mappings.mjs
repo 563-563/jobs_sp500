@@ -2625,6 +2625,22 @@ const RESEARCHED = {
     { label: "chemical-engineers", share: 2.0, conf: "broad", note: "Process development and manufacturing scale-up engineers converting Vertex's small molecule drug candidates and biologics into GMP-compliant commercial manufacturing processes at CDMOs." },
     { label: "logisticians", share: 1.0, conf: "broad", note: "Specialty pharmaceutical distribution and supply chain managers ensuring global TRIKAFTA supply for CF patients across 50+ countries via specialty pharmacy networks and direct patient programs." },
   ],
+
+  BIIB: [
+    { label: "medical-scientists", share: 20.0, conf: "broad", note: "Neuroscience research scientists, clinical scientists, translational medicine researchers, and therapeutic area experts in multiple sclerosis, Alzheimer's disease, SMA, ALS, and Friedreich's ataxia; R&D is central to Biogen's strategy for pipeline renewal." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "Specialty neurology sales representatives and account managers promoting Biogen's MS portfolio (AVONEX, Tysabri, Vumerity) plus Leqembi (Alzheimer's) joint with Eisai; Biogen's commercial focus is on specialist neurologists and academic medical centers." },
+    { label: "biochemists-and-biophysicists", share: 12.0, conf: "broad", note: "Molecular biologists, protein scientists, and bioinformatics specialists developing Biogen's biologic pipeline including antibodies, antisense oligonucleotides, and gene therapy approaches for neurological diseases." },
+    { label: "compliance-officers", share: 10.0, conf: "broad", note: "FDA/EMA regulatory affairs specialists and quality assurance professionals managing complex biologic BLA submissions, post-market commitments, and GMP compliance for Biogen's marketed biologics in 70+ countries." },
+    { label: "quality-control-inspectors", share: 8.0, conf: "broad", note: "GMP quality engineers, analytical QC scientists, and batch release specialists in Biogen's biologics manufacturing facilities in Research Triangle Park NC and Solothurn Switzerland; biologics QC is highly rigorous." },
+    { label: "chemical-engineers", share: 8.0, conf: "broad", note: "Bioprocess engineers and upstream/downstream processing engineers managing Biogen's mammalian cell culture manufacturing for interferon-beta, natalizumab, and biosimilar products at multi-thousand-liter bioreactor scale." },
+    { label: "advertising-promotions-and-marketing-managers", share: 7.0, conf: "broad", note: "Specialty pharma brand managers, medical science liaisons (MSLs), and market access specialists managing Biogen's neurology brand portfolios and navigating complex payer/reimbursement environments for high-cost specialty biologics." },
+    { label: "mathematicians-and-statisticians", share: 5.0, conf: "broad", note: "Biostatisticians designing Biogen's complex CNS clinical trials and analyzing outcomes for MS relapse rates, Alzheimer's cognitive endpoints (CDR-SB), and SMA motor function assessments." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance professionals managing Biogen's ~$9B annual revenue, Leqembi co-promotion accounting with Eisai, and SEC reporting for a major commercial-stage biopharma company." },
+    { label: "top-executives", share: 4.0, conf: "broad", note: "C-suite and senior leadership including CEO Christopher Viehbacher steering Biogen through portfolio transformation amid declining MS revenue and the Leqembi Alzheimer's ramp." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "IT directors and data science managers supporting Biogen's research informatics, clinical data management platforms, manufacturing information systems, and digital health initiatives." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR professionals supporting Biogen's ~7,600 global workforce; HR is managing significant organizational change as Biogen restructures around its neuroscience pipeline and rightsizes after biosimilars/MS portfolio challenges." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "IP attorneys protecting Biogen's biologic patent estate (Tysabri, Spinraza, Leqembi) and regulatory/commercial lawyers managing the Eisai co-promotion agreement for Leqembi." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
