@@ -2427,6 +2427,22 @@ const RESEARCHED = {
     { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A and IR analysts; Snowflake's consumption-based model with complex RPO and net revenue retention metrics requires sophisticated financial modeling and investor communications." },
     { label: "network-and-computer-systems-administrators", share: 2.0, conf: "broad", note: "Internal IT infrastructure and cloud operations staff; Snowflake's platform is cloud-native but requires internal IT for employee systems and multi-cloud administrative support." },
   ],
+
+  SQ: [
+    { label: "software-developers", share: 35.0, conf: "broad", note: "Engineering, product, and data science roles are the largest function at Block per 10-K human capital disclosures; building Square POS platform, Cash App mobile banking, Afterpay BNPL, and shared infrastructure requires massive software engineering headcount." },
+    { label: "customer-service-representatives", share: 15.0, conf: "broad", note: "Cash App has tens of millions of consumer users requiring significant customer support; Square merchant support also large; customer support/service ops identified as a major function often cited in Block's layoff disclosures." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "Square merchant sales force — account executives, territory reps, and channel partners selling Square hardware and software to SMBs and enterprises; also Afterpay merchant partnerships team." },
+    { label: "compliance-officers", share: 8.0, conf: "broad", note: "BSA/AML compliance, KYC, fraud operations, and financial regulatory compliance specialists critical for Block's money transmission licenses, banking services via Cash App, and global regulatory requirements across 30+ countries." },
+    { label: "mathematicians-and-statisticians", share: 6.0, conf: "broad", note: "Data scientists and ML engineers for fraud detection, Cash App credit underwriting, Square lending risk modeling, recommendation systems, and AI-driven developer productivity tools central to Block's AI transformation strategy." },
+    { label: "computer-and-information-systems-managers", share: 6.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers overseeing Square, Cash App, and platform engineering organizations; Block's multi-product structure requires substantial technical leadership." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance and accounting professionals managing Block's complex multi-product revenue recognition, interchange economics, and public company reporting for a fintech with both software and financial services revenue streams." },
+    { label: "advertising-promotions-and-marketing-managers", share: 4.0, conf: "broad", note: "Marketing teams for Square (SMB merchant acquisition) and Cash App (consumer brand, sports sponsorships, influencer campaigns); Block invests heavily in Cash App brand marketing to drive consumer acquisition." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite including CEO Jack Dorsey and leadership team managing Square and Cash App ecosystem strategy, product vision, and investor relations as a high-profile fintech." },
+    { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "HR business partners, recruiters, and people operations supporting ~10,000 employees globally; Block's distributed-first work model requires sophisticated HR infrastructure." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A, corporate finance, and investor relations analysts; Block's complex metrics including gross profit, EBITDA margin, and Cash App MAU/ARPU require detailed financial modeling and investor communications." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Legal counsel for financial regulatory matters, IP, consumer protection, privacy law (CCPA/GDPR), and commercial contracts across Block's fintech operations in 30+ countries." },
+    { label: "network-and-computer-systems-administrators", share: 1.0, conf: "broad", note: "Internal IT infrastructure and security operations staff; Block's distributed-first model requires robust IT systems management for a global remote-first workforce." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
