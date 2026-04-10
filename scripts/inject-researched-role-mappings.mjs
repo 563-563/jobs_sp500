@@ -1997,6 +1997,23 @@ const RESEARCHED = {
     { label: "general-office-clerks", share: 1.0, conf: "broad", note: "Admin support, facilities, office management across global offices." },
   ],
 
+  NOW: [
+    { label: "software-developers", share: 25.0, conf: "narrow", note: "Engineering ~6,460 employees (~24.6% of 26,293 total) per Unify; platform engineers building ServiceNow's ITSM, ITOM, HRSD, and AI Now generative AI features; product grew 15.99% in 2024." },
+    { label: "computer-systems-analysts", share: 15.0, conf: "broad", note: "Professional services implementation consultants and solution architects; ServiceNow has a large services organization for enterprise platform implementations, customizations, and integrations." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 14.0, conf: "narrow", note: "Enterprise account executives, renewal sales reps, and SDRs; Sales & Support ~3,740 employees (~14.2% of total) per Unify; ServiceNow's land-and-expand enterprise model requires large sales team." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Customer success managers and strategic advisors helping enterprises maximize ROI across workflow automation, ITSM, and digital transformation initiatives." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product managers, and technical program managers across ServiceNow's Now Platform, AI, and industry cloud organizations." },
+    { label: "advertising-promotions-and-marketing-managers", share: 8.0, conf: "narrow", note: "Marketing & Product ~2,420 employees (~9.2% of total) per Unify; brand marketing, demand gen, product marketing, and events (Knowledge conference) teams." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance and accounting professionals; Finance & Administration and Business Management collectively ~2,570 per Unify for ServiceNow's $10.9B revenue operations." },
+    { label: "mathematicians-and-statisticians", share: 3.0, conf: "broad", note: "AI/ML researchers and data scientists building Now Assist generative AI features, predictive AIOps, and intelligent automation capabilities across ServiceNow's platform." },
+    { label: "human-resources-specialists", share: 3.0, conf: "broad", note: "HR business partners, technical recruiters, and culture/L&D specialists; ServiceNow grew headcount 16% in 2024 requiring active recruiting." },
+    { label: "network-and-computer-systems-administrators", share: 3.0, conf: "broad", note: "IT infrastructure and cloud platform administrators supporting ServiceNow's global operations; also manages the company's own ServiceNow instances." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "CEO Bill McDermott and executive leadership across product, engineering, customer success, sales, and corporate functions." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Enterprise SaaS contract lawyers, data privacy counsel (GDPR, SOC2), IP attorneys, and regulatory specialists for ServiceNow's global enterprise customer base." },
+    { label: "financial-analysts", share: 2.0, conf: "broad", note: "FP&A and investor relations analysts; ServiceNow is a high-profile $200B+ market cap company with active capital markets engagement." },
+    { label: "public-relations-specialists", share: 1.0, conf: "broad", note: "Communications and PR team managing ServiceNow's thought leadership positioning, analyst relations, and enterprise brand communications." },
+  ],
+
   INTU: [
     { label: "software-developers", share: 32.0, conf: "narrow", note: "Engineering is Intuit's largest function with ~4,919 employees (~32% of 18,800 total) per Unify; product engineers for TurboTax, QuickBooks, Credit Karma, Mailchimp, and AI-powered tax/accounting features." },
     { label: "customer-service-representatives", share: 10.0, conf: "broad", note: "Sales & Support ~2,006 employees per Unify plus TurboTax customer service; Intuit also employs ~10,800 seasonal TurboTax Live experts (CPAs, enrolled agents) Jan-April for tax season." },
