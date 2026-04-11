@@ -3073,6 +3073,17 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance, accounting, and internal audit professionals supporting Akamai's ~$3.99B revenue global operations across 30+ countries with multi-currency reporting." },
     { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership plus HR, legal, and marketing at Akamai's Cambridge, MA headquarters; Akamai pivoted strategy toward cloud compute and security growth following CDN commoditization." },
   ],
+
+  FFIV: [
+    { label: "software-developers", share: 35.0, conf: "broad", note: "Software engineers and QA analysts building F5's application delivery and security platforms: BIG-IP (TMOS OS, LTM, ASM/Advanced WAF, APM modules), NGINX (open source and NGINX Plus), and Distributed Cloud Services (SaaS-based security and delivery). F5's ~6,557 employees (FY2024 ending September 30, 2024) are predominantly in R&D as F5 executes its transition from hardware appliances to software and SaaS." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Enterprise technical support specialists providing 24/7 support for F5's installed base of BIG-IP hardware and software; F5's services revenue (maintenance contracts, professional services) is a significant portion of total ~$2.8B annual revenue, requiring large technical support teams." },
+    { label: "computer-systems-analysts", share: 12.0, conf: "broad", note: "Professional services consultants and implementation engineers helping enterprises deploy F5's application delivery and security solutions; also includes solution architects supporting F5's Distributed Cloud migration projects for existing BIG-IP customers." },
+    { label: "sales-engineers", share: 10.0, conf: "broad", note: "Technical sales engineers (pre-sales SEs) and solutions architects supporting F5's enterprise sales cycles for complex application delivery controller and security stack decisions; critical role in F5's high-touch enterprise sales model." },
+    { label: "information-security-analysts", share: 10.0, conf: "broad", note: "Application security researchers, threat intelligence analysts, and security product specialists within F5's security portfolio (Advanced WAF, anti-bot, DDoS protection, SSL/TLS inspection, zero-trust network access). F5 Labs publishes regular threat research reports." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering directors, product management leaders, and IT operations managers overseeing F5's multi-product portfolio across systems, software, and services segments; headquartered in Seattle, WA with major development centers." },
+    { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "Finance, accounting, and internal audit professionals supporting F5's ~$2.8B revenue operations; F5 has multi-segment revenue recognition (systems, software perpetual, subscription, services) requiring complex accounting." },
+    { label: "top-executives", share: 5.0, conf: "broad", note: "C-suite and senior leadership plus HR, legal, and corporate marketing at F5's Seattle, WA headquarters; F5 has been executing a multi-year software and cloud transition strategy." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
