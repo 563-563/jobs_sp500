@@ -3052,6 +3052,16 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance, accounting, and regulatory compliance professionals supporting WEX's $2.63B revenue operations; WEX is a regulated payment processor subject to financial services compliance requirements." },
     { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership including CEO, segment presidents, plus HR, legal, and marketing at WEX's Portland, ME headquarters; WEX reported Q4 2024 GAAP operating income margin of 24.7%." },
   ],
+
+  JKHY: [
+    { label: "software-developers", share: 35.0, conf: "broad", note: "Software engineers and QA professionals building and maintaining Jack Henry's core banking platforms (Silverlake, CIF 20/20, Core Director), digital banking suite (Banno), payment processing systems (jha PayCenter), and complementary solutions for approximately 7,500 community bank and credit union clients. Jack Henry's ~7,170 associates (FY2024 ending June 30, 2024) are predominantly technology-focused as a financial technology provider." },
+    { label: "computer-systems-analysts", share: 25.0, conf: "broad", note: "Implementation consultants, systems integrators, and operations analysts who configure, deploy, and manage Jack Henry's core banking and payment systems for client financial institutions. Implementation of complex core banking systems requires large teams of technical analysts; managed services delivery is core to Jack Henry's revenue model." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Technical support specialists and client service representatives providing 24/7 technical support to community banks and credit unions using Jack Henry's banking software platforms. Banking technology requires high-availability support." },
+    { label: "securities-commodities-and-financial-services-sales-agents", share: 8.0, conf: "broad", note: "B2B sales representatives targeting community banks and credit unions for core banking conversions, digital banking, and payment processing solutions. JKHY reported GAAP revenue growth of 6.6% for FY2024." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product directors, and technology operations managers overseeing Jack Henry's portfolio across core solutions, payment solutions, and complementary solutions; headquartered in Monett, MO with major development centers." },
+    { label: "accountants-and-auditors", share: 7.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting Jack Henry's ~$2.2B revenue operations; financial technology companies serving regulated financial institutions require robust compliance and internal controls." },
+    { label: "top-executives", share: 5.0, conf: "broad", note: "C-suite and senior leadership plus HR, legal, and marketing at Jack Henry's Monett, MO headquarters; Human Capital & Compensation Committee cited in FY2024 governance filings." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
