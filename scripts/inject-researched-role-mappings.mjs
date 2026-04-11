@@ -3148,6 +3148,16 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting Atlassian's $4.4B FY2024 revenue global operations; Atlassian is incorporated in the UK with operational headquarters in Sydney and major US offices, requiring complex international tax and multi-entity accounting." },
     { label: "top-executives", share: 6.0, conf: "broad", note: "C-suite including co-founders CEO Mike Cannon-Brookes and President Jay Simons (departed), plus HR, legal, and marketing at Atlassian's Sydney, Australia headquarters; Atlassian generated $1.4B+ in free cash flow in FY2024." },
   ],
+
+  MDB: [
+    { label: "software-developers", share: 32.0, conf: "broad", note: "Software engineers building MongoDB's core database technology and Atlas cloud platform: query engine, aggregation framework, sharding, replication, Atlas Vector Search (for AI/RAG applications), Atlas Stream Processing, Atlas Data Federation, Charts, and language drivers. MongoDB's ~5,037 employees (FY2024 ending January 31, 2024) include substantial R&D investment of ~$480M on ~$1.73B revenue (~28% R&D intensity)." },
+    { label: "customer-service-representatives", share: 15.0, conf: "broad", note: "Customer success managers, technical account managers, and technical support engineers supporting MongoDB's Atlas cloud customers and Enterprise Advanced self-managed customers. MongoDB Atlas's consumption-based model requires proactive customer success to drive data storage expansion and usage growth." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "broad", note: "Enterprise account executives, sales development representatives, and channel partner managers. MongoDB's S&M expense of ~$740M on $1.73B FY2024 revenue (~43% S&M intensity) reflects aggressive enterprise market expansion for both Atlas and Enterprise Advanced database licenses." },
+    { label: "sales-engineers", share: 12.0, conf: "broad", note: "Field engineers, solutions architects, and developer advocates who help enterprises architect MongoDB solutions and migrate from relational databases. MongoDB's data modeling flexibility and schema design requirements make pre-sales technical expertise essential; developer advocacy is a key MongoDB growth driver." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering directors, product managers, and technology operations leaders overseeing MongoDB's Atlas, Enterprise, and Community product lines at its New York City headquarters and global engineering offices." },
+    { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting MongoDB's $1.73B global revenue operations; G&A expenses of ~$180M in FY2024 include public company reporting, legal, and international operations compliance." },
+    { label: "top-executives", share: 7.0, conf: "broad", note: "C-suite including CEO Dev Ittycheria, plus HR, legal, and corporate marketing at MongoDB's New York City headquarters; MongoDB is a pioneer in NoSQL document databases with operations in 100+ countries." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
