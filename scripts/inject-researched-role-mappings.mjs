@@ -3018,6 +3018,17 @@ const RESEARCHED = {
     { label: "advertising-promotions-and-marketing-managers", share: 2.0, conf: "broad", note: "B2B life science marketing professionals managing Agilent's technical content, conference presence (ASMS, PITTCON, Analytica), and digital marketing targeting laboratory scientists." },
     { label: "lawyers", share: 1.0, conf: "broad", note: "IP attorneys managing Agilent's patent portfolio in analytical instrumentation and chromatography; plus commercial lawyers managing Agilent's large global service and licensing agreements." },
   ],
+
+  CTAS: [
+    { label: "delivery-truck-drivers-and-driver-sales-workers", share: 30.0, conf: "broad", note: "Route Service Sales Representatives (RSSRs) are the core Cintas role: they drive trucks along ~11,700 established local delivery routes, deliver and pick up uniforms/shop towels/mats, and also upsell additional products to existing customers. With 11,700 routes across 46,500 total employees (May 31, 2024 FY2024), RSSRs represent roughly 25-30% of the workforce." },
+    { label: "hand-laborers-and-material-movers", share: 30.0, conf: "broad", note: "Industrial laundry production workers at Cintas's 467 operational facilities: garment hangers, sorters, washers/dryers operators, garment inspectors, and soil sorters processing millions of uniforms weekly. The highly labor-intensive uniform rental wash-and-repair operations are the largest non-driver category at each service center." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 10.0, conf: "broad", note: "Outside sales representatives (SSRs) prospecting and closing new uniform service accounts; Cintas operates a large field sales force separate from route service. Also includes Uniform Direct Sales and catalog sales staff." },
+    { label: "industrial-production-managers", share: 8.0, conf: "broad", note: "Service center managers, production supervisors, and operations managers overseeing laundry plant operations, route logistics, and service quality at each of Cintas's 467 operational facilities and 12 distribution centers." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Customer service coordinators and account managers handling order adjustments, billing inquiries, garment sizing, and service issue resolution for Cintas's more than one million business customers across North America." },
+    { label: "general-maintenance-and-repair-workers", share: 7.0, conf: "broad", note: "Maintenance technicians servicing industrial washing machines, flatwork ironers, tunnel finishers, and dryers in Cintas's laundry plants; also First Aid & Safety service technicians who periodically restock and inspect first aid cabinets and AEDs at customer locations." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance, accounting, payroll, and billing professionals supporting Cintas's $9.6B+ revenue operations; includes corporate accounting in Cincinnati HQ and shared services supporting 467 facilities." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "Corporate leadership including CEO, division presidents, regional VPs, plus HR, IT, legal, and marketing professionals at Cintas's Cincinnati, OH headquarters and regional offices." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
