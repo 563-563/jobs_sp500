@@ -3029,6 +3029,18 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Finance, accounting, payroll, and billing professionals supporting Cintas's $9.6B+ revenue operations; includes corporate accounting in Cincinnati HQ and shared services supporting 467 facilities." },
     { label: "top-executives", share: 3.0, conf: "broad", note: "Corporate leadership including CEO, division presidents, regional VPs, plus HR, IT, legal, and marketing professionals at Cintas's Cincinnati, OH headquarters and regional offices." },
   ],
+
+  BR: [
+    { label: "software-developers", share: 32.0, conf: "broad", note: "Broadridge's largest role category: software engineers and QA analysts building and maintaining trading platforms (BTCS), wealth management systems, proxy processing platforms, OmniCommunication, and regulatory reporting tools across the GTO and ICS segments. As a $6B fintech, roughly a third of Broadridge's ~14,600 associates (FY2024 ending June 30, 2024) are technology builders." },
+    { label: "computer-systems-analysts", share: 18.0, conf: "broad", note: "Business/systems analysts, implementation consultants, and operations processors who configure and run Broadridge's back-office platforms for ~1,000 financial institution clients. Broadridge's GTO segment includes significant client operations and managed services staff who run outsourced back-office functions." },
+    { label: "financial-analysts", share: 12.0, conf: "broad", note: "Capital markets analysts, regulatory compliance analysts, and financial product specialists within the GTO and ICS segments who support proxy vote processing, corporate actions, mutual fund communications, and regulatory reporting workflows for financial services clients." },
+    { label: "project-management-specialists", share: 10.0, conf: "broad", note: "Project managers and implementation specialists managing large-scale technology onboarding, migrations, and integrations for major broker-dealer and asset management clients; critical role in Broadridge's client retention model." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Technology directors, engineering managers, and VP-level product managers overseeing Broadridge's multi-segment technology portfolio; Broadridge completed a corporate restructuring in Q4 FY2024 to streamline management structure." },
+    { label: "customer-service-representatives", share: 7.0, conf: "broad", note: "Client service representatives and relationship managers supporting Broadridge's broker-dealer, asset manager, and public company clients across investor communications (annual meetings, proxy) and back-office operations." },
+    { label: "securities-commodities-and-financial-services-sales-agents", share: 6.0, conf: "broad", note: "Sales and business development professionals selling Broadridge's technology and operations solutions to financial institutions; Broadridge reported record closed sales of $342M in FY2024, a 39% increase from FY2023." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Corporate finance, accounting, and internal audit professionals supporting Broadridge's ~$6B revenue company; includes segment finance teams for GTO and ICS." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership plus HR, legal, and corporate communications at Broadridge's Lake Success, NY headquarters; headcount reduced via Q4 FY2024 restructuring." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
