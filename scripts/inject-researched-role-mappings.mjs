@@ -3180,6 +3180,17 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting Veeva's $2.36B global revenue operations across the Americas, Europe, and Asia-Pacific; Veeva converted to a Public Benefit Corporation (PBC) in February 2021." },
     { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite including founder CEO Peter Gassner, plus HR, legal, and marketing leadership at Veeva's Pleasanton, CA headquarters; Veeva is the dominant cloud software provider for the global life sciences industry." },
   ],
+
+  HUBS: [
+    { label: "software-developers", share: 25.0, conf: "broad", note: "Software engineers building HubSpot's unified customer platform: Marketing Hub, Sales Hub, Service Hub, Operations Hub, Content Hub, and Commerce Hub, plus AI-powered Smart CRM and Breeze AI features. HubSpot's 8,246 full-time employees (December 31, 2024 per FY2024 10-K) include R&D investment of ~$600M on $2.63B revenue (~23% R&D intensity)." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 20.0, conf: "broad", note: "Account executives, sales development representatives, and channel partner managers targeting mid-market B2B companies (2-2,000 employees). HubSpot's S&M expenses of ~$1.25B on $2.63B FY2024 revenue (~48% S&M intensity) reflects a very large direct sales organization serving 247,939 customers in 135+ countries." },
+    { label: "customer-service-representatives", share: 17.0, conf: "broad", note: "Customer success specialists, onboarding coaches, and technical support agents helping HubSpot's large base of mid-market customers adopt its platform. HubSpot's customer success model is central to its flywheel strategy and Net Promoter Score; the company offers tiered support tiers including dedicated Customer Success Managers for higher-tier customers." },
+    { label: "advertising-promotions-and-marketing-managers", share: 10.0, conf: "broad", note: "Inbound marketing specialists, content marketers, demand generation managers, and brand marketers at HubSpot; HubSpot's own inbound marketing (The HubSpot Blog, HubSpot Academy, INBOUND conference) is a core customer acquisition strategy and requires a significant in-house content marketing organization." },
+    { label: "sales-engineers", share: 8.0, conf: "broad", note: "Pre-sales solutions consultants and platform specialists supporting HubSpot's enterprise and mid-market sales cycles; also includes HubSpot Solutions Partners ecosystem technical resources helping certified agency and technology partners." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering directors, product managers, and technology operations leaders overseeing HubSpot's multi-hub platform at its Cambridge, MA headquarters and Dublin, Ireland technology center." },
+    { label: "accountants-and-auditors", share: 7.0, conf: "broad", note: "Finance, accounting, and G&A professionals supporting HubSpot's $2.63B global revenue; G&A expenses of ~$200M in FY2024 for a company with 247,939 customers in 135+ countries requiring international tax and compliance management." },
+    { label: "top-executives", share: 5.0, conf: "broad", note: "C-suite including CEO Yamini Rangan and co-founders Dharmesh Shah and Brian Halligan (executive chairman), plus HR, legal, and corporate development at HubSpot's Cambridge, MA headquarters." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
