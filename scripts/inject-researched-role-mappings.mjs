@@ -3041,6 +3041,17 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 4.0, conf: "broad", note: "Corporate finance, accounting, and internal audit professionals supporting Broadridge's ~$6B revenue company; includes segment finance teams for GTO and ICS." },
     { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership plus HR, legal, and corporate communications at Broadridge's Lake Success, NY headquarters; headcount reduced via Q4 FY2024 restructuring." },
   ],
+
+  WEX: [
+    { label: "software-developers", share: 30.0, conf: "broad", note: "Software engineers and QA testers building WEX's payment processing platforms across three segments: Fleet Solutions (fleet card management, telematics), Travel and Corporate Solutions (virtual payment processing), and Health and Employee Benefit Solutions (FSA/HSA/HRA administration). WEX's ~6,500 employees (FY2024) are predominantly technology-focused as the company positions itself as a global commerce platform." },
+    { label: "computer-systems-analysts", share: 20.0, conf: "broad", note: "Operations processors, implementation analysts, and systems integrators managing WEX's card transaction processing infrastructure, client onboarding, and managed services for fleet operators, travel companies, and employer benefits programs. Payment processing requires substantial operational staff." },
+    { label: "customer-service-representatives", share: 15.0, conf: "broad", note: "Fleet card support representatives, health benefits participant support staff, and travel payment service agents. WEX's three segments (fleet, travel, health) each have dedicated client service teams supporting millions of card holders and benefit participants." },
+    { label: "financial-analysts", share: 10.0, conf: "broad", note: "Risk management analysts, fraud detection analysts, and fleet data analytics professionals. WEX processes over $35B of purchase volume annually in Travel and Corporate Solutions; risk and fraud analysis is critical to payment processing operations." },
+    { label: "securities-commodities-and-financial-services-sales-agents", share: 10.0, conf: "broad", note: "B2B sales professionals selling WEX fleet card solutions to commercial fleet operators, health benefit payment solutions to employers and benefits administrators, and virtual card solutions to travel agencies and corporations." },
+    { label: "computer-and-information-systems-managers", share: 7.0, conf: "broad", note: "Engineering managers, product directors, and IT operations managers overseeing WEX's multi-segment technology stack across Fleet Solutions, Travel, and Health Benefits platforms headquartered in Portland, ME." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance, accounting, and regulatory compliance professionals supporting WEX's $2.63B revenue operations; WEX is a regulated payment processor subject to financial services compliance requirements." },
+    { label: "top-executives", share: 3.0, conf: "broad", note: "C-suite and senior leadership including CEO, segment presidents, plus HR, legal, and marketing at WEX's Portland, ME headquarters; WEX reported Q4 2024 GAAP operating income margin of 24.7%." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
