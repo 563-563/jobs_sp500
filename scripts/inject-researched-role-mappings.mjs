@@ -3095,6 +3095,17 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 6.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting Cloudflare's $1.67B revenue global operations; 49% of Cloudflare's revenue comes from international markets requiring multi-currency accounting and tax compliance." },
     { label: "top-executives", share: 4.0, conf: "broad", note: "C-suite and senior leadership including co-founders CEO Matthew Prince and CTO John Graham-Cumming, plus HR, legal, and corporate marketing at Cloudflare's San Francisco, CA headquarters." },
   ],
+
+  OKTA: [
+    { label: "software-developers", share: 30.0, conf: "broad", note: "Software engineers and QA building Okta's identity platforms: Workforce Identity Cloud (SSO, MFA, Lifecycle Management, PAM, OIG) and Customer Identity Cloud (Auth0, formerly acquired in 2021). Okta's ~5,908 employees (FY2024 ending January 31, 2024) reflect post-layoff headcount; R&D spend of ~$670M on ~$2.26B revenue represents a ~30% R&D intensity typical of identity security SaaS." },
+    { label: "customer-service-representatives", share: 18.0, conf: "broad", note: "Customer success managers, technical account managers, and technical support specialists helping Okta's enterprise and mid-market customers onboard, adopt, and optimize their identity deployments. Okta's platform is critical IAM infrastructure for customers, requiring high-touch customer success as a key retention driver." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "Account executives, sales development representatives, and channel partner managers selling Okta's identity platform directly and through a large partner ecosystem. Okta's sales and marketing expense of ~$1.04B in FY2024 (~46% of revenue) reflects the company's market expansion strategy in identity security." },
+    { label: "sales-engineers", share: 10.0, conf: "broad", note: "Pre-sales solutions engineers and identity consultants supporting Okta's enterprise sales cycles; identity deployments require deep technical expertise in enterprise directory services (Active Directory, LDAP), SSO protocols (SAML, OIDC), and MFA architecture." },
+    { label: "information-security-analysts", share: 8.0, conf: "broad", note: "Security researchers, threat intelligence analysts, and product security engineers within Okta's security platform; Okta experienced several high-profile security incidents (2022, 2023) that accelerated investment in security engineering and threat detection capabilities." },
+    { label: "computer-and-information-systems-managers", share: 8.0, conf: "broad", note: "Engineering managers, product directors, and technology operations leaders overseeing Okta's WIC and CIC product portfolios and cloud infrastructure at its San Francisco, CA headquarters." },
+    { label: "accountants-and-auditors", share: 6.0, conf: "broad", note: "Finance, accounting, and internal controls professionals supporting Okta's $2.26B global revenue operations; G&A expenses of ~$275M in FY2024 reflect the overhead of a publicly-traded enterprise SaaS company with global operations." },
+    { label: "top-executives", share: 5.0, conf: "broad", note: "C-suite including CEO Todd McKinnon and President Brett Tighe (from 2024), plus HR, legal, and marketing leadership at Okta's San Francisco, CA headquarters; Okta undertook restructuring in FY2024 reducing workforce by ~7%." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
