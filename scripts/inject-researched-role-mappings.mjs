@@ -3191,6 +3191,17 @@ const RESEARCHED = {
     { label: "accountants-and-auditors", share: 7.0, conf: "broad", note: "Finance, accounting, and G&A professionals supporting HubSpot's $2.63B global revenue; G&A expenses of ~$200M in FY2024 for a company with 247,939 customers in 135+ countries requiring international tax and compliance management." },
     { label: "top-executives", share: 5.0, conf: "broad", note: "C-suite including CEO Yamini Rangan and co-founders Dharmesh Shah and Brian Halligan (executive chairman), plus HR, legal, and corporate development at HubSpot's Cambridge, MA headquarters." },
   ],
+
+  DOCU: [
+    { label: "software-developers", share: 28.0, conf: "narrow", note: "Engineering department comprises approximately 1,890 employees (28% of 6,840 total). DocuSign's engineers build its e-signature platform, IAM (Intelligent Agreement Management) platform, CLM (Contract Lifecycle Management), and AI-powered agreement analytics. FY2024 ends January 31, 2024; DocuSign conducted multiple rounds of restructuring between Sept 2022 and Feb 2024." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "narrow", note: "Account executives and sales development representatives within DocuSign's combined Sales and Support organization of approximately 2,200 employees (33% of 6,840 total per FY2024 data). DocuSign sells to enterprise and SMB customers through direct and channel sales for its e-signature and agreement workflow products." },
+    { label: "customer-service-representatives", share: 15.0, conf: "narrow", note: "Customer support specialists and customer success managers within DocuSign's combined Sales and Support organization (~2,200 employees, 33% of total). DocuSign's subscription model serving millions of contract signers and enterprise customers requires substantial support capacity." },
+    { label: "computer-and-information-systems-managers", share: 10.0, conf: "broad", note: "Engineering managers, product directors, and technology operations leaders overseeing DocuSign's e-signature, IAM, and CLM product lines at its San Francisco, CA headquarters and engineering centers." },
+    { label: "sales-engineers", share: 8.0, conf: "broad", note: "Pre-sales solutions engineers and technical architects supporting DocuSign's enterprise agreement workflow deals; post-sales professional services consultants assisting customers with API integrations and agreement process automation implementations." },
+    { label: "advertising-promotions-and-marketing-managers", share: 7.0, conf: "broad", note: "Brand, demand generation, and content marketing professionals at DocuSign; DocuSign's broad e-signature brand recognition requires ongoing marketing investment to transition customers toward higher-value IAM and CLM products." },
+    { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "Finance, accounting, and compliance professionals supporting DocuSign's subscription-based business (~97% subscription revenue); G&A overhead for a publicly-traded company with global operations after multiple rounds of workforce restructuring." },
+    { label: "top-executives", share: 6.0, conf: "broad", note: "C-suite including CEO Allan Thygesen (joined late 2022), plus HR, legal, and strategy at DocuSign's San Francisco, CA headquarters; DocuSign has been executing a strategic transformation toward the IAM platform following the e-signature market maturation." },
+  ],
 };
 
 // Also apply GOOGL mapping to GOOG (same company, different share class)
