@@ -7263,6 +7263,74 @@ RESEARCHED.FR = [
   { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "First Industrial Realty Trust FY2024 10-K: accounting team preparing First Industrial's SEC financial statements (10-K, 10-Q), managing REIT-specific accounting requirements (straight-line rent, lease modification accounting under ASC 842, depreciation of real estate assets), coordinating with external auditors (Deloitte), internal audit and SOX compliance, and managing tenant billing and CAM (Common Area Maintenance) reconciliation processes; REIT accounting requires specialized expertise in real estate financial reporting under GAAP including treatment of development costs, acquisition accounting, and joint venture consolidation." },
 ];
 
+RESEARCHED.LUV = [
+  { label: "airline-and-commercial-pilots", share: 14.0, conf: "narrow", note: "SWAPA confirmed ~10,240 active pilots in 2024; total FTEs ~72,450 (Jan 2025 10-K). 10,240/72,450 ≈ 14.1%." },
+  { label: "flight-attendants", share: 27.0, conf: "narrow", note: "TWU Local 556 covers nearly 20,000 flight attendants; confirmed at April 2024 contract ratification. 20,000/72,450 ≈ 27.6%." },
+  { label: "hand-laborers-and-material-movers", share: 24.0, conf: "narrow", note: "TWU Local 555 ramp, operations, provisioning, and cargo agents: ~17,399 employees per Feb 2024 five-year CBA ratification release. 17,399/72,450 ≈ 24.0%." },
+  { label: "aircraft-and-avionics-equipment-mechanics-and-technicians", share: 4.0, conf: "narrow", note: "AMFA CBA covers ~2,870–3,009 mechanics and related employees (July 2023 ratification). ~2,940/72,450 ≈ 4.1%." },
+  { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "IAM District 142 covers customer service agents and reservation agents. 83% of ~72,450 union workers, minus named groups (≈50,500), implies IAM ~8,700–9,500. Estimated 12%." },
+  { label: "general-and-operations-managers", share: 7.0, conf: "reasoned_proxy", note: "2025 HQ layoffs of 1,750 = ~15% of corporate positions, implying ~11,667 corporate staff pre-layoff. Supervisors, station managers, crew schedulers, and operations leadership across 100+ airports. Estimated 7%." },
+  { label: "software-developers", share: 3.0, conf: "reasoned_proxy", note: "Technology/IT department at Dallas HQ; Southwest has undertaken significant tech modernization (reservation system overhaul, mobile app). ~2,000–2,200 tech staff estimated within ~11,600 corporate employees. ~3%." },
+  { label: "logisticians", share: 2.0, conf: "reasoned_proxy", note: "Network planning, crew scheduling optimization, fuel supply chain, provisioning logistics across 100+ airports. ~2%." },
+  { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting at Dallas HQ. ~2% standard for airline corporate overhead." },
+  { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR administration across 12 union workgroups and ~72,000 workforce requires substantial HR function. ~2%." },
+  { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at HQ and regional offices. ~2%." },
+  { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "C-suite, Board, SVP/VP-level leadership. Standard ~1% for a large U.S. airline." },
+];
+
+RESEARCHED.MOS = [
+  { label: "stationary-engineers-and-boiler-operators", share: 22.0, conf: "broad", note: "Processing plant operators dominate Mosaic's production: phosphate beneficiation/chemical plants (sulfuric acid, DAP/MAP granulation) and potash mills. Hourly workforce ~26% of 13,765 (~3,579) from 2023 10-K; broader salaried operations staff adds to this. Processing is Mosaic's most labor-intensive function. Estimated 22%." },
+  { label: "hand-laborers-and-material-movers", share: 18.0, conf: "broad", note: "Open-pit phosphate mining in Florida (dragline operators, heavy equipment) and underground potash mining in Canada (continuous miners, shaft crews). Florida phosphate confirmed ~3,000 employees; potash Canada adds several thousand more extraction workers. Estimated 18%." },
+  { label: "mining-and-geological-engineers", share: 8.0, conf: "broad", note: "Mosaic 2024 Sustainability Summary explicitly cites engineering as a critical talent focus with specific retention programs. Mining, geological, and process engineers required across phosphate matrix management, potash shaft design, and Brazil fertilizer production. Estimated 8%." },
+  { label: "industrial-production-managers", share: 7.0, conf: "reasoned_proxy", note: "Mine managers, plant managers, and shift supervisors across three segments (Phosphates, Potash, Mosaic Fertilizantes) in 6 countries. ~7%." },
+  { label: "logisticians", share: 5.0, conf: "reasoned_proxy", note: "Mosaic operates bulk-commodity export terminals and a global distribution network. Supply chain, port logistics, and product movement at scale requires substantial logistics staff. ~5%." },
+  { label: "industrial-engineers", share: 6.0, conf: "reasoned_proxy", note: "Process improvement, plant efficiency, safety systems engineering, and Six Sigma programs. Standard for integrated mining/chemical processing company. ~6%." },
+  { label: "quality-control-inspectors", share: 5.0, conf: "reasoned_proxy", note: "Fertilizer product quality assurance, environmental compliance sampling (EPA/MSHA), and mine safety inspections across regulated U.S. and Canadian operations. ~5%." },
+  { label: "electrical-and-electronics-engineers", share: 4.0, conf: "reasoned_proxy", note: "Mine electrical systems, plant automation and control systems, and potash shaft hoisting electrical engineering. ~4% consistent with mining sector." },
+  { label: "mechanical-engineers", share: 4.0, conf: "reasoned_proxy", note: "Dragline and heavy equipment maintenance engineering, potash shaft infrastructure, and plant mechanical systems. ~4%." },
+  { label: "general-and-operations-managers", share: 5.0, conf: "reasoned_proxy", note: "Segment-level and regional management beyond direct plant/mine supervisors; corporate operations leadership at Tampa HQ. ~5%." },
+  { label: "compliance-officers", share: 3.0, conf: "reasoned_proxy", note: "Environmental compliance, MSHA mine safety, export controls for fertilizer, and multi-country regulatory requirements (Canada, Brazil, US). ~3%." },
+  { label: "project-management-specialists", share: 3.0, conf: "reasoned_proxy", note: "Capital project teams for mine development, plant upgrades, and expansion in Brazil; Mosaic regularly executes large capital projects. ~3%." },
+  { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting at Tampa HQ across three reportable segments and multiple countries. ~3%." },
+  { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR across 6 countries with unionized workers in Canada (USW) and Brazil. ~3%." },
+  { label: "computer-systems-analysts", share: 2.0, conf: "reasoned_proxy", note: "IT and OT systems: ERP (SAP), plant control systems (DCS), and mine planning software. ~2%." },
+  { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "C-suite, Board, and SVP-level at Tampa HQ. ~2% for a ~14,000-person company." },
+];
+
+RESEARCHED.MSCI = [
+  { label: "software-developers", share: 28.0, conf: "broad", note: "Technology, data operations, and application development are MSCI's largest functional area per 10-K. ~69% of 6,132 employees in emerging markets (India, Hungary) are predominantly technology and data staff. Core platform engineering for indices, analytics, ESG data, and Real Assets databases. Estimated 28%." },
+  { label: "data-scientists", share: 15.0, conf: "broad", note: "MSCI 10-K: 'research and development team comprised of mathematicians, economists, statisticians, financial engineers, investment professionals.' Analytics segment (24% of revenue) and ESG & Climate require quantitative research staff. Estimated 15% in quant research/data science." },
+  { label: "financial-analysts", share: 12.0, conf: "broad", note: "Investment professionals and industry experts across Index (56% revenue), Analytics, ESG, Real Assets, and Private Capital segments. Client-facing analytical staff reviewing index methodologies and client portfolios. Estimated 12%." },
+  { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "Sales and Relationship Management is an explicit MSCI careers job category. ~7,100 clients in 100+ countries require substantial client coverage. 2024 Q4: 'best-ever recurring sales in Index.' Estimated 12% in sales/client coverage." },
+  { label: "computer-systems-analysts", share: 7.0, conf: "reasoned_proxy", note: "Technical product management and systems analysts bridging client requirements and data/technology platforms. ~7%." },
+  { label: "market-research-analysts", share: 6.0, conf: "reasoned_proxy", note: "ESG research, index methodology research, Real Assets research, and Private Capital research. ESG & Climate and Real Assets are growing segments with dedicated research staff. ~6%." },
+  { label: "computer-and-information-systems-managers", share: 5.0, conf: "reasoned_proxy", note: "Technology leadership, data operations management, platform and infrastructure managers. ~5%." },
+  { label: "general-and-operations-managers", share: 3.0, conf: "reasoned_proxy", note: "Segment and regional operations managers across 5 operating segments and 30+ countries. ~3%." },
+  { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance, accounting, and audit at New York HQ. ~3%." },
+  { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "Global HR and talent management; Board-level oversight of human capital management cited in proxy. ~3%." },
+  { label: "compliance-officers", share: 2.0, conf: "reasoned_proxy", note: "Legal and compliance for financial data regulation (SEC, ESMA, FCA, MiFID II) across 100+ countries. ~2%." },
+  { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "C-suite, EVP/SVP-level, and Board at New York HQ. ~2%." },
+  { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative and executive support at HQ and regional offices. ~2%." },
+];
+
+RESEARCHED.MSI = [
+  { label: "electrical-and-electronics-engineers", share: 22.0, conf: "narrow", note: "MSI 2024 10-K: 40% of ~21,000 employees are in engineering (~8,400). Radio/LMR engineering (APX, ASTRO public safety radios) is primarily electrical/electronics engineering. Largest single engineering sub-discipline estimated at 22% of total workforce." },
+  { label: "software-developers", share: 18.0, conf: "narrow", note: "MSI 2024 10-K: ~9,000 employees in R&D activities. Software & Services segment is ~45% of revenue. Includes Avigilon video security, PremierOne CAD, VESTA 911, CommandCentral, and cloud platforms. Estimated 18%." },
+  { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "MSI sells to government and public safety agencies globally through a direct sales force. Products & Systems Integration segment requires dedicated account executives, public safety solutions specialists, and channel managers. Estimated 12%." },
+  { label: "computer-support-specialists", share: 8.0, conf: "broad", note: "Field service technicians, managed services staff, and technical support. MSI explicitly offers repair, maintenance, preventative maintenance, system monitoring, software updates, and cybersecurity managed services for public safety networks. ~8%." },
+  { label: "assemblers-and-fabricators", share: 8.0, conf: "broad", note: "MSI manufactures radios and devices at production facilities (Malaysia, Illinois). Assembly and manufacturing workforce within Products & Systems Integration. Estimated 8%." },
+  { label: "mechanical-engineers", share: 5.0, conf: "broad", note: "Hardware product engineering for radio devices, body cameras, and vehicle-mounted systems within the 40% engineering base. ~5%." },
+  { label: "computer-hardware-engineers", share: 4.0, conf: "broad", note: "Hardware engineering for radio chipsets, body-worn camera hardware, and integrated command center systems. Part of the 40% engineering workforce. ~4%." },
+  { label: "general-and-operations-managers", share: 5.0, conf: "reasoned_proxy", note: "Operations leadership across two business segments, global manufacturing, field service delivery, and professional services. ~5%." },
+  { label: "project-management-specialists", share: 4.0, conf: "reasoned_proxy", note: "Large-scale public safety network deployments (statewide LMR systems, 911 infrastructure) require dedicated project managers. Professional services delivery function. ~4%." },
+  { label: "information-security-analysts", share: 3.0, conf: "reasoned_proxy", note: "Cybersecurity services explicitly listed as MSI service offering in 10-K; also internal security for critical infrastructure products. ~3%." },
+  { label: "network-and-computer-systems-administrators", share: 3.0, conf: "reasoned_proxy", note: "Network operations centers, LMR infrastructure support, managed services network administration for public safety communications systems. ~3%." },
+  { label: "industrial-production-managers", share: 3.0, conf: "reasoned_proxy", note: "Manufacturing plant management at production facilities in Malaysia and the US. ~3%." },
+  { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR for global workforce of ~21,000 across 100+ countries. ~2%." },
+  { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting at Chicago HQ and regional offices. ~2%." },
+  { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "C-suite, EVP/SVP-level at Chicago HQ. ~1%." },
+];
+
 // ── INJECT INTO ADJUDICATION ──
 
 const adjPath = latest(/__role_mapping_adjudication_v2_reviewed__/);
