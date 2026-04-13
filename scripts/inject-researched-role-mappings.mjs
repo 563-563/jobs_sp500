@@ -169,6 +169,27 @@ const RESEARCHED = {
     { label: "sales-managers", share: 2.5, conf: "broad", note: "10-K: CCB 144,196 employees; LOB breakdown. Branch relationship managers and sales leadership." },
   ],
 
+  GOOG: [
+    { label: "software-developers", share: 36.0, conf: "broad", note: "Same company as GOOGL (Alphabet Class C shares). Engineering ~44% per LinkedIn analytics (~80K); ~82% software. 10-K: R&D expense ~$61B." },
+    { label: "computer-and-information-research-scientists", share: 4.0, conf: "broad", note: "Google DeepMind, Google Research. 10-K: 'centralized AI-related research.'" },
+    { label: "computer-hardware-engineers", share: 4.0, conf: "broad", note: "Pixel, Nest, TPU, data center custom silicon." },
+    { label: "management-analysts", share: 10.0, conf: "broad", note: "BizOps, strategy, partnerships. LinkedIn: Business Management ~14%." },
+    { label: "architectural-and-engineering-managers", share: 4.0, conf: "broad", note: "Engineering directors, VPs, tech leads. Manager:IC ratio ~1:8-10." },
+    { label: "project-management-specialists", share: 7.0, conf: "broad", note: "Product managers (~5%) + TPMs/program managers (~2%). LinkedIn: ~2% PMO." },
+    { label: "advertising-promotions-and-marketing-managers", share: 4.0, conf: "broad", note: "Marketing and brand. 10-K: S&M expense increased $885M." },
+    { label: "sales-managers", share: 7.0, conf: "broad", note: "Google Ads sales, GCP enterprise sales, YouTube ad sales. LinkedIn: Sales & Support ~10%." },
+    { label: "computer-support-specialists", share: 3.0, conf: "broad", note: "Google Cloud support, Workspace support, YouTube partner support." },
+    { label: "network-and-computer-systems-administrators", share: 3.0, conf: "broad", note: "Data center operations. LinkedIn: Operations ~3%." },
+    { label: "information-security-analysts", share: 3.0, conf: "broad", note: "Corporate IT and security. LinkedIn: IT ~3%." },
+    { label: "data-scientists", share: 3.0, conf: "broad", note: "Ads analytics, search quality, Cloud analytics, YouTube metrics." },
+    { label: "financial-managers", share: 3.0, conf: "broad", note: "Finance, accounting, treasury. LinkedIn: Finance & Admin ~5%." },
+    { label: "human-resources-specialists", share: 2.0, conf: "narrow", note: "Google People Operations. LinkedIn analytics: HR ~2% (~4.4K)." },
+    { label: "lawyers", share: 2.0, conf: "broad", note: "Legal, regulatory, content policy. 10-K: extensive antitrust/privacy discussion." },
+    { label: "administrative-services-managers", share: 2.0, conf: "broad", note: "Office management, workplace services, facilities." },
+    { label: "editors", share: 2.0, conf: "broad", note: "YouTube content operations, trust & safety, content moderation." },
+    { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Other Bets: Waymo, Verily, X. Small share of total." },
+  ],
+
   GOOGL: [
     { label: "software-developers", share: 36.0, conf: "broad", note: "Engineering ~44% per LinkedIn analytics (~80K); ~82% software. 10-K: R&D expense ~$61B." },
     { label: "computer-and-information-research-scientists", share: 4.0, conf: "broad", note: "Google DeepMind, Google Research. 10-K: 'centralized AI-related research.'" },
