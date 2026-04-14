@@ -7483,6 +7483,26 @@ RESEARCHED.NI = [
   { label: "administrative-services-managers", share: 5.0, conf: "broad", note: "NiSource 2024 10-K: corporate support staff at Columbus, OH HQ including HR, finance, accounting, procurement, IT, legal, and communications; shared services staff supporting nine regulated subsidiary companies; regulatory affairs staff preparing rate cases and compliance filings with state utility commissions; NiSource has a lean corporate center with shared services model following 2015 spinoff of Columbia Pipeline Group." },
 ];
 
+RESEARCHED["BF.B"] = [
+  { label: "food-and-tobacco-processing-workers", share: 28.0, conf: "broad", note: "Distillery operators, bottling line workers, barrel warehouse workers at Jack Daniel's distillery (Lynchburg TN), Woodford Reserve, and other production facilities; dominant occupational category for spirits manufacturer." },
+  { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "broad", note: "On-premise and off-premise sales force selling spirits to distributors, retailers, and on-premise accounts across global markets; ~5,900 total employees with significant commercial organization per 10-K." },
+  { label: "hand-laborers-and-material-movers", share: 7.0, conf: "broad", note: "Warehouse workers, barrel handlers, and material movers at production facilities; spirits aging and storage is labor-intensive." },
+  { label: "market-research-analysts", share: 6.0, conf: "broad", note: "Marketing, brand management, consumer insights professionals; premium spirits brand building requires significant marketing workforce." },
+  { label: "top-executives", share: 5.0, conf: "reasoned_proxy", note: "Management across global operations; regional presidents, country managers, brand directors across 170+ country distribution." },
+  { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative support across Louisville KY HQ and global offices; standard ~5% ratio for ~5,900-person beverage company." },
+  { label: "logisticians", share: 5.0, conf: "broad", note: "Supply chain and distribution logistics for global spirits distribution; managing distributor relationships and export logistics across 170+ countries." },
+  { label: "sales-managers", share: 4.0, conf: "broad", note: "Regional sales managers, district managers, key account managers overseeing sales force across on-premise and off-premise channels." },
+  { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting at Louisville HQ and regional offices; excise tax compliance, cost accounting for production operations." },
+  { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Quality assurance at distilleries and bottling facilities; regulatory compliance testing, sensory analysis, production QC per TTB requirements." },
+  { label: "industrial-production-managers", share: 3.0, conf: "broad", note: "Production supervisors and plant managers at Jack Daniel's, Woodford Reserve, and other Brown-Forman distillery and bottling operations." },
+  { label: "chemists-and-materials-scientists", share: 2.0, conf: "broad", note: "Distillery scientists, master distillers' support staff, flavor chemists developing and maintaining whiskey and spirits character." },
+  { label: "industrial-engineers", share: 2.0, conf: "broad", note: "Process engineers at production facilities; bottling line efficiency, distillery process optimization, capacity planning." },
+  { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals for global workforce; significant union relations component at Lynchburg production facilities." },
+  { label: "financial-analysts", share: 2.0, conf: "reasoned_proxy", note: "Financial planning and analysis, investor relations, treasury at Louisville HQ." },
+  { label: "public-relations-specialists", share: 2.0, conf: "broad", note: "Brand communications, media relations, corporate affairs; spirits industry requires significant PR/comms for brand building and regulatory engagement." },
+  { label: "agricultural-workers", share: 1.0, conf: "reasoned_proxy", note: "Some grain/agave agricultural operations; Brown-Forman sources grains locally and has some direct agricultural relationships." },
+];
+
 // ── INJECT INTO ADJUDICATION ──
 
 const adjPath = latest(/__role_mapping_adjudication_v2_reviewed__/);
