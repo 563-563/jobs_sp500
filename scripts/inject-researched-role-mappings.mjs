@@ -7423,6 +7423,40 @@ RESEARCHED.NDSN = [
   { label: "human-resources-specialists", share: 2.0, conf: "broad", note: "Nordson Corporation FY2024 10-K: HR professionals managing talent across 35+ countries; Nordson emphasizes talent development and succession planning as core capabilities; talent acquisition for engineering and technical roles in competitive industrial technology markets; diversity and inclusion programs highlighted in Nordson's human capital disclosures; labor relations management for manufacturing workers at US plants." },
 ];
 
+RESEARCHED.A = [
+  { label: "assemblers-and-fabricators", share: 10.0, conf: "broad", note: "Instrument manufacturing in Malaysia (Penang), Singapore, Germany (Waldbronn), and US; manufacturing operatives for LC, GC, MS, spectroscopy instruments per FY2023 10-K segment analysis." },
+  { label: "wholesale-and-manufacturing-sales-representatives", share: 9.0, conf: "narrow", note: "Direct sales force across LSAG and ACG segments; technical/scientific product sales representatives per FY2023 10-K segment headcounts (~5,400 ACG, ~6,900 LSAG include significant commercial staff)." },
+  { label: "electrical-and-electronics-engineers", share: 7.0, conf: "broad", note: "Largest single engineering discipline per Zippia data (20% of employees have electrical engineering background); R&D staff designing analytical instruments across LSAG and DGG." },
+  { label: "electrical-and-electronics-engineering-technicians", share: 6.0, conf: "broad", note: "Field service engineers (ACG CrossLab) and lab technicians; ACG segment (~5,400 employees) is predominantly field service with electronics technician skills." },
+  { label: "computer-programmers", share: 6.0, conf: "broad", note: "Software development for OpenLab, SLIMS, informatics platforms; Agilent has significant software product lines with dedicated development teams per 10-K." },
+  { label: "medical-equipment-repairers", share: 6.0, conf: "broad", note: "ACG CrossLab instrument repair and maintenance service; field service engineers repair LC, GC, MS, microarray instruments across customer labs globally." },
+  { label: "chemists-and-materials-scientists", share: 4.5, conf: "broad", note: "Analytical chemistry R&D scientists across LSAG; chemists developing methods, columns, consumables, and spectrometry applications; DGG research scientists." },
+  { label: "top-executives", share: 4.5, conf: "reasoned_proxy", note: "Management across three business segments, regional leaders, and functional VPs; ~4.5% is typical for ~18k-person technology company." },
+  { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative support across global operations in 30+ countries; standard ~4% ratio for large diversified life sciences company." },
+  { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Manufacturing QA/QC for analytical instruments; ISO-certified production requires significant quality inspection workforce at manufacturing sites." },
+  { label: "chemical-engineers", share: 3.0, conf: "broad", note: "Process engineers for chemical consumable manufacturing (columns, reagents), analytical method development; specialty chemical analysis products." },
+  { label: "chemical-technicians", share: 3.0, conf: "broad", note: "Lab technicians in consumables production; analytical chemistry technicians supporting R&D and manufacturing at Agilent's production facilities." },
+  { label: "electro-mechanical-technicians", share: 2.5, conf: "broad", note: "Electro-mechanical assembly technicians for precision instruments requiring mechanical and electronic integration (GC, LC, mass spectrometers)." },
+  { label: "biomedical-engineers", share: 2.5, conf: "broad", note: "DGG (Diagnostics and Genomics Group) engineers developing pathology instruments, microarray systems, and in-vitro diagnostic devices." },
+  { label: "accountants-and-auditors", share: 2.5, conf: "reasoned_proxy", note: "Finance and accounting across global operations; standard ratio for ~$6.8B revenue life sciences company." },
+  { label: "mechanical-engineers", share: 2.5, conf: "broad", note: "Mechanical design engineers for analytical instrument hardware; optics, fluid handling, thermal systems in chromatography and spectrometry products." },
+  { label: "biological-technicians", share: 2.0, conf: "broad", note: "DGG diagnostics and genomics lab technicians; pathology solutions and microarray manufacturing/QC technicians." },
+  { label: "medical-scientists", share: 2.0, conf: "broad", note: "DGG research scientists in diagnostics and genomics; regulatory science, clinical validation, IVD development for pathology segment." },
+  { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals supporting ~18,100 global employees across 30+ countries; standard ratio for multinational life sciences company." },
+  { label: "market-research-analysts", share: 2.0, conf: "reasoned_proxy", note: "Marketing, product management, and market intelligence functions across all three business segments." },
+  { label: "logisticians", share: 2.0, conf: "broad", note: "Supply chain, procurement, and logistics for global instrument manufacturing and consumables distribution to 160+ countries." },
+  { label: "customer-service-representatives", share: 2.0, conf: "broad", note: "Inside sales support, order management, technical support desk for non-field customer service; distinct from field ACG service engineers." },
+  { label: "calibration-technologists-and-technicians", share: 1.5, conf: "broad", note: "Calibration services within ACG CrossLab; instrument performance verification and calibration specialists per CrossLab service portfolio." },
+  { label: "computer-and-information-systems-managers", share: 1.5, conf: "reasoned_proxy", note: "IT management across global operations; informatics product managers, enterprise IT infrastructure leadership." },
+  { label: "industrial-engineers", share: 1.5, conf: "broad", note: "Manufacturing process engineers at Agilent's production facilities; lean manufacturing, production optimization across instrument and consumable factories." },
+  { label: "physicists-and-astronomers", share: 1.5, conf: "broad", note: "Physics R&D for spectroscopy, mass spectrometry, atomic force microscopy, optical systems; significant physics workforce in LSAG R&D per instrument type." },
+  { label: "financial-analysts", share: 1.0, conf: "reasoned_proxy", note: "Financial planning and analysis, investor relations, treasury functions at corporate headquarters." },
+  { label: "data-scientists", share: 1.0, conf: "broad", note: "Bioinformatics, genomics data analysis, SureSelect/microarray data pipeline development within DGG and informatics teams." },
+  { label: "sales-managers", share: 1.0, conf: "broad", note: "Regional and national sales managers overseeing field sales representatives across life sciences, pharma, food, environmental, chemical markets." },
+  { label: "network-and-computer-systems-administrators", share: 1.0, conf: "reasoned_proxy", note: "IT infrastructure administrators supporting global network, enterprise systems across 30+ country operations." },
+  { label: "information-security-analysts", share: 1.0, conf: "reasoned_proxy", note: "Cybersecurity staff protecting instrument data, customer data, and informatics platforms; increasingly important for lab software products." },
+];
+
 // ── INJECT INTO ADJUDICATION ──
 
 const adjPath = latest(/__role_mapping_adjudication_v2_reviewed__/);
