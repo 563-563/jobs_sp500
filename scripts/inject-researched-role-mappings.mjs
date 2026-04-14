@@ -7330,6 +7330,41 @@ RESEARCHED.MSI = [
   { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting at Chicago HQ and regional offices. ~2%." },
   { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "C-suite, EVP/SVP-level at Chicago HQ. ~1%." },
 ];
+
+RESEARCHED["BRK.B"] = [
+  { label: "assemblers-and-fabricators", share: 18.0, conf: "broad", note: "Shaw Industries (~20k carpet/flooring), Clayton Homes (~15k manufactured homes), Forest River (~11k RVs), Marmon Holdings assembly (~20k+); dominant manufacturing workforce per 2023 10-K segment of ~185k." },
+  { label: "metal-and-plastic-machine-workers", share: 10.0, conf: "broad", note: "Precision Castparts (~30k aerospace castings/forgings), ISCAR/IMC (~7.5k metalworking), Marmon metalworking subsidiaries; manufacturing segment per 2024 10-K." },
+  { label: "railroad-occupations", share: 9.3, conf: "narrow", note: "BNSF Railway ~37,000 employees (locomotive engineers, conductors, maintenance-of-way) per BNSF 2024 performance summary; ~9.3% of 396,500 total." },
+  { label: "heavy-and-tractor-trailer-truck-drivers", share: 6.0, conf: "broad", note: "McLane Company ~22,000 distribution drivers; Pilot Flying J trucking staff; per Berkshire 2023 10-K service/retailing segment." },
+  { label: "retail-sales-workers", share: 5.5, conf: "broad", note: "Pilot Flying J convenience stores (~10k), auto dealers BHHC (~5k), Nebraska Furniture Mart (~3k), Helzberg Diamonds (~3k), various retail per 10-K service segment." },
+  { label: "customer-service-representatives", share: 4.5, conf: "broad", note: "GEICO customer service representatives (~12k), insurance back-office operations (~6k) per GEICO workforce data and insurance segment." },
+  { label: "food-preparation-workers", share: 3.5, conf: "broad", note: "Pilot Flying J food service (~10k), See's Candies production/retail (~3k); per service/retailing segment of 10-K." },
+  { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative support across all subsidiaries; standard ~4% ratio for diversified industrial/service conglomerate of ~396k employees." },
+  { label: "general-maintenance-and-repair-workers", share: 3.5, conf: "broad", note: "BNSF maintenance-of-way and equipment maintenance (~5k), plus facility maintenance across manufacturing, retail, energy subsidiaries (~9k)." },
+  { label: "insurance-sales-agents", share: 3.5, conf: "narrow", note: "GEICO direct sales agents and licensed sales representatives; GEICO had ~30,584 employees end-2023, roughly half in customer-facing sales/service roles." },
+  { label: "construction-laborers-and-helpers", share: 3.0, conf: "broad", note: "Clayton Homes site-built construction crews (~6k), Berkshire Hathaway Energy construction projects (~4k), MiTek building products (~2k)." },
+  { label: "line-installers-and-repairers", share: 2.5, conf: "broad", note: "Berkshire Hathaway Energy (PacifiCorp, MidAmerican, NV Energy) electrical field crews maintaining ~150k miles of transmission/distribution lines; ~24k BHE employees." },
+  { label: "cashiers", share: 2.5, conf: "broad", note: "Pilot Flying J fuel station/convenience cashiers across ~750 locations; See's Candies retail cashiers." },
+  { label: "airline-and-commercial-pilots", share: 2.7, conf: "narrow", note: "NetJets fractional private aviation ~11,000 employees, predominantly pilots and crew; per NetJets operational data cited in 10-K service segment." },
+  { label: "hand-laborers-and-material-movers", share: 2.5, conf: "broad", note: "McLane warehouse pickers/packers (~5k), Pilot Flying J material handlers (~3k), manufacturing warehouses across Berkshire subsidiaries." },
+  { label: "wholesale-and-manufacturing-sales-representatives", share: 2.0, conf: "broad", note: "TTI electronic components distribution (~7k sales), McLane wholesale sales force; per service and retailing segment." },
+  { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 2.0, conf: "broad", note: "Maintenance technicians across Berkshire manufacturing plants (PCC, Shaw, Lubrizol, Johns Manville, Forest River); standard ~1% ratio for heavy manufacturing." },
+  { label: "stationary-engineers-and-boiler-operators", share: 1.5, conf: "broad", note: "BHE power plant operators (PacifiCorp, MidAmerican, NV Energy, AltaLink); includes nuclear, thermal, and gas generation facilities." },
+  { label: "accountants-and-auditors", share: 1.5, conf: "reasoned_proxy", note: "Finance and accounting staff across all Berkshire subsidiaries; standard ~1.5% ratio for large conglomerate." },
+  { label: "industrial-production-managers", share: 1.5, conf: "reasoned_proxy", note: "Plant and production managers across Berkshire manufacturing segment (~185k workers); approximately 1 manager per 30 production workers." },
+  { label: "material-recording-clerks", share: 1.5, conf: "broad", note: "Inventory and shipping clerks at McLane, Pilot, manufacturing warehouses across Berkshire subsidiaries." },
+  { label: "insurance-underwriters", share: 1.5, conf: "broad", note: "GEICO underwriting staff, Gen Re underwriters, Berkshire Hathaway Reinsurance Group; insurance segment ~43k total employees." },
+  { label: "training-and-development-specialists", share: 1.3, conf: "narrow", note: "FlightSafety International ~5,000 employees primarily aviation training instructors and simulator technicians per subsidiary profile." },
+  { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "C-suite and senior executives across ~70 major subsidiaries; Berkshire HQ has only 27 employees but subsidiaries each have leadership teams." },
+  { label: "automotive-service-technicians-and-mechanics", share: 1.0, conf: "broad", note: "Berkshire Hathaway Automotive (BHHC) auto dealer service departments across ~80 dealerships." },
+  { label: "electrical-and-electronics-engineers", share: 0.8, conf: "broad", note: "BHE engineering staff for transmission/distribution infrastructure, renewable energy projects; PCC aerospace engineers." },
+  { label: "flight-attendants", share: 0.8, conf: "broad", note: "NetJets cabin crew and flight attendants; NetJets ~11k employees with significant cabin crew component." },
+  { label: "human-resources-specialists", share: 0.7, conf: "reasoned_proxy", note: "HR staff across all major Berkshire subsidiaries; standard ratio for large diversified employer." },
+  { label: "chemical-technicians", share: 0.9, conf: "broad", note: "Lubrizol specialty chemical R&D and production technicians (~8.5k employees); Benjamin Moore formulation technicians." },
+  { label: "financial-analysts", share: 0.5, conf: "reasoned_proxy", note: "Investment and financial analysis at Berkshire HQ, subsidiary CFO offices, BHE treasury; small relative to total headcount." },
+  { label: "management-analysts", share: 0.5, conf: "reasoned_proxy", note: "Operations and strategy consultants embedded in larger subsidiaries like BNSF, BHE, GEICO for process improvement." },
+];
+
 // ── INJECT INTO ADJUDICATION ──
 
 const adjPath = latest(/__role_mapping_adjudication_v2_reviewed__/);
