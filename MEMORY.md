@@ -1,15 +1,16 @@
 # SP500 Deep-Research Pipeline — Memory
 
 ## Status
-Last updated: 2026-04-08
+Last updated: 2026-04-16
 
 ## RESEARCHED list
 <!-- Tickers that have completed deep-research (JSON in data/intermediate/researched/) -->
 <!-- and have been injected into the pipeline. -->
-AAPL, AVGO, TSLA, BRK.B, CRM, NFLX, AMD, INTC, GILD, REGN
+537 total unique tickers injected. All known SP500 constituents complete.
+Final session added: SBAC, SHW, SJM, SNA, SO, SPG, SPGI, SRE, STE, STT, SWK, SYF, SYY, TDG, TEL, TFX, TMUS, TROW, TSCO, TSN, TT, TTWO, TXT, TYL, UAL, UDR, UHS, UNP, UPS, URI, VFC, VLO, VMC, VRSN, VST, VTR, VTRS, WAB, WBA, WBD, WEC, WELL, WHR, WMB, WRB, WY, XEL, XYL, YUM, ZBH
 
 ## Priority List (remaining)
-ZTS, QCOM, TXN, INTU, NOW, UBER, TRV, NSC, ADI, AMAT
+None — all SP500 tickers complete (537 total)
 
 ## Batch History
 
