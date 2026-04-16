@@ -8894,6 +8894,17 @@ RESEARCHED.UAL = [
   { label: "marketing-managers", share: 3.0, conf: "broad", note: "United Airlines 2024 10-K: marketing professionals managing MileagePlus loyalty program marketing, credit card co-brand partnership (Chase), United Polaris brand campaigns, and digital marketing; loyalty program is a significant revenue driver with ~100M MileagePlus members." },
 ];
 
+RESEARCHED.UDR = [
+  { label: "property-real-estate-and-community-association-managers", share: 35.0, conf: "broad", note: "UDR 2024 10-K: apartment community managers and leasing professionals managing ~60,000 apartment homes across 150+ communities in 20 markets; ~1,800 employees; property management is the dominant function for a multifamily REIT; includes community managers, leasing consultants, and assistant managers." },
+  { label: "building-and-grounds-cleaning-and-maintenance-occupations", share: 25.0, conf: "broad", note: "UDR 2024 10-K: maintenance technicians, housekeepers, and groundskeepers servicing apartment units and common areas; service requests, preventive maintenance, unit turnover preparation, and amenity maintenance; maintenance is the second-largest workforce function at apartment communities." },
+  { label: "accountants-and-auditors", share: 12.0, conf: "broad", note: "UDR 2024 10-K: finance professionals managing NYSE-listed REIT accounting (FFO reporting, NOI by community), lease revenue recognition under ASC 842, SEC reporting, and complex capital structure (OP units, preferred equity, joint ventures); revenue ~$1.7B." },
+  { label: "software-developers", share: 8.0, conf: "broad", note: "UDR 2024 10-K: technology professionals supporting UDR's proprietary Next Generation Operating Platform (NGOP), self-guided tour technology, online leasing systems, and resident portal; UDR has invested significantly in technology to enable decentralized property management and reduce on-site staffing costs." },
+  { label: "marketing-managers", share: 6.0, conf: "broad", note: "UDR 2024 10-K: marketing professionals managing digital advertising for apartment communities (ILS listings, Google Ads, social media), brand management, and resident experience programs; online leasing is the primary acquisition channel for apartment renters." },
+  { label: "top-executives", share: 6.0, conf: "broad", note: "UDR 2024 10-K: CEO Tom Toomey, CFO Joe Fisher, and regional VPs for Western, Southeastern, and Mid-Atlantic markets; NYSE-listed multifamily REIT with ~$14B in real estate assets; executive team managing portfolio optimization and technology-enabled property management." },
+  { label: "lawyers", share: 5.0, conf: "broad", note: "UDR 2024 10-K: legal professionals managing residential lease compliance across 20 markets with varying state/local landlord-tenant laws, fair housing compliance, REIT tax compliance, acquisitions/dispositions, and joint venture agreements." },
+  { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "UDR 2024 10-K: HR professionals managing ~1,800 employees; talent acquisition for property management roles; performance management for decentralized team; industry standard for residential REITs where property management is the primary employee base." },
+];
+
 // ── INJECT INTO ADJUDICATION ──
 
 const adjPath = latest(/__role_mapping_adjudication_v2_reviewed__/);
