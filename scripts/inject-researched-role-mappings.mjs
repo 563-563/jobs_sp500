@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  KMI: [
+    { label: "oil-and-gas-workers", share: 30.0, conf: "broad", note: "Field operations workers including pipeline controllers, measurement/metering technicians, cathodic protection workers, and field operations staff at Kinder Morgan's 82,000+ miles of natural gas pipelines; ~10,933 total employees FY2024 per 10-K." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 15.0, conf: "broad", note: "Compressor station mechanics and pipeline facility maintenance technicians keeping Kinder Morgan's hundreds of compressor stations and terminal equipment operational." },
+    { label: "stationary-engineers-and-boiler-operators", share: 12.0, conf: "broad", note: "Compressor station operators running large gas compression machinery along KMI's natural gas pipeline network; compression is the core operational function of a natural gas pipeline system." },
+    { label: "mechanical-engineers", share: 8.0, conf: "broad", note: "Pipeline integrity engineers, compression system engineers, and facilities engineers overseeing design and maintenance of KMI's pipeline and terminal infrastructure." },
+    { label: "civil-engineers", share: 5.0, conf: "broad", note: "Civil and construction engineers managing pipeline construction and right-of-way projects; KMI has multiple large pipeline expansion projects under development including Evangeline Pass." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "broad", note: "Finance and accounting staff at KMI's Houston HQ and regional offices managing $15B+ revenue operations and complex MLP/C-corp tax structures." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative support at corporate HQ and regional/district offices across the pipeline network." },
+    { label: "lawyers", share: 5.0, conf: "broad", note: "FERC regulatory attorneys, easement/right-of-way lawyers, and contract counsel managing KMI's complex regulatory environment and landowner agreements." },
+    { label: "top-executives", share: 5.0, conf: "broad", note: "Senior leadership including CEO Kim Dang, regional VPs, segment presidents managing Natural Gas Pipelines, Products Pipelines, Terminals, and CO2 segments." },
+    { label: "electrical-and-electronics-engineers", share: 4.0, conf: "broad", note: "SCADA (Supervisory Control and Data Acquisition), instrumentation, and telemetry engineers managing real-time pipeline monitoring and control systems." },
+    { label: "environmental-scientists-and-specialists", share: 3.0, conf: "broad", note: "Environmental compliance specialists managing spill prevention, air emissions permits, wetlands crossings, and EPA/state regulatory requirements for KMI's extensive pipeline network." },
+    { label: "general-office-clerks", share: 3.0, conf: "reasoned_proxy", note: "Office and administrative clerks supporting operations at KMI's district and regional offices across its pipeline network footprint." },
+  ],
   KIM: [
     { label: "real-estate-brokers-and-sales-agents", share: 25.0, conf: "broad", note: "Leasing specialists negotiating retail leases across Kimco's 560+ open-air shopping centers; largest functional group for a retail REIT focused on grocery-anchored properties; ~717 total employees FY2024 per 10-K." },
     { label: "property-real-estate-and-community-association-managers", share: 22.0, conf: "broad", note: "Property managers overseeing day-to-day operations, tenant relations, and maintenance coordination at Kimco's portfolio of ~100M sq ft of open-air shopping centers across the US." },
