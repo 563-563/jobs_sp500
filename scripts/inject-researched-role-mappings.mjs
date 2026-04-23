@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PPL: [
+    { label: "line-installers-and-repairers", share: 30.0, conf: "broad", note: "Electrical distribution and transmission line crews maintaining and building PPL Electric Utilities' Pennsylvania network, Louisville Gas and Electric/Kentucky Utilities' Kentucky network, and Rhode Island Energy's grid serving a combined ~3.6 million customers (~9,675 employees FY2024)." },
+    { label: "power-plant-operators-distributors-and-dispatchers", share: 12.0, conf: "broad", note: "Power plant operators running PPL's Kentucky regulated generation fleet (~7,500 MW of coal, gas, and hydro capacity) plus energy control center dispatchers managing grid reliability across PPL's three utility subsidiaries." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Customer service staff handling billing, outage reporting, and account management for PPL's Pennsylvania (1.5M), Kentucky (1.3M), and Rhode Island (0.8M) customers across electric and natural gas services." },
+    { label: "electricians", share: 8.0, conf: "broad", note: "Substation electricians, relay technicians, and facility maintenance electricians supporting PPL's extensive multi-state transmission and distribution infrastructure." },
+    { label: "electrical-and-electronics-engineers", share: 8.0, conf: "broad", note: "Power systems engineers, protection engineers, and grid modernization specialists designing and maintaining PPL's transmission and distribution networks and integrating renewable energy resources." },
+    { label: "plumbers-pipefitters-and-steamfitters", share: 8.0, conf: "broad", note: "Gas distribution field workers installing and maintaining natural gas mains, service lines, and meters for Louisville Gas and Electric's Kentucky natural gas customers and Rhode Island Energy's gas customers." },
+    { label: "management-analysts", share: 6.0, conf: "broad", note: "Regulatory affairs staff (critical for multi-state rate case filings), operations analysts, and strategic planning professionals at PPL's Allentown headquarters and subsidiary offices." },
+    { label: "financial-analysts", share: 5.0, conf: "reasoned_proxy", note: "Finance and regulatory accounting staff managing PPL's utility rate base calculations, capital program tracking, and multi-subsidiary financial consolidation." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative support staff across PPL's corporate headquarters and Pennsylvania, Kentucky, and Rhode Island subsidiary offices." },
+    { label: "human-resources-specialists", share: 4.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and union contract administration for PPL's large unionized utility workforce across three states." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "Corporate C-suite and subsidiary presidents overseeing PPL Electric Utilities, Louisville Gas and Electric, Kentucky Utilities, and Rhode Island Energy." },
+  ],
   PPG: [
     { label: "assemblers-and-fabricators", share: 30.0, conf: "broad", note: "Chemical production workers operating batch reactors, mixing/blending equipment, and filling lines at PPG's global paint and coatings manufacturing plants; production labor is the largest workforce segment for a specialty chemicals manufacturer (~46,000 employees FY2024)." },
     { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "Sales representatives and account managers selling PPG coatings to automotive OEMs (Performance Coatings and Industrial Coatings segments), body shops, aerospace MRO facilities, industrial customers, and international architectural markets globally." },
