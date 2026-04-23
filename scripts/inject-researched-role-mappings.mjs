@@ -75,6 +75,21 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NTRS: [
+    { label: "financial-analysts", share: 16.0, conf: "broad", note: "Portfolio managers, investment analysts, and securities analysts managing Northern Trust's $1.65T in assets under management across Wealth Management and Asset Management divisions (~23,300 employees FY2024)." },
+    { label: "accountants-and-auditors", share: 12.0, conf: "broad", note: "Fund accountants and reconciliation specialists managing securities settlement, NAV calculation, and fund accounting for Northern Trust's $15.6T in assets under custody/administration; fund accounting is a major operational function at a custody bank." },
+    { label: "software-developers", share: 14.0, conf: "broad", note: "Technology engineers developing and maintaining Northern Trust's custody systems, wealth management platforms, data delivery infrastructure, and digital banking tools across its global operations." },
+    { label: "computer-systems-analysts", share: 8.0, conf: "broad", note: "Systems architects and integration analysts designing Northern Trust's banking and custody technology platforms, data management systems, and API delivery infrastructure." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Client service representatives supporting institutional custody clients, fund managers, and wealth management clients with account inquiries, reporting, and operational requests." },
+    { label: "personal-financial-advisors", share: 10.0, conf: "broad", note: "Wealth advisors, trust officers, and private banking relationship managers in Northern Trust's Wealth Management segment serving affluent families and high-net-worth individuals." },
+    { label: "sales-managers", share: 6.0, conf: "broad", note: "Business development officers and relationship managers in the Asset Servicing segment acquiring and managing institutional custody and fund administration mandates from pension funds and sovereign wealth funds." },
+    { label: "management-analysts", share: 6.0, conf: "broad", note: "Compliance analysts, risk managers, and strategy staff supporting Northern Trust's regulatory compliance, risk frameworks, and business unit governance." },
+    { label: "secretaries-and-administrative-assistants", share: 8.0, conf: "reasoned_proxy", note: "Administrative assistants and office staff supporting Northern Trust's relationship managers, executives, and corporate offices globally." },
+    { label: "operations-research-analysts", share: 5.0, conf: "broad", note: "Quantitative analysts and operational risk researchers developing Northern Trust's investment risk models, portfolio analytics, and securities lending optimization." },
+    { label: "computer-and-information-systems-managers", share: 4.0, conf: "broad", note: "IT leadership managing Northern Trust's enterprise technology organization and global technology delivery." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for Northern Trust's ~23,300-person global workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment heads managing Northern Trust's Wealth Management and Asset Servicing businesses." },
+  ],
   NTAP: [
     { label: "sales-managers", share: 35.0, conf: "narrow", note: "Sales representatives, account managers, and technical sales engineers; NetApp's 2024 10-K states approximately 5,300 of ~11,800 total employees (~45%) are in worldwide sales and marketing functions." },
     { label: "software-developers", share: 30.0, conf: "broad", note: "Software engineers developing NetApp's ONTAP storage OS, cloud services (Cloud Volumes ONTAP, Azure NetApp Files), and AI data management platforms; R&D was $1,029M in FY2024, primarily personnel costs." },
