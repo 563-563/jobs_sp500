@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  SJM: [
+    { label: "bakers", share: 28.0, conf: "broad", note: "Bakery production workers at J.M. Smucker's Hostess Brands plants producing Twinkies, Ding Dongs, Ho Hos, Donettes, and other snack cakes; the Hostess acquisition (November 2023) significantly expanded Smucker's workforce and bakers are now a major workforce group (~9,000 employees FY2024)." },
+    { label: "food-and-tobacco-processing-workers", share: 22.0, conf: "broad", note: "Food processing production workers at Smucker's peanut butter (Jif), jams/jellies (Smucker's), coffee (Folgers), and Café Bustelo manufacturing plants across multiple US facilities." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "broad", note: "Sales representatives and customer business managers selling Smucker's portfolio of brands (Folgers, Jif, Smucker's, Hostess, Dunkin', Café Bustelo) to grocery retailers, mass merchandisers, club stores, drug stores, and foodservice customers." },
+    { label: "industrial-production-managers", share: 8.0, conf: "broad", note: "Plant managers and operations managers overseeing Smucker's food manufacturing facilities including Hostess baking plants, Jif plants in Lexington KY, Folgers roasting plants, and Smucker's jam/jelly production facilities." },
+    { label: "hand-laborers-and-material-movers", share: 7.0, conf: "broad", note: "Warehouse, shipping/receiving, and materials handling workers at Smucker's manufacturing facilities and distribution centers managing ingredient inputs and finished goods." },
+    { label: "agricultural-and-food-scientists", share: 4.0, conf: "broad", note: "Food scientists and food technologists in Smucker's R&D teams developing new flavors, formulations, and product innovations across coffee, nut butter, jams, and sweet baked goods categories." },
+    { label: "management-analysts", share: 4.0, conf: "reasoned_proxy", note: "Corporate strategy, supply chain, and integration management staff at Smucker's Orrville, Ohio headquarters, supporting integration of the large Hostess Brands acquisition." },
+    { label: "financial-analysts", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting professionals managing Smucker's financial reporting across expanded product segments following the Hostess acquisition." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing workforce integration for the combined Smucker's/Hostess organization and labor relations at unionized manufacturing facilities." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Smucker's Orrville, Ohio headquarters and regional production offices." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and brand leaders overseeing Smucker's U.S. Retail Consumer Foods, U.S. Retail Pet Foods, and other segments." },
+  ],
   SHW: [
     { label: "retail-sales-workers", share: 35.0, conf: "broad", note: "Paint and coatings sales associates at Sherwin-Williams' 5,000+ company-operated paint stores, serving professional painting contractors, homeowners, and commercial customers; store-level retail is the dominant workforce function at Sherwin-Williams (~63,890 employees FY2024, 4,428+ stores and branches)." },
     { label: "sales-managers", share: 15.0, conf: "broad", note: "Store managers and assistant managers at Sherwin-Williams paint stores, plus district managers and area managers overseeing groups of stores; Sherwin-Williams promotes heavily from within, creating a large managerial layer in its store network." },
