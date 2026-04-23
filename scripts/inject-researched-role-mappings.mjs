@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PNR: [
+    { label: "assemblers-and-fabricators", share: 35.0, conf: "broad", note: "Manufacturing workers assembling Pentair's pool equipment, water treatment systems, pumps, valves, and filtration products across global production facilities; Pentair is a physical-product manufacturer with ~9,750 employees FY2024." },
+    { label: "industrial-production-managers", share: 10.0, conf: "broad", note: "Plant and operations managers overseeing Pentair's manufacturing facilities producing pool, water treatment, and flow control equipment across multiple geographies including US, Europe, and Asia." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "Sales representatives selling Pentair's pool, water, and flow control products through distributor, dealer, OEM, and builder channels across residential, commercial, and industrial segments." },
+    { label: "mechanical-engineers", share: 8.0, conf: "broad", note: "Product design and development engineers creating next-generation pool equipment (pumps, heaters, controls), water softeners, filtration systems, and flow management products for Pentair's three segments." },
+    { label: "industrial-engineers", share: 8.0, conf: "broad", note: "Manufacturing process engineers and continuous improvement specialists optimizing Pentair's production efficiency, lean manufacturing programs, and quality systems across global plants." },
+    { label: "sales-managers", share: 4.0, conf: "broad", note: "Sales directors and regional sales managers overseeing Pentair's dealer/distributor networks and key account relationships in pool, residential water treatment, and commercial water management markets." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 3.0, conf: "broad", note: "Procurement and supply chain staff managing Pentair's materials sourcing, supplier relationships, and supply chain operations for global manufacturing." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance and accounting professionals managing Pentair's corporate financial reporting, cost accounting, and audit functions for an Ireland-domiciled global manufacturer." },
+    { label: "management-analysts", share: 5.0, conf: "reasoned_proxy", note: "Corporate strategy, business development, and operations staff supporting Pentair's transformation to a pure-play water solutions company following divestitures." },
+    { label: "human-resources-specialists", share: 4.0, conf: "reasoned_proxy", note: "HR professionals managing talent acquisition, labor relations, and workforce programs across Pentair's global manufacturing and commercial operations." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative and office support staff at Pentair's UK headquarters and US/global operational offices." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "C-suite and senior divisional leadership overseeing Pentair's Pool, Water Solutions, and Flow Control segments." },
+  ],
   PLTR: [
     { label: "software-developers", share: 45.0, conf: "broad", note: "Core platform engineers building Palantir's Gotham (government), Foundry (commercial), AIP, and Apollo products, plus Forward Deployed Engineers (FDEs) — Palantir's signature role where software engineers embed directly at government and commercial client sites to deploy and extend the platform (~3,936 employees FY2024, heavily engineering-driven culture)." },
     { label: "data-scientists", share: 10.0, conf: "broad", note: "Data engineers and quantitative analysts building and deploying analytics pipelines, AI/ML models, and ontologies within Palantir's platforms for defense, intelligence, and commercial clients." },
