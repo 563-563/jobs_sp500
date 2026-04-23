@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  OKE: [
+    { label: "oil-and-gas-workers", share: 28.0, conf: "broad", note: "Field operations workers including pipeline controllers, measurement/metering technicians, wellhead gathering operators, and field operations staff across ONEOK's ~50,000-mile natural gas gathering, processing, and transmission system (~5,177 employees FY2024, including Magellan acquisition)." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Compressor station mechanics, plant maintenance technicians, and millwrights maintaining ONEOK's large fleet of compressors at gathering, processing, and fractionation facilities." },
+    { label: "stationary-engineers-and-boiler-operators", share: 12.0, conf: "broad", note: "Gas plant operators and fractionation plant operators running ONEOK's natural gas processing plants (removing NGLs from raw gas) and NGL fractionators (separating ethane, propane, butane); ONEOK's processing and fractionation business is a core operational segment." },
+    { label: "chemical-engineers", share: 8.0, conf: "broad", note: "Process engineers at ONEOK's natural gas processing plants and NGL fractionation facilities; also Magellan's petroleum products pipeline engineers managing refined product quality." },
+    { label: "mechanical-engineers", share: 8.0, conf: "broad", note: "Pipeline and plant mechanical engineers managing integrity programs, compression system design, and facilities engineering across ONEOK's natural gas and petroleum products infrastructure." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "Electrical and instrumentation engineers managing control systems, SCADA, and electrical infrastructure at ONEOK's gathering, processing, and pipeline facilities." },
+    { label: "environmental-scientists-and-specialists", share: 4.0, conf: "broad", note: "Environmental compliance specialists managing ONEOK's air emissions, water quality, and land remediation obligations under state and federal environmental regulations." },
+    { label: "logisticians", share: 5.0, conf: "broad", note: "Pipeline schedulers, nomination processors, and supply chain specialists managing gas and liquids throughput scheduling across ONEOK's pipeline systems and the Magellan refined products network." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at ONEOK's Tulsa, Oklahoma headquarters and field operations offices." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing ONEOK's revenue accounting, commodity risk reporting, and financial controls across its midstream segments." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for ONEOK's ~5,177-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment leaders managing ONEOK's natural gas gathering, processing, and pipeline businesses." },
+  ],
   ODFL: [
     { label: "heavy-and-tractor-trailer-truck-drivers", share: 40.0, conf: "broad", note: "Linehaul tractor-trailer drivers and pick-up & delivery (P&D) drivers; ODFL's ~21,895-person non-union workforce (FY2024) is primarily drivers operating a fleet of ~9,000 linehaul tractors across its 255 service centers nationwide." },
     { label: "hand-laborers-and-material-movers", share: 28.0, conf: "broad", note: "Dock workers loading and unloading LTL freight shipments at Old Dominion's ~255 service center terminals; dock operations are the second-largest workforce category at any LTL carrier given the labor intensity of handling thousands of small shipments daily." },
