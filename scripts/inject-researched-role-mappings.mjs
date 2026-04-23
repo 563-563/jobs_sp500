@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PSA: [
+    { label: "property-real-estate-and-community-association-managers", share: 45.0, conf: "broad", note: "On-site facility managers and district managers operating Public Storage's 3,300+ self-storage properties; property managers are the core operational role at a self-storage REIT, responsible for leasing units, maintaining facilities, and managing day-to-day operations (~5,900 employees FY2024)." },
+    { label: "retail-sales-workers", share: 20.0, conf: "broad", note: "On-site sales associates and assistant property managers at Public Storage facilities, actively selling storage unit rentals to walk-in and online customers, completing move-in paperwork, and providing customer-facing service." },
+    { label: "customer-service-representatives", share: 10.0, conf: "broad", note: "Call center and customer service staff handling reservations, account management, and support for Public Storage's ~2 million active storage customers across the US." },
+    { label: "construction-managers", share: 5.0, conf: "broad", note: "Development and renovation project managers overseeing new self-storage facility construction and existing facility expansion/renovation projects in Public Storage's active development pipeline." },
+    { label: "management-analysts", share: 5.0, conf: "broad", note: "Regional and corporate operations staff, including district managers above the facility level and strategic operations/analytics roles at Public Storage's Glendale, California headquarters." },
+    { label: "real-estate-brokers-and-sales-agents", share: 4.0, conf: "broad", note: "Real estate acquisition and development professionals identifying and evaluating new self-storage facility sites and acquisition targets for Public Storage's growth program." },
+    { label: "financial-analysts", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Public Storage's REIT financial reporting, property-level NOI tracking, and complex REIT tax compliance for the world's largest self-storage company." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, training, and employee development for Public Storage's geographically dispersed facility workforce." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Public Storage's Glendale corporate headquarters." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional senior leaders overseeing Public Storage's US and European self-storage portfolios." },
+  ],
   PPL: [
     { label: "line-installers-and-repairers", share: 30.0, conf: "broad", note: "Electrical distribution and transmission line crews maintaining and building PPL Electric Utilities' Pennsylvania network, Louisville Gas and Electric/Kentucky Utilities' Kentucky network, and Rhode Island Energy's grid serving a combined ~3.6 million customers (~9,675 employees FY2024)." },
     { label: "power-plant-operators-distributors-and-dispatchers", share: 12.0, conf: "broad", note: "Power plant operators running PPL's Kentucky regulated generation fleet (~7,500 MW of coal, gas, and hydro capacity) plus energy control center dispatchers managing grid reliability across PPL's three utility subsidiaries." },
