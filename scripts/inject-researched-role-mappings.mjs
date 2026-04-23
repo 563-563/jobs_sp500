@@ -75,6 +75,26 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NCLH: [
+    { label: "janitors-and-building-cleaners", share: 22.0, conf: "broad", note: "Cabin stewards, housekeeping attendants, and public area cleaners maintaining guest staterooms and ship public spaces across NCLH's ~30-ship fleet; cabin service is the single largest shipboard labor category (~41,700 total employees FY2024)." },
+    { label: "waiters-and-waitresses", share: 16.0, conf: "broad", note: "Restaurant dining service staff, specialty restaurant servers, and buffet attendants serving meals across Norwegian, Oceania, and Regent brand ships; a large ocean cruise ship has multiple restaurants requiring hundreds of servers." },
+    { label: "cooks", share: 11.0, conf: "broad", note: "Galley cooks and kitchen staff preparing meals for thousands of passengers and crew daily across multiple restaurant venues on each ship." },
+    { label: "food-service-managers", share: 5.0, conf: "broad", note: "Restaurant managers, F&B directors, hotel directors, and executive operations managers overseeing food and beverage service across NCLH's ships." },
+    { label: "chefs-and-head-cooks", share: 5.0, conf: "broad", note: "Executive chefs, sous chefs, and culinary leads at each restaurant venue; NCLH's premium brands (Oceania, Regent) have particularly high chef-to-passenger ratios." },
+    { label: "marine-engineers-and-naval-architects", share: 5.0, conf: "broad", note: "Chief engineers, first engineers, and engine room officers maintaining propulsion, electrical, and mechanical systems aboard NCLH's cruise ships; regulated by STCW maritime certification." },
+    { label: "bartenders", share: 5.0, conf: "broad", note: "Bartenders and cocktail servers at bars, lounges, pool decks, and specialty venues across NCLH's fleet; beverages are a major revenue and labor category aboard cruise ships." },
+    { label: "customer-service-representatives", share: 5.0, conf: "broad", note: "Guest services staff at reception desks, shore excursion desks, and guest relations handling passenger inquiries, complaints, and service requests onboard and at shoreside call centers." },
+    { label: "gaming-services-occupations", share: 3.0, conf: "broad", note: "Casino dealers, pit bosses, and casino operations staff running shipboard casinos; NCL and Regent ships feature full casinos generating significant onboard revenue." },
+    { label: "recreation-workers", share: 3.0, conf: "broad", note: "Activities staff, shore excursion guides, sports court attendants, and kids' club counselors managing passenger recreation programs on NCLH's ships." },
+    { label: "entertainment-and-recreation-managers", share: 2.0, conf: "broad", note: "Cruise directors and entertainment directors managing show schedules, activities programs, and guest entertainment experiences across NCLH's fleet." },
+    { label: "dancers-and-choreographers", share: 2.0, conf: "broad", note: "Production show performers, dancers, musicians, and entertainment cast members performing Broadway-style shows and live entertainment aboard cruise ships." },
+    { label: "massage-therapists", share: 2.0, conf: "broad", note: "Spa therapists, massage therapists, and beauty service staff at Mandara Spa and onboard wellness facilities; spa is a major onboard revenue category for cruise lines." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at NCLH's Miami headquarters and brand offices supporting corporate and operational functions." },
+    { label: "sales-managers", share: 3.0, conf: "broad", note: "Sales representatives and account managers at NCLH's shoreside reservation centers and travel trade sales teams." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing NCLH's revenue accounting, ship-level cost reporting, and corporate financial operations." },
+    { label: "software-developers", share: 2.0, conf: "broad", note: "IT engineers maintaining NCLH's reservation systems, onboard point-of-sale systems, and digital guest experience platforms." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and brand presidents managing Norwegian Cruise Line, Oceania Cruises, and Regent Seven Seas Cruises brands." },
+  ],
   MSI: [
     { label: "software-developers", share: 28.0, conf: "broad", note: "Software engineers building Motorola Solutions' command center software (CAD, PremierOne), video analytics platforms (Avigilon AI), body camera apps, and cloud services; 40% of ~21,000 employees are engineers (Dec 2024 10-K) with heavy software focus across Products & SI and Software & Services segments." },
     { label: "electrical-and-electronics-engineers", share: 8.0, conf: "broad", note: "RF and hardware engineers designing land mobile radio (LMR) radios (ASTRO P25, TETRA), body cameras, and video security cameras; Motorola Solutions remains a major radio hardware manufacturer for public safety." },
