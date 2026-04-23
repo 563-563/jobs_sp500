@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PGR: [
+    { label: "claims-adjusters-appraisers-examiners-and-investigators", share: 30.0, conf: "broad", note: "Auto insurance claims adjusters, field appraisers, and claims examiners processing and settling auto accident and property damage claims; claims is the largest workforce category at Progressive, which handles tens of millions of auto insurance claims annually (~66,300 employees FY2024)." },
+    { label: "customer-service-representatives", share: 21.0, conf: "broad", note: "Phone sales and service agents providing auto insurance quotes, policy service, billing support, and customer assistance through Progressive's direct-to-consumer and agency channels." },
+    { label: "insurance-underwriters", share: 10.0, conf: "broad", note: "Auto insurance underwriters evaluating driver risk profiles and pricing auto policies across Progressive's personal and commercial auto segments." },
+    { label: "software-developers", share: 10.0, conf: "broad", note: "Software engineers building Progressive's digital customer experience, Snapshot telematics platform, pricing engine, claims processing systems, and enterprise technology infrastructure; Progressive is known as a technology-forward insurer." },
+    { label: "insurance-sales-agents", share: 8.0, conf: "broad", note: "Independent agent support staff and direct sales agents at Progressive's internet, phone, and agency-distribution channels selling auto, home, and renters insurance." },
+    { label: "data-scientists", share: 6.0, conf: "broad", note: "Actuarial data scientists and analytics specialists analyzing telematics data (Snapshot), driving behavior, and claims patterns to develop Progressive's industry-leading risk pricing models." },
+    { label: "operations-research-analysts", share: 4.0, conf: "broad", note: "Actuaries and pricing analysts building statistical models for insurance rate making, loss reserving, and catastrophe risk management across Progressive's portfolio." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Progressive's statutory and GAAP financial reporting, premium accounting, and loss reserve calculations." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at Progressive's Mayfield Village, OH headquarters and regional offices nationwide." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for Progressive's ~66,000-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior leadership managing Progressive's personal lines, commercial lines, and property insurance businesses." },
+  ],
   PFG: [
     { label: "customer-service-representatives", share: 16.0, conf: "broad", note: "Retirement plan participant service agents, insurance claims processors, and customer service representatives serving Principal's ~70M customers across retirement, insurance, and investment products (~20,000 employees FY2024)." },
     { label: "financial-analysts", share: 13.0, conf: "broad", note: "Investment analysts and portfolio managers at Principal Global Investors ($500B+ AUM) managing equity, fixed income, and real estate investment mandates for institutional and retail clients worldwide." },
