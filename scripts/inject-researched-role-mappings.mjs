@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NVR: [
+    { label: "construction-managers", share: 28.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing home building; NVR's 2024 10-K states ~5,930 of ~7,000 employees are in homebuilding operations with Ryan Homes, NVHomes, and Heartland Homes brands." },
+    { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants in NVR's model homes and sales centers across its homebuilding markets in the Mid-Atlantic, Southeast, Midwest, and Southwest US." },
+    { label: "loan-officers", share: 10.0, conf: "narrow", note: "Mortgage loan officers in NVR Mortgage (NVR's captive mortgage subsidiary); ~1,070 employees are in mortgage banking operations per FY2024 10-K." },
+    { label: "cost-estimators", share: 6.0, conf: "broad", note: "Construction estimators pricing home options, labor, and materials across NVR's standardized Ryan Homes and NVHomes product lines." },
+    { label: "project-management-specialists", share: 5.0, conf: "broad", note: "Project coordinators and development managers coordinating lot development schedules and home construction timelines across NVR's communities." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 5.0, conf: "broad", note: "Purchasing agents procuring lumber, appliances, fixtures, and building materials for NVR's homebuilding divisions; materials procurement is critical in homebuilding cost control." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Civil engineers supporting lot development, grading design, and site utility coordination; NVR's unique land-light model means it controls finished lots rather than raw land, but still requires civil engineering." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at NVR's Reston, VA headquarters and division offices supporting corporate and operational functions." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance, job cost accounting, and audit staff managing NVR's homebuilding and mortgage banking financial operations." },
+    { label: "architects", share: 3.0, conf: "broad", note: "Architects and design studio staff managing NVR's home product lines and buyer option selections across its regional markets." },
+    { label: "customer-service-representatives", share: 3.0, conf: "broad", note: "Warranty coordinators and customer care representatives handling post-closing warranty service requests for NVR homebuyers." },
+    { label: "insurance-underwriters", share: 3.0, conf: "broad", note: "Mortgage underwriters and processors in NVR Mortgage handling loan underwriting and closing services for Ryan Homes and NVHomes buyers." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for NVR's ~7,000-person workforce." },
+    { label: "property-real-estate-and-community-association-managers", share: 1.0, conf: "reasoned_proxy", note: "HOA and community management-related roles in NVR's new home communities." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and division presidents managing NVR's homebuilding and mortgage banking operations." },
+  ],
   NTRS: [
     { label: "financial-analysts", share: 16.0, conf: "broad", note: "Portfolio managers, investment analysts, and securities analysts managing Northern Trust's $1.65T in assets under management across Wealth Management and Asset Management divisions (~23,300 employees FY2024)." },
     { label: "accountants-and-auditors", share: 12.0, conf: "broad", note: "Fund accountants and reconciliation specialists managing securities settlement, NAV calculation, and fund accounting for Northern Trust's $15.6T in assets under custody/administration; fund accounting is a major operational function at a custody bank." },
