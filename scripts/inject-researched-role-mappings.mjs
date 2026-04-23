@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  ROST: [
+    { label: "retail-sales-workers", share: 45.0, conf: "broad", note: "Store associates at Ross Dress for Less and dd's DISCOUNTS off-price retail stores; Ross operates 1,800+ stores and dd's operates 350+ stores, with store-level hourly associates representing the overwhelming majority of Ross Stores' ~108,000 total employees (FY2024)." },
+    { label: "sales-managers", share: 18.0, conf: "broad", note: "Store managers, assistant store managers, and area supervisors overseeing daily operations at Ross and dd's store locations; each store has multiple levels of management staff overseeing departments, loss prevention, and store performance." },
+    { label: "hand-laborers-and-material-movers", share: 15.0, conf: "broad", note: "Merchandise processing, stockroom, and receiving associates handling the constant flow of irregular, opportunistic inventory shipments that are central to the off-price model; merchandise processing is a labor-intensive function at Ross's stores and distribution centers." },
+    { label: "delivery-truck-drivers-and-driver-sales-workers", share: 5.0, conf: "broad", note: "Distribution center and logistics workers at Ross's extensive network of distribution centers (including the Shafter, CA mega-DC) managing store replenishment across a geographically dispersed store network." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 5.0, conf: "broad", note: "Merchandise buyers and associate buyers in Ross's large buying organization sourcing opportunistic off-price deals from department stores, manufacturers, and brand owners; buying is Ross's core strategic competence and a larger function than at traditional retailers." },
+    { label: "management-analysts", share: 4.0, conf: "reasoned_proxy", note: "Corporate operations, loss prevention leadership, supply chain, and strategy staff at Ross Stores' Dublin, California headquarters." },
+    { label: "financial-analysts", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Ross Stores' financial reporting, store-level profitability analysis, and inventory cost accounting." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing high-volume recruiting, onboarding, and employee development for Ross's large retail workforce." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Ross Stores' corporate headquarters and regional offices." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and divisional leaders overseeing Ross Dress for Less and dd's DISCOUNTS brands." },
+  ],
   ROL: [
     { label: "pest-control-workers", share: 55.0, conf: "broad", note: "Pest control service technicians applying pesticides, setting traps, and conducting termite inspections at residential and commercial customer locations across Rollins' 800+ branch offices; field service technicians are the core workforce at a route-based pest control company (~20,000+ employees FY2024, serving 2.8M+ customers under Orkin, HomeTeam, Clark, and other brands)." },
     { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Customer service and scheduling representatives at Rollins' branch offices handling customer inquiries, appointment booking, renewal calls, and account management for residential and commercial pest control and termite contracts." },
