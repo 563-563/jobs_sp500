@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  REG: [
+    { label: "property-real-estate-and-community-association-managers", share: 30.0, conf: "broad", note: "Property managers and asset managers responsible for day-to-day operations, tenant relations, and performance of Regency Centers' portfolio of ~475 grocery-anchored shopping centers in high-barrier coastal and Sun Belt markets (~500 employees FY2024)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 22.0, conf: "broad", note: "Leasing agents and leasing directors negotiating new leases and renewals with grocers (Publix, Kroger, Whole Foods), specialty retailers, and restaurants that anchor Regency Centers' open-air shopping centers; leasing is the core commercial activity." },
+    { label: "construction-managers", share: 15.0, conf: "broad", note: "Development and redevelopment project managers overseeing Regency Centers' record-high development and redevelopment pipeline — the company's highest annual volume of starts in nearly 20 years as of 2024." },
+    { label: "financial-analysts", share: 12.0, conf: "broad", note: "Investment analysts, portfolio analysts, and REIT accounting professionals managing Regency Centers' asset valuation, NOI analysis, capital allocation decisions, and SEC financial reporting for a ~$13B enterprise value REIT." },
+    { label: "management-analysts", share: 7.0, conf: "broad", note: "Corporate strategy, market research, and asset management analysts supporting Regency Centers' portfolio strategy focused on infill grocery-anchored shopping centers near affluent demographics." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Accounting and auditing staff managing Regency Centers' REIT tax compliance, tenant billing, and consolidated financial statements across a large portfolio of operating properties." },
+    { label: "general-maintenance-and-repair-workers", share: 4.0, conf: "reasoned_proxy", note: "Facilities and maintenance staff managing common area upkeep and capital improvements at Regency Centers' directly managed shopping center properties." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior leadership overseeing Regency Centers' East, Central, and West regional operations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent programs for Regency Centers' lean corporate workforce across its Jacksonville, FL headquarters and regional offices." },
+    { label: "secretaries-and-administrative-assistants", share: 1.0, conf: "reasoned_proxy", note: "Administrative support at Regency Centers' Jacksonville, Florida headquarters and regional offices." },
+  ],
   RCL: [
     { label: "food-and-beverage-serving-and-related-workers", share: 28.0, conf: "broad", note: "Waitstaff, bartenders, bar attendants, and food service workers across Royal Caribbean's fleet of 68 ships — each large ship has multiple restaurants, bars, and specialty dining venues requiring hundreds of F&B service staff; food and beverage serving is the largest single occupational category at a cruise company (~106,000 employees FY2024)." },
     { label: "janitors-and-building-cleaners", share: 25.0, conf: "broad", note: "Cabin stewards, housekeeping attendants, and public area cleaners maintaining cleanliness of thousands of staterooms and vast public spaces aboard Royal Caribbean International, Celebrity Cruises, and Silversea Cruises vessels; shipboard housekeeping is the second-largest workforce category on cruise ships." },
