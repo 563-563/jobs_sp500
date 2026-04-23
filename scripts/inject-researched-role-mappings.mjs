@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PLD: [
+    { label: "property-real-estate-and-community-association-managers", share: 25.0, conf: "broad", note: "Property managers overseeing Prologis's portfolio of ~1.3 billion square feet of logistics and industrial real estate across 20 countries; property management is the core operational function of the world's largest industrial REIT (~5,000 employees FY2024)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 20.0, conf: "broad", note: "Leasing agents and market officers negotiating leases with Prologis's ~6,500 tenant customers (Amazon, FedEx, UPS, Home Depot, DHL, etc.) for warehouse and logistics space in high-barrier markets globally." },
+    { label: "financial-analysts", share: 15.0, conf: "broad", note: "Investment analysts, fund managers, and portfolio analysts managing Prologis's co-investment ventures with sovereign wealth funds, pension funds, and institutional investors; fund management is a major Prologis business line." },
+    { label: "construction-managers", share: 12.0, conf: "broad", note: "Development project managers overseeing new logistics facility construction; Prologis has one of the largest global industrial real estate development programs, including near-term building completions and land bank development." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Asset managers, market strategy analysts, and business development staff managing Prologis's market positioning, customer relationships, and strategic initiatives including Prologis Essentials services." },
+    { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "REIT accountants and auditors managing Prologis's complex REIT tax compliance, co-investment fund accounting, and SEC financial reporting across 20 countries." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Civil and site engineers supporting Prologis's global logistics real estate development program, including site feasibility, grading, and infrastructure design." },
+    { label: "software-developers", share: 3.0, conf: "broad", note: "Technology engineers building Prologis's Essentials platform providing supply chain and energy services, data analytics tools, and digital property management systems." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative staff at Prologis's San Francisco headquarters and global market offices." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing talent programs for Prologis's ~5,000-person global real estate organization." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional leaders managing Prologis's Americas, Europe, and Asia Pacific real estate portfolios." },
+  ],
   PKG: [
     { label: "stationary-engineers-and-boiler-operators", share: 20.0, conf: "broad", note: "Paper machine operators, pulp digester operators, and power boiler operators at Packaging Corporation of America's 7 containerboard mills; paper mills operate 24/7 with continuous process operators as the dominant mill occupation (~15,400 employees FY2024)." },
     { label: "assemblers-and-fabricators", share: 20.0, conf: "broad", note: "Corrugated box plant workers cutting, printing, laminating, and assembling corrugated containers at PCA's 85 converting facilities; box plant fabrication is the largest employee category across PCA's converting network." },
