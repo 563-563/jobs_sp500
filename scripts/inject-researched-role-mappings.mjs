@@ -75,6 +75,21 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NRG: [
+    { label: "customer-service-representatives", share: 26.0, conf: "broad", note: "Customer service agents handling retail electricity account support (Reliant, NRG Direct, Green Mountain) for 6M residential and commercial customers, plus Vivint smart home security customer support (~10,000 total employees FY2024; Vivint acquisition closed 2023)." },
+    { label: "general-maintenance-and-repair-workers", share: 20.0, conf: "broad", note: "Vivint field technicians installing, maintaining, and troubleshooting smart home security systems (cameras, locks, sensors, panels) at residential customer homes across the US; Vivint's field service workforce is large given ~2M smart home customers." },
+    { label: "stationary-engineers-and-boiler-operators", share: 12.0, conf: "broad", note: "Power plant operators running NRG's ~13 GW power generation fleet including natural gas combined cycle plants, coal plants, and nuclear operations; plant operations require 24/7 operator coverage." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Vivint direct-to-door salespeople and retail electricity sales staff acquiring new residential customers; Vivint's D2D sales model requires a large field sales force." },
+    { label: "software-developers", share: 5.0, conf: "broad", note: "IT engineers developing Vivint's home automation software, NRG's retail energy billing platforms, and energy management systems." },
+    { label: "electricians", share: 5.0, conf: "broad", note: "Electrical maintenance technicians and journeyman electricians maintaining electrical infrastructure at NRG's power generation facilities." },
+    { label: "electrical-and-electronics-engineers", share: 4.0, conf: "broad", note: "Electrical and power systems engineers managing NRG's power plant engineering, grid interconnection, and reliability programs." },
+    { label: "financial-analysts", share: 4.0, conf: "broad", note: "Energy commodity traders and financial analysts managing NRG's electricity and natural gas trading positions and hedging programs in Texas and other deregulated markets." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing NRG's complex revenue accounting across its retail electricity and smart home businesses." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at NRG's Houston headquarters and regional offices supporting corporate and operational functions." },
+    { label: "operations-research-analysts", share: 3.0, conf: "broad", note: "Energy market analysts and quantitative analysts supporting NRG's power dispatch optimization, demand forecasting, and commodity risk management." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for NRG's ~10,000-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment leaders managing NRG's energy and smart home businesses." },
+  ],
   NKE: [
     { label: "retail-sales-workers", share: 40.0, conf: "broad", note: "Nike store associates in Nike's ~1,060 owned retail stores (Nike Direct) worldwide, including Nike brand stores, Nike Factory Stores, and Converse stores; Nike does not manufacture products and retail is by far the largest employee category (~79,400 employees as of May 31, 2024)." },
     { label: "hand-laborers-and-material-movers", share: 15.0, conf: "broad", note: "Distribution center workers at Nike's major logistics hubs (Memphis, TN; Laakdal, Belgium; others) sorting, packing, and shipping footwear and apparel for Nike Direct e-commerce and wholesale fulfillment." },
