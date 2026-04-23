@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  RL: [
+    { label: "retail-sales-workers", share: 40.0, conf: "broad", note: "Store associates and sales staff at Ralph Lauren's owned and operated retail stores, factory outlet stores, and Club Monaco locations globally; direct-to-consumer retail is Ralph Lauren's primary channel and largest workforce segment (~23,400 employees FY2024, 312 global outlet stores)." },
+    { label: "sales-managers", share: 15.0, conf: "broad", note: "Store managers, area managers, and regional retail directors overseeing Ralph Lauren's direct retail network including full-price stores, factory stores, and Club Monaco locations in North America, Europe, and Asia Pacific." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 10.0, conf: "broad", note: "Wholesale account managers and sales representatives managing Ralph Lauren's wholesale relationships with department stores and specialty retailers — products sold through ~9,600 wholesale doors globally including Nordstrom, Macy's, and international department stores." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Supply chain, brand management, operations, and corporate strategy staff at Ralph Lauren's New York headquarters and global regional offices managing the company's multi-brand DTC transformation." },
+    { label: "fashion-designers", share: 7.0, conf: "broad", note: "Clothing and accessories designers creating collections for Ralph Lauren's portfolio of brands including Polo Ralph Lauren, Ralph Lauren Purple Label, Ralph Lauren Collection, Double RL, Lauren Ralph Lauren, and Club Monaco." },
+    { label: "financial-analysts", share: 5.0, conf: "reasoned_proxy", note: "Finance and FP&A professionals managing Ralph Lauren's multi-currency, multi-segment financial reporting for operations in North America, Europe, and Asia Pacific." },
+    { label: "hand-laborers-and-material-movers", share: 5.0, conf: "reasoned_proxy", note: "Distribution center workers fulfilling e-commerce orders, processing wholesale shipments, and managing inventory at Ralph Lauren's distribution facilities." },
+    { label: "graphic-designers", share: 3.0, conf: "reasoned_proxy", note: "Marketing, visual merchandising, and digital design staff supporting Ralph Lauren's brand image across physical stores, digital platforms, and advertising campaigns." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing talent programs for Ralph Lauren's global retail and corporate workforce spanning dozens of countries." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Corporate C-suite and brand leaders including Executive Chairman Ralph Lauren and the senior management team overseeing North America, Europe, and Asia Pacific regions." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support staff at Ralph Lauren's New York and Greensboro corporate offices and global regional headquarters." },
+  ],
   RJF: [
     { label: "personal-financial-advisors", share: 46.0, conf: "narrow", note: "Raymond James reported ~8,800 employee financial advisors (FA) as of FY2024 year-end — 46% of ~19,000 total employees; FAs in the Private Client Group manage $1.57 trillion in client assets, making wealth management the dominant workforce function at Raymond James Financial." },
     { label: "financial-analysts", share: 15.0, conf: "broad", note: "Capital markets research analysts, equity analysts, fixed income analysts, investment banking analysts, and credit analysts in Raymond James' Capital Markets and Asset Management segments." },
