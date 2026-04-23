@@ -75,6 +75,21 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PFG: [
+    { label: "customer-service-representatives", share: 16.0, conf: "broad", note: "Retirement plan participant service agents, insurance claims processors, and customer service representatives serving Principal's ~70M customers across retirement, insurance, and investment products (~20,000 employees FY2024)." },
+    { label: "financial-analysts", share: 13.0, conf: "broad", note: "Investment analysts and portfolio managers at Principal Global Investors ($500B+ AUM) managing equity, fixed income, and real estate investment mandates for institutional and retail clients worldwide." },
+    { label: "insurance-underwriters", share: 12.0, conf: "broad", note: "Life insurance, disability income, and dental/vision insurance underwriters in Principal's US Insurance Solutions segment evaluating risk and pricing insurance products for employer groups and individuals." },
+    { label: "software-developers", share: 10.0, conf: "broad", note: "Technology engineers building Principal's retirement plan administration platforms, insurance policy systems, and digital customer experience tools." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Financial advisors and benefits consultants selling retirement plans, group insurance, and investment management services to employers and plan sponsors." },
+    { label: "accountants-and-auditors", share: 8.0, conf: "broad", note: "Actuaries, accountants, and financial controllers managing insurance reserves, retirement plan accounting, and statutory financial reporting across Principal's regulated insurance entities." },
+    { label: "personal-financial-advisors", share: 8.0, conf: "broad", note: "Retail financial advisors and wealth management specialists providing financial planning, investment, and retirement planning services to individual clients." },
+    { label: "management-analysts", share: 6.0, conf: "broad", note: "Product managers, business analysts, and strategy staff managing Principal's retirement and insurance product portfolios and go-to-market strategy." },
+    { label: "operations-research-analysts", share: 5.0, conf: "broad", note: "Actuaries and quantitative analysts developing insurance pricing models, asset-liability management frameworks, and retirement liability projections." },
+    { label: "computer-systems-analysts", share: 4.0, conf: "broad", note: "IT systems analysts and architects designing Principal's retirement administration and insurance policy systems." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at Principal's Des Moines, IA headquarters and global offices." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for Principal's ~20,000-person global organization." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment presidents managing Principal's Retirement, Insurance, and Asset Management segments." },
+  ],
   PEG: [
     { label: "line-installers-and-repairers", share: 18.0, conf: "broad", note: "Electric lineworkers maintaining and repairing PSE&G's electric transmission and distribution system serving ~2.4M electric customers across New Jersey (~13,000 employees FY2024; ~60% unionized per PSEG 2024 Annual Report)." },
     { label: "plumbers-pipefitters-and-steamfitters", share: 14.0, conf: "broad", note: "Gas service workers installing, inspecting, and maintaining PSE&G's natural gas distribution system serving ~1.9M gas customers across New Jersey." },
