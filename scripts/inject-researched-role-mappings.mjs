@@ -75,6 +75,25 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  LH: [
+    { label: "clinical-laboratory-technologists-and-technicians", share: 28.0, conf: "broad", note: "Medical laboratory scientists (MLS) and medical lab technicians (MLT) performing tests at Labcorp's central and regional labs; the largest occupational group at a diagnostic lab company (~70,000 employees FY2024, Dx segment 78% of revenue)." },
+    { label: "phlebotomists", share: 15.0, conf: "broad", note: "Phlebotomists and patient service center (PSC) staff performing blood draws at Labcorp's 2,000+ patient service centers nationwide." },
+    { label: "biological-technicians", share: 8.0, conf: "broad", note: "Specimen processors, accessioning technicians, and laboratory assistants handling, sorting, and preparing specimens for testing at central labs and reference facilities." },
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 6.0, conf: "broad", note: "Specimen couriers and medical logistics drivers transporting time-sensitive specimens from PSCs and hospitals to Labcorp's regional and central processing labs." },
+    { label: "medical-and-health-services-managers", share: 6.0, conf: "broad", note: "PSC supervisors, laboratory directors, and department managers overseeing Labcorp's patient service centers, lab operations, and clinical programs." },
+    { label: "customer-service-representatives", share: 6.0, conf: "broad", note: "Client services and patient services representatives handling test orders, result inquiries, and physician liaison calls; critical interface between Labcorp and its 300,000+ physician clients." },
+    { label: "medical-scientists", share: 5.0, conf: "broad", note: "PhD scientists developing and validating esoteric and specialty tests; also clinical researchers supporting Biopharma Laboratory Services (BLS) clinical trial work (22% of Labcorp revenue)." },
+    { label: "hand-laborers-and-material-movers", share: 5.0, conf: "broad", note: "Specimen sorters, lab logistics workers, and material handlers managing the high-volume specimen flow through Labcorp's laboratory processing facilities." },
+    { label: "physicians-and-surgeons", share: 3.0, conf: "broad", note: "Pathologists (MD/DO) interpreting anatomic pathology, cytology, and complex clinical cases requiring physician sign-out at Labcorp's pathology and esoteric testing labs." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff supporting Labcorp's laboratory operations, corporate offices, and regional management teams." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance, billing, and audit staff managing revenue cycle, accounts receivable, and payer contracting for Labcorp's $13B revenue business." },
+    { label: "chemists-and-materials-scientists", share: 3.0, conf: "broad", note: "Clinical chemists and toxicologists operating and validating mass spectrometry and other chemistry instrumentation in Labcorp's specialty testing divisions." },
+    { label: "software-developers", share: 2.0, conf: "broad", note: "IT engineers developing and maintaining Labcorp's laboratory information systems (LIS), patient portals, and data integration platforms." },
+    { label: "sales-managers", share: 2.0, conf: "broad", note: "Account managers and sales representatives calling on hospitals, physician offices, and health systems to grow Labcorp's client base." },
+    { label: "general-office-clerks", share: 2.0, conf: "reasoned_proxy", note: "Billing clerks, data entry staff, and general office workers supporting Labcorp's revenue cycle and administrative operations." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for Labcorp's ~70,000-person global workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior leadership managing Labcorp's two business segments and global operations." },
+  ],
   LEN: [
     { label: "construction-managers", share: 30.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing home building across Lennar's 1,000+ active communities; the largest occupational category in a homebuilder, ~10,653 in homebuilding segment (FY2024 10-K)." },
     { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants in Lennar's model homes and welcome centers across all markets; sales agents are the primary customer-facing role and a major staffing category at every Lennar community." },
