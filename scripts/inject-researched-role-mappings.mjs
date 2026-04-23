@@ -75,6 +75,21 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NDAQ: [
+    { label: "software-developers", share: 34.0, conf: "broad", note: "Software engineers building Nasdaq's exchange matching engines, anti-financial crime platforms (Verafin, Nasdaq Surveillance), cloud-based trading technology, and financial data APIs; Nasdaq has evolved into a fintech company with technology as its largest headcount category (~9,162 employees FY2024)." },
+    { label: "financial-analysts", share: 12.0, conf: "broad", note: "Market data analysts, index methodology analysts, and regulatory reporting specialists in Nasdaq's Capital Access Platforms and Market Services segments; Nasdaq manages thousands of proprietary indexes including the Nasdaq-100." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Account executives and enterprise sales staff selling Nasdaq's market data subscriptions, financial technology platforms, anti-financial crime software, and capital access services to global financial institutions." },
+    { label: "data-scientists", share: 8.0, conf: "broad", note: "AI/ML engineers and data scientists building Nasdaq's anti-financial crime AI models (Verafin), market surveillance analytics, and ESG data products." },
+    { label: "computer-systems-analysts", share: 8.0, conf: "broad", note: "Systems architects and integration analysts designing Nasdaq's exchange infrastructure, data delivery pipelines, and financial technology platforms." },
+    { label: "information-security-analysts", share: 5.0, conf: "broad", note: "Market surveillance analysts and cybersecurity professionals monitoring for market manipulation, insider trading, and securing critical exchange infrastructure." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "IT directors and technology program managers overseeing Nasdaq's global technology operations and engineering delivery." },
+    { label: "management-analysts", share: 5.0, conf: "broad", note: "Strategy, product management, and business development staff managing Nasdaq's product roadmap across its four business divisions." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Nasdaq's financial reporting, revenue recognition, and internal controls across its technology, data, and exchange businesses." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff supporting Nasdaq's global leadership and corporate offices." },
+    { label: "operations-research-analysts", share: 3.0, conf: "broad", note: "Quantitative analysts and market microstructure researchers developing Nasdaq's exchange matching algorithms and market quality analytics." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing talent acquisition and workforce programs for Nasdaq's ~9,000-person global workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and division heads managing Nasdaq's exchange, data, and financial technology businesses." },
+  ],
   NCLH: [
     { label: "janitors-and-building-cleaners", share: 22.0, conf: "broad", note: "Cabin stewards, housekeeping attendants, and public area cleaners maintaining guest staterooms and ship public spaces across NCLH's ~30-ship fleet; cabin service is the single largest shipboard labor category (~41,700 total employees FY2024)." },
     { label: "waiters-and-waitresses", share: 16.0, conf: "broad", note: "Restaurant dining service staff, specialty restaurant servers, and buffet attendants serving meals across Norwegian, Oceania, and Regent brand ships; a large ocean cruise ship has multiple restaurants requiring hundreds of servers." },
