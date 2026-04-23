@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  KIM: [
+    { label: "real-estate-brokers-and-sales-agents", share: 25.0, conf: "broad", note: "Leasing specialists negotiating retail leases across Kimco's 560+ open-air shopping centers; largest functional group for a retail REIT focused on grocery-anchored properties; ~717 total employees FY2024 per 10-K." },
+    { label: "property-real-estate-and-community-association-managers", share: 22.0, conf: "broad", note: "Property managers overseeing day-to-day operations, tenant relations, and maintenance coordination at Kimco's portfolio of ~100M sq ft of open-air shopping centers across the US." },
+    { label: "accountants-and-auditors", share: 13.0, conf: "broad", note: "Finance and accounting staff critical for REIT compliance (GAAP real estate accounting, FFO/AFFO reporting, 90% income distribution requirements); includes corporate accounting and financial reporting teams." },
+    { label: "construction-managers", share: 10.0, conf: "broad", note: "Capital improvement and redevelopment project managers overseeing tenant improvement, anchor repositioning, and mixed-use development projects at Kimco's shopping centers." },
+    { label: "lawyers", share: 8.0, conf: "broad", note: "Real estate attorneys and paralegals handling lease negotiations, acquisitions, dispositions, and title work for Kimco's large commercial real estate portfolio." },
+    { label: "top-executives", share: 7.0, conf: "broad", note: "Senior leadership including CEO Conor Flynn, CFO, regional presidents, and corporate officers managing Kimco's $10B+ portfolio of open-air shopping centers." },
+    { label: "secretaries-and-administrative-assistants", share: 7.0, conf: "reasoned_proxy", note: "Administrative support at corporate HQ (Jericho NY) and regional offices; standard support ratio for a lean professional services REIT." },
+    { label: "financial-managers", share: 5.0, conf: "broad", note: "Regional finance directors, asset managers, and treasury staff overseeing financial performance of the shopping center portfolio and capital market activities." },
+    { label: "computer-and-information-systems-managers", share: 2.0, conf: "reasoned_proxy", note: "IT staff managing property management systems (MRI, Yardi), tenant billing, and enterprise technology for ~717 employees and hundreds of properties." },
+    { label: "general-office-clerks", share: 1.0, conf: "reasoned_proxy", note: "General office and administrative clerks at corporate and regional offices." },
+  ],
   A: [
     { label: "assemblers-and-fabricators", share: 25.0, conf: "broad", note: "Precision instrument assembly at LSAG manufacturing sites (Wilmington DE, Waldbronn Germany, Singapore) and DGG reagent/array/kit production; largest occupation group per manufacturing segment." },
     { label: "medical-equipment-repairers", share: 15.0, conf: "broad", note: "Field Service Engineers in CrossLab segment (~5,400 CrossLab employees FY2023 per 10-K); FSEs install, qualify, and repair chromatographs and mass specs at customer laboratories globally." },
