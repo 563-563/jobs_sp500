@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  MSCI: [
+    { label: "software-developers", share: 35.0, conf: "broad", note: "Software engineers building MSCI's index calculation engines, portfolio analytics platforms (BarraOne, RiskMetrics), ESG data infrastructure, and client-facing tools; 69% of MSCI's 6,132 employees (Dec 2024) are in emerging market locations including India, Hungary, and China where engineering centers are concentrated." },
+    { label: "financial-analysts", share: 15.0, conf: "broad", note: "Index methodology analysts, quantitative researchers, and ESG research analysts developing MSCI's 240,000+ indexes, factor models, and ESG scoring frameworks." },
+    { label: "data-scientists", share: 10.0, conf: "broad", note: "Data scientists and ML engineers building MSCI's ESG and Climate data products, real asset data analytics, and AI-enhanced index and analytics features." },
+    { label: "operations-research-analysts", share: 8.0, conf: "broad", note: "Quantitative analysts and optimization researchers developing risk models, multi-factor equity models, and fixed income analytics within MSCI's Analytics and Index segments." },
+    { label: "computer-systems-analysts", share: 8.0, conf: "broad", note: "Systems architects and technical analysts designing MSCI's data pipelines, cloud infrastructure, and enterprise technology systems supporting global index and analytics delivery." },
+    { label: "sales-managers", share: 8.0, conf: "broad", note: "Account managers and institutional sales staff covering asset managers, pension funds, banks, and ETF providers who license MSCI's indexes and analytics subscription products." },
+    { label: "computer-and-information-systems-managers", share: 4.0, conf: "broad", note: "IT directors and technology program managers overseeing MSCI's global engineering teams and technology infrastructure." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing MSCI's financial reporting, revenue recognition for subscription contracts, and internal audit functions." },
+    { label: "management-analysts", share: 3.0, conf: "broad", note: "Strategy and product management staff analyzing market opportunities and managing MSCI's product roadmap across Index, Analytics, and ESG segments." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative assistants supporting MSCI's global leadership teams and corporate offices." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent acquisition and workforce programs for MSCI's globally distributed 6,132-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment leaders managing MSCI's global financial data and analytics business." },
+  ],
   MOS: [
     { label: "material-moving-machine-operators", share: 19.0, conf: "broad", note: "Mining equipment operators running excavators, drag lines, front-end loaders, and slurry pumps at Mosaic's open-pit phosphate mines in Florida and Brazil and underground potash mines in Saskatchewan; equipment operation is the largest job category in mining (~13,765 employees FY2024)." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Equipment maintenance mechanics and millwrights keeping Mosaic's mining machinery, chemical processing plants, and fertilizer production equipment operational; maintenance is a critical and large function in mining operations." },
