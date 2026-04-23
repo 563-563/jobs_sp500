@@ -75,6 +75,22 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NDSN: [
+    { label: "mechanical-engineers", share: 15.0, conf: "broad", note: "Mechanical engineers designing Nordson's precision adhesive dispensing systems, fluid management components, and medical device tubing and connectors; engineering is the core function at a precision technology equipment company (~8,000 employees, FY2024 ending Oct 31)." },
+    { label: "assemblers-and-fabricators", share: 15.0, conf: "broad", note: "Precision equipment assemblers and fabricators building Nordson's dispensing, testing, and medical fluid systems at manufacturing facilities in the US, Germany, Netherlands, and China." },
+    { label: "electrical-and-electronics-engineers", share: 10.0, conf: "broad", note: "Electronics and controls engineers designing servo controls, high-voltage electronics, and precision measurement systems across Nordson's Industrial Precision Solutions and Advanced Technology Solutions segments." },
+    { label: "general-maintenance-and-repair-workers", share: 10.0, conf: "broad", note: "Field service technicians installing, maintaining, and repairing Nordson dispensing and testing equipment at customer facilities worldwide; aftermarket services is a major and growing business at Nordson." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Sales engineers and account managers selling Nordson's precision equipment directly to industrial manufacturers, electronics OEMs, medical device companies, and consumer goods producers globally." },
+    { label: "quality-control-inspectors", share: 8.0, conf: "broad", note: "Quality assurance inspectors and test technicians ensuring Nordson's precision equipment meets tight specifications; quality control is critical for precision dispensing and medical fluid systems." },
+    { label: "software-developers", share: 8.0, conf: "broad", note: "Embedded software engineers developing Nordson's motion control software, dispensing control systems, and testing automation software for electronics and medical applications." },
+    { label: "industrial-engineers", share: 5.0, conf: "broad", note: "Industrial and manufacturing engineers optimizing Nordson's production processes and driving continuous improvement across its global manufacturing network." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at Nordson's Westlake, Ohio headquarters and global offices supporting engineering, sales, and corporate functions." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Nordson's multi-segment financial reporting, cost accounting, and internal controls." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 4.0, conf: "broad", note: "Procurement staff sourcing precision components, specialty materials, and subassemblies for Nordson's global equipment manufacturing." },
+    { label: "project-management-specialists", share: 3.0, conf: "broad", note: "Project managers overseeing custom system integration projects and customer-specific engineering programs for Nordson's key accounts." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for Nordson's ~8,000-person global team." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment presidents managing Nordson's three business segments globally." },
+  ],
   NDAQ: [
     { label: "software-developers", share: 34.0, conf: "broad", note: "Software engineers building Nasdaq's exchange matching engines, anti-financial crime platforms (Verafin, Nasdaq Surveillance), cloud-based trading technology, and financial data APIs; Nasdaq has evolved into a fintech company with technology as its largest headcount category (~9,162 employees FY2024)." },
     { label: "financial-analysts", share: 12.0, conf: "broad", note: "Market data analysts, index methodology analysts, and regulatory reporting specialists in Nasdaq's Capital Access Platforms and Market Services segments; Nasdaq manages thousands of proprietary indexes including the Nasdaq-100." },
