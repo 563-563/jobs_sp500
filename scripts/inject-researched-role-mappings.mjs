@@ -75,6 +75,28 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  A: [
+    { label: "assemblers-and-fabricators", share: 25.0, conf: "broad", note: "Precision instrument assembly at LSAG manufacturing sites (Wilmington DE, Waldbronn Germany, Singapore) and DGG reagent/array/kit production; largest occupation group per manufacturing segment." },
+    { label: "medical-equipment-repairers", share: 15.0, conf: "broad", note: "Field Service Engineers in CrossLab segment (~5,400 CrossLab employees FY2023 per 10-K); FSEs install, qualify, and repair chromatographs and mass specs at customer laboratories globally." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "Global direct sales force selling analytical instruments to pharma R&D, environmental, food safety, and clinical labs; all three segments (LSAG, DGG, CrossLab) carry dedicated field sales." },
+    { label: "software-developers", share: 7.0, conf: "broad", note: "Instrument control/data software (MassHunter, OpenLab CDS, SureCall genomics, OpenBio lab informatics); ~7% SW headcount typical for instrument-software hybrid companies with heavy informatics investment." },
+    { label: "chemists-and-materials-scientists", share: 5.0, conf: "broad", note: "Analytical chemistry method development, LC/MS reference standards, reagent formulation across LSAG applications labs and DGG diagnostics R&D." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "Design of mass spectrometer ion optics and electronics for ICP-MS, GC-MS, UV-Vis spectrophotometers, and microwave plasma instruments." },
+    { label: "quality-control-inspectors", share: 5.0, conf: "broad", note: "ISO 9001/13485-certified manufacturing QC; instrument final test, reagent batch release testing, and calibration verification across all production sites." },
+    { label: "biological-technicians", share: 4.0, conf: "broad", note: "Lab technicians in DGG (~5,800 employees FY2023) supporting FISH probe, CGH array, and histopathology reagent development and manufacturing." },
+    { label: "customer-service-representatives", share: 3.0, conf: "broad", note: "CrossLab technical phone/remote support reps and SureService contract administrators supporting ~220k installed instruments globally." },
+    { label: "biochemists-and-biophysicists", share: 3.0, conf: "broad", note: "Senior R&D scientists in DGG developing molecular diagnostics, companion diagnostics, and FISH/CGH genomics products." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative support across global offices in US, EU, and APAC; ~3% typical for a professional services/manufacturing hybrid." },
+    { label: "mechanical-engineers", share: 2.0, conf: "broad", note: "HPLC pump design, mass spec vacuum systems, optical bench design, and microfluidic chip engineering at instrument R&D centers." },
+    { label: "industrial-production-managers", share: 2.0, conf: "reasoned_proxy", note: "Manufacturing plant managers at Agilent's major instrument and reagent production facilities; ~1 manager per 12-15 production workers." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting staff across global operations (~17,900 total employees FY2024); standard ~2% ratio for a global technology company." },
+    { label: "physicists-and-astronomers", share: 1.0, conf: "broad", note: "Spectroscopy, optical instrumentation, and atomic physics scientists supporting ICP-MS, fluorescence, and Raman instrument development." },
+    { label: "top-executives", share: 1.5, conf: "reasoned_proxy", note: "Senior leaders across three business segments (LSAG, DGG, CrossLab) and corporate; ~1.5% typical for a $6.5B revenue technology company." },
+    { label: "general-office-clerks", share: 1.5, conf: "reasoned_proxy", note: "General office and administrative clerks at global headquarters and regional offices." },
+    { label: "industrial-engineers", share: 1.0, conf: "broad", note: "Manufacturing process optimization and lean manufacturing engineers at instrument/reagent production facilities." },
+    { label: "material-recording-clerks", share: 1.0, conf: "reasoned_proxy", note: "Inventory and shipping clerks at manufacturing, distribution, and service parts depots globally." },
+    { label: "data-scientists", share: 1.0, conf: "broad", note: "AI/ML for chromatography data analysis, genomics bioinformatics pipelines, and lab informatics analytics embedded in Agilent's software products." },
+  ],
   AMZN: [
     { label: "hand-laborers-and-material-movers", share: 58.0, conf: "broad", note: "Warehouse associates — picking, packing, stowing in fulfillment/sortation centers. 10-K: Fulfillment expense $109B; ~300K Career Choice participants." },
     { label: "material-moving-machine-operators", share: 4.0, conf: "broad", note: "Forklift/conveyor operators and robotics tenders in fulfillment centers." },
