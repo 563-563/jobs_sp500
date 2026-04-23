@@ -75,6 +75,17 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  SPG: [
+    { label: "property-real-estate-and-community-association-managers", share: 30.0, conf: "broad", note: "On-site property managers and asset managers overseeing Simon's 194 US retail properties (92 malls, 70 Premium Outlets, 14 Mills, and lifestyle centers) across 37 states; property management is the core operational function of a mall REIT (~3,000 employees FY2024)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 20.0, conf: "broad", note: "Leasing directors, leasing representatives, and regional leasing managers negotiating tenant leases across Simon's mall, premium outlet, and lifestyle center portfolio; securing and retaining quality anchor and specialty tenants drives Simon's NOI." },
+    { label: "management-analysts", share: 15.0, conf: "broad", note: "Corporate operations, marketing, and strategic asset management staff at Simon's Indianapolis headquarters managing the company's mall brand strategy, remerchandising programs, and Simon Brand Ventures (SPARC Group) investments." },
+    { label: "construction-managers", share: 10.0, conf: "broad", note: "Development and redevelopment project managers overseeing Simon's significant mixed-use redevelopment program transforming underperforming mall anchors into hotels, residential, office, and entertainment uses." },
+    { label: "financial-analysts", share: 12.0, conf: "broad", note: "Investment analysts, portfolio analysts, and REIT accounting professionals managing Simon's complex financial reporting including JV/co-investment structures, debt management for one of the largest REIT balance sheets globally, and NOI performance tracking." },
+    { label: "general-maintenance-and-repair-workers", share: 5.0, conf: "reasoned_proxy", note: "Common area maintenance technicians managing cleaning, HVAC, electrical, and mechanical systems at Simon's mall properties; routine maintenance may be partially outsourced to contractors." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "Corporate C-suite including Chairman/CEO David Simon and senior leadership overseeing Simon's US mall, international, and retail brand investment businesses." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing talent programs across Simon's lean but geographically dispersed property management and corporate workforce." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Simon's Indianapolis headquarters and regional offices." },
+  ],
   SOLV: [
     { label: "assemblers-and-fabricators", share: 28.0, conf: "broad", note: "Manufacturing workers producing Solventum's wound care products (Tegaderm, Cavilon), dental materials (3M ESPE Filtek, Scotchbond), filtration membranes, and other healthcare products at global manufacturing sites; production is the largest workforce segment (~22,000 employees FY2024, spun off from 3M in April 2024)." },
     { label: "wholesale-and-manufacturing-sales-representatives", share: 18.0, conf: "broad", note: "Hospital and healthcare facility sales representatives selling Solventum's wound management, infection prevention, surgical supplies, and dental products to hospitals, dental practices, and GPOs; a large, specialized sales force is needed to reach healthcare providers globally." },
