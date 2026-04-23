@@ -75,6 +75,22 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  MSI: [
+    { label: "software-developers", share: 28.0, conf: "broad", note: "Software engineers building Motorola Solutions' command center software (CAD, PremierOne), video analytics platforms (Avigilon AI), body camera apps, and cloud services; 40% of ~21,000 employees are engineers (Dec 2024 10-K) with heavy software focus across Products & SI and Software & Services segments." },
+    { label: "electrical-and-electronics-engineers", share: 8.0, conf: "broad", note: "RF and hardware engineers designing land mobile radio (LMR) radios (ASTRO P25, TETRA), body cameras, and video security cameras; Motorola Solutions remains a major radio hardware manufacturer for public safety." },
+    { label: "general-maintenance-and-repair-workers", share: 14.0, conf: "broad", note: "Field service technicians maintaining, repairing, and managing P25/TETRA radio networks, video surveillance systems, and command center infrastructure for law enforcement, fire, and EMS customers under managed services contracts." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Account executives and public safety sales specialists calling on police, fire, EMS, and government agencies; sales force is large given Motorola Solutions' direct-to-customer government sales model across 100+ countries." },
+    { label: "project-management-specialists", share: 6.0, conf: "broad", note: "Project and program managers overseeing large LMR system deployments, network infrastructure upgrades, and command center software implementations for state and local government clients." },
+    { label: "computer-and-information-systems-managers", share: 5.0, conf: "broad", note: "IT directors and technology managers overseeing Motorola Solutions' cloud infrastructure, enterprise IT, and software delivery operations." },
+    { label: "computer-systems-analysts", share: 5.0, conf: "broad", note: "Systems architects and integration analysts designing interoperable public safety communications networks and command center software ecosystems." },
+    { label: "information-security-analysts", share: 4.0, conf: "broad", note: "Cybersecurity engineers protecting Motorola Solutions' critical public safety infrastructure and LMR networks from cyber threats; security is a top concern for police and government radio systems." },
+    { label: "management-analysts", share: 4.0, conf: "broad", note: "Business analysts and product managers overseeing MSI's product roadmap and go-to-market strategy across software, hardware, and services product lines." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff supporting Motorola Solutions' engineering teams, sales organization, and corporate functions globally." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Motorola Solutions' $10B+ revenue operation, government contract billing, and financial reporting." },
+    { label: "computer-and-information-research-scientists", share: 3.0, conf: "broad", note: "AI and ML researchers developing Motorola Solutions' AI-powered video analytics (Avigilon Alta), gunshot detection (Vigilant), and AI-driven dispatch tools." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent acquisition and development for Motorola Solutions' 21,000-person globally distributed workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite managing Motorola Solutions' Products & SI and Software & Services segments." },
+  ],
   MSCI: [
     { label: "software-developers", share: 35.0, conf: "broad", note: "Software engineers building MSCI's index calculation engines, portfolio analytics platforms (BarraOne, RiskMetrics), ESG data infrastructure, and client-facing tools; 69% of MSCI's 6,132 employees (Dec 2024) are in emerging market locations including India, Hungary, and China where engineering centers are concentrated." },
     { label: "financial-analysts", share: 15.0, conf: "broad", note: "Index methodology analysts, quantitative researchers, and ESG research analysts developing MSCI's 240,000+ indexes, factor models, and ESG scoring frameworks." },
