@@ -75,6 +75,26 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  LDOS: [
+    { label: "software-developers", share: 24.0, conf: "broad", note: "Software engineers building defense IT systems, health IT platforms, and mission software; Leidos's National Security & Digital and Health & Civil segments are fundamentally software businesses for the US government (~48,000 employees FY2024)." },
+    { label: "information-security-analysts", share: 8.0, conf: "broad", note: "Cybersecurity analysts, cyber engineers, and cleared security professionals; Leidos is a top DoD cyber contractor, with 52% of employees holding security clearances." },
+    { label: "project-management-specialists", share: 8.0, conf: "broad", note: "Program and project managers running government contracts across DoD, DHS, HHS, and intelligence community; each multi-year government contract requires dedicated PM staffing." },
+    { label: "computer-systems-analysts", share: 8.0, conf: "broad", note: "Systems architects and analysts designing IT solutions for government clients; Leidos's model is analyzing, architecting, and integrating large-scale government IT systems." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "Electronics engineers working on sensors, radar systems, electronic warfare, and detection systems in Leidos's defense technology divisions." },
+    { label: "aerospace-engineers", share: 4.0, conf: "broad", note: "Aerospace engineers supporting aircraft systems, unmanned aerial systems, space systems, and defense platform integration for DoD clients." },
+    { label: "network-and-computer-systems-administrators", share: 5.0, conf: "broad", note: "Network admins and systems administrators managing government IT infrastructure for classified and unclassified networks across federal agencies." },
+    { label: "operations-research-analysts", share: 5.0, conf: "broad", note: "Intelligence analysts, data analysts, and operations researchers supporting defense and intelligence community clients; Leidos Intelligence Group focuses heavily on analytical services." },
+    { label: "computer-and-information-systems-managers", share: 4.0, conf: "broad", note: "IT directors and CIO-equivalent managers leading technology delivery on large government program vehicles; management layer on major IT contracts." },
+    { label: "management-analysts", share: 6.0, conf: "broad", note: "Management consultants and advisory staff delivering business process improvement, digital transformation, and strategy services to federal agencies." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative and executive assistants supporting program offices, contracts management, and corporate functions across Leidos's large organization." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance, accounting, and contract audit staff managing government contract billing, DCAA compliance, and corporate financial reporting." },
+    { label: "mechanical-engineers", share: 3.0, conf: "broad", note: "Mechanical engineers supporting hardware systems integration, laboratory instrumentation, and physical security systems for defense programs." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, benefits, and workforce programs for Leidos's ~48,000-person workforce." },
+    { label: "computer-and-information-research-scientists", share: 3.0, conf: "broad", note: "AI/ML researchers, computational scientists, and R&D staff in Leidos's advanced technology and innovation programs for DoD and intelligence community." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite, group presidents, and senior leadership managing Leidos's three business segments." },
+    { label: "architectural-and-engineering-managers", share: 4.0, conf: "broad", note: "Chief engineers, technical directors, and engineering managers overseeing engineering programs and technical talent across defense and civil programs." },
+    { label: "logisticians", share: 2.0, conf: "broad", note: "Logistics and supply chain specialists supporting defense logistics IT systems and sustainment programs for military clients." },
+  ],
   KR: [
     { label: "cashiers", share: 20.0, conf: "broad", note: "Checkout cashiers at ~2,700+ Kroger stores; cashiers are the largest single job category in grocery retail operations." },
     { label: "retail-sales-workers", share: 25.0, conf: "broad", note: "Grocery associates, stock clerks, produce workers, and general store floor staff across Kroger's broad retail footprint of ~2,700 stores." },
