@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NEM: [
+    { label: "material-moving-machine-operators", share: 21.0, conf: "broad", note: "Mining equipment operators running haul trucks, front-end loaders, bulldozers, and excavators at Newmont's open-pit and underground gold mines across Nevada, Canada, Australia, Ghana, Peru, and other operations (~22,200 employees FY2024)." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Mining equipment mechanics and millwrights maintaining the heavy machinery, conveyors, ball mills, and processing equipment across Newmont's global mine and mill sites; maintenance is a critical and large function in mining." },
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 12.0, conf: "broad", note: "Haul truck operators and heavy equipment drivers transporting ore and waste rock within mine sites; in large gold mines like Newmont's Nevada and Boddington operations, haul truck fleets require hundreds of drivers." },
+    { label: "stationary-engineers-and-boiler-operators", share: 8.0, conf: "broad", note: "Mill and process plant operators running gold processing facilities including SAG/ball mills, flotation circuits, carbon-in-leach (CIL) circuits, and smelters to extract gold from ore." },
+    { label: "chemical-technicians", share: 6.0, conf: "broad", note: "Assay lab technicians, process control technicians, and metallurgical technicians monitoring ore grades, reagent additions, and gold recovery rates at Newmont's processing plants." },
+    { label: "quality-control-inspectors", share: 6.0, conf: "broad", note: "Grade control specialists, sampling inspectors, and quality technicians managing ore grade measurement and metallurgical sampling throughout Newmont's mining and processing operations." },
+    { label: "mining-and-geological-engineers", share: 5.0, conf: "broad", note: "Mine engineers, metallurgical engineers, and mine planners designing mining sequences, blast patterns, and extraction plans across Newmont's global portfolio of gold mines." },
+    { label: "geological-and-petroleum-technicians", share: 4.0, conf: "broad", note: "Geological field technicians conducting core drilling, mapping, sampling, and resource estimation support across Newmont's exploration and operating mine sites." },
+    { label: "environmental-scientists-and-specialists", share: 3.0, conf: "broad", note: "Environmental compliance specialists managing cyanide management, water quality, tailings impoundment, and reclamation obligations under mining permits across multiple jurisdictions." },
+    { label: "chemists-and-materials-scientists", share: 3.0, conf: "broad", note: "Metallurgists and process chemists optimizing gold recovery and developing processing improvements at Newmont's operational mine sites and R&D centers." },
+    { label: "water-and-wastewater-treatment-plant-and-system-operators", share: 3.0, conf: "broad", note: "Water treatment operators managing process water recycling, tailings solution management, and environmental water treatment systems at Newmont's mine sites." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at Newmont's Denver headquarters and mine site offices in multiple countries supporting operations and corporate functions." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Newmont's cost-of-gold accounting, multi-country financial reporting, and treasury operations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for Newmont's ~22,200-person globally distributed workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional management leading Newmont's global gold mining operations." },
+  ],
   NDSN: [
     { label: "mechanical-engineers", share: 15.0, conf: "broad", note: "Mechanical engineers designing Nordson's precision adhesive dispensing systems, fluid management components, and medical device tubing and connectors; engineering is the core function at a precision technology equipment company (~8,000 employees, FY2024 ending Oct 31)." },
     { label: "assemblers-and-fabricators", share: 15.0, conf: "broad", note: "Precision equipment assemblers and fabricators building Nordson's dispensing, testing, and medical fluid systems at manufacturing facilities in the US, Germany, Netherlands, and China." },
