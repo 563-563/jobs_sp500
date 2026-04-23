@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  RVTY: [
+    { label: "chemists-and-materials-scientists", share: 22.0, conf: "broad", note: "Biochemists, immunochemists, and analytical chemists in Revvity's R&D and manufacturing teams developing and producing immunoassay reagents, genetic screening kits, and diagnostic test kits — including EUROIMMUN's autoimmune and infectious disease assays (~11,000 employees FY2024)." },
+    { label: "chemical-technicians", share: 18.0, conf: "broad", note: "Laboratory technicians and QC analysts manufacturing Revvity's diagnostic reagents, biological samples, and life science consumables, and performing quality control testing on finished products across global manufacturing sites." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 15.0, conf: "broad", note: "Life science and diagnostics sales representatives selling Revvity's instruments, reagents, and software to pharmaceutical companies, biotech firms, academic research labs, clinical diagnostic laboratories, and public health institutions globally." },
+    { label: "biomedical-engineers", share: 12.0, conf: "broad", note: "Instrument engineers and diagnostic hardware engineers designing Revvity's analytical instruments including multimode plate readers, liquid handling robots, genetic screening systems, and immunoassay platforms." },
+    { label: "software-developers", share: 8.0, conf: "broad", note: "Software engineers developing Revvity's informatics and data analysis software portfolio (SIGNALS Laboratory Informatics, informatics platforms for drug discovery and bioanalysis) — a growing focus as Revvity expands its software business." },
+    { label: "assemblers-and-fabricators", share: 8.0, conf: "broad", note: "Instrument assembly technicians building Revvity's analytical instruments and diagnostic equipment at manufacturing facilities in the US, Germany, and other global sites." },
+    { label: "management-analysts", share: 5.0, conf: "reasoned_proxy", note: "Quality management, regulatory affairs, and operations professionals managing Revvity's FDA/CE/IVD regulatory compliance for its diagnostic products and life science tools globally." },
+    { label: "financial-analysts", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Revvity's multi-segment (Life Sciences and Diagnostics) financial reporting following the divestiture of its applied/industrial businesses." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing global talent programs for Revvity's scientific and commercial workforce across 10+ countries." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative support at Revvity's Waltham, Massachusetts headquarters and global offices." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Corporate C-suite and divisional leaders overseeing Revvity's Life Sciences and Diagnostics business segments globally." },
+  ],
   RSG: [
     { label: "heavy-and-tractor-trailer-truck-drivers", share: 45.0, conf: "broad", note: "Garbage truck, recycling truck, and roll-off drivers collecting solid waste from residential, commercial, and industrial customers across Republic Services' collection routes in 40+ states; route drivers are the single largest occupation at any waste collection company (~42,000 employees FY2024)." },
     { label: "hand-laborers-and-material-movers", share: 18.0, conf: "broad", note: "Materials recovery facility (MRF) sorters, landfill workers, transfer station workers, and waste handlers at Republic Services' recycling facilities, transfer stations, and landfill sites; Republic operates 200+ active landfills and 70+ recycling facilities." },
