@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  POOL: [
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 38.0, conf: "broad", note: "Inside counter sales and outside sales representatives at Pool Corp's 448 sales center branches; the core role at a wholesale distributor — selling pool chemicals, equipment, building materials, and supplies to ~125,000 pool service companies, builders, and retailers (~6,000 employees FY2024)." },
+    { label: "delivery-truck-drivers-and-driver-sales-workers", share: 18.0, conf: "broad", note: "Delivery drivers transporting pool products from Pool Corp's 448 branch locations to wholesale customers across North America, Europe, and Australia; route delivery is essential to Pool Corp's same-day/next-day service model." },
+    { label: "hand-laborers-and-material-movers", share: 15.0, conf: "broad", note: "Warehouse receiving, pick/pack, and inventory staff managing Pool Corp's 200,000+ SKU product range across its extensive branch network." },
+    { label: "sales-managers", share: 12.0, conf: "broad", note: "Branch managers overseeing individual Pool Corp sales centers and regional/market managers; branch managers are the key operational leadership layer at Pool Corp's distributed distribution model." },
+    { label: "customer-service-representatives", share: 5.0, conf: "broad", note: "Inside customer service and order management staff handling inbound customer inquiries, special orders, and account support for Pool Corp's wholesale customer base." },
+    { label: "management-analysts", share: 3.0, conf: "reasoned_proxy", note: "Corporate strategy, operations, and business development staff at Pool Corp's Covington, Louisiana headquarters, supporting geographic expansion and acquisitions." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting professionals managing Pool Corp's financial reporting, inventory costing, and multi-country tax compliance as the world's largest wholesale pool products distributor." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, training, and employee development across Pool Corp's 448 branch locations." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Pool Corp's corporate headquarters and regional offices." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "C-suite and divisional executives leading Pool Corp's North American, European, and Australian distribution businesses." },
+  ],
   PNW: [
     { label: "line-installers-and-repairers", share: 30.0, conf: "broad", note: "Electrical line crews maintaining and building APS's distribution and transmission system serving ~1.4 million Arizona customers; lineworkers are the largest occupational group at electric distribution utilities (~6,403 employees FY2024)." },
     { label: "power-plant-operators-distributors-and-dispatchers", share: 15.0, conf: "broad", note: "Power plant operators running Pinnacle West's generation fleet including the Palo Verde Nuclear Generating Station (largest US nuclear plant, ~3,300 MW), natural gas peaking units, and energy control center dispatchers managing grid reliability." },
