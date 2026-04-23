@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PHM: [
+    { label: "construction-managers", share: 30.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing homebuilding across PulteGroup's Pulte Homes, Centex, Del Webb, DiVosta, and John Wieland Homes brands; construction management is the dominant occupation in a homebuilder (~6,793 employees FY2024)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants at PulteGroup's model homes and sales centers serving first-time buyers (Centex), move-up buyers (Pulte Homes), and active adult (Del Webb 55+) communities." },
+    { label: "loan-officers", share: 8.0, conf: "broad", note: "Mortgage loan officers in PulteGroup's financial services segment (PulteGroup Financial Services / Pulte Mortgage) originating home loans for buyers of PulteGroup homes." },
+    { label: "cost-estimators", share: 6.0, conf: "broad", note: "Construction estimators pricing home options, labor, and materials across PulteGroup's product lines and regional divisions." },
+    { label: "project-management-specialists", share: 5.0, conf: "broad", note: "Project managers and development coordinators scheduling lot development, permits, and home construction across PulteGroup's active communities." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 5.0, conf: "broad", note: "Purchasing agents procuring lumber, appliances, cabinets, and building materials for PulteGroup's homebuilding divisions." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Site civil engineers managing grading, utility design, and infrastructure for PulteGroup's land development activities." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at PulteGroup's Atlanta headquarters and divisional offices across its major markets." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing PulteGroup's job-cost accounting, community P&Ls, and SEC financial reporting." },
+    { label: "architects", share: 3.0, conf: "broad", note: "Architects and design studio staff developing PulteGroup's home product lines and managing buyer option selections." },
+    { label: "customer-service-representatives", share: 3.0, conf: "broad", note: "Warranty coordinators handling post-closing service requests for PulteGroup homebuyers across its brands." },
+    { label: "insurance-underwriters", share: 3.0, conf: "broad", note: "Mortgage underwriters and title insurance processors in PulteGroup's financial services segment." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing workforce programs for PulteGroup's ~6,800-person workforce." },
+    { label: "property-real-estate-and-community-association-managers", share: 1.0, conf: "broad", note: "Community and HOA-related managers for PulteGroup's Del Webb active adult communities, which often include community amenities and HOA management." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and division presidents managing PulteGroup's homebuilding and financial services operations." },
+  ],
   PGR: [
     { label: "claims-adjusters-appraisers-examiners-and-investigators", share: 30.0, conf: "broad", note: "Auto insurance claims adjusters, field appraisers, and claims examiners processing and settling auto accident and property damage claims; claims is the largest workforce category at Progressive, which handles tens of millions of auto insurance claims annually (~66,300 employees FY2024)." },
     { label: "customer-service-representatives", share: 21.0, conf: "broad", note: "Phone sales and service agents providing auto insurance quotes, policy service, billing support, and customer assistance through Progressive's direct-to-consumer and agency channels." },
