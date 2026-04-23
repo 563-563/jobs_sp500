@@ -75,6 +75,29 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  LHX: [
+    { label: "electrical-and-electronics-engineers", share: 12.0, conf: "broad", note: "Electrical and RF engineers designing radios, electronic warfare systems, radar, and communications hardware; the largest engineering discipline at L3Harris given its core business in defense electronics (~45,000 employees, ~40% engineers/scientists per FY2024 10-K)." },
+    { label: "software-developers", share: 10.0, conf: "broad", note: "Embedded software engineers, signal processing developers, and mission software engineers across L3Harris's Communication Systems, Integrated Mission Systems, and Space & Airborne segments." },
+    { label: "aerospace-engineers", share: 7.0, conf: "broad", note: "Aerospace engineers in L3Harris's Space & Airborne Systems segment designing space payloads, ISR sensors, and airborne mission systems for US military and intelligence." },
+    { label: "assemblers-and-fabricators", share: 14.0, conf: "broad", note: "Electronics assembly workers fabricating and assembling defense radios, electronic warfare systems, night vision devices, and space payloads; manufacturing is a core function at L3Harris's production facilities." },
+    { label: "project-management-specialists", share: 7.0, conf: "broad", note: "Program managers and project managers running fixed-price and cost-plus defense contracts for DoD, intelligence community, and international clients." },
+    { label: "aerospace-engineering-and-operations-technicians", share: 6.0, conf: "broad", note: "Test technicians, integration technicians, and field support technicians qualifying and testing complex defense electronics systems against mil-spec requirements." },
+    { label: "mechanical-engineers", share: 4.0, conf: "broad", note: "Mechanical engineers designing enclosures, thermal management, and structural components for ruggedized defense electronics intended for harsh operational environments." },
+    { label: "calibration-technologists-and-technicians", share: 4.0, conf: "broad", note: "Calibration technicians maintaining measurement standards and calibrating precision test equipment and instruments across L3Harris's manufacturing and test facilities." },
+    { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Quality assurance inspectors performing DCMA inspections, first-article testing, and production quality verification on defense electronics hardware." },
+    { label: "architectural-and-engineering-managers", share: 4.0, conf: "broad", note: "Chief engineers, technical directors, and engineering management overseeing large defense programs and technical teams across L3Harris's four business segments." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 4.0, conf: "broad", note: "Procurement specialists managing defense supply chain, subcontractor management, and hardware procurement across L3Harris's complex multi-tier supply chain." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff supporting program offices, engineering teams, and corporate functions across L3Harris's global defense enterprise." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance, cost accounting, and DCAA compliance staff managing government contract accounting and corporate financial reporting." },
+    { label: "computer-systems-analysts", share: 3.0, conf: "broad", note: "IT systems analysts and architects supporting enterprise IT and mission system integration efforts for L3Harris's government clients." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Logistics and supply chain specialists managing parts flow, program deliveries, and field sustainment logistics for L3Harris defense programs." },
+    { label: "information-security-analysts", share: 2.0, conf: "broad", note: "Cybersecurity analysts supporting L3Harris's classified program environments and customers' secure communications systems." },
+    { label: "industrial-production-managers", share: 2.0, conf: "broad", note: "Manufacturing plant managers and production supervisors overseeing assembly operations at L3Harris's key production facilities." },
+    { label: "physicists-and-astronomers", share: 2.0, conf: "broad", note: "Physicists specializing in RF, optics, EO/IR sensors, and radar physics for L3Harris's advanced sensor and space programs." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for L3Harris's ~45,000-person workforce." },
+    { label: "computer-and-information-research-scientists", share: 1.0, conf: "broad", note: "AI/ML and computational research scientists in L3Harris advanced technology programs for DoD and intelligence community clients." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment presidents managing L3Harris's defense business segments." },
+  ],
   LH: [
     { label: "clinical-laboratory-technologists-and-technicians", share: 28.0, conf: "broad", note: "Medical laboratory scientists (MLS) and medical lab technicians (MLT) performing tests at Labcorp's central and regional labs; the largest occupational group at a diagnostic lab company (~70,000 employees FY2024, Dx segment 78% of revenue)." },
     { label: "phlebotomists", share: 15.0, conf: "broad", note: "Phlebotomists and patient service center (PSC) staff performing blood draws at Labcorp's 2,000+ patient service centers nationwide." },
