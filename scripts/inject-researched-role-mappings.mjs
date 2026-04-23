@@ -75,6 +75,25 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  KR: [
+    { label: "cashiers", share: 20.0, conf: "broad", note: "Checkout cashiers at ~2,700+ Kroger stores; cashiers are the largest single job category in grocery retail operations." },
+    { label: "retail-sales-workers", share: 25.0, conf: "broad", note: "Grocery associates, stock clerks, produce workers, and general store floor staff across Kroger's broad retail footprint of ~2,700 stores." },
+    { label: "food-service-managers", share: 8.0, conf: "broad", note: "Store managers, department managers (deli, bakery, produce, meat) at each Kroger location; grocery chains have dense management layers per store." },
+    { label: "food-preparation-workers", share: 8.0, conf: "broad", note: "Deli, prepared foods, hot bar, and grab-and-go section workers preparing ready-to-eat food in store kitchens across Kroger's 2,700+ locations." },
+    { label: "butchers-and-meat-cutters", share: 5.0, conf: "broad", note: "Meat department workers cutting, trimming, and packaging fresh meat at in-store full-service meat counters; Kroger maintains full meat departments across its stores." },
+    { label: "bakers", share: 2.0, conf: "broad", note: "In-store bakeries producing fresh bread, cakes, and pastries; Kroger operates full-service bakery departments at most locations." },
+    { label: "pharmacy-technicians", share: 4.0, conf: "broad", note: "Pharmacy department technicians at Kroger's 2,200+ in-store pharmacy locations; pharmacy is a major Kroger business line." },
+    { label: "hand-laborers-and-material-movers", share: 8.0, conf: "broad", note: "Distribution center workers, warehouse loaders/unloaders, and freight handlers across Kroger's extensive distribution network serving its stores." },
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 4.0, conf: "broad", note: "Kroger distribution fleet drivers delivering product from DCs to stores; Kroger operates its own logistics network with thousands of delivery routes." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Corporate finance, store-level accounting, and audit functions at Kroger's Cincinnati headquarters and regional offices." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate leadership including C-suite, VP, and director-level management at Kroger HQ and division offices." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at Kroger corporate, divisional, and regional offices across the US." },
+    { label: "food-and-tobacco-processing-workers", share: 4.0, conf: "broad", note: "Workers at Kroger's ~38 manufacturing plants producing private-label products including dairy, deli items, beverages, and baked goods under Kroger's Simple Truth and store brands." },
+    { label: "software-developers", share: 1.0, conf: "broad", note: "Kroger Technology & Digital division engineers building e-commerce, app, supply chain, and data science platforms." },
+    { label: "pharmacists", share: 2.0, conf: "broad", note: "Licensed pharmacists at Kroger's 2,200+ pharmacy locations providing dispensing, counseling, and immunization services." },
+    { label: "general-office-clerks", share: 1.0, conf: "reasoned_proxy", note: "Office clerks and support staff at Kroger's divisional and corporate offices." },
+    { label: "customer-service-representatives", share: 3.0, conf: "broad", note: "Customer service desk workers handling returns, special orders, and complaints, plus online order support staff for Kroger's digital grocery business." },
+  ],
   KMI: [
     { label: "oil-and-gas-workers", share: 30.0, conf: "broad", note: "Field operations workers including pipeline controllers, measurement/metering technicians, cathodic protection workers, and field operations staff at Kinder Morgan's 82,000+ miles of natural gas pipelines; ~10,933 total employees FY2024 per 10-K." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 15.0, conf: "broad", note: "Compressor station mechanics and pipeline facility maintenance technicians keeping Kinder Morgan's hundreds of compressor stations and terminal equipment operational." },
