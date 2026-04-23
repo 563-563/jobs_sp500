@@ -75,6 +75,25 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  MOS: [
+    { label: "material-moving-machine-operators", share: 19.0, conf: "broad", note: "Mining equipment operators running excavators, drag lines, front-end loaders, and slurry pumps at Mosaic's open-pit phosphate mines in Florida and Brazil and underground potash mines in Saskatchewan; equipment operation is the largest job category in mining (~13,765 employees FY2024)." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Equipment maintenance mechanics and millwrights keeping Mosaic's mining machinery, chemical processing plants, and fertilizer production equipment operational; maintenance is a critical and large function in mining operations." },
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 10.0, conf: "broad", note: "Haul truck operators and over-the-road drivers moving phosphate rock, potash ore, and finished fertilizer products within mine sites and to distribution points." },
+    { label: "stationary-engineers-and-boiler-operators", share: 8.0, conf: "broad", note: "Chemical plant operators running Mosaic's phosphate concentration and potash granulation plants; operating sulfuric acid plants, evaporators, and granulation equipment to produce finished DAP/MAP/MOP fertilizer." },
+    { label: "chemical-technicians", share: 6.0, conf: "broad", note: "Process control technicians and laboratory technicians monitoring chemical parameters, sampling slurry and finished product, and running quality tests at Mosaic's processing facilities." },
+    { label: "mining-and-geological-engineers", share: 5.0, conf: "broad", note: "Mine engineers, mine planners, and geological engineers managing ore body assessment, mine design, and production optimization across Mosaic's phosphate and potash mining operations." },
+    { label: "quality-control-inspectors", share: 5.0, conf: "broad", note: "Product quality inspectors and sampling technicians ensuring fertilizer products meet nutrient specification standards for Mosaic's phosphate and potash product lines." },
+    { label: "chemical-engineers", share: 5.0, conf: "broad", note: "Process engineers designing and optimizing Mosaic's phosphate beneficiation, sulfuric acid production, and potash refining processes; engineering support for large-scale fertilizer manufacturing plants." },
+    { label: "geological-and-petroleum-technicians", share: 4.0, conf: "broad", note: "Geological field technicians conducting core drilling, survey work, and ore grade sampling to support mine planning at Mosaic's phosphate and potash properties." },
+    { label: "environmental-scientists-and-specialists", share: 3.0, conf: "broad", note: "Environmental compliance specialists managing Mosaic's phosphate mining reclamation, wastewater management, and regulatory compliance under EPA and state mining permits." },
+    { label: "water-and-wastewater-treatment-plant-and-system-operators", share: 3.0, conf: "broad", note: "Operators managing water recirculation, process water treatment, and tailings water management systems essential to Mosaic's phosphate slurry mining operations." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Supply chain and logistics specialists managing rail, barge, and port shipments of finished fertilizer products from Mosaic's production sites to agricultural markets worldwide." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at Mosaic's Tampa headquarters and mine/plant site offices supporting operations and corporate functions." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Mosaic's cost accounting, commodity pricing exposure, and financial reporting across its three business segments." },
+    { label: "industrial-engineers", share: 2.0, conf: "broad", note: "Industrial engineers focused on process efficiency and production optimization at Mosaic's mining and processing facilities." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for Mosaic's ~13,765-person global workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment leaders managing Mosaic's phosphate, potash, and Mosaic Fertilizantes segments." },
+  ],
   LUV: [
     { label: "flight-attendants", share: 28.0, conf: "narrow", note: "Approximately 20,000 Southwest flight attendants covered by TWU Local 556 contract; confirmed figure from Southwest 2024 press releases (~72,450 total employees FY2024)." },
     { label: "airline-and-commercial-pilots", share: 18.0, conf: "broad", note: "Approximately 13,000 Southwest pilots represented by SWAPA (Southwest Airlines Pilots Association); Southwest operated ~720 aircraft requiring large pilot rosters with scheduling coverage." },
