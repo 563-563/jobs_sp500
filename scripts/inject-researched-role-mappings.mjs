@@ -75,6 +75,21 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PKG: [
+    { label: "stationary-engineers-and-boiler-operators", share: 20.0, conf: "broad", note: "Paper machine operators, pulp digester operators, and power boiler operators at Packaging Corporation of America's 7 containerboard mills; paper mills operate 24/7 with continuous process operators as the dominant mill occupation (~15,400 employees FY2024)." },
+    { label: "assemblers-and-fabricators", share: 20.0, conf: "broad", note: "Corrugated box plant workers cutting, printing, laminating, and assembling corrugated containers at PCA's 85 converting facilities; box plant fabrication is the largest employee category across PCA's converting network." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Maintenance mechanics and millwrights maintaining paper machines, converting equipment, boilers, and mechanical infrastructure at PCA's mills and box plants; maintenance is a critical and large function in paper manufacturing." },
+    { label: "quality-control-inspectors", share: 8.0, conf: "broad", note: "Paper quality technicians and corrugated board inspectors testing linerboard, medium, and finished corrugated products against customer specification; quality control is essential in packaging manufacturing." },
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 8.0, conf: "broad", note: "Truck drivers delivering finished corrugated boxes and packaging products from PCA's converting plants to industrial and consumer products customers." },
+    { label: "chemical-engineers", share: 5.0, conf: "broad", note: "Paper process engineers managing pulping chemistry, bleaching, sizing, and paper coating processes at PCA's kraft linerboard and medium mills." },
+    { label: "chemical-technicians", share: 4.0, conf: "broad", note: "Laboratory technicians testing paper grades, pulp freeness, chemical additions, and finished product specifications at PCA's mill laboratories." },
+    { label: "water-and-wastewater-treatment-plant-and-system-operators", share: 4.0, conf: "broad", note: "Process water and effluent treatment operators managing PCA's large-scale wastewater treatment systems at its paper mills; pulp and paper mills generate significant wastewater requiring treatment under EPA permits." },
+    { label: "industrial-engineers", share: 3.0, conf: "broad", note: "Industrial engineers driving production efficiency and lean manufacturing improvements across PCA's mills and converting plant network." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at PCA's Lake Forest, IL headquarters and plant office locations." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and cost accounting staff managing PCA's mill cost accounting, converting plant P&Ls, and corporate financial reporting." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations (mills are heavily unionized) and workforce programs for PCA's ~15,400-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and mill/plant operations leaders managing PCA's containerboard, corrugated, and paper segments." },
+  ],
   PHM: [
     { label: "construction-managers", share: 30.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing homebuilding across PulteGroup's Pulte Homes, Centex, Del Webb, DiVosta, and John Wieland Homes brands; construction management is the dominant occupation in a homebuilder (~6,793 employees FY2024)." },
     { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants at PulteGroup's model homes and sales centers serving first-time buyers (Centex), move-up buyers (Pulte Homes), and active adult (Del Webb 55+) communities." },
