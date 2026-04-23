@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PEG: [
+    { label: "line-installers-and-repairers", share: 18.0, conf: "broad", note: "Electric lineworkers maintaining and repairing PSE&G's electric transmission and distribution system serving ~2.4M electric customers across New Jersey (~13,000 employees FY2024; ~60% unionized per PSEG 2024 Annual Report)." },
+    { label: "plumbers-pipefitters-and-steamfitters", share: 14.0, conf: "broad", note: "Gas service workers installing, inspecting, and maintaining PSE&G's natural gas distribution system serving ~1.9M gas customers across New Jersey." },
+    { label: "electricians", share: 12.0, conf: "broad", note: "Electrical maintenance workers at PSE&G's substations, transmission switching stations, and distribution facilities maintaining the electric grid across northern and central New Jersey." },
+    { label: "stationary-engineers-and-boiler-operators", share: 8.0, conf: "broad", note: "Nuclear plant operators and auxiliary operators at PSEG's Salem and Hope Creek nuclear generating stations in Salem County, NJ; nuclear generation is a major part of PSEG's portfolio." },
+    { label: "construction-laborers-and-helpers", share: 8.0, conf: "broad", note: "Construction workers supporting PSE&G's capital investment programs including gas system replacement, electric grid modernization, and EV infrastructure." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Customer service agents at PSE&G call centers handling billing inquiries, outage reports, service orders, and energy assistance program support for NJ customers." },
+    { label: "electrical-and-electronics-engineers", share: 6.0, conf: "broad", note: "Power systems engineers and nuclear engineers managing grid planning, substation design, and nuclear plant engineering at PSEG's facilities." },
+    { label: "civil-engineers", share: 5.0, conf: "broad", note: "Civil and structural engineers supporting PSE&G's gas pipeline and electric infrastructure projects across NJ." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at PSEG's Newark, NJ headquarters and regional offices." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance and regulatory accounting staff managing PSEG's rate case filings and financial reporting." },
+    { label: "construction-managers", share: 3.0, conf: "broad", note: "Capital project managers overseeing PSE&G's electric grid hardening, gas system replacement, and renewable energy capital programs." },
+    { label: "general-maintenance-and-repair-workers", share: 3.0, conf: "broad", note: "Substation and facility maintenance workers keeping PSEG's electric substations, gas pressure stations, and nuclear plant auxiliary facilities operational." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for PSEG's ~13,000-person workforce." },
+    { label: "software-developers", share: 1.0, conf: "broad", note: "IT engineers maintaining PSEG's energy management and customer information systems." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and subsidiary leaders managing PSEG's PSE&G and PSEG Power operations." },
+  ],
   PCG: [
     { label: "line-installers-and-repairers", share: 19.0, conf: "broad", note: "Electric lineworkers installing, maintaining, and repairing power lines across PG&E's 108,000+ circuit miles of electric distribution system in Northern and Central California; linework is the largest occupational group at a large electric utility (~28,410 employees FY2024)." },
     { label: "plumbers-pipefitters-and-steamfitters", share: 15.0, conf: "broad", note: "Gas service workers installing, inspecting, and repairing PG&E's 45,200 miles of natural gas distribution pipelines serving residential and commercial customers; PG&E is one of the largest US gas distribution utilities." },
