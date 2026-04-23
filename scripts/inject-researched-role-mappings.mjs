@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  ORLY: [
+    { label: "retail-sales-workers", share: 55.0, conf: "broad", note: "Store retail associates at the parts counter helping DIY and professional customers find automotive parts, tools, and accessories; the dominant occupational category at O'Reilly's 6,378 US and international stores (~93,047 total employees FY2024)." },
+    { label: "delivery-truck-drivers-and-driver-sales-workers", share: 17.0, conf: "broad", note: "Professional parts delivery drivers running O'Reilly's 'hub and spoke' delivery network serving professional automotive shops; rapid professional delivery is a key differentiator for O'Reilly's dual-market strategy (DIY + professional)." },
+    { label: "hand-laborers-and-material-movers", share: 13.0, conf: "broad", note: "Distribution center workers picking, packing, and shipping automotive parts across O'Reilly's 30+ regional distribution centers that supply its store network." },
+    { label: "customer-service-representatives", share: 5.0, conf: "broad", note: "Customer service and phone support staff assisting professional accounts and DIY customers with parts lookup, order status, and technical inquiries." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative staff at O'Reilly's Springfield, Missouri headquarters and regional offices." },
+    { label: "automotive-service-technicians-and-mechanics", share: 2.0, conf: "broad", note: "Automotive technicians supporting O'Reilly's loaner tool program and some light install services; also technical specialists advising professional mechanics on parts selection." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing O'Reilly's financial operations across its 6,378-store retail network." },
+    { label: "software-developers", share: 1.0, conf: "broad", note: "IT engineers maintaining O'Reilly's e-commerce platform, inventory management systems, and professional customer ordering platforms." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for O'Reilly's ~93,000-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and divisional management at O'Reilly Automotive's headquarters." },
+  ],
   OMC: [
     { label: "sales-managers", share: 15.0, conf: "broad", note: "Account executives and client service managers managing client relationships at Omnicom's BBDO, DDB, TBWA, and other advertising agencies; client service is the largest single functional group at advertising agencies (~74,900 employees FY2024)." },
     { label: "art-directors", share: 12.0, conf: "broad", note: "Creative directors, art directors, and visual designers concepting and executing advertising campaigns across Omnicom's global creative agencies." },
