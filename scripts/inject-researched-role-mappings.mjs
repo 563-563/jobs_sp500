@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  OMC: [
+    { label: "sales-managers", share: 15.0, conf: "broad", note: "Account executives and client service managers managing client relationships at Omnicom's BBDO, DDB, TBWA, and other advertising agencies; client service is the largest single functional group at advertising agencies (~74,900 employees FY2024)." },
+    { label: "art-directors", share: 12.0, conf: "broad", note: "Creative directors, art directors, and visual designers concepting and executing advertising campaigns across Omnicom's global creative agencies." },
+    { label: "management-analysts", share: 9.0, conf: "broad", note: "Account planners, brand strategists, and management consultants providing strategic thinking and business analysis for client campaigns across Omnicom's agencies." },
+    { label: "public-relations-specialists", share: 9.0, conf: "broad", note: "PR practitioners, communications strategists, and media relations specialists at Omnicom's major PR networks including Porter Novelli, FleishmanHillard, and Ketchum." },
+    { label: "advertising-sales-agents", share: 8.0, conf: "broad", note: "Media planners and buyers purchasing advertising space across TV, digital, social, outdoor, and print media for clients through Omnicom Media Group (OMD, PHD, Hearts & Science)." },
+    { label: "graphic-designers", share: 8.0, conf: "broad", note: "Digital designers, UX designers, brand identity designers, and web designers executing visual deliverables across Omnicom's creative and digital agencies." },
+    { label: "producers-and-directors", share: 7.0, conf: "broad", note: "TV commercial producers, content directors, video producers, and integrated production managers producing Omnicom client campaigns across screens." },
+    { label: "market-research-analysts", share: 6.0, conf: "broad", note: "Consumer insights researchers, brand tracking analysts, and media measurement specialists providing audience analytics and campaign effectiveness measurement." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at Omnicom's global agency offices across 100+ countries supporting account teams and leadership." },
+    { label: "software-developers", share: 5.0, conf: "broad", note: "Digital engineers building client websites, campaign microsites, marketing technology platforms, and programmatic advertising tools across Omnicom's digital practices." },
+    { label: "data-scientists", share: 4.0, conf: "broad", note: "Data and analytics specialists developing audience models, programmatic bidding algorithms, and campaign attribution analytics within Omnicom's Precision Marketing and data-driven marketing practices." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Omnicom's multi-currency financial operations across its global agency portfolio." },
+    { label: "writers-and-authors", share: 3.0, conf: "broad", note: "Copywriters and content writers crafting advertising copy, brand narratives, social media content, and PR materials for Omnicom clients across its creative agencies." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for Omnicom's ~74,900-person globally distributed workforce." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Agency CEOs, executive creative directors, group presidents, and corporate leadership across Omnicom's many agency brands and holding company." },
+  ],
   OKE: [
     { label: "oil-and-gas-workers", share: 28.0, conf: "broad", note: "Field operations workers including pipeline controllers, measurement/metering technicians, wellhead gathering operators, and field operations staff across ONEOK's ~50,000-mile natural gas gathering, processing, and transmission system (~5,177 employees FY2024, including Magellan acquisition)." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Compressor station mechanics, plant maintenance technicians, and millwrights maintaining ONEOK's large fleet of compressors at gathering, processing, and fractionation facilities." },
