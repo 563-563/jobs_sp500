@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  RJF: [
+    { label: "personal-financial-advisors", share: 46.0, conf: "narrow", note: "Raymond James reported ~8,800 employee financial advisors (FA) as of FY2024 year-end — 46% of ~19,000 total employees; FAs in the Private Client Group manage $1.57 trillion in client assets, making wealth management the dominant workforce function at Raymond James Financial." },
+    { label: "financial-analysts", share: 15.0, conf: "broad", note: "Capital markets research analysts, equity analysts, fixed income analysts, investment banking analysts, and credit analysts in Raymond James' Capital Markets and Asset Management segments." },
+    { label: "customer-service-representatives", share: 10.0, conf: "broad", note: "Client service associates, operations staff, and brokerage account support personnel handling account administration, trade support, and customer inquiries for Raymond James' 8,800+ financial advisors and their clients." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "Compliance officers, risk management professionals, operations analysts, and strategic planning staff — critical functions for a regulated broker-dealer and bank holding company." },
+    { label: "loan-officers", share: 6.0, conf: "broad", note: "Raymond James Bank loan officers originating residential mortgages, securities-based loans, and corporate loans as part of Raymond James' banking segment serving Private Client Group clients." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance, accounting, and internal audit professionals managing Raymond James Financial's corporate financial reporting and regulatory capital compliance as a publicly-traded broker-dealer." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Branch administrative assistants supporting financial advisors at Raymond James branches and corporate administrative staff at the St. Petersburg, Florida headquarters." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "Corporate C-suite and segment leaders overseeing Raymond James' Private Client Group, Capital Markets, Asset Management, and Banking divisions." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent acquisition and employee programs across Raymond James' advisor-centric workforce." },
+    { label: "information-security-analysts", share: 1.0, conf: "reasoned_proxy", note: "Cybersecurity professionals protecting Raymond James' wealth management platforms and client financial data from cyber threats." },
+  ],
   RF: [
     { label: "loan-officers", share: 20.0, conf: "broad", note: "Mortgage loan officers, commercial relationship managers, and small business bankers originating and managing consumer, business, and real estate loans across Regions Bank's ~1,300 branches in the South and Midwest; lending is the core revenue-generating function of a regional bank (~19,644 employees FY2024)." },
     { label: "tellers", share: 18.0, conf: "broad", note: "Bank tellers handling cash transactions, deposits, withdrawals, and routine customer inquiries at Regions Bank's branch network across 15 states; tellers remain a significant portion of branch staff despite digital banking growth." },
