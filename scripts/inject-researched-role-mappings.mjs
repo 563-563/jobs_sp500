@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NI: [
+    { label: "line-installers-and-repairers", share: 20.0, conf: "broad", note: "Gas service technicians installing, inspecting, and repairing natural gas service lines, meters, and distribution mains for Columbia Gas (OH, PA, VA, KY, MD) and NIPSCO gas customers; field service is the largest workforce category at a gas distribution utility (~7,746 employees FY2024)." },
+    { label: "plumbers-pipefitters-and-steamfitters", share: 15.0, conf: "broad", note: "Pipeline workers installing, replacing, and maintaining natural gas distribution mains; NiSource has a major pipeline replacement program (CTRP) accelerating infrastructure renewal across its 6-state service territory." },
+    { label: "electricians", share: 10.0, conf: "broad", note: "Electric lineworkers maintaining and repairing NIPSCO's electric transmission and distribution lines serving ~500,000 electric customers in northern Indiana." },
+    { label: "construction-laborers-and-helpers", share: 8.0, conf: "broad", note: "Construction laborers and helpers supporting NiSource's capital pipeline replacement and electric grid upgrade projects across its service territory." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Customer service agents at Columbia Gas and NIPSCO call centers handling billing inquiries, service orders, emergency calls, and account management for 3.8M+ utility customers." },
+    { label: "stationary-engineers-and-boiler-operators", share: 5.0, conf: "broad", note: "Power plant operators at NIPSCO's remaining electric generation facilities; NIPSCO is transitioning from coal to renewable energy but maintains some gas/coal plant operations." },
+    { label: "civil-engineers", share: 5.0, conf: "broad", note: "Pipeline engineers and civil engineers designing gas distribution system upgrades and NIPSCO electric grid expansion projects." },
+    { label: "general-maintenance-and-repair-workers", share: 5.0, conf: "broad", note: "General maintenance workers at NiSource's compressor stations, service centers, and electric substations." },
+    { label: "construction-managers", share: 5.0, conf: "broad", note: "Capital project managers overseeing NiSource's gas pipeline replacement programs and NIPSCO electric infrastructure upgrades across its utility service territories." },
+    { label: "electrical-and-electronics-engineers", share: 4.0, conf: "broad", note: "Electrical engineers managing NIPSCO's power grid, substation design, and transmission system; also protection and controls engineers managing grid reliability." },
+    { label: "project-management-specialists", share: 4.0, conf: "broad", note: "Program managers coordinating NiSource's large-scale capital investment programs, including the Columbia Gas pipeline safety initiatives." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at NiSource's Columbus, Indiana headquarters and regional district offices across its 6-state territory." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and regulatory accounting staff managing rate case filings, regulatory assets, and NiSource's financial reporting." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for NiSource's ~7,700-person regulated utility workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and utility operating company leaders managing NiSource's gas and electric utilities." },
+  ],
   NEM: [
     { label: "material-moving-machine-operators", share: 21.0, conf: "broad", note: "Mining equipment operators running haul trucks, front-end loaders, bulldozers, and excavators at Newmont's open-pit and underground gold mines across Nevada, Canada, Australia, Ghana, Peru, and other operations (~22,200 employees FY2024)." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 18.0, conf: "broad", note: "Mining equipment mechanics and millwrights maintaining the heavy machinery, conveyors, ball mills, and processing equipment across Newmont's global mine and mill sites; maintenance is a critical and large function in mining." },
