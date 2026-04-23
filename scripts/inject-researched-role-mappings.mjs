@@ -75,6 +75,17 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  SBAC: [
+    { label: "construction-managers", share: 25.0, conf: "broad", note: "Tower construction project managers and colocation project managers overseeing new tower builds and colocation installations (adding carrier equipment to existing SBA towers) across the Americas and Africa; construction management is the core operational activity for a tower company (~1,720 employees FY2024, 40,000+ tower portfolio)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 20.0, conf: "broad", note: "Site acquisition specialists and lease negotiators identifying new tower sites, negotiating ground leases with landowners, and managing lease portfolios for SBA's tower sites across the US, Brazil, and other international markets." },
+    { label: "management-analysts", share: 15.0, conf: "broad", note: "Leasing/contract managers, international operations staff, and corporate strategy professionals managing SBA's carrier customer relationships, master lease agreements with AT&T, Verizon, T-Mobile, and DISH, and multi-country operations across the Americas and Africa." },
+    { label: "electrical-and-electronics-engineering-technicians", share: 15.0, conf: "broad", note: "Tower field technicians performing preventive maintenance, equipment inspections, and emergency repairs on SBA's cell tower portfolio; technicians are essential for maintaining uptime on carrier-leased antenna systems." },
+    { label: "financial-analysts", share: 10.0, conf: "broad", note: "Finance and accounting staff managing SBA's complex REIT financial reporting, tower lease accounting under ASC 842, and multi-currency international financial consolidation for operations in Brazil, Central America, Caribbean, and Africa." },
+    { label: "civil-engineers", share: 5.0, conf: "broad", note: "Structural engineers analyzing tower loading for new carrier antenna installations, zoning and permitting specialists managing regulatory approvals for new tower sites." },
+    { label: "human-resources-specialists", share: 4.0, conf: "reasoned_proxy", note: "HR professionals managing international talent programs across SBA's US, Latin American, and African operations." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative support at SBA's Boca Raton, Florida headquarters and international regional offices." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional leaders overseeing SBA's US and international tower businesses." },
+  ],
   RVTY: [
     { label: "chemists-and-materials-scientists", share: 22.0, conf: "broad", note: "Biochemists, immunochemists, and analytical chemists in Revvity's R&D and manufacturing teams developing and producing immunoassay reagents, genetic screening kits, and diagnostic test kits — including EUROIMMUN's autoimmune and infectious disease assays (~11,000 employees FY2024)." },
     { label: "chemical-technicians", share: 18.0, conf: "broad", note: "Laboratory technicians and QC analysts manufacturing Revvity's diagnostic reagents, biological samples, and life science consumables, and performing quality control testing on finished products across global manufacturing sites." },
