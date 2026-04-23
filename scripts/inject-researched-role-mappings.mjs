@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PNW: [
+    { label: "line-installers-and-repairers", share: 30.0, conf: "broad", note: "Electrical line crews maintaining and building APS's distribution and transmission system serving ~1.4 million Arizona customers; lineworkers are the largest occupational group at electric distribution utilities (~6,403 employees FY2024)." },
+    { label: "power-plant-operators-distributors-and-dispatchers", share: 15.0, conf: "broad", note: "Power plant operators running Pinnacle West's generation fleet including the Palo Verde Nuclear Generating Station (largest US nuclear plant, ~3,300 MW), natural gas peaking units, and energy control center dispatchers managing grid reliability." },
+    { label: "electricians", share: 10.0, conf: "broad", note: "Substation electricians, relay technicians, and facility electricians supporting APS's electrical infrastructure, substations, and metering systems across Arizona's extensive service territory." },
+    { label: "electrical-and-electronics-engineers", share: 10.0, conf: "broad", note: "Power systems engineers, protection engineers, and grid planning engineers designing and maintaining APS's transmission and distribution network, integrating large-scale solar generation, and managing grid modernization projects." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Customer service agents handling billing, outage reporting, energy efficiency programs, and account management for APS's ~1.4 million residential and business electricity customers across Arizona." },
+    { label: "management-analysts", share: 5.0, conf: "broad", note: "Operations analysts, regulatory affairs specialists, and program managers supporting APS's rate case proceedings with the Arizona Corporation Commission and grid modernization strategic initiatives." },
+    { label: "civil-engineers", share: 3.0, conf: "broad", note: "Civil and structural engineers supporting Pinnacle West's capital infrastructure program for grid hardening, transmission expansion, and generation facility construction in Arizona." },
+    { label: "financial-analysts", share: 4.0, conf: "reasoned_proxy", note: "Finance and regulatory accounting staff managing Pinnacle West's utility rate base tracking, capital expenditure planning, and corporate financial reporting for a regulated electric utility." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative support staff at Pinnacle West's Phoenix corporate headquarters and APS's district offices and customer service centers across Arizona." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations, union contract administration, and workforce development for APS's large unionized workforce." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "Corporate executives and senior leaders of Pinnacle West Capital and its principal subsidiary Arizona Public Service Company." },
+  ],
   PNR: [
     { label: "assemblers-and-fabricators", share: 35.0, conf: "broad", note: "Manufacturing workers assembling Pentair's pool equipment, water treatment systems, pumps, valves, and filtration products across global production facilities; Pentair is a physical-product manufacturer with ~9,750 employees FY2024." },
     { label: "industrial-production-managers", share: 10.0, conf: "broad", note: "Plant and operations managers overseeing Pentair's manufacturing facilities producing pool, water treatment, and flow control equipment across multiple geographies including US, Europe, and Asia." },
