@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  ODFL: [
+    { label: "heavy-and-tractor-trailer-truck-drivers", share: 40.0, conf: "broad", note: "Linehaul tractor-trailer drivers and pick-up & delivery (P&D) drivers; ODFL's ~21,895-person non-union workforce (FY2024) is primarily drivers operating a fleet of ~9,000 linehaul tractors across its 255 service centers nationwide." },
+    { label: "hand-laborers-and-material-movers", share: 28.0, conf: "broad", note: "Dock workers loading and unloading LTL freight shipments at Old Dominion's ~255 service center terminals; dock operations are the second-largest workforce category at any LTL carrier given the labor intensity of handling thousands of small shipments daily." },
+    { label: "diesel-service-technicians-and-mechanics", share: 7.0, conf: "broad", note: "Truck and trailer maintenance technicians at ODFL's service centers keeping its large-scale fleet of tractors, trailers, and forklifts in service; fleet uptime is critical for ODFL's premium service standards." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Freight dispatch agents, tracing specialists, claims agents, and customer service staff handling pickup scheduling, freight tracking, and customer inquiries for ODFL's national freight network." },
+    { label: "sales-managers", share: 6.0, conf: "broad", note: "Account executives and freight sales representatives managing shipper accounts across ODFL's regional and national customer base." },
+    { label: "logisticians", share: 3.0, conf: "broad", note: "Network planners and operational logistics analysts managing ODFL's freight flow across its hub-and-spoke LTL network." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative staff at ODFL's Thomasville, NC headquarters and service center offices." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing ODFL's revenue accounting, freight billing, and financial reporting." },
+    { label: "software-developers", share: 1.0, conf: "broad", note: "IT engineers maintaining ODFL's freight management systems, customer web portals, and operational technology platforms." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting and workforce programs for ODFL's ~22,000-person non-union workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional management at Old Dominion Freight Line." },
+  ],
   NWSA: [
     { label: "reporters-correspondents-and-broadcast-news-analysts", share: 19.0, conf: "broad", note: "Journalists and reporters across News Corp's News Media segment (New York Post, The Times, The Sun, The Australian, Sky News Australia) and Dow Jones (Wall Street Journal, MarketWatch, Barron's); news gathering is the largest single function (~23,900 employees FY2024)." },
     { label: "editors", share: 12.0, conf: "broad", note: "Copy editors, section editors, and managing editors in News Corp's news brands, plus book editors and acquisitions editors at HarperCollins Publisher (the world's largest trade publisher)." },
