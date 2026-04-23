@@ -75,6 +75,22 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  OXY: [
+    { label: "oil-and-gas-workers", share: 25.0, conf: "broad", note: "Field production workers, wellsite operators, roustabouts, and production technicians at Occidental's Permian Basin (Delaware and Midland), DJ Basin, and international E&P operations in Oman, Algeria, and UAE (~13,323 employees FY2024, post-CrownRock acquisition)." },
+    { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 12.0, conf: "broad", note: "Equipment maintenance mechanics maintaining oil field production equipment, compression facilities, and chemical plant machinery across Occidental's three business segments." },
+    { label: "petroleum-engineers", share: 10.0, conf: "broad", note: "Reservoir engineers, drilling engineers, completion engineers, and production engineers managing Occidental's E&P technical programs across the Permian Basin and international assets." },
+    { label: "stationary-engineers-and-boiler-operators", share: 10.0, conf: "broad", note: "Chemical plant operators at OxyChem's (OCC Chemical) facilities producing chlorine, caustic soda, PVC, and chlorinated solvents; OxyChem is one of the largest US chlor-alkali producers with plants in Texas and Louisiana." },
+    { label: "chemical-engineers", share: 8.0, conf: "broad", note: "Process engineers at OxyChem's chemical manufacturing plants designing and optimizing chlor-alkali, vinyl chloride, and PVC production processes." },
+    { label: "geological-and-petroleum-technicians", share: 6.0, conf: "broad", note: "Geological technicians, field geological support, and drilling engineering technicians supporting Occidental's E&P operations across the Permian Basin and international." },
+    { label: "mechanical-engineers", share: 5.0, conf: "broad", note: "Facilities engineers and mechanical engineers managing oil production infrastructure, facility design, and pipeline integrity across Occidental's assets." },
+    { label: "environmental-scientists-and-specialists", share: 4.0, conf: "broad", note: "Environmental specialists managing Occidental's regulatory compliance, air emissions monitoring, and environmental remediation programs across its oil field and chemical operations." },
+    { label: "chemical-technicians", share: 4.0, conf: "broad", note: "Laboratory technicians and process control technicians monitoring product quality and process parameters at OxyChem's chemical manufacturing facilities." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at Occidental's Houston headquarters and operational offices across the Permian Basin and international locations." },
+    { label: "accountants-and-auditors", share: 5.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Occidental's multi-segment financial reporting, oil and gas cost tracking, and SEC reporting." },
+    { label: "logisticians", share: 2.0, conf: "broad", note: "Logistics specialists managing crude oil and gas marketing logistics, CO2 pipeline scheduling, and midstream transport coordination." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing workforce programs for Occidental's ~13,323-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and business segment leaders managing Occidental's Oil and Gas, OxyChem, and Midstream segments." },
+  ],
   OTIS: [
     { label: "elevator-installers-and-repairers", share: 45.0, conf: "narrow", note: "Elevator and escalator mechanics performing maintenance, repair, and installation; Otis's 2024 annual report confirms ~44,000 of ~72,000 employees are field professionals focused on manufacturing, installing, and maintaining products, with maintenance of 2.4M service units being the company's largest business (Service segment)." },
     { label: "assemblers-and-fabricators", share: 15.0, conf: "broad", note: "Manufacturing workers assembling elevator cars, escalator components, controllers, and safety systems at Otis factories in China, Germany, Czech Republic, the US, and other countries for the New Equipment segment." },
