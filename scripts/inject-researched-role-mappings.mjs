@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NTAP: [
+    { label: "sales-managers", share: 35.0, conf: "narrow", note: "Sales representatives, account managers, and technical sales engineers; NetApp's 2024 10-K states approximately 5,300 of ~11,800 total employees (~45%) are in worldwide sales and marketing functions." },
+    { label: "software-developers", share: 30.0, conf: "broad", note: "Software engineers developing NetApp's ONTAP storage OS, cloud services (Cloud Volumes ONTAP, Azure NetApp Files), and AI data management platforms; R&D was $1,029M in FY2024, primarily personnel costs." },
+    { label: "management-analysts", share: 6.0, conf: "broad", note: "Product managers, product marketing managers, and go-to-market strategy staff supporting NetApp's cloud storage and AI data management product portfolio." },
+    { label: "customer-service-representatives", share: 5.0, conf: "broad", note: "Technical support and professional services staff helping customers deploy and troubleshoot NetApp's on-premises and cloud storage systems." },
+    { label: "computer-and-information-research-scientists", share: 5.0, conf: "broad", note: "Storage research scientists and AI/ML researchers developing NetApp's next-generation storage algorithms, data fabric architecture, and AI data management capabilities." },
+    { label: "computer-systems-analysts", share: 4.0, conf: "broad", note: "Solutions architects and systems engineers designing hybrid cloud storage architectures for enterprise customers." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at NetApp's San Jose headquarters and regional sales offices worldwide." },
+    { label: "computer-and-information-systems-managers", share: 3.0, conf: "broad", note: "Engineering managers and IT leadership overseeing NetApp's product development and corporate technology infrastructure." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing NetApp's $6.3B revenue operations, multi-country tax, and SEC reporting." },
+    { label: "information-security-analysts", share: 2.0, conf: "broad", note: "Cybersecurity engineers building and maintaining security for NetApp's cloud platforms and enterprise storage products." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent and workforce programs for NetApp's ~11,800-person global workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior leadership managing NetApp's storage and cloud businesses." },
+  ],
   NRG: [
     { label: "customer-service-representatives", share: 26.0, conf: "broad", note: "Customer service agents handling retail electricity account support (Reliant, NRG Direct, Green Mountain) for 6M residential and commercial customers, plus Vivint smart home security customer support (~10,000 total employees FY2024; Vivint acquisition closed 2023)." },
     { label: "general-maintenance-and-repair-workers", share: 20.0, conf: "broad", note: "Vivint field technicians installing, maintaining, and troubleshooting smart home security systems (cameras, locks, sensors, panels) at residential customer homes across the US; Vivint's field service workforce is large given ~2M smart home customers." },
