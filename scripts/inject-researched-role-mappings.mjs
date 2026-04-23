@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PLTR: [
+    { label: "software-developers", share: 45.0, conf: "broad", note: "Core platform engineers building Palantir's Gotham (government), Foundry (commercial), AIP, and Apollo products, plus Forward Deployed Engineers (FDEs) — Palantir's signature role where software engineers embed directly at government and commercial client sites to deploy and extend the platform (~3,936 employees FY2024, heavily engineering-driven culture)." },
+    { label: "data-scientists", share: 10.0, conf: "broad", note: "Data engineers and quantitative analysts building and deploying analytics pipelines, AI/ML models, and ontologies within Palantir's platforms for defense, intelligence, and commercial clients." },
+    { label: "sales-managers", share: 12.0, conf: "broad", note: "Account executives and sales directors in Palantir's rapidly expanding US commercial sales force (US commercial revenue grew 54% YoY in 2024) and government account managers serving DOD, intelligence agencies, and allied governments." },
+    { label: "management-analysts", share: 10.0, conf: "broad", note: "Business development, program managers, and strategy staff supporting Palantir's government and commercial engagements, including solution architects and deployment operations managers." },
+    { label: "computer-systems-analysts", share: 7.0, conf: "broad", note: "Systems integration and solution architecture specialists helping government and commercial clients connect disparate data sources into Palantir's Foundry and Gotham platforms." },
+    { label: "financial-analysts", share: 5.0, conf: "reasoned_proxy", note: "Finance, FP&A, and accounting staff supporting Palantir's corporate finance functions including revenue recognition, government contract accounting, and investor reporting." },
+    { label: "top-executives", share: 3.0, conf: "reasoned_proxy", note: "C-suite and senior leadership including CEO Alex Karp, CTO Shyam Sankar, and regional/division heads overseeing government and commercial businesses." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR and talent acquisition staff supporting Palantir's selective engineering hiring process and global workforce management." },
+    { label: "secretaries-and-administrative-assistants", share: 3.0, conf: "reasoned_proxy", note: "Administrative and office support staff at Palantir's Denver HQ and global offices." },
+    { label: "computer-and-information-research-scientists", share: 2.0, conf: "reasoned_proxy", note: "AI/ML researchers working on Palantir's Artificial Intelligence Platform (AIP), large language model integrations, and advanced defense AI applications including AI-enabled military targeting and logistics." },
+  ],
   PLD: [
     { label: "property-real-estate-and-community-association-managers", share: 25.0, conf: "broad", note: "Property managers overseeing Prologis's portfolio of ~1.3 billion square feet of logistics and industrial real estate across 20 countries; property management is the core operational function of the world's largest industrial REIT (~5,000 employees FY2024)." },
     { label: "real-estate-brokers-and-sales-agents", share: 20.0, conf: "broad", note: "Leasing agents and market officers negotiating leases with Prologis's ~6,500 tenant customers (Amazon, FedEx, UPS, Home Depot, DHL, etc.) for warehouse and logistics space in high-barrier markets globally." },
