@@ -75,6 +75,22 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NKE: [
+    { label: "retail-sales-workers", share: 40.0, conf: "broad", note: "Nike store associates in Nike's ~1,060 owned retail stores (Nike Direct) worldwide, including Nike brand stores, Nike Factory Stores, and Converse stores; Nike does not manufacture products and retail is by far the largest employee category (~79,400 employees as of May 31, 2024)." },
+    { label: "hand-laborers-and-material-movers", share: 15.0, conf: "broad", note: "Distribution center workers at Nike's major logistics hubs (Memphis, TN; Laakdal, Belgium; others) sorting, packing, and shipping footwear and apparel for Nike Direct e-commerce and wholesale fulfillment." },
+    { label: "software-developers", share: 7.0, conf: "broad", note: "Engineers at Nike Technology (Nike's tech organization) building Nike.com, Nike App, SNKRS, membership platforms, and supply chain technology; Nike has made massive investments in direct-to-consumer digital infrastructure." },
+    { label: "sales-managers", share: 6.0, conf: "broad", note: "Wholesale account managers and key account sales teams managing Nike's relationships with major retail partners (Foot Locker, Dick's, Nordstrom, Zalando, etc.) and independent retailers globally." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff at Nike's Beaverton, OR world headquarters and regional offices worldwide supporting corporate functions." },
+    { label: "logisticians", share: 5.0, conf: "broad", note: "Supply chain planners, logistics coordinators, and demand planning analysts managing Nike's complex global supply chain connecting 96+ footwear factories across 11 countries to Nike's distribution network." },
+    { label: "fashion-designers", share: 5.0, conf: "broad", note: "Footwear and apparel designers at Nike's Beaverton campus conceiving and developing Nike, Jordan, and Converse seasonal product lines; design is a core competitive advantage and has hundreds of creative roles." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Nike's $51B revenue global business, including FX management, transfer pricing, and financial reporting." },
+    { label: "human-resources-specialists", share: 3.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, labor relations, and workforce programs for Nike's 79,000+ employee global organization." },
+    { label: "market-research-analysts", share: 3.0, conf: "broad", note: "Consumer insights analysts, sports marketing analysts, and trend researchers supporting Nike's global brand strategy and product positioning." },
+    { label: "art-directors", share: 2.0, conf: "broad", note: "Creative directors and art directors managing Nike brand advertising campaigns, in-store visual merchandising, and marketing materials globally." },
+    { label: "customer-service-representatives", share: 2.0, conf: "broad", note: "Customer service specialists handling Nike.com order inquiries, Nike+ member support, and returns processing for Nike's growing direct-to-consumer business." },
+    { label: "industrial-designers", share: 1.0, conf: "broad", note: "Product design engineers developing footwear tooling, material specifications, and manufacturing-ready designs in collaboration with Nike's contract manufacturers." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior leadership managing Nike's global footwear and apparel business." },
+  ],
   NI: [
     { label: "line-installers-and-repairers", share: 20.0, conf: "broad", note: "Gas service technicians installing, inspecting, and repairing natural gas service lines, meters, and distribution mains for Columbia Gas (OH, PA, VA, KY, MD) and NIPSCO gas customers; field service is the largest workforce category at a gas distribution utility (~7,746 employees FY2024)." },
     { label: "plumbers-pipefitters-and-steamfitters", share: 15.0, conf: "broad", note: "Pipeline workers installing, replacing, and maintaining natural gas distribution mains; NiSource has a major pipeline replacement program (CTRP) accelerating infrastructure renewal across its 6-state service territory." },
