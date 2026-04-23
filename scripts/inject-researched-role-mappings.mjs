@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  LEN: [
+    { label: "construction-managers", share: 30.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing home building across Lennar's 1,000+ active communities; the largest occupational category in a homebuilder, ~10,653 in homebuilding segment (FY2024 10-K)." },
+    { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants in Lennar's model homes and welcome centers across all markets; sales agents are the primary customer-facing role and a major staffing category at every Lennar community." },
+    { label: "loan-officers", share: 8.0, conf: "broad", note: "Mortgage loan officers in Lennar's Financial Services segment (Eagle Home Mortgage and related entities); 2,066 Financial Services employees originate and close home loans for Lennar buyers." },
+    { label: "project-management-specialists", share: 6.0, conf: "broad", note: "Project coordinators, land development managers, and schedule managers coordinating land entitlement, lot development, and home construction timelines across Lennar's national footprint." },
+    { label: "cost-estimators", share: 5.0, conf: "broad", note: "Construction estimators and value-engineering staff pricing home options, trade labor, and materials across Lennar's standardized product lines." },
+    { label: "purchasing-managers-buyers-and-purchasing-agents", share: 5.0, conf: "broad", note: "Purchasing agents sourcing lumber, appliances, fixtures, and building materials for Lennar's homebuilding divisions; materials procurement is a critical cost-control function in homebuilding." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff supporting division offices, model home complexes, and corporate functions across Lennar's national organization." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing job cost accounting, community P&Ls, and corporate financial reporting across Lennar's homebuilding and Financial Services divisions." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Civil engineers and land development engineers managing grading, utility design, and site infrastructure for Lennar's land development and lot finishing operations." },
+    { label: "architects", share: 3.0, conf: "broad", note: "Architects and plan designers developing Lennar's home product lines and customizing plans to local market needs; also includes design studio staff managing buyer option selections." },
+    { label: "insurance-underwriters", share: 3.0, conf: "broad", note: "Title insurance and homeowner insurance underwriters and processors in Lennar's Financial Services segment providing closing services to home buyers." },
+    { label: "customer-service-representatives", share: 3.0, conf: "broad", note: "Warranty service coordinators and customer care representatives handling post-closing warranty claims and service requests for Lennar homebuyers." },
+    { label: "property-real-estate-and-community-association-managers", share: 3.0, conf: "broad", note: "Multifamily property managers overseeing Lennar's Multifamily segment (546 employees) managing apartment communities; also HOA-related roles in homebuilding communities." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, onboarding, and benefits for Lennar's 13,265-person workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite, division presidents, and senior leadership managing Lennar's national homebuilding and financial services operations." },
+  ],
   LDOS: [
     { label: "software-developers", share: 24.0, conf: "broad", note: "Software engineers building defense IT systems, health IT platforms, and mission software; Leidos's National Security & Digital and Health & Civil segments are fundamentally software businesses for the US government (~48,000 employees FY2024)." },
     { label: "information-security-analysts", share: 8.0, conf: "broad", note: "Cybersecurity analysts, cyber engineers, and cleared security professionals; Leidos is a top DoD cyber contractor, with 52% of employees holding security clearances." },
