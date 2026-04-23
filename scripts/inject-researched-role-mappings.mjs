@@ -75,6 +75,20 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  OTIS: [
+    { label: "elevator-installers-and-repairers", share: 45.0, conf: "narrow", note: "Elevator and escalator mechanics performing maintenance, repair, and installation; Otis's 2024 annual report confirms ~44,000 of ~72,000 employees are field professionals focused on manufacturing, installing, and maintaining products, with maintenance of 2.4M service units being the company's largest business (Service segment)." },
+    { label: "assemblers-and-fabricators", share: 15.0, conf: "broad", note: "Manufacturing workers assembling elevator cars, escalator components, controllers, and safety systems at Otis factories in China, Germany, Czech Republic, the US, and other countries for the New Equipment segment." },
+    { label: "sales-managers", share: 8.0, conf: "broad", note: "Account managers and sales engineers selling new elevator and escalator installations to real estate developers, architects, and building contractors; also modernization sales to existing building owners." },
+    { label: "general-maintenance-and-repair-workers", share: 5.0, conf: "broad", note: "Facility and manufacturing plant maintenance workers at Otis's global factory locations maintaining production equipment." },
+    { label: "mechanical-engineers", share: 5.0, conf: "broad", note: "Mechanical engineers designing elevator systems, drive mechanisms, counterweights, and mechanical safety devices across Otis's New Equipment R&D centers." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at Otis's Farmington, CT headquarters and global offices across 200+ countries and territories." },
+    { label: "electrical-and-electronics-engineers", share: 4.0, conf: "broad", note: "Control systems engineers designing elevator controllers, variable-frequency drives, and IoT-connected elevator technology (Otis ONE platform)." },
+    { label: "quality-control-inspectors", share: 4.0, conf: "broad", note: "Quality assurance inspectors verifying elevator components and safety systems at Otis manufacturing facilities; elevator safety standards require rigorous inspection." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Otis's $14B+ revenue global service and equipment business." },
+    { label: "software-developers", share: 2.0, conf: "broad", note: "Software engineers developing Otis's connected elevator platform (Otis ONE), remote monitoring systems, and digital service tools." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for Otis's ~72,000-person globally distributed workforce, including many unionized field mechanics." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and regional leaders managing Otis's New Equipment and Service segments globally." },
+  ],
   ORLY: [
     { label: "retail-sales-workers", share: 55.0, conf: "broad", note: "Store retail associates at the parts counter helping DIY and professional customers find automotive parts, tools, and accessories; the dominant occupational category at O'Reilly's 6,378 US and international stores (~93,047 total employees FY2024)." },
     { label: "delivery-truck-drivers-and-driver-sales-workers", share: 17.0, conf: "broad", note: "Professional parts delivery drivers running O'Reilly's 'hub and spoke' delivery network serving professional automotive shops; rapid professional delivery is a key differentiator for O'Reilly's dual-market strategy (DIY + professional)." },
