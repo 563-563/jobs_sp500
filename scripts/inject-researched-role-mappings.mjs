@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  PCG: [
+    { label: "line-installers-and-repairers", share: 19.0, conf: "broad", note: "Electric lineworkers installing, maintaining, and repairing power lines across PG&E's 108,000+ circuit miles of electric distribution system in Northern and Central California; linework is the largest occupational group at a large electric utility (~28,410 employees FY2024)." },
+    { label: "plumbers-pipefitters-and-steamfitters", share: 15.0, conf: "broad", note: "Gas service workers installing, inspecting, and repairing PG&E's 45,200 miles of natural gas distribution pipelines serving residential and commercial customers; PG&E is one of the largest US gas distribution utilities." },
+    { label: "electricians", share: 12.0, conf: "broad", note: "Electrical maintenance workers at PG&E's substations, switchyards, and transmission facilities maintaining the electrical infrastructure of PG&E's bulk transmission and distribution systems." },
+    { label: "construction-laborers-and-helpers", share: 8.0, conf: "broad", note: "Construction laborers supporting PG&E's massive wildfire risk mitigation capital program including undergrounding, PSPS hardening, and vegetation management infrastructure projects." },
+    { label: "customer-service-representatives", share: 8.0, conf: "broad", note: "Customer service agents at PG&E's call centers handling billing inquiries, service orders, outage reports, and energy assistance applications for ~5.5M electric and ~4.5M gas customer accounts." },
+    { label: "construction-managers", share: 5.0, conf: "broad", note: "Capital project managers overseeing PG&E's extensive grid hardening program and gas system safety improvement projects across Northern and Central California." },
+    { label: "stationary-engineers-and-boiler-operators", share: 6.0, conf: "broad", note: "Power plant operators at PG&E's Diablo Canyon Nuclear Power Plant, hydroelectric stations, and natural gas peaker plants managing power generation operations." },
+    { label: "electrical-and-electronics-engineers", share: 5.0, conf: "broad", note: "Power systems engineers and electrical engineers managing grid planning, substation design, and protection and relay systems across PG&E's complex transmission and distribution network." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Civil engineers supporting transmission line corridor design, underground cable installation projects, and natural gas pipeline infrastructure engineering." },
+    { label: "general-maintenance-and-repair-workers", share: 4.0, conf: "broad", note: "Substation maintenance workers and general facility maintenance staff maintaining PG&E's hundreds of electric substations and gas metering/regulating stations." },
+    { label: "secretaries-and-administrative-assistants", share: 5.0, conf: "reasoned_proxy", note: "Administrative staff at PG&E's Oakland headquarters and regional offices across Northern and Central California." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and regulatory accounting staff managing PG&E's rate case filings, regulatory asset accounting, and financial reporting." },
+    { label: "software-developers", share: 2.0, conf: "broad", note: "IT engineers maintaining PG&E's energy management systems, customer online portal, and outage management systems." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing labor relations and workforce programs for PG&E's ~28,400-person workforce; most utility workers are represented by IBEW and other unions." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and utility leadership managing PG&E's electric and gas operations across its California service territory." },
+  ],
   PCAR: [
     { label: "assemblers-and-fabricators", share: 32.0, conf: "broad", note: "Heavy truck assembly workers building Kenworth, Peterbilt, and DAF trucks on production lines at factories in Chillicothe OH, Denton TX, Renton WA, and European DAF plants (~30,100 employees FY2024)." },
     { label: "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights", share: 12.0, conf: "broad", note: "Manufacturing plant maintenance mechanics maintaining production machinery, stamping presses, and assembly line equipment at PACCAR's truck manufacturing plants." },
