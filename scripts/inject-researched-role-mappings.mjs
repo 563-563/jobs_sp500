@@ -75,6 +75,23 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  NWSA: [
+    { label: "reporters-correspondents-and-broadcast-news-analysts", share: 19.0, conf: "broad", note: "Journalists and reporters across News Corp's News Media segment (New York Post, The Times, The Sun, The Australian, Sky News Australia) and Dow Jones (Wall Street Journal, MarketWatch, Barron's); news gathering is the largest single function (~23,900 employees FY2024)." },
+    { label: "editors", share: 12.0, conf: "broad", note: "Copy editors, section editors, and managing editors in News Corp's news brands, plus book editors and acquisitions editors at HarperCollins Publisher (the world's largest trade publisher)." },
+    { label: "software-developers", share: 12.0, conf: "broad", note: "Technology engineers at Realtor.com (Move Inc.), REA Group, Dow Jones digital, and News Corp's other digital properties; Digital Real Estate Services and Dow Jones's digital subscription business require substantial engineering." },
+    { label: "sales-managers", share: 10.0, conf: "broad", note: "Advertising sales reps, digital subscription sales, and real estate listing sales staff across News Corp's properties; sales is critical for advertising revenue, REA/realtor.com listings, and WSJ/Dow Jones data subscriptions." },
+    { label: "customer-service-representatives", share: 7.0, conf: "broad", note: "Customer service agents for Foxtel subscriber support, Wall Street Journal/Dow Jones subscription support, and HarperCollins customer service." },
+    { label: "producers-and-directors", share: 6.0, conf: "broad", note: "TV and content producers at News Corp's Foxtel (Australia's largest subscription TV service) and news program production staff at Sky News Australia." },
+    { label: "writers-and-authors", share: 5.0, conf: "broad", note: "Columnists, editorial writers, and staff writers at News Corp's journalism brands, plus professional content writers at Dow Jones's professional information services." },
+    { label: "real-estate-brokers-and-sales-agents", share: 5.0, conf: "broad", note: "Real estate data and sales staff at Move Inc. (Realtor.com) and REA Group (Australia's dominant digital real estate listings platform); digital real estate is ~35% of News Corp revenue." },
+    { label: "management-analysts", share: 4.0, conf: "broad", note: "Strategy and product management staff across News Corp's digital properties and business units managing product roadmaps and monetization." },
+    { label: "secretaries-and-administrative-assistants", share: 6.0, conf: "reasoned_proxy", note: "Administrative staff across News Corp's many global editorial offices and corporate headquarters in New York." },
+    { label: "accountants-and-auditors", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing News Corp's $10B revenue multi-segment global operation." },
+    { label: "market-research-analysts", share: 3.0, conf: "broad", note: "Audience analytics researchers and market data analysts supporting Dow Jones's professional information business and News Corp's digital audience strategy." },
+    { label: "public-relations-specialists", share: 3.0, conf: "broad", note: "Communications and PR professionals managing brand communications for News Corp's many media properties and corporate communications." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing talent programs for News Corp's ~23,900-person globally distributed workforce." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "Senior leadership across News Corp's many brands and corporate headquarters; a holding company with many brand-level executive teams." },
+  ],
   NVR: [
     { label: "construction-managers", share: 28.0, conf: "broad", note: "Construction superintendents and community construction managers overseeing home building; NVR's 2024 10-K states ~5,930 of ~7,000 employees are in homebuilding operations with Ryan Homes, NVHomes, and Heartland Homes brands." },
     { label: "real-estate-brokers-and-sales-agents", share: 18.0, conf: "broad", note: "New home sales consultants in NVR's model homes and sales centers across its homebuilding markets in the Mid-Atlantic, Southeast, Midwest, and Southwest US." },
