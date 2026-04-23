@@ -75,6 +75,18 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  LUV: [
+    { label: "flight-attendants", share: 28.0, conf: "narrow", note: "Approximately 20,000 Southwest flight attendants covered by TWU Local 556 contract; confirmed figure from Southwest 2024 press releases (~72,450 total employees FY2024)." },
+    { label: "airline-and-commercial-pilots", share: 18.0, conf: "broad", note: "Approximately 13,000 Southwest pilots represented by SWAPA (Southwest Airlines Pilots Association); Southwest operated ~720 aircraft requiring large pilot rosters with scheduling coverage." },
+    { label: "hand-laborers-and-material-movers", share: 24.0, conf: "broad", note: "Ramp agents and ground operations workers loading/unloading baggage, marshaling aircraft, and performing ground handling duties; ramp operations are the largest non-crew workforce category at Southwest given its high-frequency point-to-point network." },
+    { label: "aircraft-and-avionics-equipment-mechanics-and-technicians", share: 7.0, conf: "broad", note: "Line and heavy maintenance technicians represented by AMFA (Aircraft Mechanics Fraternal Association) maintaining Southwest's Boeing 737 fleet at line stations and Tech Ops centers." },
+    { label: "customer-service-representatives", share: 12.0, conf: "broad", note: "Gate agents, customer service agents, and operations agents handling passenger check-in, boarding, and customer service at Southwest's 100+ airports; collectively large workforce category." },
+    { label: "secretaries-and-administrative-assistants", share: 4.0, conf: "reasoned_proxy", note: "Administrative staff at Southwest's Dallas HQ and regional offices supporting corporate and operational functions." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Finance and accounting staff managing Southwest's $26B revenue operation including revenue management, cost accounting, and financial reporting." },
+    { label: "software-developers", share: 2.0, conf: "broad", note: "IT engineers developing and maintaining Southwest's reservations, operational control, loyalty (Rapid Rewards), and digital customer experience systems." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals managing recruiting, benefits, and labor relations for Southwest's ~72,000-person unionized workforce." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite and senior management at Southwest's Dallas headquarters." },
+  ],
   LHX: [
     { label: "electrical-and-electronics-engineers", share: 12.0, conf: "broad", note: "Electrical and RF engineers designing radios, electronic warfare systems, radar, and communications hardware; the largest engineering discipline at L3Harris given its core business in defense electronics (~45,000 employees, ~40% engineers/scientists per FY2024 10-K)." },
     { label: "software-developers", share: 10.0, conf: "broad", note: "Embedded software engineers, signal processing developers, and mission software engineers across L3Harris's Communication Systems, Integrated Mission Systems, and Space & Airborne segments." },
