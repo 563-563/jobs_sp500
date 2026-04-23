@@ -75,6 +75,19 @@ const scoreByLabel = new Map(scoreRows.map((s) => [s.repo_label, Number(s.repo_s
 // Only include roles with share_pct >= 1% to avoid noise.
 
 const RESEARCHED = {
+  SNDK: [
+    { label: "electrical-and-electronics-engineers", share: 25.0, conf: "broad", note: "NAND flash semiconductor design engineers, product engineers, and test engineers developing SanDisk's BiCS flash memory architecture and SSD products; SanDisk (spun off from Western Digital in 2024) is fundamentally an engineering-driven flash memory company (~7,800-9,500 employees FY2024)." },
+    { label: "computer-hardware-engineers", share: 18.0, conf: "broad", note: "SSD controller engineers, hardware design engineers, and product development engineers creating SanDisk's solid state drives (consumer SSDs, enterprise SSDs), embedded storage (eMMC, UFS), and removable storage (SD cards, USB drives)." },
+    { label: "software-developers", share: 15.0, conf: "broad", note: "Firmware engineers and software developers building SSD firmware, flash management algorithms (FTL, wear leveling, ECC), embedded storage software, and SSD management utilities for SanDisk's storage product portfolio." },
+    { label: "semiconductor-processing-technicians", share: 12.0, conf: "broad", note: "Process technicians and yield engineers supporting SanDisk's NAND flash manufacturing at its joint venture fabs with Kioxia (formerly Toshiba) in Japan; SanDisk/Kioxia jointly develop and manufacture 3D NAND flash (BiCS technology) in Yokkaichi and Kitakami, Japan." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 12.0, conf: "broad", note: "OEM account managers and distribution channel sales representatives selling SanDisk's flash storage products to PC OEMs, smartphone manufacturers, data center operators, and retail distribution partners globally." },
+    { label: "computer-systems-analysts", share: 5.0, conf: "broad", note: "Enterprise storage solutions architects and technical sales engineers supporting SanDisk's enterprise SSD and data center storage business." },
+    { label: "management-analysts", share: 4.0, conf: "reasoned_proxy", note: "Corporate strategy, operations, and supply chain professionals at SanDisk's Milpitas, California headquarters managing the company following its spin-off from Western Digital in 2024." },
+    { label: "financial-analysts", share: 4.0, conf: "reasoned_proxy", note: "Finance and accounting staff establishing SanDisk's standalone financial reporting and SEC compliance processes following the 2024 spin-off from Western Digital." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR professionals managing the workforce transition and talent programs following SanDisk's spin-off from Western Digital." },
+    { label: "secretaries-and-administrative-assistants", share: 2.0, conf: "reasoned_proxy", note: "Administrative support at SanDisk's Milpitas, California headquarters and global offices." },
+    { label: "top-executives", share: 1.0, conf: "reasoned_proxy", note: "Corporate C-suite establishing SanDisk as an independent public company following the 2024 Western Digital spin-off." },
+  ],
   SNA: [
     { label: "assemblers-and-fabricators", share: 28.0, conf: "broad", note: "Manufacturing assembly workers producing Snap-on's hand tools, power tools, storage systems, and diagnostic equipment at US plants (Kenosha, WI area) and international facilities in the UK, Germany, and other countries; assembly is the largest workforce function at a premium tool manufacturer (~13,000 employees FY2024)." },
     { label: "machinists-and-tool-and-die-makers", share: 15.0, conf: "broad", note: "Precision machinists producing Snap-on's high-quality tool components using CNC and precision machining; Snap-on's competitive advantage is the tight tolerances and superior metallurgy of its tools, requiring skilled machining trades workers." },
