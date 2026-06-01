@@ -3317,6 +3317,17 @@ const RESEARCHED = {
     { label: "operations-research-analysts", share: 1.0, conf: "broad", note: "Process improvement analysts and operational analysts optimizing Travelers' claims handling efficiency and underwriting workflow." },
   ],
 
+  TYL: [
+    { label: "software-developers", share: 38.0, conf: "narrow", note: "Product engineers, SaaS platform developers, cloud engineers, and DevOps staff; Tyler's 2024 Fast Facts explicitly discloses 2,822 'technology-specific roles' out of ~7,400 total employees; this covers both R&D engineers (~840 based on $117.9M R&D spend) and SaaS hosting/infrastructure engineers in cost-of-revenues." },
+    { label: "management-analysts", share: 22.0, conf: "narrow", note: "Implementation consultants helping state and local governments deploy Tyler's ERP (Munis), court management, public safety, tax assessment, and other civic software; FY2024 10-K identifies 5,250 employees in cost of revenues, and professional services revenue of $264M (12.3% of total $2.138B) anchors this large consulting function." },
+    { label: "customer-service-representatives", share: 21.0, conf: "narrow", note: "Technical support and software maintenance helpdesk staff for Tyler's government clients; Tyler's 2024 Fast Facts explicitly discloses 1,559 'support team members'; ongoing SaaS subscription support is critical for court systems, police CAD, and ERP clients requiring 24/7 availability." },
+    { label: "wholesale-and-manufacturing-sales-representatives", share: 8.0, conf: "broad", note: "Government software account executives and sales development representatives; Tyler's S&M expense of $157.7M in FY2024 implies ~875 sales/marketing employees (at ~$180K blended cost) targeting state/local government RFP cycles and procurement processes." },
+    { label: "computer-systems-analysts", share: 4.0, conf: "broad", note: "Integration specialists and systems analysts helping government clients connect Tyler's software with legacy mainframe systems, CAMA platforms, criminal justice information systems, and state data exchanges." },
+    { label: "accountants-and-auditors", share: 3.0, conf: "reasoned_proxy", note: "Corporate finance, accounting, and FP&A staff managing Tyler's $2.138B revenue SaaS business with complex multi-year government contract revenue recognition." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR and recruiting professionals supporting Tyler's 7,400+ employees; Plano TX headquarters is the primary hiring hub for this government-focused vertical software company." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "CEO Lynn Moore, CFO Brian Miller, and executive leadership team at Tyler's Plano TX headquarters overseeing the dominant provider of integrated software to US state and local governments." },
+  ],
+
   UBER: [
     { label: "customer-service-representatives", share: 20.0, conf: "broad", note: "Rider and driver support specialists, Uber Eats consumer support, and partner success agents; Sales & Support is Uber's largest department at ~44% of 31,100 full-time employees per Unify." },
     { label: "operations-research-analysts", share: 18.0, conf: "broad", note: "City operations managers, marketplace analysts, logistics operations staff, and driver partner operations teams; Operations ~12% of total per Unify; key function ensuring supply-demand balance." },
