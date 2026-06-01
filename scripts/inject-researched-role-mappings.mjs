@@ -3270,6 +3270,36 @@ const RESEARCHED = {
     { label: "software-developers", share: 0.5, conf: "broad", note: "Internal technology developers supporting NS's train management systems, customer visibility tools, and operational analytics platforms." },
   ],
 
+  TPL: [
+    { label: "accountants-and-auditors", share: 20.0, conf: "broad", note: "CAO, controllers, staff accountants, FP&A, and IR staff; royalty-income business model requires substantial financial reporting staff relative to headcount (ZoomInfo: Finance dept ~27% of 111 employees)." },
+    { label: "property-real-estate-and-community-association-managers", share: 18.0, conf: "broad", note: "Land associates, landmen, land technicians managing TPL's 880K surface acres in Permian Basin; negotiate surface easements, leases, grazing rights, and mineral royalty agreements." },
+    { label: "water-and-wastewater-treatment-plant-and-system-operators", share: 11.0, conf: "broad", note: "TPWR (water services subsidiary, ~35 of 114 total employees) field operators running produced-water disposal wells, water sourcing, and treatment infrastructure in the Delaware and Midland basins." },
+    { label: "petroleum-engineers", share: 8.0, conf: "broad", note: "TPWR water sourcing/infrastructure engineers; project development managers designing water disposal wells and sourcing well fields; FY2025 10-K: 114 total FTEs, ~35 in TPWR." },
+    { label: "management-analysts", share: 8.0, conf: "broad", note: "SVP Business Development, SVP M&A, VP Corporate Strategy, investor relations VP; TPL actively grows royalty acreage and water services capacity through transactions and business development." },
+    { label: "lawyers", share: 7.0, conf: "broad", note: "General Counsel, Asst GC/SVP Commercial Transactions, in-house counsel managing complex surface-rights contracts, easement disputes, and regulatory compliance for large Permian land portfolio." },
+    { label: "top-executives", share: 6.0, conf: "broad", note: "CEO, CFO, CAO, EVP TPWR, and SVP-level officers (~6-7 named officers); TPL is extremely capital-efficient at 114 employees for a ~$25B market cap company." },
+    { label: "environmental-scientists-and-specialists", share: 5.0, conf: "broad", note: "Environmental compliance specialists (Midland-based) managing surface disturbance permits, RRC water disposal permits, and ESG reporting for TPL's Texas Permian surface estate." },
+    { label: "civil-engineers", share: 4.0, conf: "broad", note: "Infrastructure design engineers for TPWR pipeline systems, water well fields, and disposal injection well construction; project engineering for water services capacity expansion." },
+    { label: "software-developers", share: 5.0, conf: "reasoned_proxy", note: "IT and data management professionals; GIS analysts supporting land management spatial data; systems managing royalty tracking, easement databases, and TPWR operations data." },
+    { label: "human-resources-specialists", share: 4.0, conf: "reasoned_proxy", note: "HR director and HR staff (ZoomInfo: ~5% of 111 employees); talent management for lean but highly specialized workforce across Dallas HQ and Midland field operations." },
+    { label: "general-and-operations-managers", share: 4.0, conf: "reasoned_proxy", note: "Operations managers, project development managers, and Director of TPWR Operations overseeing field operations, capital project execution, and cross-functional coordination." },
+  ],
+
+  TPR: [
+    { label: "retail-sales-workers", share: 55.0, conf: "narrow", note: "Store sales associates at ~1,402 directly operated stores (Coach 930, Kate Spade 378, Stuart Weitzman 94); FY2024 10-K states 14,700 of 18,600 total employees (~79%) are in retail locations." },
+    { label: "sales-managers", share: 12.0, conf: "narrow", note: "Store leaders, associate store leaders, district managers, and area managers across 1,402 stores; FY2024 10-K retail location headcount anchors this estimate." },
+    { label: "stock-clerks-and-order-fillers", share: 5.0, conf: "broad", note: "Distribution center pick/pack/ship workers at Jacksonville (~500 employees) and North Las Vegas (~200 employees) fulfillment centers serving e-commerce and store replenishment." },
+    { label: "fashion-designers", share: 3.0, conf: "broad", note: "Product designers, creative directors, technical designers, and accessories designers across Coach, Kate Spade, and Stuart Weitzman design studios at NYC HQ; all three brands maintain distinct design identities." },
+    { label: "marketing-managers", share: 3.0, conf: "broad", note: "Brand marketing, digital marketing, PR, consumer insights, and brand strategy professionals across three luxury brands; includes e-commerce and social media marketing teams." },
+    { label: "software-developers", share: 3.0, conf: "broad", note: "IT, e-commerce technology, data analytics, and enterprise systems developers; significant omnichannel investment supporting tapestry.com and brand e-commerce sites." },
+    { label: "logisticians", share: 4.0, conf: "broad", note: "Supply chain planners, sourcing managers, logistics coordinators, and distribution center management; Tapestry uses contract manufacturing globally requiring substantial sourcing and logistics oversight." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance, FP&A, accounting, and audit professionals at NYC HQ managing $6.7B revenue company with global operations." },
+    { label: "human-resources-specialists", share: 2.0, conf: "reasoned_proxy", note: "HR, talent acquisition, L&D, and total rewards staff across Tapestry corporate and three brand organizations." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "C-suite, brand presidents, EVPs, SVPs, and director-level leadership at Tapestry corporate HQ (Hudson Yards, NYC) and brand headquarters." },
+    { label: "merchandise-displayers-and-window-trimmers", share: 1.0, conf: "broad", note: "Regional visual merchandising specialists and HQ visual merchandising directors; most in-store VM work is performed by store associates, making dedicated VM headcount small." },
+    { label: "general-and-operations-managers", share: 8.0, conf: "reasoned_proxy", note: "Legal, real estate, product development/sourcing managers, customer service, operations, and procurement professionals at corporate and brand level not captured in other categories." },
+  ],
+
   TRV: [
     { label: "claims-adjusters-appraisers-examiners-and-investigators", share: 38.0, conf: "narrow", note: "Travelers' Claim team is approximately 13,000 strong per their 2024 Sustainability Report, representing ~38% of 34,000 total employees; covers Business Insurance, Bond & Specialty, and Personal Insurance claim lines." },
     { label: "insurance-underwriters", share: 22.0, conf: "broad", note: "Commercial and personal lines underwriters assessing risk and pricing policies; Travelers' core competitive advantage is underwriting excellence delivering 86.2% combined ratio in 2024 record performance." },
