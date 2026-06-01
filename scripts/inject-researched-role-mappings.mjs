@@ -3328,6 +3328,22 @@ const RESEARCHED = {
     { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "CEO Lynn Moore, CFO Brian Miller, and executive leadership team at Tyler's Plano TX headquarters overseeing the dominant provider of integrated software to US state and local governments." },
   ],
 
+  UAL: [
+    { label: "flight-attendants", share: 25.0, conf: "narrow", note: "AFA-CWA represented flight attendants; FY2024 10-K discloses exactly 26,337 flight attendants out of 107,300 total employees (24.5%); the largest single employee group at United." },
+    { label: "airline-and-commercial-pilots", share: 15.0, conf: "narrow", note: "ALPA represented pilots; FY2024 10-K discloses exactly 16,123 pilots (15.0%); ALPA publicly confirms United as one of its largest pilot groups with 14,000-18,000+ members." },
+    { label: "hand-laborers-and-material-movers", share: 20.0, conf: "narrow", note: "IAM District 141 Fleet Service workers (ramp/baggage handlers, cargo agents) plus United Ground Express ramp staff; FY2024 10-K: ~21,900 fleet service employees (~16,017 mainline + ~5,882 UGE) representing 20.4% of total." },
+    { label: "customer-service-representatives", share: 14.0, conf: "narrow", note: "IAM District 141 Passenger Service workers (gate agents, ticket counter agents, customer service); FY2024 10-K: 11,650 mainline passenger service plus ~half of 5,882 UGE employees (~2,941), totaling ~14,591 (~13.6%)." },
+    { label: "aircraft-and-avionics-equipment-mechanics-and-technicians", share: 10.0, conf: "narrow", note: "IBT represented A&P mechanics and storekeepers; FY2024 10-K: 9,967 IBT technicians + 1,300 storekeepers = 11,267 (~10.5%); United maintains a large in-house MRO operation." },
+    { label: "software-developers", share: 3.0, conf: "reasoned_proxy", note: "IT software engineers and technology staff; United has invested heavily in digital and technology modernization including revenue management, mobile app, operations control systems; part of ~19,500 non-union management/admin workforce." },
+    { label: "management-analysts", share: 3.0, conf: "reasoned_proxy", note: "Operations planning analysts, network planning, strategic analysts, and business analysts; airline network management and revenue optimization require substantial analytical staff." },
+    { label: "operations-research-analysts", share: 2.0, conf: "broad", note: "Revenue management specialists and operations research analysts optimizing United's complex network of routes, fares, and capacity; yield management is a core competency at major carriers." },
+    { label: "logisticians", share: 2.0, conf: "reasoned_proxy", note: "Supply chain and logistics staff managing United's complex procurement of aircraft parts, catering, fuel, and ground service equipment across ~350 destinations." },
+    { label: "accountants-and-auditors", share: 2.0, conf: "reasoned_proxy", note: "Finance and accounting professionals at United's Chicago-Elk Grove Village HQ; complex airline accounting including fuel hedging, lease accounting, loyalty program deferred revenue for a $58B revenue airline." },
+    { label: "lawyers", share: 1.0, conf: "reasoned_proxy", note: "Legal counsel managing airline regulatory affairs (DOT, FAA), labor contract negotiations (8 labor unions), personal injury litigation, and international route authority matters." },
+    { label: "human-resources-specialists", share: 1.0, conf: "reasoned_proxy", note: "HR professionals supporting United's 107,300 employees across a highly unionized workforce (82%) with multiple simultaneous contract negotiations and labor relations management." },
+    { label: "top-executives", share: 2.0, conf: "reasoned_proxy", note: "CEO Scott Kirby, COO Toby Enqvist, and VP/director-level management; United's hub-and-spoke network requires regional management across hubs in Chicago, Denver, Houston, Newark, LA, San Francisco, Washington-Dulles." },
+  ],
+
   UBER: [
     { label: "customer-service-representatives", share: 20.0, conf: "broad", note: "Rider and driver support specialists, Uber Eats consumer support, and partner success agents; Sales & Support is Uber's largest department at ~44% of 31,100 full-time employees per Unify." },
     { label: "operations-research-analysts", share: 18.0, conf: "broad", note: "City operations managers, marketplace analysts, logistics operations staff, and driver partner operations teams; Operations ~12% of total per Unify; key function ensuring supply-demand balance." },
